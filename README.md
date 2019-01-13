@@ -2,4 +2,7 @@
 Super simple sample programs for Circuit Playground Express.
 
 ## Development
-I went on vacation and completely forgot to get a copy of the original pamphlet. If you're about to work on a sample, please log it in the issues section so anyone else that decides to work on this will know what needs to be done.
+The names of exercises from the Arduino version of the training have been added as a [project in the github repo page](https://github.com/mimiflynn/cpx-training/projects/1), so select one that interests you and start converting ;)
+
+## References
+[Circuit Playground Express CircuitPython guide](https://learn.adafruit.com/adafruit-circuit-playground-express/circuitpython-quickstart)
