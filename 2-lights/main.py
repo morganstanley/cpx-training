@@ -1,4 +1,5 @@
 # CircuitPlaygroundExpress_NeoPixel
+# https://learn.adafruit.com/circuitpython-made-easy-on-circuit-playground-express/neopixels
 import board
 import neopixel
 
