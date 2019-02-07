@@ -1,9 +1,9 @@
-from adafruit_circuitplayground.express import cpx
 import time
+from adafruit_circuitplayground.express import cpx
 
 while True:
-    temperature_c = cpx.temperature
-    temperature_f = temperature_c * 1.8 + 32
-    print("Temperature celsius:", temperature_c)
-    print("Temperature fahrenheit:", temperature_f)
+    print("Temperature C:", cpx.temperature)
+    print("Temperature F:", cpx.temperature * 1.8 + 32)
+    print((cpx.temperature, cpx.temperature * 1.8 + 32))
     time.sleep(1)
+
