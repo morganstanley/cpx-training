@@ -33,3 +33,7 @@ The names of exercises from the Arduino version of the training have been added 
 
 6. Name your Python file as code.py (Available filenames are: code.txt, code.py, main.txt and main.py)
 
+7. To use Circuit Playground Express Library, include the following line at the top
+```python 
+from adafruit_circuitplayground.express import cpx
+```
