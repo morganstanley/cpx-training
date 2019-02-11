@@ -1,13 +1,8 @@
-# from https://learn.adafruit.com/adafruit-circuit-playground-express/creating-and-editing-code
-import board
-import digitalio
-import time
+from adafruit_circuitplayground.express import cpx
+import time 
 
-led = digitalio.DigitalInOut(board.D13)
-led.direction = digitalio.Direction.OUTPUT
-
-while True:
-    led.value = True
+while True: 
+    cpx.red_led = True
     time.sleep(0.5)
-    led.value = False
+    cpx.red_led = False
     time.sleep(0.5)

@@ -1,20 +1,13 @@
-# CircuitPlaygroundExpress_CapTouch
-# https://circuitpython.readthedocs.io/en/latest/shared-bindings/touchio/__init__.html
+from adafruit_circuitplayground.express import cpx
 import time
 
-import board
-import touchio
-import neopixel
+cpx.pixels.brightness = 0.3
 
-touch1 = touchio.TouchIn(board.A1)
-touch7 = touchio.TouchIn(board.A7)
-pixels = neopixel.NeoPixel(board.NEOPIXEL, 10, brightness=.1)
-
-while True:
-    if touch1.value:
-        pixels.fill((255, 0, 0))
-        pixels.show()
-    if touch7.value:
-        pixels.fill((0, 0, 0))
-        pixels.show()
+while True: 
+    if cpx.touch_A1:
+        cpx.pixels.fill( (255, 0, 0) )
+        cpx.pixels.show()
+    if cpx.touch_A7:
+        cpx.pixels.fill( (0, 0, 0) )
+        cpx.pixels.show()
     time.sleep(0.01)
