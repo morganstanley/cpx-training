@@ -1,9 +1,9 @@
-# Variables
+# Variables and Types
 
-## Lights
+## Color Variables
 From level 1 exercise 2
 
-```
+```python
 from adafruit_circuitplayground.express import cpx
 
 cpx.pixels.brightness = 0.3
@@ -25,7 +25,7 @@ while True:
 
 Make a list of color variables by color name.
 
-```
+```python
 from adafruit_circuitplayground.express import cpx
 
 # Colors
@@ -58,9 +58,17 @@ while True:
     cpx.pixels.show()
 ```
 
+## Working with lists
+
+
+
+
+
+
+
 Eventually come to this:
 
-```
+```python
 # Learn more https://realpython.com/python-variables/
 # and https://realpython.com/python-data-types/
 import time
@@ -96,3 +104,5 @@ while True:
         time.sleep(.05)
     time.sleep(1)
 ```
+
+How can we streamline this so that we don't have to enter a color for each `for` block?
