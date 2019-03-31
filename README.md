@@ -20,8 +20,8 @@ The names of exercises from the Arduino version of the training have been added 
 
 [Set up Arduino IDE](https://learn.adafruit.com/adafruit-circuit-playground-express/set-up-arduino-ide)
 
-## Notes 
-1. After connecting your Arduino device to your computer, if no device/drive show up in the File Explorer, try hit the reset button on Arduino device. 
+## Notes
+1. After connecting your Arduino device to your computer, if no device/drive show up in the File Explorer, try hit the reset button on Arduino device.
 
 2. Disk Drive should have name CIRCUITPY instead of CPLAYBOOT, if CPLAYBOOT is displayed, you need to drag the CPX CircuitPython UF2 file over to the disk drive [UF2 file download link](https://learn.adafruit.com/adafruit-circuit-playground-express/circuitpython-quickstart)
 
@@ -34,6 +34,6 @@ The names of exercises from the Arduino version of the training have been added 
 6. Name your Python file as code.py (Available filenames are: code.txt, code.py, main.txt and main.py)
 
 7. To use Circuit Playground Express Library, include the following line at the top
-```python 
+```python
 from adafruit_circuitplayground.express import cpx
 ```
