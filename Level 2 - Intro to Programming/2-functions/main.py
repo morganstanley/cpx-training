@@ -6,7 +6,7 @@ import time
 import board
 import neopixel
 
-pixels = neopixel.NeoPixel(board.NEOPIXEL, 10, brightness=.2)
+pixels = neopixel.NeoPixel(board.NEOPIXEL, 10, brightness=.1)
 pixels.fill((0, 0, 0))
 pixels.show()
 
@@ -124,4 +124,3 @@ while True:
     if rainbowCycleDemo:
         print('Rainbow Cycle Demo')
         rainbow_cycle(.001)
-

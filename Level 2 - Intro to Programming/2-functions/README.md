@@ -4,7 +4,11 @@
 # Learn more https://realpython.com/python-variables/
 # and https://realpython.com/python-data-types/
 import time
-from adafruit_circuitplayground.express import cpx
+
+import board
+import neopixel
+
+pixels = neopixel.NeoPixel(board.NEOPIXEL, 10, brightness=.1)
 
 # Colors
 BLACK = (0, 0, 0)
@@ -19,9 +23,7 @@ BLUE = (0, 0, 255)
 LIGHT_BLUE = (80, 200, 175)
 WHITE = (255, 255, 255)
 
-pixels = cpx.pixels
-
-pixels.brightness = 0.3
+pixels = pixels
 pixels.fill(BLACK)
 pixels.show()
 

@@ -7,7 +7,7 @@ From level 1 exercise 2
 import board
 import neopixel
 
-pixels = neopixel.NeoPixel(board.NEOPIXEL, 10, brightness=.2)
+pixels = neopixel.NeoPixel(board.NEOPIXEL, 10, brightness=.1)
 pixels.fill((0, 0, 0))
 pixels.show()
 
@@ -32,7 +32,7 @@ Make a list of color variables by color name.
 import board
 import neopixel
 
-pixels = neopixel.NeoPixel(board.NEOPIXEL, 10, brightness=.2)
+pixels = neopixel.NeoPixel(board.NEOPIXEL, 10, brightness=.1)
 
 # Colors
 BLACK = (0, 0, 0)
@@ -81,7 +81,7 @@ import time
 import board
 import neopixel
 
-pixels = neopixel.NeoPixel(board.NEOPIXEL, 10, brightness=.2)
+pixels = neopixel.NeoPixel(board.NEOPIXEL, 10, brightness=.1)
 
 # Colors
 BLACK = (0, 0, 0)
