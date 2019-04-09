@@ -50,47 +50,34 @@ def rainbow(wait):
 
 
 def simpleCircle(wait):
-    RED = 0x100000  # (0x10, 0, 0) also works
-    YELLOW = (0x10, 0x10, 0)
-    GREEN = (0, 0x10, 0)
-    AQUA = (0, 0x10, 0x10)
-    BLUE = (0, 0, 0x10)
-    PURPLE = (0x10, 0, 0x10)
-    BLACK = (0, 0, 0)
+    # Colors
+    RED = (255, 0, 0)
+    PINK = (255, 100, 120)
+    ORANGE = (255, 100, 0)
+    YELLOW = (255, 255, 0)
+    GREEN = (0, 255, 0)
+    CYAN = (0, 255, 255)
+    PURPLE = (255, 0, 255)
+    BLUE = (0, 0, 255)
+    LIGHT_BLUE = (80, 200, 175)
+    WHITE = (255, 255, 255)
+
+    colors = [
+        PINK,
+        RED,
+        ORANGE,
+        YELLOW,
+        GREEN,
+        CYAN,
+        PURPLE,
+        BLUE,
+        LIGHT_BLUE,
+        WHITE
+    ]
 
     for i in range(len(pixels)):
-        pixels[i] = RED
-        time.sleep(wait)
-    time.sleep(1)
-
-    for i in range(len(pixels)):
-        pixels[i] = YELLOW
-        time.sleep(wait)
-    time.sleep(1)
-
-    for i in range(len(pixels)):
-        pixels[i] = GREEN
-        time.sleep(wait)
-    time.sleep(1)
-
-    for i in range(len(pixels)):
-        pixels[i] = AQUA
-        time.sleep(wait)
-    time.sleep(1)
-
-    for i in range(len(pixels)):
-        pixels[i] = BLUE
-        time.sleep(wait)
-    time.sleep(1)
-
-    for i in range(len(pixels)):
-        pixels[i] = PURPLE
-        time.sleep(wait)
-    time.sleep(1)
-
-    for i in range(len(pixels)):
-        pixels[i] = BLACK
-        time.sleep(wait)
+        pixels[i] = colors[i]
+        time.sleep(.05)
     time.sleep(1)
 
 

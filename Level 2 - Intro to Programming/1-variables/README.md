@@ -135,7 +135,18 @@ BLUE = (0, 0, 255)
 LIGHT_BLUE = (80, 200, 175)
 WHITE = (255, 255, 255)
 
-colors = [PINK, RED, ORANGE, YELLOW, GREEN, CYAN, PURPLE, BLUE, LIGHT_BLUE, WHITE]
+colors = [
+    PINK,
+    RED,
+    ORANGE,
+    YELLOW, 
+    GREEN, 
+    CYAN, 
+    PURPLE, 
+    BLUE, 
+    LIGHT_BLUE, 
+    WHITE
+]
 
 pixels.fill(BLACK)
 pixels.show()
@@ -145,4 +156,5 @@ while True:
         pixels[i] = colors[i]
         time.sleep(.05)
     time.sleep(1)
+
 ```
