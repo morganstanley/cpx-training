@@ -57,6 +57,14 @@ while True:
     pixels.fill((0, 0, 0))
 ```
 
+## What are built in methods?
+
+int
+
+range
+
+len
+
 Get to this:
 ```python
 # CircuitPlaygroundExpress_NeoPixel
