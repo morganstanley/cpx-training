@@ -1,7 +1,7 @@
 # Variables and Types
 
 ## Color Variables
-From level 1 exercise 2
+[From level 1 exercise 2](https://github.com/mimiflynn/cpx-training/blob/master/Level%201%20-%20Intro%20to%20CPX/2-lights/main.py)
 
 ```python
 import board
@@ -25,6 +25,8 @@ while True:
     pixels[9] = (0, 0, 100)
     pixels.show()
 ```
+
+What do those numbers mean? How can we make this more readable?
 
 Make a list of color variables by color name.
 
@@ -64,12 +66,6 @@ while True:
 ```
 
 ## Working with lists
-
-
-
-
-
-
 
 Eventually come to this:
 

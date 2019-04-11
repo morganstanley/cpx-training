@@ -1,6 +1,7 @@
 # Built in methods
 
-Lets start with this:
+Lets start [where we left off with functions](https://github.com/mimiflynn/cpx-training/tree/master/Level%202%20-%20Intro%20to%20Programming/3-methods):
+
 ```python
 # CircuitPlaygroundExpress_NeoPixel
 # https://learn.adafruit.com/adafruit-circuit-playground-express/circuitpython-neopixel

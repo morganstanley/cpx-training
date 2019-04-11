@@ -1,6 +1,7 @@
 # Functions
 
-Lets start with where we left off with variables.
+Lets start with [where we left off with variables](https://github.com/mimiflynn/cpx-training/blob/master/Level%202%20-%20Intro%20to%20Programming/1-variables/main.py).
+
 ```python
 import time
 
@@ -47,6 +48,7 @@ while True:
 ```
 
 And make a function out of the behavior:
+
 ```python
 def simpleCircle(wait):
     # Colors
@@ -134,5 +136,5 @@ while True:
     if simpleCircleDemo:
         print('Simple Circle Demo')
         simpleCircle(.05)
-    pixels.fill((0, 0, 0)) 
+    pixels.fill((0, 0, 0))
 ```
