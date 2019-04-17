@@ -65,6 +65,14 @@ while True:
     pixels.show()
 ```
 
+ * a variable is used to store data to be used by the program
+ * this data can be a number, a string, a Boolean, a list or some other data type
+ * every variable has a name which can consist of letters, numbers, and the underscore character (_). 
+ * no other type of characters can be used to create the variable name and the variable may NOT start with a number. 
+ * the equal sign = is used to assign a value to a variable. 
+ * that assignment can be from a fixed value or taken from another existing variable
+ * it can also be used to change the value of a variable from one value to another after the initial assignment is made
+
 ## Working with lists
 
 Eventually come to this:
