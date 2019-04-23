@@ -6,11 +6,11 @@ Learn to create variables and work with lists.
 
 [Code](https://github.com/mimiflynn/cpx-training/tree/master/Level%202%20-%20Intro%20to%20Programming/1-variables)
 
-## 2 - Operators
+## 2 - Statements and expressions
 
-Learn about functions and conditions.
+Learn about statements and expressions.
 
-[Code](https://github.com/mimiflynn/cpx-training/tree/master/Level%202%20-%20Intro%20to%20Programming/2-functions)
+[Code](https://github.com/mimiflynn/cpx-training/tree/master/Level%202%20-%20Intro%20to%20Programming/2-statements-and-expressions)
 
 ## 3 - Built-in Functions
 
