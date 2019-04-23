@@ -1,4 +1,4 @@
-# Built in functions
+# Built-in functions
 
 Lets start with [where we left off with variables](https://github.com/mimiflynn/cpx-training/blob/master/Level%202%20-%20Intro%20to%20Programming/1-variables/main.py).
 
