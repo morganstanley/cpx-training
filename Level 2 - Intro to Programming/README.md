@@ -6,7 +6,7 @@ Learn to create variables and work with lists.
 
 [Code](https://github.com/mimiflynn/cpx-training/tree/master/Level%202%20-%20Intro%20to%20Programming/1-variables)
 
-## 2 - Operators and Functions
+## 2 - Operators
 
 Learn about functions and conditions.
 
@@ -18,3 +18,8 @@ Learn about some of the built-in methods we have been using such as `int`, `rang
 
 [Code](https://github.com/mimiflynn/cpx-training/tree/master/Level%202%20-%20Intro%20to%20Programming/3-methods)
 
+## 4 - Functions
+
+Learn how to make your own functions.
+
+[Code]()
