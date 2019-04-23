@@ -16,7 +16,7 @@ Learn about functions and conditions.
 
 Learn about some of the built-in functions we have been using such as `range` and `len`.
 
-[Code](https://github.com/mimiflynn/cpx-training/tree/master/Level%202%20-%20Intro%20to%20Programming/3-methods)
+[Code](https://github.com/mimiflynn/cpx-training/tree/master/Level%202%20-%20Intro%20to%20Programming/3-built-in-functions)
 
 ## 4 - Functions
 
