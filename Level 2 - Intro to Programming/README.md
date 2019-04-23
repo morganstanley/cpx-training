@@ -12,9 +12,9 @@ Learn about functions and conditions.
 
 [Code](https://github.com/mimiflynn/cpx-training/tree/master/Level%202%20-%20Intro%20to%20Programming/2-functions)
 
-## 3 - Built-in Methods
+## 3 - Built-in Functions
 
-Learn about some of the built-in methods we have been using such as `int`, `range` and `len`.
+Learn about some of the built-in functions we have been using such as `int`, `range` and `len`.
 
 [Code](https://github.com/mimiflynn/cpx-training/tree/master/Level%202%20-%20Intro%20to%20Programming/3-methods)
 
@@ -22,4 +22,4 @@ Learn about some of the built-in methods we have been using such as `int`, `rang
 
 Learn how to make your own functions.
 
-[Code]()
+[Code](https://github.com/mimiflynn/cpx-training/tree/master/Level%202%20-%20Intro%20to%20Programming/4-functions)
