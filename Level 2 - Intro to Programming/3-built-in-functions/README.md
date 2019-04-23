@@ -48,12 +48,18 @@ while True:
 
 Built-in functions are handy tools built into the Python language (and other languages) that help programmers do common things, like get the length of a list or range of a loop.
 
-[Built-In Function Reference](https://docs.python.org/3/library/functions.html)
-
 ### `len(s)`
 
 Return the length (the number of items) of an object. The argument may be a sequence (such as a string, bytes, tuple, list, or range) or a collection (such as a dictionary, set, or frozen set).
 
-### `range(stop)
+### `range(stop)`
 
 Rather than being a function, range is actually an immutable sequence type, as documented in [Ranges and Sequence Types — list, tuple, range](https://docs.python.org/3/library/stdtypes.html#range).
+
+### Documentation
+
+All programmers use references to plan and build their code. The details of the built-in functions above is from documentation.
+
+Feel free to look through and explore the documentation of the built-in functions. You can find all kinds of interesting tools for your projects. Experiment to learn more.
+
+[Built-In Function Reference](https://docs.python.org/3/library/functions.html)
