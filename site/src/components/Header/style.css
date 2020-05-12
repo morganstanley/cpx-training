@@ -1,0 +1,42 @@
+.header-main{
+    display: flex;
+    margin-bottom: 30px;
+}
+.logo-link{
+    box-shadow: none;
+    text-decoration: none;
+    color: inherit;
+}
+.logo-img{
+    margin-right: 20px;
+    margin-bottom: 0;
+    min-width: 50;
+    height: 70px;
+}
+.header-nav{
+    float: right;
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.nav-ul{
+    list-style: none;
+              float: right;
+              height: 25px;
+              padding-top: 18px
+}
+.nav-li{
+    float: left;
+                margin-right: 20px;
+}
+.li-h1{
+    font-size: 20px;
+    font-weight: 300;
+                  margin-bottom: 0;
+                  margin-top: 0;
+}
+.li-link{
+    box-shadow: none;
+                    text-decoration: none;
+                    color: inherit;
+}
