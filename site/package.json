@@ -1,12 +1,7 @@
 {
-  "name": "gatsby-starter-22boxes-uno",
-  "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
+  "name": "makerspace-cpx-intro",
+  "description": "Learn the basics of CPX",
   "version": "0.1.0",
-  "author": "Gagandeep Singh <iamtherealgd@gmail.com>",
-  "bugs": {
-    "url": "https://github.com/iamtherealgd/gatsby-starter-22boxes-uno"
-  },
   "dependencies": {
     "gatsby": "^2.19.45",
     "gatsby-image": "^2.2.44",
@@ -38,23 +33,19 @@
   "devDependencies": {
     "prettier": "^1.19.1"
   },
-  "homepage": "https://github.com/iamtherealgd/gatsby-starter-22boxes-uno",
   "keywords": [
     "gatsby"
   ],
   "license": "MIT",
   "main": "n/a",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/iamtherealgd/gatsby-starter-22boxes-uno.git"
-  },
   "scripts": {
-    "build": "gatsby build",
+    "build": "gatsby build && npm run pub",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "pub": "rm -rf ../docs && mv public ../docs"
   }
 }
