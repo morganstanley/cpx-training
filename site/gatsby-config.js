@@ -1,16 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `22Boxes Template Uno`,
-    author: {
-      name: `Gagandeep Singh`,
-      summary: `22boxes.com`,
-    },
-    description: `22Boxes Gatsby template Uno`,
-    siteUrl: `https://22boxesgatsbyuno.netlify.com/`,
-    social: {
-      twitter: `twentytwoboxes`,
-    },
+    title: `CPX Training`,
+    description: `Introduction to CircuitPython with CircuitPlayground Express`
   },
+  pathPrefix: `/cpx-training`,
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
