@@ -42,15 +42,6 @@ const BlogIndex = ({ data, location }) => {
                   {title}
                 </Link>
               </h3>
-              <small
-                style={{
-                  color: "#B7B7B7",
-                  fontSize: `11px`,
-                  fontWeight: `300`,
-                }}
-              >
-                {node.frontmatter.date}
-              </small>
             </header>
             <section
               style={{ color: "#888888", fontSize: `17px`, fontWeight: `300` }}
