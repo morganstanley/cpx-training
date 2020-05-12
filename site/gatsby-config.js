@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `CPX Training`,
-    description: `Introduction to CircuitPython with CircuitPlayground Express`
+    description: `Introduction to CircuitPython with CircuitPlayground Express`,
+    siteUrl: 'https://mimiflynn.github.io/cpx-training/'
   },
   pathPrefix: `/cpx-training`,
   plugins: [
