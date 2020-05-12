@@ -13,7 +13,7 @@ const BlogIndex = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="All posts" />
-      {posts.map(({ node }) => {
+      {posts.reverse().map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
         return (
           <article
