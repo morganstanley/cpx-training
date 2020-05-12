@@ -36,8 +36,8 @@ exports.createPages = async ({ graphql, actions }) => {
   const posts = result.data.allMarkdownRemark.edges.filter(
     edge => edge.node.frontmatter.template === "post"
   )
-  const work = result.data.allMarkdownRemark.edges.filter(
-    edge => edge.node.frontmatter.template === "work"
+  const continueEntry = result.data.allMarkdownRemark.edges.filter(
+    edge => edge.node.frontmatter.template === "continue"
   )
   const blogPost = path.resolve(`./src/templates/blog-post.js`)
 
@@ -56,13 +56,13 @@ exports.createPages = async ({ graphql, actions }) => {
     })
   })
 
-  const workPage = path.resolve("./src/templates/work.js")
-  work.forEach(work => {
+  const continuePage = path.resolve("./src/templates/continue.js")
+  continueEntry.forEach(item => {
     createPage({
-      path: work.node.fields.slug,
-      component: workPage,
+      path: item.node.fields.slug,
+      component: continuePage,
       context: {
-        slug: work.node.fields.slug,
+        slug: item.node.fields.slug,
       },
     })
   })

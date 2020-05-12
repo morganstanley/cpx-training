@@ -1,6 +1,6 @@
 ---
 template: post
-title: Level 1 Exercise 3 - Buttons
+title: Level 1 | Exercise 3 - Buttons
 slug: level-1-exercise-3
 date: "2020-05-10T23:46:37.121Z"
 category: CircuitPython

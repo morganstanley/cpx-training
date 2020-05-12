@@ -1,6 +1,6 @@
 ---
 template: post
-title: Level 1 Exercise 6 - Temperature
+title: Level 1 | Exercise 6 - Temperature
 slug: level-1-exercise-6
 date: "2020-05-07T23:46:37.121Z"
 category: CircuitPython

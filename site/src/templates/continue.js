@@ -3,9 +3,8 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
-import Bio from "../components/bio"
 
-class WorkTemplate extends React.Component {
+class ContinueTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
     const siteTitle = this.props.data.site.siteMetadata.title
@@ -44,19 +43,16 @@ class WorkTemplate extends React.Component {
               marginTop: rhythm(2),
             }}
           />
-          <footer>
-            <Bio />
-          </footer>
         </article>
       </Layout>
     )
   }
 }
 
-export default WorkTemplate
+export default ContinueTemplate
 
 export const pageQuery = graphql`
-  query WorkBySlug($slug: String!) {
+  query ContinueBySlug($slug: String!) {
     site {
       siteMetadata {
         title

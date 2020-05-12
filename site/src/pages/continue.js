@@ -4,16 +4,16 @@ import { rhythm } from "../utils/typography"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const WorkPage = ({ data, location }) => {
+const ContinuePage = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
-  const workPosts = data.allMarkdownRemark.edges
+  const continuePosts = data.allMarkdownRemark.edges
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="Work" />
-      {workPosts.map(work => {
-        const title = work.node.frontmatter.title || work.node.fields.slug
-        const node = work.node
+      <SEO title="Continue" />
+      {continuePosts.map(item => {
+        const title = item.node.frontmatter.title || item.node.fields.slug
+        const node = item.node
         return (
           <article
             key={node.fields.slug}
@@ -77,7 +77,7 @@ const WorkPage = ({ data, location }) => {
   )
 }
 
-export default WorkPage
+export default ContinuePage
 
 export const pageQuery = graphql`
   query {
@@ -86,7 +86,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(filter: { frontmatter: { template: { eq: "work" } } }) {
+    allMarkdownRemark(filter: { frontmatter: { template: { eq: "continue" } } }) {
       edges {
         node {
           frontmatter {

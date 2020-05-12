@@ -1,5 +1,4 @@
 import React from "react"
-import logo from "./logo.svg"
 import { Link } from "gatsby"
 import "./style.css"
 
@@ -11,10 +10,10 @@ class Header extends React.Component {
       paddingBottom: location.pathname === "/" ? `5px` : `0px`,
       boxShadow: location.pathname === "/" ? `0px 1px 0px 0px black` : `none`,
     }
-    const workLinkStyle = {
-      paddingBottom: location.pathname === "/work" ? `5px` : `0px`,
+    const continueLinkStyle = {
+      paddingBottom: location.pathname === "/continue" ? `5px` : `0px`,
       boxShadow:
-        location.pathname === "/work" ? `0px 1px 0px 0px black` : `none`,
+        location.pathname === "/continue" ? `0px 1px 0px 0px black` : `none`,
     }
     const aboutLinkStyle = {
       paddingBottom: location.pathname === "/about" ? `5px` : `0px`,
@@ -25,7 +24,7 @@ class Header extends React.Component {
     return (
       <div className="header-main">
         <Link className="logo-link" to={`/`}>
-          <img src={logo} alt="22 Boxes logo" className="logo-img" />
+          Intro to CPX
         </Link>
 
         <div className="header-nav">
@@ -33,14 +32,14 @@ class Header extends React.Component {
             <li className="nav-li">
               <h1 className="li-h1" style={blogLinkStyle}>
                 <Link className="li-link" to={`/`}>
-                  Blog
+                  Exercises
                 </Link>
               </h1>
             </li>
             <li className="nav-li">
-              <h1 className="li-h1" style={workLinkStyle}>
-                <Link className="li-link" to={`/work`}>
-                  Work
+              <h1 className="li-h1" style={continueLinkStyle}>
+                <Link className="li-link" to={`/continue`}>
+                  Continue Learning
                 </Link>
               </h1>
             </li>

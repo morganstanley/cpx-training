@@ -1,6 +1,6 @@
 ---
 template: post
-title: Level 1 Exercise 1 - Blink
+title: Level 1 | Exercise 1 - Blink
 slug: level-1-exercise-1
 date: "2020-05-12T23:46:37.121Z"
 category: CircuitPython
