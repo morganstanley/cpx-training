@@ -1,6 +1,12 @@
-# Introduction to CircuitPython with CircuitPlayground Express
+# Introduction to CircuitPython with CircuitPlayground Express Site
 
-## How to contribute
+This directory houses the source code for the website. The built website code lives at `/docs`.
+
+This is a [GatsbyJS](https://www.gatsbyjs.org) site based on the [gatsby-starter-22boxes-uno](https://www.gatsbyjs.org/starters/iamtherealgd/gatsby-starter-22boxes-uno/) starter.
+
+GatsbyJS is a React based framework for creating static sites that can easily be hosted in spaces such at [Github Pages](https://pages.github.com).
+
+## How to contribute to the site
 
 ### Dependencies
 
@@ -31,7 +37,6 @@ npm run build
 
 Create a pull request and reach out to the contributing team for a code review and merge.
 
+### Implementation Notes
 
-## Site Details
-
-[GatsbyJS](https://www.gatsbyjs.org) site based on the [gatsby-starter-22boxes-uno](https://www.gatsbyjs.org/starters/iamtherealgd/gatsby-starter-22boxes-uno/) starter.
+By default, GatsbyJS will build a site to live at the root of a domain name, but with Github Pages, the site will live in a subdirectory of `cpx-training/` so a [slight modification](https://www.gatsbyjs.org/docs/path-prefix/) to the `gatsby-config.js` was needed to define a path prefix.
