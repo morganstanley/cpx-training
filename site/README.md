@@ -1,4 +1,4 @@
-# Introduction to CircuitPython with CircuitPlayground Express Site
+# CPX-training Site
 
 This directory houses the source code for the website. The built website code lives at `/docs`.
 
@@ -17,8 +17,7 @@ Text Editor ([VSCode](https://code.visualstudio.com), [Sublime Text](https://www
 
 ### Develop
 
-Clone this repo and change directory into `/site`.
-
+Clone this repo and change directory into `/site` and run:
 ```
 npm install
 ```
@@ -28,7 +27,11 @@ To run preview server:
 npm run start
 ```
 
+And load [http://localhost:8000](http://localhost:8000) in your browser.
+
 ### Build
+
+The build command will automatically replace the contents of the `/docs` directory with the built code.
 ```
 npm run build
 ```
