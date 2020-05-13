@@ -29,6 +29,14 @@ npm run start
 
 And load [http://localhost:8000](http://localhost:8000) in your browser.
 
+### Updating Content
+
+The main content for the site lives in the [`/site/content`](https://github.com/mimiflynn/cpx-training/tree/master/site/content) directory.
+
+The `/site/content/exercises` directory contains directories name for the corresponding level and exercise. `/site/content/exercises/L1-E1` should contain Level 1 Exercise 1 details and code.
+
+Please note that because the [starter project](https://www.gatsbyjs.org/starters/iamtherealgd/gatsby-starter-22boxes-uno/) used for this site is based on displaying this content as a blog, the order of the exercises are dependent on the date included in the metadata. The first exercise (L1 E1) starts on May 1, and the last one (L1 E6) is May 6. The index page listing the exercises lists them from earliest to latest which also drives the menu at the bottom of each exercise page for the previous and next exercises. I didn't really want to go through and modify the whole site structure to include an order metadata field, but if you want to change the whole thing around, please do. If not, just go ahead and add new exercises with newer and newer dates.
+
 ### Build
 
 The build command will automatically replace the contents of the `/docs` directory with the built code.

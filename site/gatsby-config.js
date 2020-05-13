@@ -66,8 +66,7 @@ module.exports = {
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `content/assets/uno-favicon.png`,
+        display: `minimal-ui`
       },
     },
     `gatsby-plugin-react-helmet`,
