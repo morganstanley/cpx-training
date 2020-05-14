@@ -12,6 +12,9 @@ const BlogIndex = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
+      <h2>Intro to CircuitPython with Circuit Playground Express</h2>
+      <p>Intro text here. Include photos and video if possible.</p>
+      <hr />
       <SEO title="All posts" />
       {posts.reverse().map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
