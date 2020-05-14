@@ -67,7 +67,7 @@ const ContinuePage = ({ data, location }) => {
                   fontFamily: `Montserrat`,
                 }}
               >
-                View Project
+                Take me there
               </a>
             </section>
           </article>
