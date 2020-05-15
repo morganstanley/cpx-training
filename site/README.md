@@ -33,6 +33,8 @@ And load [http://localhost:8000](http://localhost:8000) in your browser of choic
 
 The main content for the site lives in the [`/site/content`](https://github.com/mimiflynn/cpx-training/tree/master/site/content) directory.
 
+[MarkDown Reference](https://daringfireball.net/projects/markdown/syntax)
+
 #### Exercises
 
 The [`/site/content/exercises`](https://github.com/mimiflynn/cpx-training/tree/master/site/content/exercises) directory contains directories name for the corresponding level and exercise. [`/site/content/exercises/L1-E1`](https://github.com/mimiflynn/cpx-training/tree/master/site/content/exercises/L1-E1) should contain Level 1 Exercise 1 details and code. The main content is build from the `index.md` file contained in each of these directories.
