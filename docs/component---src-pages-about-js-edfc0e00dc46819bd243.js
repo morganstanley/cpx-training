@@ -1,2 +1,2 @@
 (window.webpackJsonp=window.webpackJsonp||[]).push([[4],{"3XHS":function(e,t,a){"use strict";a.r(t),a.d(t,"pageQuery",(function(){return i}));var n=a("q1tI"),r=a.n(n),l=a("Bl7J"),o=a("vrFN");t.default=function(e){var t=e.data,a=e.location,n=t.site.siteMetadata.title;return r.a.createElement(l.a,{location:a,title:n},r.a.createElement(o.a,{title:"About"}),r.a.createElement("div",{style:{marginTop:"30px",fontFamily:"Montserrat"}},r.a.createElement("h2",null,"Morgan Stanley Makerspace"),r.a.createElement("p",null,"More details coming soon.")))};var i="1097489062"}}]);
-//# sourceMappingURL=component---src-pages-about-js-34c8c23446d63b5e7753.js.map
+//# sourceMappingURL=component---src-pages-about-js-edfc0e00dc46819bd243.js.map
