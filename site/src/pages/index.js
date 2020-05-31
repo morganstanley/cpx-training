@@ -16,7 +16,7 @@ const BlogIndex = ({ data, location }) => {
       <p>Intro text here. Include photos and video if possible.</p>
       <hr />
       <SEO title="All posts" />
-      {posts.reverse().map(({ node }) => {
+      {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
         return (
           <article
@@ -58,7 +58,7 @@ const BlogIndex = ({ data, location }) => {
           </article>
         )
       })}
-    </Layout>
+    </Layout> 
   )
 }
 
@@ -71,7 +71,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(sort: { order: [ASC, ASC], fields: [frontmatter___level, frontmatter___exercise] }) {
       edges {
         node {
           excerpt
@@ -79,13 +79,14 @@ export const pageQuery = graphql`
             slug
           }
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
             template
             title
             tags
             description
             slug
             category
+            level
+            exercise
           }
         }
       }

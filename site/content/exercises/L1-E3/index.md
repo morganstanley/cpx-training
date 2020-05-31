@@ -2,7 +2,8 @@
 template: post
 title: Level 1 | Exercise 3 - Buttons
 slug: level-1-exercise-3
-date: "2020-05-03T23:46:37.121Z"
+level: 1
+exercise: 3
 category: CircuitPython
 tags: ["Level 1"]
 ---

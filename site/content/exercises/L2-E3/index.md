@@ -2,7 +2,8 @@
 template: post
 title: Level 2 | Exercise 3 - Built-in functions
 slug: level-2-exercise-3
-date: "2020-05-09T23:46:37.121Z"
+level: 2
+exercise: 3
 category: CircuitPython
 tags: ["Level 2"]
 ---
