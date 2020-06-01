@@ -8,7 +8,7 @@ exports.createPages = async ({ graphql, actions }) => {
     `
       {
         allMarkdownRemark(
-          sort: { fields: [frontmatter___date], order: DESC }
+          sort: { order: [DESC, DESC], fields: [frontmatter___level, frontmatter___exercise] }
           limit: 1000
         ) {
           edges {
@@ -20,6 +20,9 @@ exports.createPages = async ({ graphql, actions }) => {
                 template
                 title
                 tags
+                level
+                exercise
+                category
               }
             }
           }

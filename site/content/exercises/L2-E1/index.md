@@ -2,7 +2,8 @@
 template: post
 title: Level 2 | Exercise 1 - Variables and Types
 slug: level-2-exercise-1
-date: "2020-05-07T23:46:37.121Z"
+level: 2
+exercise: 1
 category: CircuitPython
 tags: ["Level 2"]
 ---

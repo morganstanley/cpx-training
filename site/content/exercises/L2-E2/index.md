@@ -2,7 +2,8 @@
 template: post
 title: Level 2 | Exercise 2 - Expression and Statements
 slug: level-2-exercise-2
-date: "2020-05-08T23:46:37.121Z"
+level: 2
+exercise: 2
 category: CircuitPython
 tags: ["Level 2"]
 ---
