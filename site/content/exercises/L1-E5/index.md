@@ -7,6 +7,7 @@ exercise: 5
 category: CircuitPython
 tags: ["Level 1"]
 ---
+The circuit playground has an accelerometer so it can tell when it's moving. Let's see what we can do with this.
 
 ```python
 from adafruit_circuitplayground.express import cpx
