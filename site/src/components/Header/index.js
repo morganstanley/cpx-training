@@ -6,6 +6,11 @@ class Header extends React.Component {
   render() {
     const { location } = this.props
 
+    const setupLinkStyle = {
+      paddingBottom: location.pathname === "/setup" ? `5px` : `0px`,
+      boxShadow: location.pathname === "/setup" ? `0px 1px 0px 0px black` : `none`
+    }
+
     const blogLinkStyle = {
       paddingBottom: location.pathname === "/" ? `5px` : `0px`,
       boxShadow: location.pathname === "/" ? `0px 1px 0px 0px black` : `none`,
@@ -33,6 +38,13 @@ class Header extends React.Component {
               <h1 className="li-h1" style={blogLinkStyle}>
                 <Link className="li-link" to={`/`}>
                   Exercises
+                </Link>
+              </h1>
+            </li>
+            <li className="nav-li">
+              <h1 className="li-h1" style={setupLinkStyle}>
+                <Link className="li-link" to={`/setup`}>
+                  Setup
                 </Link>
               </h1>
             </li>
