@@ -19,24 +19,19 @@ const SetupPage = ({ data, location }) => {
         </p>
 
         <h3>In Detail</h3>
-        <div class="container"> 
-            <div class="first">
-                <ul>
-                    <li>10 Mini NeoPixel LEDs</li>
-                    <li>Accelerometer</li>
-                    <li>Temperature Sensor</li>
-                    <li>Light Sensor</li>
-                    <li>Sound Sensor</li>
-                    <li>Infrared Transmitter / Receiver</li>
-                    <li>Mini Speaker</li>
-                    <li>Two Push Buttons</li>
-                    <li>Slide Switch</li>
-                    <li>Seven Touch Pads</li>
-                </ul>
-            </div>
-            <div class="second">
-                <p>image of cpx here on the right</p>
-            </div>
+        <div >
+          <ul>
+            <li>10 Mini NeoPixel LEDs</li>
+            <li>Accelerometer</li>
+            <li>Temperature Sensor</li>
+            <li>Light Sensor</li>
+            <li>Sound Sensor</li>
+            <li>Infrared Transmitter / Receiver</li>
+            <li>Mini Speaker</li>
+            <li>Two Push Buttons</li>
+            <li>Slide Switch</li>
+            <li>Seven Touch Pads</li>
+          </ul>
         </div>
 
         <h3>What Do I Need?</h3>
@@ -66,17 +61,13 @@ const SetupPage = ({ data, location }) => {
             There are other modes you can choose to explore here later 
             in your own time!
         </p>
-        <p>show Mu Editor Modes image here</p>
         <p>Mu Editor has a 'checker' button which checks that your code 
             can be understood correctly and will highlight any errors.
         </p>
-        <p>show Mu Editor ch image here</p>
         <p>The Serial button listens to your CPX board for any data being
             emitted. It can be used in conjunction with the Plotter to 
             show this data graphically.
         </p>
-        <p>Show serial / plotter images</p>
-
 
         <h3>Be Inspired</h3>
         <p>Images & video here</p>
