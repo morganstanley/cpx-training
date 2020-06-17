@@ -7,6 +7,7 @@ exercise: 1
 category: CircuitPython
 tags: ["Level 1"]
 ---
+
 All Circuit Playground code follows a similar format. Let's start with a small example.
 
 ```python

@@ -7,6 +7,7 @@ exercise: 2
 category: CircuitPython
 tags: ["Level 1"]
 ---
+
 Let's explore further. 
 
 We can do all sorts of crazy things by adding to the __while loop__.

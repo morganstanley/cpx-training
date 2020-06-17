@@ -7,6 +7,7 @@ exercise: 3
 category: CircuitPython
 tags: ["Level 1"]
 ---
+
 Let's have a listen to the CPX's speakers!
 
 Here the first number is the pitch, and the second number is the duration of the note.

@@ -7,6 +7,7 @@ exercise: 4
 category: CircuitPython
 tags: ["Level 1"]
 ---
+
 We've played with lights and sound, now let's play with touch!
 
 Touching different pins on the Express board will trigger different lights and sounds.
