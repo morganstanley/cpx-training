@@ -8,6 +8,14 @@ category: CircuitPython
 tags: ["Level 1"]
 ---
 
+We've played with lights and sound, now let's play with touch!
+
+Touching different pins on the Express board will trigger different lights and sounds.
+
+Also try playing with the slide switch to enable and disable it entirely.
+
+The touchpad is assigned by its number on the circuit playground. 
+
 ```python
 from adafruit_circuitplayground.express import cpx
 

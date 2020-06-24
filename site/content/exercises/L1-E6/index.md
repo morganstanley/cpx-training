@@ -8,6 +8,9 @@ category: CircuitPython
 tags: ["Level 1"]
 ---
 
+This code will print out the current temperature to the MuEditor display.
+
+
 ```python
 import time
 from adafruit_circuitplayground.express import cpx
