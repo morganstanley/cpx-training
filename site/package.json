@@ -46,6 +46,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "pub": "rm -rf ../docs && mv public ../docs"
+    "pub": "rm -rf ../docs && mv public ../docs",
+    "pubWindows": "rd /S \"../docs\" && move public \"../docs\""
   }
 }
