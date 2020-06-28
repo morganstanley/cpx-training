@@ -13,7 +13,7 @@ const BlogIndex = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <h2>Intro to CircuitPython with Circuit Playground Express</h2>
-      <p>Intro text here. Include photos and video if possible.</p>
+      <p>If you haven't set up your Circuit Playground Express, go ahead and refer to the Setup section of the site.</p>
       <hr />
       <SEO title="All posts" />
       {posts.map(({ node }) => {
@@ -58,7 +58,7 @@ const BlogIndex = ({ data, location }) => {
           </article>
         )
       })}
-    </Layout> 
+    </Layout>
   )
 }
 
