@@ -13,8 +13,8 @@ const SetupPage = ({ data, location }) => {
       <div style={{ marginTop: `30px`, fontFamily: `Montserrat` }}>
 
         <h1>Start Here</h1>
-        <h3>What is the Circuit Playgroud Express?</h3>
-        <p>The Circuit Playgroud Express is an all-in-one circuit board 
+        <h3>What is the Circuit Playground Express?</h3>
+        <p>The Circuit Playground Express is an all-in-one circuit board 
             featuring a processor, sensors, LEDs, USB and more!
         </p>
 
