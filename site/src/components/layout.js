@@ -1,6 +1,7 @@
 import React from "react"
 import { rhythm } from "../utils/typography"
 import Header from "./Header"
+import "./layout.css"
 
 function Layout({ location, title, children }) {
   

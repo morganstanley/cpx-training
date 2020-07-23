@@ -19,7 +19,7 @@ const SetupPage = ({ data, location }) => {
         </p>
 
         <h3>In Detail</h3>
-        <div >
+        <div>
           <ul>
             <li>10 Mini NeoPixel LEDs</li>
             <li>Accelerometer</li>
@@ -35,7 +35,7 @@ const SetupPage = ({ data, location }) => {
         </div>
 
         <h3>What Do I Need?</h3>
-        <ul>
+        <ol>
             <li>Your Circuit Playgroud Express</li>
             <li>
                 <p>
@@ -43,18 +43,33 @@ const SetupPage = ({ data, location }) => {
                     <a href="https://codewith.mu/">Download Here</a> 
                 </p>
             </li>
-        </ul>
+        </ol>
 
         <h3>Getting Going</h3>
-        <ul>
-            <li>Connect your Circuit Playgroud Express to your computer.</li>
-            <li>Check the device shows up as a Disk Drive in File Exporer
-                with the name CIRCUITPY.
+        <ol>
+            <li>After downloading the MU Editor (link above), install it.</li>
+            <li>You will need to install CircuitPython on to your CPX board (extra detail <s/>
+              <a href="https://learn.adafruit.com/welcome-to-circuitpython/installing-circuitpython">here</a>).
+            <ul>
+              <li>Go to the CircuitPython site <s/>
+                <a href="https://circuitpython.org/board/circuitplayground_express/">here</a> <s/>
+                and follow the download steps for the latest stable release.
+              </li>
+              <li>Connect your Circuit Playgroud Express to your computer via USB and press the reset button.</li>
+              <li>The device should display as a Disk Drive named CPLAYBOOT (if instead it appears as CIRCUITPY, skip ahead to #3.</li>
+              <li>Find the .uf2 CircuitPython file you downloaded; drag and drop it onto the CPLAYBOOT drive (this will install CircuitPython on your CPX).</li>
+              <li>Wait for a few seconds, the lights should flash and the device should reconnect and reappear named CIRCUITPY.</li>
+            </ul>
             </li>
-            <li>If it does not show up, try hitting the reset button on the CPX device.</li>
-            <li>Launch the Mu Editor - choose Adafruit CircuitPython mode.</li>
-            <li>Save the file that you create to your CIRCUITPY disk, and name it main.py</li>
-        </ul>
+
+            <li>Launch the MU Editor
+              <ul>
+              <li>Choose Adafruit CircuitPython mode.</li>
+              <li>Save your code to the CIRCUITPY disk and name it main.py.</li>
+              </ul>
+            </li>
+
+        </ol>
 
         <h3>More on Mu Editor</h3>
         <p>Choose the Adafruit CircuitPython mode for this session. 
@@ -68,11 +83,6 @@ const SetupPage = ({ data, location }) => {
             emitted. It can be used in conjunction with the Plotter to 
             show this data graphically.
         </p>
-
-        <h3>Be Inspired</h3>
-        <p>Images & video here</p>
-
-        
 
     </div>
     </Layout>
