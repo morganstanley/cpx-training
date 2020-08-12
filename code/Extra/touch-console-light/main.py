@@ -1,8 +1,8 @@
 import time
 from adafruit_circuitplayground.express import cpx
- 
+
 cpx.pixels.brightness = 0.3
- 
+
 while True:
     if cpx.touch_A1:
         print("Touched A1!")
@@ -26,7 +26,3 @@ while True:
         print("Touched A7!")
         cpx.pixels[4] = (100, 0, 155)
     time.sleep(0.1)
-
-
-
-    
