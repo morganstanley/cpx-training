@@ -1,8 +1,10 @@
-import React from "react"
-import { Link, graphql } from "gatsby"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import { rhythm } from "../utils/typography"
+import React from 'react'
+import { Link, graphql } from 'gatsby'
+
+import Layout from '../components/layout'
+import SEO from '../components/seo'
+
+import '../styles/style.css'
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
@@ -21,34 +23,17 @@ const BlogIndex = ({ data, location }) => {
         return (
           <article
             key={node.fields.slug}
-            style={{
-              marginTop: `-15px`,
-              marginBottom: `70px`,
-            }}
           >
             <header>
-              <h3
-                style={{
-                  marginBottom: rhythm(1 / 10),
-                }}
-              >
+              <h3>
                 <Link
-                  style={{
-                    boxShadow: `none`,
-                    color: "#000000",
-                    fontSize: `21px`,
-                    fontWeight: `400`,
-                    fontFamily: `Montserrat`,
-                  }}
                   to={node.fields.slug}
                 >
                   {title}
                 </Link>
               </h3>
             </header>
-            <section
-              style={{ color: "#888888", fontSize: `17px`, fontWeight: `300` }}
-            >
+            <section>
               <p
                 dangerouslySetInnerHTML={{
                   __html: node.frontmatter.description || node.excerpt,

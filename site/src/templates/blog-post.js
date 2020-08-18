@@ -1,8 +1,8 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { rhythm } from "../utils/typography"
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -16,38 +16,20 @@ class BlogPostTemplate extends React.Component {
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
         />
-        <article style={{ padding: `0px 15px 15px 15px` }}>
+        <article>
           <header>
-            <h1
-              style={{
-                marginTop: rhythm(1),
-                marginBottom: 0,
-              }}
-            >
+            <h1>
               {post.frontmatter.title}
             </h1>
           </header>
           <section dangerouslySetInnerHTML={{ __html: post.html }} />
-          <hr
-            style={{
-              marginBottom: rhythm(2),
-              marginTop: rhythm(2),
-            }}
-          />
+          <hr />
           <footer>
           </footer>
         </article>
 
         <nav>
-          <ul
-            style={{
-              display: `flex`,
-              flexWrap: `wrap`,
-              justifyContent: `space-between`,
-              listStyle: `none`,
-              padding: 0,
-            }}
-          >
+          <ul>
             <li>
               {previous && (
                 <Link to={previous.fields.slug} rel="prev">

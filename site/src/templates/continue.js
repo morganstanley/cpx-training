@@ -2,7 +2,6 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { rhythm, scale } from "../utils/typography"
 
 class ContinueTemplate extends React.Component {
   render() {
@@ -15,34 +14,17 @@ class ContinueTemplate extends React.Component {
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
         />
-        <article style={{ padding: `0px 15px 15px 15px` }}>
+        <article>
           <header>
-            <h1
-              style={{
-                marginTop: rhythm(1),
-                marginBottom: 0,
-              }}
-            >
+            <h1>
               {post.frontmatter.title}
             </h1>
-            <p
-              style={{
-                ...scale(-1 / 5),
-                display: `block`,
-                marginBottom: rhythm(1),
-                fontStyle: "italic",
-              }}
-            >
+            <p>
               {post.frontmatter.category}
             </p>
           </header>
           <section dangerouslySetInnerHTML={{ __html: post.html }} />
-          <hr
-            style={{
-              marginBottom: rhythm(2),
-              marginTop: rhythm(2),
-            }}
-          />
+          <hr />
         </article>
       </Layout>
     )

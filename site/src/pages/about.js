@@ -1,8 +1,8 @@
-import React from "react"
-import { graphql } from "gatsby"
+import React from 'react'
+import { graphql } from 'gatsby'
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from '../components/layout'
+import SEO from '../components/seo'
 
 const AboutPage = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
@@ -10,7 +10,7 @@ const AboutPage = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="About" />
-      <div style={{ marginTop: `30px`, fontFamily: `Montserrat` }}>
+      <div>
         <h2>Morgan Stanley Makerspace</h2>
         <p>More details coming soon.</p>
       </div>
