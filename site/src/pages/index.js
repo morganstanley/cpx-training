@@ -4,12 +4,13 @@ import { Link, graphql } from 'gatsby'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
+import '../styles/global.css'
 import '../styles/style.css'
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
   const posts = data.allMarkdownRemark.edges.filter(
-    edge => edge.node.frontmatter.template === "post"
+    edge => edge.node.frontmatter.template === 'post'
   )
 
   return (

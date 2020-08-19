@@ -1,5 +1,11 @@
+:root {
+    --main-bg-color: #FFFFFF;
+    --secondary-bg-color: #AAAAAA;
+}
+
 body {
+    background-color: var(--main-bg-color);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
     padding: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
