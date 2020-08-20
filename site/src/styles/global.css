@@ -1,11 +1,26 @@
 :root {
-    --main-bg-color: #FFFFFF;
-    --secondary-bg-color: #AAAAAA;
+    --main-bg: #FFF;
+    --secondary-bg: #AAAAAA;
+    --main-text: #222;
+    --link-text: #207cff;
 }
 
 body {
-    background-color: var(--main-bg-color);
+    background-color: var(--main-bg);
+    color: var(--main-text);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
     padding: 0;
+}
+
+a {
+    color: var(--link-text);
+}
+
+a:visted {
+    color: #5041ad;
+}
+
+footer {
+    height: 15rem;
 }

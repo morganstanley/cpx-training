@@ -4,6 +4,7 @@ import { Link } from 'gatsby'
 const Header = ({ location }) => {
   const links = {
     Home: '/',
+    Exercises: '/exercises',
     Setup: '/setup',
     Continue: '/continue',
     About: '/about'
@@ -23,7 +24,7 @@ const Header = ({ location }) => {
   }
 
   return (
-    <div className="header-main">
+    <div className="header-main content">
       <h1>
         <Link className="logo-link" to={`/`}>
           Makerspace
