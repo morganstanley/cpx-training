@@ -43,12 +43,30 @@
 /* Pages */
 
 .home-main article {
-    height: 60vh;
-    padding: 20vh 0;
+    position: relative;
+    height: 100vh;
 }
 
 .home-main article:nth-of-type(even) {
     background-color: #EFEFEF;
+}
+
+.home-main article .background-image {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.home-main article .pane {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 60vh;
+    width: 100%;
+    padding: 20vh 0;
 }
 
 .home-main article h3 {

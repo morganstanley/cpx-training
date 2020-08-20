@@ -10,55 +10,65 @@ const BlogIndex = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <div className="home-main">
-        <article><header className="content">
-          <h2>Intro to CircuitPython with Adafruit's Circuit Playground Express</h2>
-        </header>
-          <section className="content">
-            <p>An interactive introduction to coding.</p>
-          </section>
+        <article>
+          <img src="/images/cpx.JPG" className="background-image" />
+          <div className="pane">
+            <header className="content">
+              <h2>Intro to CircuitPython with Adafruit's Circuit Playground Express</h2>
+            </header>
+            <section className="content">
+              <p>An interactive introduction to coding.</p>
+            </section>
+          </div>
         </article>
         <SEO title="Workshops" />
         <article>
-          <header className="content">
-            <h3>
-              <Link to={`/exercises`}>
-                CPX Training Workshop
+          <div className="pane">
+            <header className="content">
+              <h3>
+                <Link to={`/exercises`}>
+                  CPX Training Workshop
                 </Link>
-            </h3>
-          </header>
-          <section className="content">
-            <p>
-              Learn the basics through simple exercises designed to inspire.
+              </h3>
+            </header>
+            <section className="content">
+              <p>
+                Learn the basics through simple exercises designed to inspire.
           </p>
-          </section>
+            </section>
+          </div>
         </article>
         <article>
-          <header className="content">
-            <h3>
-              <Link to={`/exercises`}>
-                Train the Trainer
+          <div className="pane">
+            <header className="content">
+              <h3>
+                <Link to={`/exercises`}>
+                  Train the Trainer
                 </Link>
-            </h3>
-          </header>
-          <section className="content">
-            <p>
-              Learn how to encourage and inspire young coders as a volunteer in a CPX Training Workshop.
+              </h3>
+            </header>
+            <section className="content">
+              <p>
+                Learn how to encourage and inspire young coders as a volunteer in a CPX Training Workshop.
           </p>
-          </section>
+            </section>
+          </div>
         </article>
         <article>
-          <header className="content">
-            <h3>
-              <Link to={`/exercises`}>
-                Make a Makerspace
+          <div className="pane">
+            <header className="content">
+              <h3>
+                <Link to={`/exercises`}>
+                  Make a Makerspace
               </Link>
-            </h3>
-          </header>
-          <section className="content">
-            <p>
-              Learn what it takes to create a Makerspace for your own community starting with the CPX Training workshop.
+              </h3>
+            </header>
+            <section className="content">
+              <p>
+                Learn what it takes to create a Makerspace for your own community starting with the CPX Training workshop.
           </p>
-          </section>
+            </section>
+          </div>
         </article>
       </div>
     </Layout>

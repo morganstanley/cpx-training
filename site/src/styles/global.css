@@ -1,7 +1,7 @@
 :root {
     --main-bg: #FFF;
     --secondary-bg: #AAAAAA;
-    --main-text: #222;
+    --main-text: #000;
     --link-text: #207cff;
 }
 
@@ -15,6 +15,7 @@ body {
 
 a {
     color: var(--link-text);
+    text-decoration: none;
 }
 
 a:visted {
