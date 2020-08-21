@@ -77,12 +77,17 @@ article.hero .pane {
     padding: 20vh 0;
 }
 
+article.hero .pane section.content span {
+    font-size: 2rem;
+    color: var(--tertiary-text);
+}
+
 article h2, article h3 {
     color: var(--secondary-text);
     font-size: 3rem;
 }
 
-article h2 span, article h3 span {
+article.hero .pane section.content span, article h2 span, article h3 span {
     background: #000;
     font-family: 'Courier New', Courier, monospace;
 }

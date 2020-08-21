@@ -17,7 +17,7 @@ const BlogIndex = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <div className="exercises-main">
         <article className="hero">
-          <img src="/images/desktop.JPG" className="background-image" alt="CPX Board with Lights" />
+          <img src="images/desktop.JPG" className="background-image" alt="CPX Board with Lights" />
           <div className="pane">
             <header className="content">
               <h2>

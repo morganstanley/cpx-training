@@ -11,7 +11,7 @@ const BlogIndex = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <div className="home-main">
         <article className="hero">
-          <img src="/images/cpx.JPG" className="background-image" alt="CPX Board with Lights" />
+          <img src="images/cpx.JPG" className="background-image" alt="CPX Board with Lights" />
           <div className="pane">
             <header className="content">
               <h2>
@@ -22,50 +22,61 @@ const BlogIndex = ({ data, location }) => {
         </article>
         <SEO title="Workshops" />
         <article className="hero">
+          <img src="images/student.JPG" className="background-image" alt="Student with CPX Board" />
           <div className="pane">
             <header className="content">
               <h3>
-                <Link to={`/exercises`}>
-                  CPX Training Workshop
-                </Link>
+                <span>
+                  <Link to={`/exercises`}>
+                    CPX Training Workshop
+                  </Link>
+                </span>
               </h3>
             </header>
             <section className="content">
-              <p>
+              <span>
                 An interactive introduction to coding. Learn the basics through simple exercises designed to inspire.
-              </p>
+              </span>
             </section>
           </div>
         </article>
         <article className="hero">
           <div className="pane">
-            <header className="content">
-              <h3>
-                <Link to={`/exercises`}>
-                  Train the Trainer
-                </Link>
-              </h3>
-            </header>
-            <section className="content">
-              <p>
-                Learn how to encourage and inspire young coders as a volunteer in a CPX Training Workshop.
-          </p>
-            </section>
+            <img src="images/chelci-beth.jpg" className="background-image" alt="Presenters" />
+            <div className="pane">
+              <header className="content">
+                <h3>
+                  <span>
+                    <Link to={`/exercises`}>
+                      Train the Trainer
+                    </Link>
+                  </span>
+                </h3>
+              </header>
+              <section className="content">
+                <span>
+                  Learn how to encourage and inspire young coders as a volunteer in a CPX Training Workshop.
+                </span>
+              </section>
+            </div>
           </div>
         </article>
         <article className="hero">
+          <img src="images/teacher-student.jpg" className="background-image" alt="Student and Teacher" />
           <div className="pane">
             <header className="content">
               <h3>
-                <Link to={`/exercises`}>
-                  Make a Makerspace
-              </Link>
+                <span>
+                  <Link to={`/exercises`}>
+                    Make a Makerspace
+                  </Link>
+                </span>
               </h3>
             </header>
             <section className="content">
-              <p>
+              <span>
                 Learn what it takes to create a Makerspace for your own community starting with the CPX Training workshop.
-          </p>
+              </span>
             </section>
           </div>
         </article>
