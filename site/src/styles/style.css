@@ -11,7 +11,11 @@
     margin: 0 auto;
 }
 
-.header-main {
+.body-main {
+    background-color: var(--secondary-bg);
+}
+
+.header-main .content {
     display: flex;
     align-items: baseline;
     justify-content: flex-end;
@@ -42,25 +46,29 @@
 
 /* Pages */
 
-.home-main article {
+.home-main article, .exercises-main article {
     position: relative;
     height: 100vh;
-}
-
-.home-main article:nth-of-type(even) {
-    background-color: var(--secondary-bg);
-}
-
-.home-main article .background-image {
-    position: absolute;
-    height: 100vh;
-    width: 100%;
-    top: 0;
-    left: 0;
     overflow: hidden;
 }
 
-.home-main article .pane {
+.home-main article:nth-of-type(even), .exercices-main article:nth-of-type(even) {
+    background-color: var(--secondary-bg);
+}
+
+.home-main article:nth-of-type(odd), .exercices-main article:nth-of-type(odd) {
+    background-color: var(--main-bg);
+}
+
+article .background-image {
+    position: absolute;
+    min-height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+article .pane {
     position: absolute;
     top: 0;
     left: 0;
@@ -69,16 +77,12 @@
     padding: 20vh 0;
 }
 
-.home-main article h2, .home-main article h3 {
+article h2, article h3 {
     color: var(--secondary-text);
     font-size: 3rem;
 }
 
-.home-main article h2 span, .home-main article h3 span {
+article h2 span, article h3 span {
     background: #000;
     font-family: 'Courier New', Courier, monospace;
-}
-
-.exercises-main article {
-    height: 7rem;
 }

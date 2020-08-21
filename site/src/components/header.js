@@ -24,7 +24,7 @@ const Header = ({ location }) => {
   }
 
   return (
-    <div className="header-main content">
+    <div className="content">
       <h1>
         <Link className="logo-link" to={`/`}>
           Makerspace

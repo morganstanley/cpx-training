@@ -6,7 +6,7 @@ import Header from './header'
 function Layout({ location, title, children }) {
   return (
     <div className="main">
-      <header>
+      <header className="header-main">
         <Header location={location} />
       </header>
       <main className="body-main">

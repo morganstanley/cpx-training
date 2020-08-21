@@ -15,10 +15,17 @@ const BlogIndex = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <div className="exercises-main content">
-        <h2>Intro to CircuitPython with Circuit Playground Express</h2>
-        <p>If you haven't set up your Circuit Playground Express, go ahead and refer to <Link to={`/setup`}>Setup</Link>.</p>
-        <hr />
+      <div className="exercises-main">
+        <article>
+          <img src="/images/desktop.JPG" className="background-image" alt="CPX Board with Lights" />
+          <div className="pane">
+            <header className="content">
+              <h2>
+                <span>Intro to CircuitPython with Adafruit's Circuit Playground Express</span>
+              </h2>
+            </header>
+          </div>
+        </article>
         <SEO title="All posts" />
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
@@ -26,7 +33,7 @@ const BlogIndex = ({ data, location }) => {
             <article
               key={node.fields.slug}
             >
-              <header>
+              <header className="content">
                 <h3>
                   <Link
                     to={node.fields.slug}
@@ -35,7 +42,7 @@ const BlogIndex = ({ data, location }) => {
                   </Link>
                 </h3>
               </header>
-              <section>
+              <section className="content">
                 <p
                   dangerouslySetInnerHTML={{
                     __html: node.frontmatter.description || node.excerpt,
