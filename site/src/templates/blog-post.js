@@ -15,7 +15,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
       />
-      <article>
+      <article className="content">
         <header>
           <h1>
             {post.frontmatter.title}
@@ -27,7 +27,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         </footer>
       </article>
 
-      <nav>
+      <nav className="content">
         <ul>
           <li>
             {previous && (

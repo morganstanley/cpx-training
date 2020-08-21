@@ -10,7 +10,7 @@ const SetupPage = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="Setup" />
-      <div>
+      <div className="content">
 
         <h1>Start Here</h1>
         <h3>What is the Circuit Playgroud Express?</h3>

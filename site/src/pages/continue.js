@@ -17,6 +17,7 @@ const ContinuePage = ({ data, location }) => {
         return (
           <article
             key={node.fields.slug}
+            className="content"
           >
             <header>
               <h3>

@@ -10,7 +10,7 @@ const AboutPage = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="About" />
-      <div>
+      <div className="content">
         <h2>Morgan Stanley Makerspace</h2>
         <p>More details coming soon.</p>
       </div>
