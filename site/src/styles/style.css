@@ -52,13 +52,13 @@ article.hero {
     overflow: hidden;
 }
 
-.home-main article:nth-of-type(even), .exercices-main article:nth-of-type(even) {
+/* .home-main article:nth-of-type(even), .exercises article:nth-of-type(even) {
     background-color: var(--secondary-bg);
 }
 
-.home-main article:nth-of-type(odd), .exercices-main article:nth-of-type(odd) {
+.home-main article:nth-of-type(odd), .exercises article:nth-of-type(odd) {
     background-color: var(--main-bg);
-}
+} */
 
 article.hero .background-image {
     position: absolute;
