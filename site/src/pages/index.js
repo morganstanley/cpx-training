@@ -10,7 +10,7 @@ const BlogIndex = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <div className="home-main">
-        <article>
+        <article className="hero">
           <img src="/images/cpx.JPG" className="background-image" alt="CPX Board with Lights" />
           <div className="pane">
             <header className="content">
@@ -21,7 +21,7 @@ const BlogIndex = ({ data, location }) => {
           </div>
         </article>
         <SEO title="Workshops" />
-        <article>
+        <article className="hero">
           <div className="pane">
             <header className="content">
               <h3>
@@ -37,7 +37,7 @@ const BlogIndex = ({ data, location }) => {
             </section>
           </div>
         </article>
-        <article>
+        <article className="hero">
           <div className="pane">
             <header className="content">
               <h3>
@@ -53,7 +53,7 @@ const BlogIndex = ({ data, location }) => {
             </section>
           </div>
         </article>
-        <article>
+        <article className="hero">
           <div className="pane">
             <header className="content">
               <h3>

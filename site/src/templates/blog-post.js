@@ -15,7 +15,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
       />
-      <article className="content">
+      <article className="exercise-main content">
         <header>
           <h1>
             {post.frontmatter.title}

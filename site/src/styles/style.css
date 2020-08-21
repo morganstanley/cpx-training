@@ -46,7 +46,7 @@
 
 /* Pages */
 
-.home-main article, .exercises-main article {
+article.hero {
     position: relative;
     height: 100vh;
     overflow: hidden;
@@ -60,7 +60,7 @@
     background-color: var(--main-bg);
 }
 
-article .background-image {
+article.hero .background-image {
     position: absolute;
     min-height: 100vh;
     width: 100%;
@@ -68,7 +68,7 @@ article .background-image {
     left: 0;
 }
 
-article .pane {
+article.hero .pane {
     position: absolute;
     top: 0;
     left: 0;
@@ -85,4 +85,9 @@ article h2, article h3 {
 article h2 span, article h3 span {
     background: #000;
     font-family: 'Courier New', Courier, monospace;
+}
+
+.exercise-main img {
+    display: block;
+    margin: 2rem auto;
 }
