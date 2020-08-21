@@ -1,8 +1,8 @@
 :root {
     --main-bg: #FFF;
-    --secondary-bg: #AAAAAA;
+    --secondary-bg: #EFEFEF;
     --main-text: #000;
-    --link-text: #207cff;
+    --secondary-text: #207cff;
 }
 
 body {
@@ -14,7 +14,7 @@ body {
 }
 
 a {
-    color: var(--link-text);
+    color: var(--secondary-text);
     text-decoration: none;
 }
 

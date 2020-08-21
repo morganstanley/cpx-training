@@ -11,14 +11,13 @@ const BlogIndex = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <div className="home-main">
         <article>
-          <img src="/images/cpx.JPG" className="background-image" />
+          <img src="/images/cpx.JPG" className="background-image" alt="CPX Board with Lights" />
           <div className="pane">
             <header className="content">
-              <h2>Intro to CircuitPython with Adafruit's Circuit Playground Express</h2>
+              <h2>
+                <span>Intro to CircuitPython with Adafruit's Circuit Playground Express</span>
+              </h2>
             </header>
-            <section className="content">
-              <p>An interactive introduction to coding.</p>
-            </section>
           </div>
         </article>
         <SEO title="Workshops" />
@@ -33,8 +32,8 @@ const BlogIndex = ({ data, location }) => {
             </header>
             <section className="content">
               <p>
-                Learn the basics through simple exercises designed to inspire.
-          </p>
+                An interactive introduction to coding. Learn the basics through simple exercises designed to inspire.
+              </p>
             </section>
           </div>
         </article>

@@ -48,7 +48,7 @@
 }
 
 .home-main article:nth-of-type(even) {
-    background-color: #EFEFEF;
+    background-color: var(--secondary-bg);
 }
 
 .home-main article .background-image {
@@ -69,8 +69,14 @@
     padding: 20vh 0;
 }
 
-.home-main article h3 {
+.home-main article h2, .home-main article h3 {
+    color: var(--secondary-text);
     font-size: 3rem;
+}
+
+.home-main article h2 span, .home-main article h3 span {
+    background: #000;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .exercises-main article {
