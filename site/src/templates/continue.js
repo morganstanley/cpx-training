@@ -1,34 +1,32 @@
-import React from "react"
-import { graphql } from "gatsby"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import React from 'react'
+import { graphql } from 'gatsby'
+import Layout from '../components/layout'
+import SEO from '../components/seo'
 
-class ContinueTemplate extends React.Component {
-  render() {
-    const post = this.props.data.markdownRemark
-    const siteTitle = this.props.data.site.siteMetadata.title
+const ContinueTemplate = ({ data, location }) => {
+  const post = data.markdownRemark
+  const siteTitle = data.site.siteMetadata.title
 
-    return (
-      <Layout location={this.props.location} title={siteTitle}>
-        <SEO
-          title={post.frontmatter.title}
-          description={post.frontmatter.description || post.excerpt}
-        />
-        <article>
-          <header>
-            <h1>
-              {post.frontmatter.title}
-            </h1>
-            <p>
-              {post.frontmatter.category}
-            </p>
-          </header>
-          <section dangerouslySetInnerHTML={{ __html: post.html }} />
-          <hr />
-        </article>
-      </Layout>
-    )
-  }
+  return (
+    <Layout location={location} title={siteTitle}>
+      <SEO
+        title={post.frontmatter.title}
+        description={post.frontmatter.description || post.excerpt}
+      />
+      <article className="content">
+        <header>
+          <h1>
+            {post.frontmatter.title}
+          </h1>
+          <p>
+            {post.frontmatter.category}
+          </p>
+        </header>
+        <section dangerouslySetInnerHTML={{ __html: post.html }} />
+        <hr />
+      </article>
+    </Layout>
+  )
 }
 
 export default ContinueTemplate

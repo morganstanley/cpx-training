@@ -1,59 +1,98 @@
-.main {
-    margin-left: auto;
-    margin-right: auto;
-}
+/*
+ * Developed to use CSS grid and flexbox
+ *
+ * https://css-tricks.com/snippets/css/complete-guide-grid/
+ * https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+ *
+ **/
 
-.header-main {
-    display: flex;
-    margin-bottom: 3.0rem;
+.content {
+    width: 75%;
+    margin: 0 auto;
 }
 
 .body-main {
-    min-height: calc(100vh - 12.0rem);
-    border: 0.5px solid #EEEEEE;
-    border-bottom: 0;
-    border-radius: 1.0rem 1.0rem .0rem .0rem;
-    padding-left: 3.0rem;
-    padding-right: 3.0rem;
-    padding-top: -2.0rem;
+    background-color: var(--secondary-bg);
 }
 
-.logo-link {
-    box-shadow: none;
-    text-decoration: none;
-    color: inherit;
-}
-
-.logo-img {
-    margin-right: 2.0rem;
-    margin-bottom: 0;
-    min-width: 50;
-    height: 7.0rem;
+.header-main .content {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-end;
 }
 
 .header-nav {
-    float: right;
-    width: 100%;
-    margin-top: auto;
-    margin-bottom: auto;
+    flex-grow: 2;
+    text-align: right;
 }
 
 .header-nav ul {
-    list-style: none;
-    float: right;
-    height: 25px;
-    padding-top: 18px
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
 }
 
 .header-nav ul li {
-    float: left;
-    margin-right: 2.0rem;
+    list-style-type: none;
+    margin: 1rem;
+    padding: 0;
 }
 
-.header-nav ul li .nav-link {
-    text-decoration: none;
+.header-nav ul li:last-of-type {
+    margin-right: 0;
 }
 
-.header-nav ul li .nav-link-current {
-    text-decoration: underline;
+/* Pages */
+
+article.hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* .home-main article:nth-of-type(even), .exercises article:nth-of-type(even) {
+    background-color: var(--secondary-bg);
+}
+
+.home-main article:nth-of-type(odd), .exercises article:nth-of-type(odd) {
+    background-color: var(--main-bg);
+} */
+
+article.hero .background-image {
+    position: absolute;
+    min-height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+article.hero .pane {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 60vh;
+    width: 100%;
+    padding: 20vh 0;
+}
+
+article.hero .pane section.content span {
+    font-size: 2rem;
+    color: var(--tertiary-text);
+}
+
+article h2, article h3 {
+    color: var(--secondary-text);
+    font-size: 3rem;
+}
+
+article.hero .pane section.content span, article h2 span, article h3 span {
+    background: #000;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.exercise-main img {
+    display: block;
+    margin: 2rem auto;
 }

@@ -1,5 +1,28 @@
+:root {
+    --main-bg: #FFF;
+    --secondary-bg: #EFEFEF;
+    --main-text: #000;
+    --secondary-text: #207cff;
+    --tertiary-text: #ff5f87;
+}
+
 body {
+    background-color: var(--main-bg);
+    color: var(--main-text);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
     padding: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+    color: var(--secondary-text);
+    text-decoration: none;
+}
+
+a:visted {
+    color: #5041ad;
+}
+
+footer {
+    height: 15rem;
 }

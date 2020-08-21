@@ -10,6 +10,8 @@ tags: ["Level 1"]
 
 All Circuit Playground code follows a similar format. Let's start with a small example.
 
+![CPX Blink](blink.gif)
+
 ```python
 # This section lets the system know which libraries we want to use
 from adafruit_circuitplayground.express import cpx

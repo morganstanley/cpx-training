@@ -1,8 +1,8 @@
-import React from "react"
-import { graphql, Link } from "gatsby"
+import React from 'react'
+import { graphql, Link } from 'gatsby'
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from '../components/layout'
+import SEO from '../components/seo'
 
 const ContinuePage = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
@@ -17,6 +17,7 @@ const ContinuePage = ({ data, location }) => {
         return (
           <article
             key={node.fields.slug}
+            className="content"
           >
             <header>
               <h3>

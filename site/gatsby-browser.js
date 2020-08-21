@@ -1,5 +1,3 @@
-// custom typefaces
-import "typeface-montserrat"
-import "typeface-merriweather"
-
-import "prismjs/themes/prism.css"
+import 'dracula-prism/css/dracula-prism.css'
+import './src/styles/global.css'
+import './src/styles/style.css'
