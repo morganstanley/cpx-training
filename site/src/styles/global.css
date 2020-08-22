@@ -4,6 +4,7 @@
     --main-text: #000;
     --secondary-text: #207cff;
     --tertiary-text: #ff5f87;
+    --alternate-font: 'Courier New', Courier, monospace;
 }
 
 body {
@@ -21,6 +22,14 @@ a {
 
 a:visted {
     color: #5041ad;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2rem;
 }
 
 footer {
