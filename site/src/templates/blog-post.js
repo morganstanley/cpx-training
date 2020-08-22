@@ -17,18 +17,15 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
       />
       <article className="exercise-main content">
         <header>
-          <h1>
+          <h2>
             {post.frontmatter.title}
-          </h1>
+          </h2>
         </header>
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
-        <hr />
-        <footer>
-        </footer>
       </article>
 
       <nav className="content">
-        <ul>
+        <ul className="exercise-nav">
           <li>
             {previous && (
               <Link to={previous.fields.slug} rel="prev">

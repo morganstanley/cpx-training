@@ -30,28 +30,26 @@ const BlogIndex = ({ data, location }) => {
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
-            <div className="exercises">
-              <article
-                key={node.fields.slug}
-              >
-                <header className="content">
-                  <h3>
-                    <Link
-                      to={node.fields.slug}
-                    >
-                      {title}
-                    </Link>
-                  </h3>
-                </header>
-                <section className="content">
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html: node.frontmatter.description || node.excerpt,
-                    }}
-                  />
-                </section>
-              </article>
-            </div>
+            <article
+              key={node.fields.slug}
+            >
+              <header className="content">
+                <h3>
+                  <Link
+                    to={node.fields.slug}
+                  >
+                    {title}
+                  </Link>
+                </h3>
+              </header>
+              <section className="content">
+                <p
+                  dangerouslySetInnerHTML={{
+                    __html: node.frontmatter.description || node.excerpt,
+                  }}
+                />
+              </section>
+            </article>
           )
         })}
       </div>
