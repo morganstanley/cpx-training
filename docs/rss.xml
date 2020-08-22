@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[CPX Training]]></title><description><![CDATA[Introduction to CircuitPython with CircuitPlayground Express]]></description><link>https://morgan-stanley.github.io/cpx-training</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 22 Aug 2020 23:18:14 GMT</lastBuildDate><item><title><![CDATA[Level 2 | Exercise 3 - Built-in functions]]></title><description><![CDATA[Lets start with where we left off with variables. We are using two built-in functions in this script, can you find them? What are built-in…]]></description><link>https://morgan-stanley.github.io/cpx-training/L2-E3/</link><guid isPermaLink="false">https://morgan-stanley.github.io/cpx-training/L2-E3/</guid><content:encoded>&lt;p&gt;Lets start with &lt;a href=&quot;https://github.com/mimiflynn/cpx-training/blob/master/Level%202%20-%20Intro%20to%20Programming/1-variables/main.py&quot;&gt;where we left off with variables&lt;/a&gt;.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[CPX Training]]></title><description><![CDATA[Introduction to CircuitPython with CircuitPlayground Express]]></description><link>https://morgan-stanley.github.io/cpx-training</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 21 Aug 2020 21:41:37 GMT</lastBuildDate><item><title><![CDATA[Level 2 | Exercise 3 - Built-in functions]]></title><description><![CDATA[Lets start with where we left off with variables. We are using two built-in functions in this script, can you find them? What are built-in…]]></description><link>https://morgan-stanley.github.io/cpx-training/L2-E3/</link><guid isPermaLink="false">https://morgan-stanley.github.io/cpx-training/L2-E3/</guid><content:encoded>&lt;p&gt;Lets start with &lt;a href=&quot;https://github.com/mimiflynn/cpx-training/blob/master/Level%202%20-%20Intro%20to%20Programming/1-variables/main.py&quot;&gt;where we left off with variables&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;We are using two built-in functions in this script, can you find them?&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;# Learn more https://realpython.com/python-variables/&lt;/span&gt;
 &lt;span class=&quot;token comment&quot;&gt;# and https://realpython.com/python-data-types/&lt;/span&gt;
@@ -207,12 +207,12 @@ colors &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span clas
     PINK&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
     RED&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
     ORANGE&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-    YELLOW&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; 
-    GREEN&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; 
-    CYAN&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; 
-    PURPLE&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; 
-    BLUE&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; 
-    LIGHT_BLUE&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; 
+    YELLOW&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    GREEN&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    CYAN&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    PURPLE&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    BLUE&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    LIGHT_BLUE&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
     WHITE
 &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
 

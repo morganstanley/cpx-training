@@ -1,1 +1,70 @@
-{"componentChunkName":"component---cache-dev-404-page-js","path":"/dev-404-page/","result":{"data":{"allSitePage":{"nodes":[{"path":"/L2-E4/"},{"path":"/L2-E3/"},{"path":"/L2-E2/"},{"path":"/L2-E1/"},{"path":"/L1-E6/"},{"path":"/L1-E5/"},{"path":"/L1-E4/"},{"path":"/L1-E3/"},{"path":"/L1-E2/"},{"path":"/L1-E1/"},{"path":"/circuitpython/"},{"path":"/adafruit/"},{"path":"/404/"},{"path":"/about/"},{"path":"/continue/"},{"path":"/exercises/"},{"path":"/"},{"path":"/setup/"},{"path":"/404.html"}]}},"pageContext":{}}}
+{
+    "componentChunkName": "component---cache-dev-404-page-js",
+    "path": "/dev-404-page/",
+    "result": {
+        "data": {
+            "allSitePage": {
+                "nodes": [
+                    {
+                        "path": "/L2-E4/"
+                    },
+                    {
+                        "path": "/L2-E3/"
+                    },
+                    {
+                        "path": "/L2-E2/"
+                    },
+                    {
+                        "path": "/L2-E1/"
+                    },
+                    {
+                        "path": "/L1-E6/"
+                    },
+                    {
+                        "path": "/L1-E5/"
+                    },
+                    {
+                        "path": "/L1-E4/"
+                    },
+                    {
+                        "path": "/L1-E3/"
+                    },
+                    {
+                        "path": "/L1-E2/"
+                    },
+                    {
+                        "path": "/L1-E1/"
+                    },
+                    {
+                        "path": "/circuitpython/"
+                    },
+                    {
+                        "path": "/adafruit/"
+                    },
+                    {
+                        "path": "/404/"
+                    },
+                    {
+                        "path": "/about/"
+                    },
+                    {
+                        "path": "/continue/"
+                    },
+                    {
+                        "path": "/"
+                    },
+                    {
+                        "path": "/setup/"
+                    },
+                    {
+                        "path": "/404.html"
+                    },
+                    {
+                        "path": "/exercises/"
+                    }
+                ]
+            }
+        },
+        "pageContext": {}
+    }
+}
