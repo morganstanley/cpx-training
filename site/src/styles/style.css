@@ -96,10 +96,11 @@ article.hero .pane section.content span, article h2 span, article h3 span {
     padding: 2rem 0;
 }
 
-.exercise-main h2 {
-    font-family: var(--alternate-font);
+.exercises-main article h3, .exercise-main h2 {
+    display: inline-block;
+    font-family: var(--more-alternate-font);
     color: var(--tertiary-text);
-    text-shadow: 10px 10px 10px var(--secondary-text);
+    background: #FFF;
 }
 
 .exercise-main img {

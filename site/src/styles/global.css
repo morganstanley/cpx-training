@@ -5,6 +5,7 @@
     --secondary-text: #207cff;
     --tertiary-text: #ff5f87;
     --alternate-font: 'Courier New', Courier, monospace;
+    --more-alternate-font: VT323, Terminal, "Courier New", Courier, monospace;
 }
 
 body {
