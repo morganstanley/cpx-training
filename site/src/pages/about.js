@@ -22,12 +22,15 @@ const AboutPage = ({ data, location }) => {
         </article>
         <SEO title="About" />
         <article className="content">
-          <h2>Morgan Stanley Makerspace</h2>
-          <h3>Mission</h3>
+          <h2>Mission</h2>
+          <p>The Morgan Stanley Makerspace works towards two of the Firm's core values: Give back and diversity and inclusion.</p>
+          <h3>Give Back</h3>
+          <p></p>
+          <h3>Commit to Diversity and Inclusion</h3>
           <p>More details coming soon.</p>
         </article>
-      </div>
-    </Layout>
+      </div >
+    </Layout >
   )
 }
 
