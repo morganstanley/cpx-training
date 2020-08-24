@@ -3,7 +3,7 @@ template: continue
 title: Circuit Python
 slug: circuit-python
 date: "2020-05-01T22:12:03.284Z"
-description: "CircuitPython"
+description: "CircuitPython Documentation"
 category: CircuitPython
 link: https://circuitpython.org
 ---

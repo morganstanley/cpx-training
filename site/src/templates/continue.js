@@ -15,15 +15,14 @@ const ContinueTemplate = ({ data, location }) => {
       />
       <article className="content">
         <header>
-          <h1>
+          <h2>
             {post.frontmatter.title}
-          </h1>
+          </h2>
           <p>
             {post.frontmatter.category}
           </p>
         </header>
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
-        <hr />
       </article>
     </Layout>
   )

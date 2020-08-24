@@ -30,3 +30,7 @@ article.hero .background-image {
 .setup-main article.hero {
     background-image: url('../../static/images/happy.jpg');
 }
+
+.continue-main article.hero {
+    background-image: url('../../static/images/student-computer.jpg');
+}
