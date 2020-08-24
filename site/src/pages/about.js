@@ -9,10 +9,23 @@ const AboutPage = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="About" />
-      <div className="content">
-        <h2>Morgan Stanley Makerspace</h2>
-        <p>More details coming soon.</p>
+      <div className="about-main">
+        <article className="hero">
+          <img src="images/happy.jpg" className="background-image" alt="Student with CPX Board" />
+          <div className="pane">
+            <header className="content">
+              <h2>
+                <span>Morgan Stanley Makerspace</span>
+              </h2>
+            </header>
+          </div>
+        </article>
+        <SEO title="About" />
+        <article className="content">
+          <h2>Morgan Stanley Makerspace</h2>
+          <h3>Mission</h3>
+          <p>More details coming soon.</p>
+        </article>
       </div>
     </Layout>
   )

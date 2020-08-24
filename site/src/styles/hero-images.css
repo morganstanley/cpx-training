@@ -32,5 +32,13 @@ article.hero .background-image {
 }
 
 .continue-main article.hero {
-    background-image: url('../../static/images/student-computer.jpg');
+    background-image: url('../../static/images/laughing.jpg');
+}
+
+.about-main article.hero {
+    background-image: url('../../static/images/sharing.jpg');
+}
+
+.makerspace-main article.hero {
+    background-image: url('../../static/images/learning.jpg');
 }

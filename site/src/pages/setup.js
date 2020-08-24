@@ -28,24 +28,19 @@ const SetupPage = ({ data, location }) => {
             </header>
             <h3>What is the Circuit Playgroud Express?</h3>
             <p>The Circuit Playgroud Express is an all-in-one circuit board
-            featuring a processor, sensors, LEDs, USB and more!
-        </p>
-
-            <h3>In Detail</h3>
-            <div>
-              <ul>
-                <li>10 Mini NeoPixel LEDs</li>
-                <li>Accelerometer</li>
-                <li>Temperature Sensor</li>
-                <li>Light Sensor</li>
-                <li>Sound Sensor</li>
-                <li>Infrared Transmitter / Receiver</li>
-                <li>Mini Speaker</li>
-                <li>Two Push Buttons</li>
-                <li>Slide Switch</li>
-                <li>Seven Touch Pads</li>
-              </ul>
-            </div>
+            featuring a processor, sensors, LEDs, USB and more that you can program:</p>
+            <ul>
+              <li>10 Mini NeoPixel LEDs</li>
+              <li>Accelerometer</li>
+              <li>Temperature Sensor</li>
+              <li>Light Sensor</li>
+              <li>Sound Sensor</li>
+              <li>Infrared Transmitter / Receiver</li>
+              <li>Mini Speaker</li>
+              <li>Two Push Buttons</li>
+              <li>Slide Switch</li>
+              <li>Seven Touch Pads</li>
+            </ul>
 
             <h3>What Do I Need?</h3>
             <ol>
