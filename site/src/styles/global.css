@@ -4,6 +4,8 @@
     --main-text: #000;
     --secondary-text: #207cff;
     --tertiary-text: #ff5f87;
+    --text-bg: #000;
+    --alternate-text-bg: #FFF;
     --alternate-font: 'Courier New', Courier, monospace;
     --more-alternate-font: VT323, Terminal, "Courier New", Courier, monospace;
 }

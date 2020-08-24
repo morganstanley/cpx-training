@@ -1,0 +1,32 @@
+article.hero {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+article.hero .background-image {
+    margin: -20000px -20000px;
+}
+
+.home-main article.hero {
+    background-image: url('../../static/images/circuitplaygroundexpress.jpg');
+}
+
+.home-main article.hero.hero-exercises {
+    background-image: url('../../static/images/student-computer.jpg');
+}
+
+.home-main article.hero.hero-train {
+    background-image: url('../../static/images/chelci-beth.jpg');
+}
+
+.home-main article.hero.hero-makerspace {
+    background-image: url('../../static/images/teacher-student.jpg');
+}
+
+.exercises-main article.hero {
+    background-image: url('../../static/images/desk.jpg');
+}
+
+.setup-main article.hero {
+    background-image: url('../../static/images/happy.jpg');
+}

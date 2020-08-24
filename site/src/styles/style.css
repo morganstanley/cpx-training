@@ -60,14 +60,6 @@ article.hero {
     background-color: var(--main-bg);
 }
 
-article.hero .background-image {
-    position: absolute;
-    min-height: 100vh;
-    width: 100%;
-    top: 0;
-    left: 0;
-}
-
 article.hero .pane {
     position: absolute;
     top: 0;
@@ -88,7 +80,7 @@ article h2, article.hero h3 {
 }
 
 article.hero .pane section.content span, article h2 span, article h3 span {
-    background: #000;
+    background: var(--text-bg);
     font-family: var(--alternate-font);
 }
 
@@ -100,7 +92,7 @@ article.hero .pane section.content span, article h2 span, article h3 span {
     display: inline-block;
     font-family: var(--more-alternate-font);
     color: var(--tertiary-text);
-    background: #FFF;
+    background: var(--alternate-text-bg);
 }
 
 .exercise-main img {
@@ -130,5 +122,5 @@ ul.exercise-nav li:last-of-type {
 .footer-main {
     padding-top: 2rem;
     color: var(--tertiary-text);
-    background: #000;
+    background: #080a21;
 }

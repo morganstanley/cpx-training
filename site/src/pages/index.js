@@ -11,7 +11,7 @@ const BlogIndex = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <div className="home-main">
         <article className="hero">
-          <img src="images/cpx.JPG" className="background-image" alt="CPX Board with Lights" />
+          <img src="images/circuitplaygroundexpress.jpg" className="background-image" alt="CPX Board with Lights" />
           <div className="pane">
             <header className="content">
               <h2>
@@ -21,8 +21,8 @@ const BlogIndex = ({ data, location }) => {
           </div>
         </article>
         <SEO title="Workshops" />
-        <article className="hero">
-          <img src="images/student.JPG" className="background-image" alt="Student with CPX Board" />
+        <article className="hero hero-exercises">
+          <img src="images/student-computer.jpg" className="background-image" alt="Student with CPX Board" />
           <div className="pane">
             <header className="content">
               <h3>
@@ -40,7 +40,7 @@ const BlogIndex = ({ data, location }) => {
             </section>
           </div>
         </article>
-        <article className="hero">
+        <article className="hero hero-train">
           <div className="pane">
             <img src="images/chelci-beth.jpg" className="background-image" alt="Presenters" />
             <div className="pane">
@@ -61,7 +61,7 @@ const BlogIndex = ({ data, location }) => {
             </div>
           </div>
         </article>
-        <article className="hero">
+        <article className="hero hero-makerspace">
           <img src="images/teacher-student.jpg" className="background-image" alt="Student and Teacher" />
           <div className="pane">
             <header className="content">

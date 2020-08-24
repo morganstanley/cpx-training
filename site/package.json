@@ -37,7 +37,7 @@
   "main": "n/a",
   "scripts": {
     "build": "gatsby build --prefix-paths && npm run pub",
-    "develop": "gatsby develop",
+    "develop": "gatsby clean && gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
