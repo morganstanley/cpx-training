@@ -39,6 +39,10 @@ article.hero .background-image {
     background-image: url('../../static/images/sharing.jpg');
 }
 
+.trainer-main article.hero {
+    background-image: url('../../static/images/chelci-beth.jpg');
+}
+
 .makerspace-main article.hero {
     background-image: url('../../static/images/learning.jpg');
 }

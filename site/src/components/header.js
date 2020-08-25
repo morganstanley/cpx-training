@@ -4,9 +4,10 @@ import { Link } from 'gatsby'
 const Header = ({ location }) => {
   const links = {
     Home: '/',
-    Exercises: '/exercises',
-    Setup: '/setup',
-    Continue: '/continue',
+    Training: '/exercises',
+    Trainer: '/trainer',
+    'Make a Makerspace': '/makerspace',
+    'Continue Learning': '/continue',
     About: '/about'
   };
 

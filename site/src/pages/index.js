@@ -15,9 +15,14 @@ const BlogIndex = ({ data, location }) => {
           <div className="pane">
             <header className="content">
               <h2>
-                <span>Intro to CircuitPython with Adafruit's Circuit Playground Express</span>
+                <span>Building Community Through Code</span>
               </h2>
             </header>
+            <section className="content">
+              <span>
+                Intro to CircuitPython with Adafruit's Circuit Playground Express
+              </span>
+            </section>
           </div>
         </article>
         <SEO title="Workshops" />

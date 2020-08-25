@@ -1,5 +1,5 @@
 import React from 'react'
-import { graphql } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
@@ -89,7 +89,10 @@ const SetupPage = ({ data, location }) => {
             emitted. It can be used in conjunction with the Plotter to
             show this data graphically.
         </p>
-
+            <h3>
+              <Link to={`/exercises`}>Exercises</Link>
+            </h3>
+            <p>Now that you're all set up, head over to the <Link to={`/exercises`}>Exercises</Link> to learn how to program the Circuit Playground Express!</p>
           </article>
         </div>
       </div>
