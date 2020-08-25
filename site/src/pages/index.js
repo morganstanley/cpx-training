@@ -52,7 +52,7 @@ const BlogIndex = ({ data, location }) => {
               <header className="content">
                 <h3>
                   <span>
-                    <Link to={`/exercises`}>
+                    <Link to={`/trainer`}>
                       Train the Trainer
                     </Link>
                   </span>
@@ -72,7 +72,7 @@ const BlogIndex = ({ data, location }) => {
             <header className="content">
               <h3>
                 <span>
-                  <Link to={`/exercises`}>
+                  <Link to={`/makerspace`}>
                     Make a Makerspace
                   </Link>
                 </span>
