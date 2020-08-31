@@ -22,12 +22,23 @@ const AboutPage = ({ data, location }) => {
         </article>
         <SEO title="About" />
         <article className="content">
-          <h2>Mission</h2>
-          <p>The Morgan Stanley Makerspace works towards two of the Firm's core values: Give back and diversity and inclusion.</p>
+          <h2>What is Morgan Stanley Makerspace</h2>
+          <p>An employee designed and run program bringing STEM-based interactive workshops to children and teens who wouldn't otherwise have the opportunity to learn about coding and robotics.</p>
+          <p>Our most common workshop marries Python programming and hardware with the Adafruit Circuit Playground Express (CPX), a beginner friendly microcontroller that provides fast feedback necessary for new programmers.</p>
+          <p>Since the program's launch in 2018, 400+ children and teens have participated in 30 different workshops; 50% of participants resided in a NYC shelter at the time of participation.</p>
+          <h3>Mission</h3>
+          <blockquote>
+            <p>Our DNA, our culture and our history are rooted in serving our clients.</p>
+            <cite>James Gorman</cite>
+          </blockquote>
+          <p>The Morgan Stanley Makerspace works towards two of the Firm's core values.</p>
           <h3>Give Back</h3>
-          <p></p>
-          <h3>Commit to Diversity and Inclusion</h3>
-          <p>More details coming soon.</p>
+          <ul>
+            <li>Be generous with your expertise, your time, your money.</li>
+            <li>Invest in the future of our communities and our Firm.</li>
+            <li>Mentor our next generation.</li>
+          </ul>
+
         </article>
       </div >
     </Layout >
