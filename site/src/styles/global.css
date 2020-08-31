@@ -1,6 +1,7 @@
 :root {
     --main-bg: #FFF;
     --secondary-bg: #EFEFEF;
+    --tertiary-bg: #3CAA3C;
     --dark-bg: #080a21;
     --main-text: #000;
     --secondary-text: #207cff;
@@ -36,9 +37,15 @@ h3 {
 }
 
 blockquote {
-    border-left: 5px solid var(--secondary-text);
+    border-left: 5px solid var(--tertiary-bg);
     padding-left: 1.5rem;
     margin-bottom: 2rem;
+}
+
+ul li {
+    margin: 1.5rem 0;
+    padding: 0;
+    list-style-type: disc;
 }
 
 footer {
