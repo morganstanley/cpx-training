@@ -144,7 +144,7 @@ var game = new Game('Westward Bound', {
     ]
 });
 
-var player = game.player;
+window.player = game.player;
 
 var ascii = [
     '  __  __    _    _  _______ ____  ____  ____   _    ____ _____ \n',
