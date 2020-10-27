@@ -14,7 +14,8 @@ function Layout({ location, title, children }) {
       </main>
       <footer className="footer-main">
         <div className="content">
-          Thanks! We hope you found what you are looking for. Please feel free to contribute via <Link to={`https://github.com/Morgan-Stanley/cpx-training`}>Github</Link>.
+          Thanks! We hope you found what you are looking for. 
+          Please feel free to contribute via <a href="https://github.com/Morgan-Stanley/cpx-training">Github</a>.
         </div>
       </footer>
     </div>
