@@ -28,8 +28,8 @@ const MakerspacePage = ({ data, location }) => {
         <SEO title="Make a Makerspace" />
         <article className="content">
           <h2>Motivation</h2>
-          <p>In order to fill the tech- and schience-focused roles of the future, technologists nationwide should focus on providing youth from underserved communities the resources to promote computer science advocacy now.</p>
-          <p>Students from uderprivileged backgrounds are 8 to 10 times more likely to pursue college degrees in computer science if they have taken AP computer science in high school. We can project that these odds will only increase if studentds are given even earlier exposure to software and hardware technologies.</p>
+          <p>In order to fill the tech- and science-focused roles of the future, technologists nationwide should focus on providing youth from underserved communities the resources to promote computer science advocacy now.</p>
+          <p>Students from underprivileged backgrounds are 8 to 10 times more likely to pursue college degrees in computer science if they have taken AP computer science in high school. We can project that these odds will only increase if studentds are given even earlier exposure to software and hardware technologies.</p>
           <p>Through this Maker workshop, technologists who are passionate about bridging this gap will develop a blueprint that can be leveraged to facilitate tech exploration workshops for underserved youth in their communities. Marrying knowledge of Python programming and Adafruit Circuit Playground Express devices, their students will be empowered to become makers of technology.</p>
           <h3>Goals</h3>
           <ul>
