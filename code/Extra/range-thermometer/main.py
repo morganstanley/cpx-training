@@ -1,20 +1,15 @@
 # Circuit Playground Temperature
 # Reads the on-board temperature sensor and prints the value
-
+from adafruit_circuitplayground.express import cpx
 import time
-import adafruit_thermistor
-import board
-import neopixel
 import analogio
 import simpleio
 
-pixels = neopixel.NeoPixel(
-    board.NEOPIXEL, 10, brightness=.05, auto_write=False)
+pixels = cpx.pixels
 pixels.fill((0, 0, 0))
 pixels.show()
 
-thermistor = adafruit_thermistor.Thermistor(
-    board.TEMPERATURE, 10000, 10000, 25, 3950)
+temperature = cpx.temperature
 
 WHITE = (255, 255, 255)
 RED = (255, 0, 0)
@@ -26,6 +21,7 @@ CYAN = (0, 255, 255)
 PURPLE = (255, 0, 255)
 BLUE = (0, 0, 255)
 LIGHT_BLUE = (80, 200, 175)
+
 
 def set_pixels():
     pixels[0] = PURPLE
@@ -39,9 +35,10 @@ def set_pixels():
     pixels[8] = RED
     pixels[9] = RED
 
+
 while True:
-    temp_c = thermistor.temperature
-    temp_f = thermistor.temperature * 9 / 5 + 32
+    temp_c = temperature
+    temp_f = temperature * 9 / 5 + 32
     print("Temperature is: %f C and %f F" % (temp_c, temp_f))
 
     set_pixels()
@@ -54,5 +51,3 @@ while True:
             pixels[i] = (0, 0, 0)
 
     pixels.show()
-
-    time.sleep(0.25)
