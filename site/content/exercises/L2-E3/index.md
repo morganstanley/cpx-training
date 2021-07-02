@@ -8,7 +8,7 @@ category: CircuitPython
 tags: ["Level 2"]
 ---
 
-Lets start with [where we left off with variables](https://github.com/mimiflynn/cpx-training/blob/master/Level%202%20-%20Intro%20to%20Programming/1-variables/main.py).
+Lets start with [where we left off with variables](../L2-E1).
 
 We are using two built-in functions in this script, can you find them?
 

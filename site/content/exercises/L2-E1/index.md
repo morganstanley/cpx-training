@@ -13,7 +13,7 @@ In level 1, we went over the features of the Circuit Playground Express, but we 
 In this lesson, we are going to learn about variables and how we can use them to store information in order to use it again later.
 
 ## Color Variables
-[From level 1 exercise 2](https://github.com/mimiflynn/cpx-training/blob/master/Level%201%20-%20Intro%20to%20CPX/2-lights/main.py), we put the following program into the CPX:
+[From level 1 exercise 2](../L1-E2), we put the following program into the CPX:
 
 ```python
 import board
