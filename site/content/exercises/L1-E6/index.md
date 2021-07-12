@@ -8,7 +8,7 @@ category: CircuitPython
 tags: ["Level 1"]
 ---
 
-This code will print out the current temperature to the MuEditor display.
+This code will print out the current temperature to the MuEditor display. Click the Serial button in MuEditor to see the raw data output, or Plotter to see a graph.
 
 
 ```python
