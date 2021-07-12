@@ -72,6 +72,7 @@ const SetupPage = ({ data, location }) => {
               <ul>
                   <li>Choose Adafruit CircuitPython mode.</li>
                   <li>Save your code to the CIRCUITPY disk and name it main.py.</li>
+                  <li>Make sure that any code.txt or code.py files that exist on your CIRCUITPY disk are removed or renamed. If files named code.txt or code.py exist on your CIRCUITPY disk, your code in main.py will not run.</li>
                 </ul>
               </li>
 
@@ -79,6 +80,7 @@ const SetupPage = ({ data, location }) => {
 
             <h3>More on Mu Editor</h3>
             <p>Choose the Adafruit CircuitPython mode for this session.
+              Some veriosn of Mu list the Adafruit CircuitPython as CircuitPython, either will work for this session.
             There are other modes you can choose to explore here later
             in your own time!
         </p>
