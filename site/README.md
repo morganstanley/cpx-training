@@ -31,13 +31,13 @@ And load [http://localhost:8000](http://localhost:8000) in your browser of choic
 
 ### Updating Content
 
-The main content for the site lives in the [`/site/content`](https://github.com/mimiflynn/cpx-training/tree/master/site/content) directory.
+The main content for the site lives in the [`/site/content`](https://github.com/MorganStanley/cpx-training/tree/master/site/content) directory.
 
 [MarkDown Reference](https://daringfireball.net/projects/markdown/syntax)
 
 #### Exercises
 
-The [`/site/content/exercises`](https://github.com/mimiflynn/cpx-training/tree/master/site/content/exercises) directory contains directories name for the corresponding level and exercise. [`/site/content/exercises/L1-E1`](https://github.com/mimiflynn/cpx-training/tree/master/site/content/exercises/L1-E1) should contain Level 1 Exercise 1 details and code. The main content is build from the `index.md` file contained in each of these directories.
+The [`/site/content/exercises`](https://github.com/MorganStanley/cpx-training/tree/master/site/content/exercises) directory contains directories name for the corresponding level and exercise. [`/site/content/exercises/L1-E1`](https://github.com/MorganStanley/cpx-training/tree/master/site/content/exercises/L1-E1) should contain Level 1 Exercise 1 details and code. The main content is build from the `index.md` file contained in each of these directories.
 
 Please note that because the [starter project](https://www.gatsbyjs.org/starters/iamtherealgd/gatsby-starter-22boxes-uno/) used for this site is a blog template, the order of the exercises are dependent on the date included in the metadata that must be included at the top of each `index.md`.
 
