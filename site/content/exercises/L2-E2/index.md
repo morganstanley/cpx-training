@@ -18,7 +18,7 @@ tags: ["Level 2"]
 
 **Pick a previous program: go through the code line by line, which is expression and which is statement?**
 
-[Review the use of console: from Level 1 exercise 6](https://github.com/mimiflynn/cpx-training/blob/master/Level%201%20-%20Intro%20to%20CPX/6-temperature/main.py)
+[Review the use of console: from Level 1 exercise 6](../L1-E6)
 ```python
 import time
 from adafruit_circuitplayground.express import cpx
