@@ -6,7 +6,6 @@ import SEO from '../components/seo'
 
 const ContinuePage = ({ data, location }) => {
     const siteTitle = data.site.siteMetadata.title
-    const continuePosts = data.allMarkdownRemark.edges
 
     return (
         <Layout location={location} title={siteTitle}>
@@ -25,36 +24,33 @@ const ContinuePage = ({ data, location }) => {
                 <div className="content">
                     <article>
                         <h2>Resources</h2>
-                        <p>There is a lot of information about and projects for the CircuitPlayground Express.</p>
+                        <p>There is a lot of information about and projects for the Circuit Playground Express and CircuitPython!</p>
+                        <header>
+                            <h3>
+                                <a href="https://circuitpython.org">Circuit Playground Express</a>
+                            </h3>
+                        </header>
+                        <section>
+                            <a href="https://circuitpython.org/board/circuitplayground_express/">Circuit Python Downloads</a>
+                            <a href="https://circuitpython.readthedocs.io/projects/circuitplayground/en/latest/">Comprehensive Documentation</a>
+                        </section>
+                        <header>
+                            <h3>
+                                <a href="https://circuitpython.org">CircuitPython</a>
+                            </h3>
+                        </header>
+                        <section>
+                            CircuitPython is not just for the Circuit Playground Express. There are many other boards that use this language. Check out your options and download libraries and firmware at <a href="https://circuitpython.org">CircuitPython.org</a>
+                        </section>
+                        <header>
+                            <h3>
+                                <a href="https://makecode.adafruit.com/">MakeCode</a>
+                            </h3>
+                        </header>
+                        <section>
+                          <a href="https://learn.adafruit.com/using-circuit-playground-express-makecode-circuitpython-on-a-chromebook/using-makecode">Using MakeCode with Circuit Playground Express</a>
+                        </section>
                     </article>
-                    {continuePosts.map(item => {
-                        const title = item.node.frontmatter.title || item.node.fields.slug
-                        const node = item.node
-                        return (
-                            <article
-                                key={node.fields.slug}
-                            >
-                                <header>
-                                    <h3>
-                                        {title}
-                                    </h3>
-                                </header>
-                                <section>
-                                    <p
-                                        dangerouslySetInnerHTML={{
-                                            __html: node.frontmatter.description || node.excerpt,
-                                        }}
-                                    />
-                                    <a
-                                        href={node.frontmatter.link}
-                                        target="blank"
-                                    >
-                                        Take me there
-                                    </a>
-                                </section>
-                            </article>
-                        )
-                    })}
                 </div>
             </div>
         </Layout>
