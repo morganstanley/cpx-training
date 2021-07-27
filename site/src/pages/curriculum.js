@@ -27,7 +27,8 @@ const CurriculumPage = ({ data, location }) => {
                     <p>Best for ages</p>
                     <p><Link to={`/exercises`}>Go to exercises</Link></p>
                     <h3>MakeCode with the Circuit Playground Express</h3>
-                    <p>Multi-week course with Circuit Playground Express and MakeCode. Best for ages </p>
+                    <p>Multi-week course with Circuit Playground Express and MakeCode. Best for beginners of ages 9-15, this block based coding format translates to Javascript for a more comprehensive coding experience.</p>
+                    <p><a href="https://makecode.adafruit.com" target="_blank" rel="noreferrer">Go to MakeCode</a></p>
                 </article>
             </div >
         </Layout >
