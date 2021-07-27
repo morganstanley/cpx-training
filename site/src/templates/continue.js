@@ -4,28 +4,28 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 
 const ContinueTemplate = ({ data, location }) => {
-  const post = data.markdownRemark
-  const siteTitle = data.site.siteMetadata.title
+    const post = data.markdownRemark
+    const siteTitle = data.site.siteMetadata.title
 
-  return (
-    <Layout location={location} title={siteTitle}>
-      <SEO
-        title={post.frontmatter.title}
-        description={post.frontmatter.description || post.excerpt}
-      />
-      <article className="content">
-        <header>
-          <h2>
-            {post.frontmatter.title}
-          </h2>
-          <p>
-            {post.frontmatter.category}
-          </p>
-        </header>
-        <section dangerouslySetInnerHTML={{ __html: post.html }} />
-      </article>
-    </Layout>
-  )
+    return (
+        <Layout location={location} title={siteTitle}>
+            <SEO
+                title={post.frontmatter.title}
+                description={post.frontmatter.description || post.excerpt}
+            />
+            <article className="content">
+                <header>
+                    <h2>
+                        {post.frontmatter.title}
+                    </h2>
+                    <p>
+                        {post.frontmatter.category}
+                    </p>
+                </header>
+                <section dangerouslySetInnerHTML={{ __html: post.html }} />
+            </article>
+        </Layout>
+    )
 }
 
 export default ContinueTemplate

@@ -6,6 +6,7 @@ import analogio
 import simpleio
 
 pixels = cpx.pixels
+pixels.brightness = 0.1
 pixels.fill((0, 0, 0))
 pixels.show()
 
@@ -14,7 +15,7 @@ temperature = cpx.temperature
 WHITE = (255, 255, 255)
 RED = (255, 0, 0)
 PINK = (255, 100, 120)
-ORANGE = (255, 100, 0)
+ORANGE = (255, 80, 0)
 YELLOW = (255, 255, 0)
 GREEN = (0, 255, 0)
 CYAN = (0, 255, 255)
@@ -31,17 +32,17 @@ def set_pixels():
     pixels[4] = LIGHT_BLUE
     pixels[5] = YELLOW
     pixels[6] = ORANGE
-    pixels[7] = RED
+    pixels[7] = ORANGE
     pixels[8] = RED
     pixels[9] = RED
+
+set_pixels()
 
 
 while True:
     temp_c = temperature
     temp_f = temperature * 9 / 5 + 32
     print("Temperature is: %f C and %f F" % (temp_c, temp_f))
-
-    set_pixels()
 
     # light value remapped to pixel position
     peak = simpleio.map_range(temp_f, 0, 100, 0, 9)
@@ -51,3 +52,4 @@ while True:
             pixels[i] = (0, 0, 0)
 
     pixels.show()
+    time.sleep(1)
