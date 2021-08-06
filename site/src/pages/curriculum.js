@@ -27,7 +27,7 @@ const CurriculumPage = ({ data, location }) => {
                     <p>This is the original single day workshop with Circuit Playground Express and CircuitPython. Includes an overview of the board's sensors and lights through code. Allows students to dig into an aspect of the device they enjoy for an afternoon of exploration. </p>
                     <p><Link to={`/exercises`}>Go to exercises</Link></p>
 
-                    <h3>Advanced Programming with CircuitPython - Level 2</h3>
+                    <h3>Programming with CircuitPython - Level 2</h3>
                     <p>This course builds on the original single day workshop with Circuit Playground Express and CircuitPython to fill out the student's understanding of basic programming concepts.</p>
                     <p><Link to={`/exercises#Level2`}>Go to exercises</Link></p>
                 </article>

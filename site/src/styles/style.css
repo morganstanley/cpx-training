@@ -59,6 +59,10 @@ article h3 {
     color: var(--secondary-text);
 }
 
+article h4 {
+    color: var(--secondary-text);
+}
+
 article.hero {
     position: relative;
     height: 100vh;

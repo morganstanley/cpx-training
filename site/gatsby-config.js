@@ -9,8 +9,15 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/exercises`,
-        name: `exercises`,
+        path: `${__dirname}/content/exercises/level-1`,
+        name: `exercises-level-1`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/exercises/level-2`,
+        name: `exercises-level-2`,
       },
     },
     {
