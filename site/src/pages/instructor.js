@@ -11,7 +11,7 @@ const InstructorPage = ({ data, location }) => {
         <Layout location={location} title={siteTitle}>
             <div className="trainer-main">
                 <article className="hero">
-                    <img src="images/chelci-beth.jpg" className="background-image" alt="Student with CPX Board" />
+                    <img src="images/chelci-beth.jpg" className="background-image" alt="Instructors around a podium" />
                     <div className="pane">
                         <header className="content">
                             <h2>
@@ -32,8 +32,8 @@ const InstructorPage = ({ data, location }) => {
                     <p>The Morgan Stanley Makerspaces are designed to introduce participants to coding
                         and making with the Adafruit CPX device as a starting platform.</p>
                     <p />
-                    <p>The philosophy is one of discovery, experimentation and passion. The curriculum
-                        is not used as a test or a required standard to achieved, but a jumping off point.</p>
+                    <p>The philosophy of Makerspace is one of discovery, experimentation and passion. The curriculum
+                        is not used as a test or a required standard to be achieved, but a jumping off point.</p>
                     <p />
                     <p>We hope that by the end of the session, the participants will have cultivated a
                         desire to delve deeper and learn more about whichever aspect of technology inspired them.</p>
