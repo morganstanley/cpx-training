@@ -57,7 +57,9 @@ function Game(name, options) {
     };
 
     var directions = function () {
-        console.log(name + '\n' + 'To make a move use player.move(). Refresh to start again.\n---------------------------------------------------------\n');
+        console.log(name);
+        console.log('To make a move use player.move(). Refresh to start again.');
+        console.log('\n---------------------------------------------------------\n');
     };
 
     // public methods
