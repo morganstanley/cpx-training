@@ -1,7 +1,7 @@
 ---
-template: post
+template: exercise
 title: Level 2 | Exercise 4 - Functions
-slug: level-2-exercise-4
+slug: circuitpython/level-2/exercise-4
 level: 2
 exercise: 4
 category: CircuitPython

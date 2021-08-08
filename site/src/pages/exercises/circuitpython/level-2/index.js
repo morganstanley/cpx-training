@@ -1,16 +1,16 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
 
-import Layout from '../components/layout'
-import SEO from '../components/seo'
+import Layout from '../../../../components/layout'
+import SEO from '../../../../components/seo'
 
-import '../styles/global.css'
-import '../styles/style.css'
+import '../../../../styles/global.css'
+import '../../../../styles/style.css'
 
 const BlogIndex = ({ data, location }) => {
     const siteTitle = data.site.siteMetadata.title
-    const posts = data.allMarkdownRemark.edges.filter(
-        edge => edge.node.frontmatter.template === 'post'
+    const exercises = data.allMarkdownRemark.edges.filter(
+        edge => edge.node.frontmatter.template === 'exercise' && edge.node.frontmatter.level === 2 && edge.node.frontmatter.category === 'CircuitPython'
     )
 
     return (
@@ -24,19 +24,24 @@ const BlogIndex = ({ data, location }) => {
                                 <span>CPX Training Workshop</span>
                             </h2>
                         </header>
+                        <section className="content">
+                            <span>
+                                CircuitPython - Level 2
+                            </span>
+                        </section>
                     </div>
                 </article>
                 <SEO title="All posts" />
                 <article className="content">
                     <h2>
-                        Intro to CircuitPython with Adafruit's Circuit Playground Express
+                        Programming with CircuitPython on an Adafruit's Circuit Playground Express
                     </h2>
                     <h3>
                         <Link to={`/setup`}>Start Here</Link>
                     </h3>
                     <p>If you haven't set up your Circuit Playground Express board to support CircuitPython yet, please refer to the <Link to={`/setup`}>setup instructions</Link>.</p>
                 </article>
-                {posts.map(({ node }) => {
+                {exercises.map(({ node }) => {
                     const title = node.frontmatter.title || node.fields.slug
                     return (
                         <article

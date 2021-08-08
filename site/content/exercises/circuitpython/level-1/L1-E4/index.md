@@ -1,7 +1,7 @@
 ---
-template: post
+template: exercise
 title: Level 1 | Exercise 4 - Touch
-slug: level-1-exercise-4
+slug: circuitpython/level-1/exercise-4
 level: 1
 exercise: 4
 category: CircuitPython
