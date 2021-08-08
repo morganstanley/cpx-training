@@ -41,7 +41,7 @@ const CurriculumPage = ({ data, location }) => {
                     <h3>CircuitPython with the Circuit Playground Express</h3>
                     <h4>Grades 6-9</h4>
                     <p>Based on the original single day workshop with Circuit Playground Express and CircuitPython. Starts with an overview of how to work with the board's sensors and lights through code and ends with a capstone project of the student's creation.</p>
-                    <p><Link to={`/exercises/circuitplayground`}>Go to exercises</Link></p>
+                    <p><Link to={`/exercises/circuitpython`}>Go to exercises</Link></p>
 
                     <h3>Robotics</h3>
                     <h4>Grades 8-11</h4>

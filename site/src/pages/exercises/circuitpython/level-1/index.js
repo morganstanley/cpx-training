@@ -21,9 +21,14 @@ const BlogIndex = ({ data, location }) => {
                     <div className="pane">
                         <header className="content">
                             <h2>
-                                <span>CPX Training Workshop - CircuitPython - Level 1</span>
+                                <span>CPX Training Workshop</span>
                             </h2>
                         </header>
+                        <section className="content">
+                            <span>
+                                CircuitPython - Level 1
+                            </span>
+                        </section>
                     </div>
                 </article>
                 <SEO title="All posts" />

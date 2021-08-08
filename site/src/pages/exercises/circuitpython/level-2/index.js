@@ -21,15 +21,20 @@ const BlogIndex = ({ data, location }) => {
                     <div className="pane">
                         <header className="content">
                             <h2>
-                                <span>CPX Training Workshop - CircuitPython - Level 2</span>
+                                <span>CPX Training Workshop</span>
                             </h2>
                         </header>
+                        <section className="content">
+                            <span>
+                                CircuitPython - Level 2
+                            </span>
+                        </section>
                     </div>
                 </article>
                 <SEO title="All posts" />
                 <article className="content">
                     <h2>
-                        Fundamentals of Programming with CircuitPython on an Adafruit's Circuit Playground Express
+                        Programming with CircuitPython on an Adafruit's Circuit Playground Express
                     </h2>
                     <h3>
                         <Link to={`/setup`}>Start Here</Link>

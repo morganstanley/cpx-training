@@ -1,71 +1,66 @@
 import React from 'react'
-import { Link, graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 
 import Layout from '../../components/layout'
 import SEO from '../../components/seo'
 
-import '../../styles/global.css'
-import '../../styles/style.css'
-
-const BlogIndex = ({ data, location }) => {
+const CurriculumPage = ({ data, location }) => {
     const siteTitle = data.site.siteMetadata.title
 
     return (
         <Layout location={location} title={siteTitle}>
-            <div className="exercises-main">
+            <div className="curriculum-main">
                 <article className="hero">
-                    <img src="images/desk.jpg" className="background-image" alt="CPX Board with Lights" />
+                    <img src="images/circuitplaygroundexpress.jpg" className="background-image" alt="CPX Board" />
                     <div className="pane">
                         <header className="content">
                             <h2>
-                                <span>CPX Training Workshop</span>
+                                <span>Curriculum</span>
                             </h2>
                         </header>
                     </div>
                 </article>
-                <SEO title="All posts" />
+                <SEO title="About" />
                 <article className="content">
-                    <h2>
-                        Intro to CircuitPython with Adafruit's Circuit Playground Express
-                    </h2>
-                    <h3>
-                        <Link to={`/setup`}>Start Here</Link>
-                    </h3>
-                    <p>If you haven't set up your Circuit Playground Express board to support CircuitPython yet, please refer to the <Link to={`/setup`}>setup instructions</Link>.</p>
-                </article>
+                    <h2>Single Day Programs</h2>
+                    <h3>Introduction to CircuitPython - Level 1</h3>
+                    <p>This is the original single day workshop with Circuit Playground Express and CircuitPython. Includes an overview of the board's sensors and lights through code. Allows students to dig into an aspect of the device they enjoy for an afternoon of exploration. </p>
+                    <p><Link to={`/exercises/circuitpython/level-1/`}>Go to exercises</Link></p>
 
-            </div>
-        </Layout>
+                    <h3>Programming with CircuitPython - Level 2</h3>
+                    <p>This course builds on the original single day workshop with Circuit Playground Express and CircuitPython to fill out the student's understanding of basic programming concepts.</p>
+                    <p><Link to={`/exercises/circuitpython/level-2/`}>Go to exercises</Link></p>
+                </article>
+                <article className="content">
+                    <h2>Multi-week Programs</h2>
+                    <h3>MakeCode with the Circuit Playground Express</h3>
+                    <h4>Grades 5-7</h4>
+                    <p>Multi-week course with Circuit Playground Express and MakeCode. Best for beginners of ages 9-15, this graphical block based coding format translates to Javascript for a more comprehensive coding experience.</p>
+                    <p><a href="https://makecode.adafruit.com" target="_blank" rel="noreferrer">Go to MakeCode</a></p>
+
+                    <h3>CircuitPython with the Circuit Playground Express</h3>
+                    <h4>Grades 6-9</h4>
+                    <p>Based on the original single day workshop with Circuit Playground Express and CircuitPython. Starts with an overview of how to work with the board's sensors and lights through code and ends with a capstone project of the student's creation.</p>
+                    <p><Link to={`/exercises/circuitpython`}>Go to exercises</Link></p>
+
+                    <h3>Robotics</h3>
+                    <h4>Grades 8-11</h4>
+                    <p>Learn the fundamentals of robotics through combining components such as sensors, servos and gears to an Adafruit Feather microcontroller board.</p>
+                    <p>More details to come.</p>
+
+                </article>
+            </div >
+        </Layout >
     )
 }
 
-export default BlogIndex
+export default CurriculumPage
 
 export const pageQuery = graphql`
   query {
     site {
       siteMetadata {
         title
-      }
-    }
-    allMarkdownRemark(sort: { order: [ASC, ASC], fields: [frontmatter___level, frontmatter___exercise] }) {
-      edges {
-        node {
-          excerpt
-          fields {
-            slug
-          }
-          frontmatter {
-            template
-            title
-            tags
-            description
-            slug
-            category
-            level
-            exercise
-          }
-        }
       }
     }
   }
