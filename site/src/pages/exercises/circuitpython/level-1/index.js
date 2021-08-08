@@ -1,16 +1,16 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
 
-import Layout from '../components/layout'
-import SEO from '../components/seo'
+import Layout from '../../../../components/layout'
+import SEO from '../../../../components/seo'
 
-import '../styles/global.css'
-import '../styles/style.css'
+import '../../../../styles/global.css'
+import '../../../../styles/style.css'
 
 const BlogIndex = ({ data, location }) => {
     const siteTitle = data.site.siteMetadata.title
-    const posts = data.allMarkdownRemark.edges.filter(
-        edge => edge.node.frontmatter.template === 'post'
+    const exercises = data.allMarkdownRemark.edges.filter(
+        edge => edge.node.frontmatter.template === 'exercise' && edge.node.frontmatter.level === 1 && edge.node.frontmatter.category === 'CircuitPython'
     )
 
     return (
@@ -21,7 +21,7 @@ const BlogIndex = ({ data, location }) => {
                     <div className="pane">
                         <header className="content">
                             <h2>
-                                <span>CPX Training Workshop</span>
+                                <span>CPX Training Workshop - CircuitPython - Level 1</span>
                             </h2>
                         </header>
                     </div>
@@ -36,7 +36,7 @@ const BlogIndex = ({ data, location }) => {
                     </h3>
                     <p>If you haven't set up your Circuit Playground Express board to support CircuitPython yet, please refer to the <Link to={`/setup`}>setup instructions</Link>.</p>
                 </article>
-                {posts.map(({ node }) => {
+                {exercises.map(({ node }) => {
                     const title = node.frontmatter.title || node.fields.slug
                     return (
                         <article

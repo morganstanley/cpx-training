@@ -1,7 +1,7 @@
 ---
-template: post
+template: exercise
 title: Level 1 | Exercise 6 - Temperature
-slug: level-1-exercise-6
+slug: circuitpython/level-1/exercise-6
 level: 1
 exercise: 6
 category: CircuitPython

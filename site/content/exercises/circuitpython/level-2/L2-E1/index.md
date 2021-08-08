@@ -1,7 +1,7 @@
 ---
-template: post
+template: exercise
 title: Level 2 | Exercise 1 - Variables and Types
-slug: level-2-exercise-1
+slug: circuitpython/level-2/exercise-1
 level: 2
 exercise: 1
 category: CircuitPython
