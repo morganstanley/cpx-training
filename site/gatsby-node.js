@@ -35,11 +35,11 @@ exports.createPages = async ({ graphql, actions }) => {
     throw result.errors
   }
 
-  // Create blog posts pages.
+  // Create exercise pages.
   const posts = result.data.allMarkdownRemark.edges.filter(
-    edge => edge.node.frontmatter.template === "post"
+    edge => edge.node.frontmatter.template === "exercise"
   )
-  const blogPost = path.resolve(`./src/templates/blog-post.js`)
+  const blogPost = path.resolve(`./src/templates/exercise.js`)
 
   posts.forEach((post, index) => {
     const previous = index === posts.length - 1 ? null : posts[index + 1].node

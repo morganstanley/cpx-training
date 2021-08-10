@@ -9,15 +9,22 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/exercises/level-1`,
+        path: `${__dirname}/content/exercises/circuitpython/level-1`,
         name: `exercises-level-1`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/exercises/level-2`,
+        path: `${__dirname}/content/exercises/circuitpython/level-2`,
         name: `exercises-level-2`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/exercises/makecode`,
+        name: `makecode`,
       },
     },
     {
