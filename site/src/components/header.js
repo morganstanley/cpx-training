@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 
 const Header = ({ location }) => {
     const links = {
-        'Curriculum': '/curriculum',
+        'Curriculum': '/exercises',
         'Instructor Notes': '/instructor',
         'Make a Makerspace': '/makerspace',
         'Continue Learning': '/continue',

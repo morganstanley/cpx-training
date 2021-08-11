@@ -14,10 +14,19 @@ const CurriculumPage = ({ data, location }) => {
                     <img src="images/circuitplaygroundexpress.jpg" className="background-image" alt="CPX Board" />
                     <div className="pane">
                         <header className="content">
-                            <h2>
-                                <span>Curriculum</span>
-                            </h2>
+                            <h3>
+                                <span>
+                                    <Link to={`/curriculum`}>
+                                        CPX Training Workshops
+                                    </Link>
+                                </span>
+                            </h3>
                         </header>
+                        <section className="content">
+                            <span>
+                                An interactive introduction to coding. Learn the basics through simple exercises designed to inspire.
+                            </span>
+                        </section>
                     </div>
                 </article>
                 <SEO title="About" />
