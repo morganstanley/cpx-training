@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[CPX Training]]></title><description><![CDATA[Introduction to CircuitPython with CircuitPlayground Express]]></description><link>https://morgan-stanley.github.io/cpx-training</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 08 Aug 2021 12:55:26 GMT</lastBuildDate><item><title><![CDATA[Level 1 | Exercise 1 - Blink]]></title><description><![CDATA[All Circuit Playground code follows a similar format. Let’s start with a small example. CPX Blink]]></description><link>https://morgan-stanley.github.io/cpx-training/L1-E1/</link><guid isPermaLink="false">https://morgan-stanley.github.io/cpx-training/L1-E1/</guid><content:encoded>&lt;p&gt;All Circuit Playground code follows a similar format. Let’s start with a small example.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[CPX Training]]></title><description><![CDATA[Introduction to CircuitPython with CircuitPlayground Express]]></description><link>https://morgan-stanley.github.io/cpx-training</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 11 Aug 2021 01:57:37 GMT</lastBuildDate><item><title><![CDATA[Level 1 | Exercise 1 - Blink]]></title><description><![CDATA[All Circuit Playground code follows a similar format. Let’s start with a small example. CPX Blink]]></description><link>https://morgan-stanley.github.io/cpx-training/L1-E1/</link><guid isPermaLink="false">https://morgan-stanley.github.io/cpx-training/L1-E1/</guid><content:encoded>&lt;p&gt;All Circuit Playground code follows a similar format. Let’s start with a small example.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/cpx-training/6ccdcc29d27bcd7610d2c6dd4ea994ef/blink.gif&quot; alt=&quot;CPX Blink&quot;&gt;&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;# This section lets the system know which libraries we want to use&lt;/span&gt;
 &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; adafruit_circuitplayground&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;express &lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; cpx
@@ -13,7 +13,19 @@
     cpx&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;red_led &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;False&lt;/span&gt;
     time&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;sleep&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0.5&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 
-&lt;span class=&quot;token comment&quot;&gt;# Note - anything with a &apos;#&apos; infront is a comment and is ignored&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Level 1 | Exercise 2 - Lights]]></title><description><![CDATA[Let’s explore further.  We can do all sorts of crazy things by adding to the while loop. Here we will tell the circuit to turn on some…]]></description><link>https://morgan-stanley.github.io/cpx-training/L1-E2/</link><guid isPermaLink="false">https://morgan-stanley.github.io/cpx-training/L1-E2/</guid><content:encoded>&lt;p&gt;Let’s explore further. &lt;/p&gt;
+&lt;span class=&quot;token comment&quot;&gt;# Note - anything with a &apos;#&apos; infront is a comment and is ignored&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Level 1 | Exercise 3 - Buttons]]></title><description><![CDATA[Let’s have a listen to the CPX’s speakers! Here the first number is the pitch, and the second number is the duration of the note. The ‘if…]]></description><link>https://morgan-stanley.github.io/cpx-training/L1-E3/</link><guid isPermaLink="false">https://morgan-stanley.github.io/cpx-training/L1-E3/</guid><content:encoded>&lt;p&gt;Let’s have a listen to the CPX’s speakers!&lt;/p&gt;
+&lt;p&gt;Here the first number is the pitch, and the second number is the duration of the note.&lt;/p&gt;
+&lt;p&gt;The ‘if statement’ is going to check which button we pressed, and play the correspondng
+note.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; adafruit_circuitplayground&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;express &lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; cpx
+
+&lt;span class=&quot;token keyword&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; cpx&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;button_a&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        cpx&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;play_tone&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;329&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+        cpx&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;play_tone&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;261&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;elif&lt;/span&gt; cpx&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;button_b&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        cpx&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;play_tone&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;440&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+        cpx&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;play_tone&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;400&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Level 1 | Exercise 2 - Lights]]></title><description><![CDATA[Let’s explore further.  We can do all sorts of crazy things by adding to the while loop. Here we will tell the circuit to turn on some…]]></description><link>https://morgan-stanley.github.io/cpx-training/L1-E2/</link><guid isPermaLink="false">https://morgan-stanley.github.io/cpx-training/L1-E2/</guid><content:encoded>&lt;p&gt;Let’s explore further. &lt;/p&gt;
 &lt;p&gt;We can do all sorts of crazy things by adding to the &lt;strong&gt;while loop&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;Here we will tell the circuit to turn on some colorful lights.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; adafruit_circuitplayground&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;express &lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; cpx
@@ -41,19 +53,7 @@ cpx&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;pixels&lt;span 
     &lt;span class=&quot;token comment&quot;&gt;# Try changing the numbers!&lt;/span&gt;
 
     &lt;span class=&quot;token comment&quot;&gt;# this line turns on the lights!&lt;/span&gt;
-    cpx&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;pixels&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;show&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Level 1 | Exercise 3 - Buttons]]></title><description><![CDATA[Let’s have a listen to the CPX’s speakers! Here the first number is the pitch, and the second number is the duration of the note. The ‘if…]]></description><link>https://morgan-stanley.github.io/cpx-training/L1-E3/</link><guid isPermaLink="false">https://morgan-stanley.github.io/cpx-training/L1-E3/</guid><content:encoded>&lt;p&gt;Let’s have a listen to the CPX’s speakers!&lt;/p&gt;
-&lt;p&gt;Here the first number is the pitch, and the second number is the duration of the note.&lt;/p&gt;
-&lt;p&gt;The ‘if statement’ is going to check which button we pressed, and play the correspondng
-note.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; adafruit_circuitplayground&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;express &lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; cpx
-
-&lt;span class=&quot;token keyword&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; cpx&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;button_a&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
-        cpx&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;play_tone&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;329&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-        cpx&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;play_tone&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;261&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;token keyword&quot;&gt;elif&lt;/span&gt; cpx&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;button_b&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
-        cpx&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;play_tone&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;440&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-        cpx&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;play_tone&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;400&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Level 1 | Exercise 5 - Acceleration]]></title><description><![CDATA[The circuit playground has an accelerometer so it can tell when it’s moving. Let’s see what we can do with this.]]></description><link>https://morgan-stanley.github.io/cpx-training/L1-E5/</link><guid isPermaLink="false">https://morgan-stanley.github.io/cpx-training/L1-E5/</guid><content:encoded>&lt;p&gt;The circuit playground has an accelerometer so it can tell when it’s moving. Let’s see what we can do with this.&lt;/p&gt;
+    cpx&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;pixels&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;show&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Level 1 | Exercise 5 - Acceleration]]></title><description><![CDATA[The circuit playground has an accelerometer so it can tell when it’s moving. Let’s see what we can do with this.]]></description><link>https://morgan-stanley.github.io/cpx-training/L1-E5/</link><guid isPermaLink="false">https://morgan-stanley.github.io/cpx-training/L1-E5/</guid><content:encoded>&lt;p&gt;The circuit playground has an accelerometer so it can tell when it’s moving. Let’s see what we can do with this.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; adafruit_circuitplayground&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;express &lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; cpx
 
 &lt;span class=&quot;token comment&quot;&gt;# Main loop gets x, y and z axis acceleration, prints the values, and turns on&lt;/span&gt;
@@ -515,6 +515,74 @@ pixels&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;show&lt;span
     &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; i &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;pixels&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
         pixels&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; colors&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
         time&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;sleep&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;.05&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-    time&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;sleep&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[MakeCode | Exercise 1]]></title><description><![CDATA[Start by going through the intro tutorial on makecode.adafruit.com]]></description><link>https://morgan-stanley.github.io/cpx-training/E1/</link><guid isPermaLink="false">https://morgan-stanley.github.io/cpx-training/E1/</guid><content:encoded>&lt;p&gt;Start by going through the intro tutorial on makecode.adafruit.com&lt;/p&gt;</content:encoded></item><item><title><![CDATA[No title]]></title><description><![CDATA[Placeholder for now]]></description><link>https://morgan-stanley.github.io/cpx-training/README/</link><guid isPermaLink="false">https://morgan-stanley.github.io/cpx-training/README/</guid><content:encoded>&lt;h1&gt;Placeholder for now&lt;/h1&gt;</content:encoded></item><item><title><![CDATA[Adafruit Circuit Playground Express]]></title><description><![CDATA[Adafruit Circuit Playground Express]]></description><link>https://morgan-stanley.github.io/cpx-training/</link><guid isPermaLink="false">https://morgan-stanley.github.io/cpx-training/</guid><pubDate>Fri, 01 May 2020 22:12:03 GMT</pubDate><content:encoded>&lt;blockquote&gt;
+    time&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;sleep&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[MakeCode | Exercise 1]]></title><description><![CDATA[Adafruit CPX Sample Projects Participants to pick at least 3 projects from the list of the below pre-selected projects. Blinky Animation…]]></description><link>https://morgan-stanley.github.io/cpx-training/E1/</link><guid isPermaLink="false">https://morgan-stanley.github.io/cpx-training/E1/</guid><content:encoded>&lt;p&gt;Adafruit CPX Sample Projects&lt;/p&gt;
+&lt;p&gt;Participants to pick at least 3 projects from the list of the below pre-selected projects.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://makecode.adafruit.com/examples/blinky&quot;&gt;Blinky&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://makecode.adafruit.com/examples/animation-shaker&quot;&gt;Animation Shaker&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://makecode.adafruit.com/examples/juggle-counter&quot;&gt;Juggle Counter&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://makecode.adafruit.com/examples/photon-beatbox&quot;&gt;Photon Beat Box&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://makecode.adafruit.com/examples/spin-it&quot;&gt;Spin It&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://makecode.adafruit.com/examples/metronome&quot;&gt;Metronome&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt; Download code of selected project &amp;#x26; just have fun with running the example.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://learn.adafruit.com/makecode&quot;&gt;Make Code Introduction&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Objective: Just copy and paste existing examples and have fun, fun, fun…&lt;/p&gt;
+&lt;p&gt;Homework: &lt;a href=&quot;https://learn.adafruit.com/adafruit-circuit-playground-express&quot;&gt;Read thru all Adafruit features&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[MakeCode | Exercise 2]]></title><description><![CDATA[Read basics of MakeCode. Variables Logic Loops Basic Built In Objects: Math Test Arrays Objective: Start using some of the features and code…]]></description><link>https://morgan-stanley.github.io/cpx-training/E2/</link><guid isPermaLink="false">https://morgan-stanley.github.io/cpx-training/E2/</guid><content:encoded>&lt;p&gt;Read basics of MakeCode.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://makecode.adafruit.com/blocks/variables&quot;&gt;Variables&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://makecode.adafruit.com/blocks/logic&quot;&gt;Logic&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://makecode.adafruit.com/blocks/loops&quot;&gt;Loops&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Basic Built In Objects:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://makecode.adafruit.com/reference/math&quot;&gt;Math&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://makecode.adafruit.com/reference/text&quot;&gt;Test&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://makecode.adafruit.com/reference/arrays&quot;&gt;Arrays&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Objective: Start using some of the features and code blocks to build your own functionality using CPX from next session.&lt;/p&gt;
+&lt;p&gt;What are variables in daily life?&lt;/p&gt;
+&lt;p&gt;Something that changes like the weather, the time, someone is standing or
+sitting?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Can you provide an example of what does not change?&lt;/li&gt;
+&lt;li&gt;What do variables store?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Lets try blinking random pixels in the next exercise&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/cpx-training/7562b4730a34ed09058806344c6b7cf1/session2.gif&quot; alt=&quot;variable&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/cpx-training/static/4b7b4b99533bdaab74a8c9400eb25aa0/20f89/e2-12.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 62.16216216216216%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAAAsTAAALEwEAmpwYAAAC6UlEQVQoz22SW0iUaRjHJ4Ltom4CocNN2sGs0RlHHR1nZsf5xm88jM5832g6jqaY41qOMWbNdsBokLIs6SAVgUUYu4gdoBBdW8sOS1Hd1B5isRAMDNuuiur+1/t9WkTsxY/34c/Lj+d9nteQfPAKizuHSOoZY0n3KElHRvmha5gFB25g6LxGYuQJDydnUHoHWRTez9LoCRZ2jbAgMcziQyMkHR1nefdl1vZeYeXx2xg25EmYHG784TDB+iYyRL0uVyLbV4U9FCE/UI/aXUdwIEh5QsXlD5FbViHyED8qtTpOgUutE9RiMGVZsVuM5K1ZxYoVy8hMT8NoXEt4yxkSvR+oiU2wp7ODiYOXuHN0mF939xGq2omqNCKVBigsUXQ88xgsOdk4nXYK5UJk2YPskVhtSqNPbeNTyzkeBOJ4e+PEx58SvXqfRGuCePMxwkoEl+jU4wsiCTzz6EKzyUgg4Ke4SEjddlIt6XR5qvmneDtD9mp8p2Ls/eMxHSN3OR3vJNp+BGeoAfk7mS40Z9uwZBqxWMykpCSzceM6zMZMpAMxlIfnKehP4O5T2fFnFw1Du/D6VcrErApFd3J5xdw536kuXJ9hJcvmICfPhtVmJzffSbIQHm7v4dnZBwzu+wVnhY+CJh/nBntQqmuxukpwyn4c89g95bi1Gc4Jc4SwgDyXVyfLJrEmw0xzVYKTkVvEKy9QVFZJdFsrU3+PMT15k5/3tNPWHqUt1qrTEY/h31RDQbFYygZzLpo0NT1bR6uNIkvTvo+niFSXTEVNmPezY7ybGeXTm9/5b+o6r55f5uPsTd6//g0+3KNj13ZsUhmGNJMVTfotmtQulVBUXonLG6BSCKee9fP634vMTg4w/Vc/zx+d5s2LAT17+3KA2I4WbOLp/yvUsnwh1AbuLlHF8IM0/VRPc0sDkZZ6tjRvpjGyWa8jWr61AV9wk37X8L1MF4oOvwilUlXHIQe+4vQqOo4vyAru0rktfwZuFvG/Cp7hMAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;variable screen 12&quot;
+        title=&quot;variable screen 12&quot;
+        src=&quot;/cpx-training/static/4b7b4b99533bdaab74a8c9400eb25aa0/fcda8/e2-12.png&quot;
+        srcset=&quot;/cpx-training/static/4b7b4b99533bdaab74a8c9400eb25aa0/12f09/e2-12.png 148w,
+/cpx-training/static/4b7b4b99533bdaab74a8c9400eb25aa0/e4a3f/e2-12.png 295w,
+/cpx-training/static/4b7b4b99533bdaab74a8c9400eb25aa0/fcda8/e2-12.png 590w,
+/cpx-training/static/4b7b4b99533bdaab74a8c9400eb25aa0/efc66/e2-12.png 885w,
+/cpx-training/static/4b7b4b99533bdaab74a8c9400eb25aa0/c83ae/e2-12.png 1180w,
+/cpx-training/static/4b7b4b99533bdaab74a8c9400eb25aa0/20f89/e2-12.png 1213w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[No title]]></title><description><![CDATA[Placeholder for now]]></description><link>https://morgan-stanley.github.io/cpx-training/README/</link><guid isPermaLink="false">https://morgan-stanley.github.io/cpx-training/README/</guid><content:encoded>&lt;h1&gt;Placeholder for now&lt;/h1&gt;</content:encoded></item><item><title><![CDATA[Adafruit Circuit Playground Express]]></title><description><![CDATA[Adafruit Circuit Playground Express]]></description><link>https://morgan-stanley.github.io/cpx-training/</link><guid isPermaLink="false">https://morgan-stanley.github.io/cpx-training/</guid><pubDate>Fri, 01 May 2020 22:12:03 GMT</pubDate><content:encoded>&lt;blockquote&gt;
 &lt;p&gt;&lt;a href=&quot;https://learn.adafruit.com/adafruit-circuit-playground-express&quot;&gt;Adafruit Circuit Playground Express&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;</content:encoded></item></channel></rss>
