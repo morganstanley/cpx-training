@@ -111,6 +111,10 @@ article.hero .pane section.content span, article h2 span, article h3 span {
     margin: 2rem auto;
 }
 
+img.makecode {
+    width: 100%;
+}
+
 ul.exercise-nav {
     display: flex;
     flex-flow: row wrap;
