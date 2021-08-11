@@ -49,14 +49,6 @@ const MakerspacePage = ({ data, location }) => {
                         <li>Parents with children learning from home ;)</li>
                     </ul>
                 </article>
-                <article className="content">
-                    <h2>Challenges</h2>
-                    <ul>
-                        <li>Computers unavailable to students</li>
-                        <li>Volunteer recruiting</li>
-                        <li></li>
-                    </ul>
-                </article>
             </div >
         </Layout >
     )
