@@ -1,7 +1,7 @@
 ---
 template: exercise
 title: MakeCode | Session 5 | Touch Sensor
-slug: /makecode/session-4
+slug: /makecode/session-5
 level: 1
 exercise: 5
 category: MakeCode
