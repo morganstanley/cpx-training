@@ -1,7 +1,7 @@
 ---
 template: exercise
-title: MakeCode | Session 3
-slug: /makecode/session-2
+title: MakeCode | Session 3 | Loops and Temp
+slug: /makecode/session-3
 level: 1
 exercise: 3
 category: MakeCode

@@ -1,6 +1,6 @@
 ---
 template: exercise
-title: MakeCode | Session 2
+title: MakeCode | Session 2 | Basics and Variables
 slug: /makecode/session-2
 level: 1
 exercise: 2
