@@ -31,11 +31,10 @@ const BlogIndex = ({ data, location }) => {
                     <h2>
                         Intro to programming with Adafruit's Circuit Playground Express and MakeCode
                     </h2>
-                    <img src="../../images/makecode/blink.png" alt="MakeCode Blink" className="makecode" />
+                    <img src="/images/makecode/blink.png" alt="MakeCode Blink" className="makecode" />
                     <h3>
                         <a href="https://makecode.adafruit.com" target="_blank" rel="noreferrer">Go to MakeCode</a>
                     </h3>
-                    <p>If you haven't set up your Circuit Playground Express board to support MakeCode yet, please refer to the <Link to={`/setup`}>setup instructions</Link>.</p>
                     <p>Before jumping in, go ahead and <a href="https://makecode.adafruit.com" target="_blank" rel="noreferrer">Go to MakeCode website</a> and go through the "New? Start here" tutorial.</p>
                 </article>
                 {exercises.map(({ node }) => {

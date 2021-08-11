@@ -33,6 +33,7 @@ const BlogIndex = ({ data, location }) => {
                 </article>
                 <SEO title="All posts" />
                 <article className="content">
+                    <img src="/images/circuitpython/mu.png" alt="Mu Blink" className="makecode" />
                     <h2>
                         Intro to CircuitPython with Adafruit's Circuit Playground Express
                     </h2>
