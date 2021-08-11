@@ -1,7 +1,7 @@
 ---
 template: exercise
 title: Level 1 | Exercise 3 - Buttons
-slug: circuitpython/level-1/exercise-3
+slug: /circuitpython/level-1/exercise-3
 level: 1
 exercise: 3
 category: CircuitPython

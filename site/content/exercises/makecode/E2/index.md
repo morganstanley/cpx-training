@@ -1,7 +1,7 @@
 ---
 template: exercise
-title: MakeCode | Exercise 2
-slug: makecode/exercise-2
+title: MakeCode | Session 2 | Basics and Variables
+slug: /makecode/session-2
 level: 1
 exercise: 2
 category: MakeCode
@@ -31,3 +31,7 @@ Lets try blinking random pixels in the next exercise
 ![variable](session2.gif)
 
 ![variable screen 12](e2-12.png)
+
+![lightOn coding](lightOn.gif)
+
+![lightOn](lightOn.png)

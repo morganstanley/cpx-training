@@ -36,25 +36,35 @@ exports.createPages = async ({ graphql, actions }) => {
   }
 
   // Create exercise pages.
-  const exercises = result.data.allMarkdownRemark.edges.filter(
-    edge => edge.node.frontmatter.template === "exercise"
-  )
-  const exercise = path.resolve(`./src/templates/exercise.js`)
+  function createWorkshopCurriculum(exercises) {
+    const exercise = path.resolve(`./src/templates/exercise.js`)
 
-  exercises.forEach((post, index) => {
-    const previous = index === exercises.length - 1 ? null : exercises[index + 1].node
-    const next = index === 0 ? null : exercises[index - 1].node
+    exercises.forEach((post, index) => {
+      const previous = index === exercises.length - 1 ? null : exercises[index + 1].node
+      const next = index === 0 ? null : exercises[index - 1].node
 
-    createPage({
-      path: post.node.fields.slug,
-      component: exercise,
-      context: {
-        slug: post.node.fields.slug,
-        previous,
-        next,
-      },
+      createPage({
+        path: post.node.fields.slug,
+        component: exercise,
+        context: {
+          slug: post.node.fields.slug,
+          previous,
+          next,
+        },
+      })
     })
-  })
+  }
+
+  const cp = result.data.allMarkdownRemark.edges.filter(
+    edge => edge.node.frontmatter.template === 'exercise' && edge.node.frontmatter.category === 'CircuitPython'
+  )
+
+  const mc = result.data.allMarkdownRemark.edges.filter(
+    edge => edge.node.frontmatter.template === 'exercise' && edge.node.frontmatter.category === 'MakeCode'
+  )
+
+  createWorkshopCurriculum(cp);
+  createWorkshopCurriculum(mc);
 }
 
 exports.onCreateNode = ({ node, actions, getNode }) => {

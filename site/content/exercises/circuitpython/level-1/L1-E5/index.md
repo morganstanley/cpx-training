@@ -1,7 +1,7 @@
 ---
 template: exercise
 title: Level 1 | Exercise 5 - Acceleration
-slug: circuitpython/level-1/exercise-5
+slug: /circuitpython/level-1/exercise-5
 level: 1
 exercise: 5
 category: CircuitPython

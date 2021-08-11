@@ -33,7 +33,7 @@ const BlogIndex = ({ data, location }) => {
                             <h3>
                                 <span>
                                     <Link to={`/exercises`}>
-                                        CPX Training Workshop
+                                        CPX Training Workshops
                                     </Link>
                                 </span>
                             </h3>
