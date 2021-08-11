@@ -1,9 +1,9 @@
 ---
 template: exercise
-title: MakeCode | Session 2
+title: MakeCode | Session 3
 slug: /makecode/session-2
 level: 1
-exercise: 2
+exercise: 3
 category: MakeCode
 tags: ["MakeCode"]
 ---
