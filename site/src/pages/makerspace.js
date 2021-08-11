@@ -52,7 +52,8 @@ const MakerspacePage = ({ data, location }) => {
                 <article className="content">
                     <h2>Challenges</h2>
                     <ul>
-                        <li>Computers unavailable to students.</li>
+                        <li>Computers unavailable to students</li>
+                        <li>Volunteer recruiting</li>
                         <li></li>
                     </ul>
                 </article>

@@ -20,7 +20,7 @@ const BlogIndex = ({ data, location }) => {
                         </header>
                         <section className="content">
                             <span>
-                                Intro to CircuitPython with Adafruit's Circuit Playground Express
+                                Introduction to programming with Adafruit's Circuit Playground Express
                             </span>
                         </section>
                     </div>
@@ -80,7 +80,7 @@ const BlogIndex = ({ data, location }) => {
                         </header>
                         <section className="content">
                             <span>
-                                Learn what it takes to create a Makerspace for your own community starting with the CPX Training workshop.
+                                Learn what it takes to create a Makerspace for your community.
                             </span>
                         </section>
                     </div>

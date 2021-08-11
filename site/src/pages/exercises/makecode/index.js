@@ -10,7 +10,7 @@ import '../../../styles/style.css'
 const BlogIndex = ({ data, location }) => {
     const siteTitle = data.site.siteMetadata.title
     const exercises = data.allMarkdownRemark.edges.filter(
-        edge => edge.node.frontmatter.template === 'exercise' && edge.node.frontmatter.level === 1 && edge.node.frontmatter.category === 'CircuitPython'
+        edge => edge.node.frontmatter.template === 'exercise' && edge.node.frontmatter.level === 1 && edge.node.frontmatter.category === 'MakeCode'
     )
 
     return (
@@ -21,7 +21,7 @@ const BlogIndex = ({ data, location }) => {
                     <div className="pane">
                         <header className="content">
                             <h2>
-                                <span>CPX Training Workshop - CircuitPython - Level 1</span>
+                                <span>Circuit Playground Express with MakeCode</span>
                             </h2>
                         </header>
                     </div>
@@ -29,12 +29,14 @@ const BlogIndex = ({ data, location }) => {
                 <SEO title="All posts" />
                 <article className="content">
                     <h2>
-                        Intro to CircuitPython with Adafruit's Circuit Playground Express
+                        Intro to programming with Adafruit's Circuit Playground Express and MakeCode
                     </h2>
+                    <img src="../../images/makecode/blink.png" alt="MakeCode Blink" className="makecode" />
                     <h3>
-                        <Link to={`/setup`}>Start Here</Link>
+                        <a href="https://makecode.adafruit.com" target="_blank" rel="noreferrer">Go to MakeCode</a>
                     </h3>
-                    <p>If you haven't set up your Circuit Playground Express board to support CircuitPython yet, please refer to the <Link to={`/setup`}>setup instructions</Link>.</p>
+                    <p>If you haven't set up your Circuit Playground Express board to support MakeCode yet, please refer to the <Link to={`/setup`}>setup instructions</Link>.</p>
+                    <p>Before jumping in, go ahead and <a href="https://makecode.adafruit.com" target="_blank" rel="noreferrer">Go to MakeCode website</a> and go through the "New? Start here" tutorial.</p>
                 </article>
                 {exercises.map(({ node }) => {
                     const title = node.frontmatter.title || node.fields.slug
