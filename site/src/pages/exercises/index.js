@@ -36,7 +36,7 @@ const CurriculumPage = ({ data, location }) => {
                     <h3>MakeCode with the Circuit Playground Express</h3>
                     <h4>Grades 5-7</h4>
                     <p>Multi-week course with Circuit Playground Express and MakeCode. Best for beginners of ages 9-15, this graphical block based coding format translates to Javascript for a more comprehensive coding experience.</p>
-                    <p><a href="https://makecode.adafruit.com" target="_blank" rel="noreferrer">Go to MakeCode</a></p>
+                    <p><Link to={`/exercises/makecode/`}>Go to exercises</Link></p>
 
                     <h3>CircuitPython with the Circuit Playground Express</h3>
                     <h4>Grades 6-9</h4>

@@ -28,6 +28,8 @@ Variable store information the time of the day, the light to turn on or off.
 •
 Lets try blinking random pixels in the next exercise
 
+![variable](session2.gif)
+
 ![variable screen 1](e2-1.png)
 ![variable screen 2](e2-2.png)
 ![variable screen 3](e2-3.png)
