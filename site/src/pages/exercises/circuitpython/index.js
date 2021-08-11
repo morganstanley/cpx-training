@@ -22,7 +22,7 @@ const CurriculumPage = ({ data, location }) => {
                 </article>
                 <SEO title="About" />
                 <article className="content">
-                    <img src="/images/circuitpython/mu.png" alt="Mu Blink" className="makecode" />
+                    <img src="../../images/circuitpython/mu.png" alt="Mu Blink" className="makecode" />
                     <h2>Introduction to CircuitPython - Level 1</h2>
                     <p>This is the original single day workshop with Circuit Playground Express and CircuitPython. Includes an overview of the board's sensors and lights through code. Allows students to dig into an aspect of the device they enjoy for an afternoon of exploration. </p>
                     <p><Link to={`/exercises/circuitpython/level-1/`}>Go to exercises</Link></p>
