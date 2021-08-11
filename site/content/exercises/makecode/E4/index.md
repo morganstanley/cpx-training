@@ -8,7 +8,7 @@ category: MakeCode
 tags: ["MakeCode"]
 ---
 
-### Exercise 1 - What are light sensors?
+### What are light sensors?
 
 Where do you see light sensors being used?
 
@@ -38,12 +38,11 @@ Objective: Explore Light Sensor from the above assignment.
 ![e3-13](e4-13.png)
 ![e3-14](e4-14.png)
 
-Try taking CPX in dark places like a closet.
-• Try taking CPX in moderately lighted place like in a room with lights ON.
-• Try taking CPX closer to a lamp where it is bright and see how pixels change colors.
+Try taking CPX:
+ - dark places like a closet.
+ - moderately lighted place like in a room with lights ON.
+ - closer to a lamp where it is bright and see how pixels change colors.
 
-• Modify the light sensor program to run only when Button A is clicked. Hint, use On
-Button block from INPUT Blocks.
-• Make the program run only once per click.
-• Make the lights change color based on the light level WITHOUT using if-else-block
-and color the pixels directly.
+Take it further: Modify the light sensor program to run only when Button A is clicked. Hint, use On Button block from INPUT Blocks.
+- Make the program run only once per click.
+- Make the lights change color based on the light level WITHOUT using if-else-block and color the pixels directly.
