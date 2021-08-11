@@ -1,7 +1,7 @@
 ---
 template: exercise
 title: Level 2 | Exercise 3 - Built-in functions
-slug: circuitpython/level-2/exercise-3
+slug: /circuitpython/level-2/exercise-3
 level: 2
 exercise: 3
 category: CircuitPython

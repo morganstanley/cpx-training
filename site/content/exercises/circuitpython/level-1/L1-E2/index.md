@@ -1,7 +1,7 @@
 ---
 template: exercise
 title: Level 1 | Exercise 2 - Lights
-slug: circuitpython/level-1/exercise-2
+slug: /circuitpython/level-1/exercise-2
 level: 1
 exercise: 2
 category: CircuitPython

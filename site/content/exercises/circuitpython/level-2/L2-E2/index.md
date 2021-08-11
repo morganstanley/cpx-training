@@ -1,7 +1,7 @@
 ---
 template: exercise
 title: Level 2 | Exercise 2 - Expression and Statements
-slug: circuitpython/level-2/exercise-2
+slug: /circuitpython/level-2/exercise-2
 level: 2
 exercise: 2
 category: CircuitPython

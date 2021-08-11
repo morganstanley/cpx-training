@@ -1,7 +1,7 @@
 ---
 template: exercise
 title: Level 1 | Exercise 1 - Blink
-slug: circuitpython/level-1/exercise-1
+slug: /circuitpython/level-1/exercise-1
 level: 1
 exercise: 1
 category: CircuitPython
