@@ -35,8 +35,7 @@ const BlogIndex = ({ data, location }) => {
                     <h3>
                         <a href="https://makecode.adafruit.com" target="_blank" rel="noreferrer">Go to MakeCode</a>
                     </h3>
-                    <p>Before jumping in, <a href="https://makecode.adafruit.com" target="_blank" rel="noreferrer">go to MakeCode website</a> and select the "New? Start here" tutorial as you can see below.</p>
-                    <a href="https://makecode.adafruit.com" target="_blank" rel="noreferrer"><img src="../../images/makecode/new-tutorial.png" alt="MakeCode start here" className="makecode" /></a>
+                    <p>Before jumping in, <a href="https://makecode.adafruit.com" target="_blank" rel="noreferrer">go to MakeCode website</a> and select the "New? Start here" tutorial.</p>
                 </article>
                 {exercises.map(({ node }) => {
                     const title = node.frontmatter.title || node.fields.slug

@@ -53,6 +53,7 @@ article h3, article h2 {
     font-family: var(--more-alternate-font);
     color: var(--tertiary-text);
     background: var(--alternate-text-bg);
+    margin-bottom: 0;
 }
 
 article h3 {
