@@ -50,3 +50,7 @@ article.hero .background-image {
 .makerspace-main article.hero {
     background-image: url('../../static/images/learning.jpg');
 }
+
+.makerspace-main article.hero.case-change {
+    background-image: url('../../static/images/circuitplaygroundexpress.jpg');
+}
