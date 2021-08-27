@@ -65,7 +65,7 @@ const MakerspacePage = ({ data, location }) => {
                         <li>Leave with a Makerspace workshop blueprint for youth in your community.</li>
                     </ul>
                     <h3>Audience</h3>
-                    <p>This workshop caters to software and hardware enthusiasts. It is especially useful to thos who are excited about leveraging devices to teach coding and electronics to young programmers!</p>
+                    <p>This workshop caters to software and hardware enthusiasts. It is especially useful to those who are excited about leveraging devices to teach coding and electronics to young programmers!</p>
                     <ul>
                         <li>College Students</li>
                         <li>Educators</li>
@@ -75,6 +75,8 @@ const MakerspacePage = ({ data, location }) => {
                         <li>Hobbyists</li>
                         <li>Parents with children learning from home</li>
                     </ul>
+                    <a href="../images/makerspace/timeline.png" target="_blank" rel="noreferrer"><img src="../images/makerspace/timeline.png" alt="Sample Timeline" className="makecode" /></a>
+                    <a href="../images/makerspace/budget.png" target="_blank" rel="noreferrer"><img src="../images/makerspace/budget.png" alt="Sample Budget" className="makecode" /></a>
                 </article>
             </div >
         </Layout >

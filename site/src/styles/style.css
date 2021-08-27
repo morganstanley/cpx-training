@@ -140,7 +140,8 @@ article.hero .pane section.content span, article h2 span, article h3 span {
 }
 
 img.makecode {
-    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 ul.exercise-nav {

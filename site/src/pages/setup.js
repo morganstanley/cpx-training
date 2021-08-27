@@ -47,7 +47,7 @@ const SetupPage = ({ data, location }) => {
                             <li>Your Circuit Playgroud Express</li>
                             <li>
                                 <p>
-                                    MU Editor <a href="https://codewith.mu/">Download Here</a>
+                                    MU Editor <a href="https://codewith.mu/" target="_blank" rel="noreferrer">Download Here</a>
                                 </p>
                             </li>
                         </ol>
@@ -56,9 +56,9 @@ const SetupPage = ({ data, location }) => {
                         <ol>
                             <li>After downloading the MU Editor (link above), install it.</li>
                             <li>You will need to install CircuitPython on to your CPX board (extra detail <s />
-                                <a href="https://learn.adafruit.com/welcome-to-circuitpython/installing-circuitpython">here</a>).
+                                <a href="https://learn.adafruit.com/welcome-to-circuitpython/installing-circuitpython" target="_blank" rel="noreferrer">here</a>).
                                 <ul>
-                                    <li>Go to the CircuitPython site <a href="https://circuitpython.org/board/circuitplayground_express/">here</a> <s />
+                                    <li>Go to the CircuitPython site <a href="https://circuitpython.org/board/circuitplayground_express/" target="_blank" rel="noreferrer">here</a> <s />
                                         and follow the download steps for the latest stable release.
                                     </li>
                                     <li>Connect your Circuit Playgroud Express to your computer via USB and press the reset button.</li>
