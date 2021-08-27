@@ -36,30 +36,27 @@ const MakerspacePage = ({ data, location }) => {
                     <p>Students from underprivileged backgrounds are 8 to 10 times more likely to pursue college degrees in computer science if they have taken AP computer science in high school. We can project that these odds will only increase if studentds are given even earlier exposure to software and hardware technologies.</p>
                     <p>Through this Maker workshop, technologists who are passionate about bridging this gap will develop a blueprint that can be leveraged to facilitate tech exploration workshops for underserved youth in their communities. Marrying knowledge of Python programming and Adafruit Circuit Playground Express devices, their students will be empowered to become makers of technology.</p>
                 </article>
-                <article className="hero case-change">
-                    <div className="pane">
-                        <img src="images/desk.jpg" className="background-image" alt="Presenters" />
-                        <div className="talking-points">
-                            <header className="content">
-                                <h3>
-                                    <span>
-                                        The Case for Change
-                                    </span>
-                                </h3>
-                            </header>
-                            <div className="content">
-                                <div className="grid">
-                                    <section className="column">
-                                        <h3>1.4m</h3>
-                                        <p className="highlights">Number of computer-science-related jobs available in 2021</p>
-                                        <h3>400,000</h3>
-                                        <p className="highlights">Number of graduates with the skills to apply for those jobs</p>
-                                    </section>
-                                    <section className="column">
-                                        <h3>8-10x</h3>
-                                        <p className="highlights">Increase Likelihood that students from underserved backgrounds will pursue degrees in computer science if they have taken computer science in high school</p>
-                                    </section>
-                                </div>
+                <article className="content">
+                    <div className="talking-points">
+                        <header className="content">
+                            <h3>
+                                <span>
+                                    The Case for Change
+                                </span>
+                            </h3>
+                        </header>
+                        <div className="content">
+                            <div className="grid">
+                                <section className="column">
+                                    <h3>1.4m</h3>
+                                    <p className="highlights">Number of computer-science-related jobs available in 2021</p>
+                                    <h3>400,000</h3>
+                                    <p className="highlights">Number of graduates with the skills to apply for those jobs</p>
+                                </section>
+                                <section className="column">
+                                    <h3>8-10x</h3>
+                                    <p className="highlights">Increase Likelihood that students from underserved backgrounds will pursue degrees in computer science if they have taken computer science in high school</p>
+                                </section>
                             </div>
                         </div>
                     </div>

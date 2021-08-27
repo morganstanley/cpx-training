@@ -48,12 +48,15 @@
 
 /* Pages */
 
+header.content {
+    margin-bottom: 0.25rem;
+}
+
 article h3, article h2 {
     display: inline-block;
     font-family: var(--more-alternate-font);
     color: var(--tertiary-text);
     background: var(--alternate-text-bg);
-    margin-bottom: 0;
 }
 
 article h3 {
@@ -94,7 +97,6 @@ article.hero .talking-points {
     width: 100%;
 }
 
-
 article.hero .talking-points .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -104,7 +106,6 @@ article.hero .talking-points .grid {
 article.hero .talking-points .column {
     padding: 1rem;
 }
-
 
 article.hero .talking-points .column h3 {
     color: #5041ad;
@@ -129,8 +130,7 @@ article.hero h2, article.hero h3 {
     background: none;
 }
 
-article.hero .pane section.content span,
-article h2 span, article h3 span {
+article.hero .pane section.content span, article h2 span, article h3 span {
     background: var(--dark-bg);
     font-family: var(--alternate-font);
 }
