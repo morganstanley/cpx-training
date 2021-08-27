@@ -90,33 +90,28 @@ article.hero .pane {
     padding: 30vh 0;
 }
 
-article.hero .talking-points {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+article .talking-points {
+    background-color: #676767;
 }
 
-article.hero .talking-points .grid {
+article.content .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
 }
 
-article.hero .talking-points .column {
+article.content .column {
     padding: 1rem;
 }
 
-article.hero .talking-points .column h3 {
+article .column h3 {
     color: #5041ad;
-    background: var(--dark-bg);
 }
 
-article.hero .pane section .highlights {
-    background: var(--dark-bg);
+article .highlights {
     font-family: var(--alternate-font);
     font-size: 1.5rem;
-    color: var(--tertiary-text);
+    color: var(--primary-text);
 }
 
 article.hero .pane section.content span {
