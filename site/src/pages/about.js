@@ -23,9 +23,10 @@ const AboutPage = ({ data, location }) => {
                 <SEO title="About" />
                 <article className="content">
                     <h2>What is Morgan Stanley Makerspace</h2>
-                    <p>An employee designed and run program bringing STEM-based interactive workshops to children and teens who wouldn't otherwise have the opportunity to learn about coding and robotics.</p>
+                    <p>An employee designed and run program bringing one-off STEM-based interactive workshops to children and teens.</p>
                     <p>Our most common workshop marries Python programming and hardware with the Adafruit Circuit Playground Express (CPX), a beginner friendly microcontroller that provides fast feedback necessary for new programmers.</p>
-                    <p>Since the program's launch in 2018, 400+ children and teens have participated in 30 different workshops; 50% of participants resided in a NYC shelter at the time of participation.</p>
+                    <p>We launched our Morgan Stanley Makerspace program with the hope that it would – in the long-term – drive greater digital literacy amongst the young people we’d engage. For as long as the digital industry has thrived in the United States, there has been a gap between those who have access to technology and those who do not. This digital divide is not just access to reliable and affordable internet service, but equitable access to fundamental technology education required to ensure digital literacy and economic opportunity in our ever evolving and increasingly virtual world.</p>
+                    <p>Since the program's launch in 2018, 500+ children and teens have participated dozens of different workshops; 50% of participants resided in a NYC shelter at the time of participation.</p>
                     <h3>Mission</h3>
                     <blockquote>
                         <p>Our DNA, our culture and our history are rooted in serving our clients.</p>
@@ -74,6 +75,31 @@ const AboutPage = ({ data, location }) => {
                         <cite>Kait Szydlowski</cite>
                     </blockquote>
                 </article>
+
+                <SEO title="STEM Extension" />
+                <article className="content">
+                    <h2>What is Morgan Stanley STEM Extension?</h2>
+                    <p>Morgan Stanley's STEM Extension program takes our Makerspace workshops to the next-level, providing week-on-week sustained engagement with cohorts of students across New York, New Jersey, and Maryland.</p>
+                    <p>The new initiative leverages physical computing through the Raspberry Pi 400 computer and the Adafruit Feather Wing controllers, in addition to the Adafruit Circuit Playground Express, to teach the fundamentals of computer science education. The end goal? Connect students with limited access to computer science education, helping them move beyond being a consumer of technology into a self-sufficient digital citizen.</p>
+                </article>
+
+                <SEO title="Adafruit Circuit Playground Express" />
+                <article className="content">
+                    <h2>Why Adafruit Circuit Playground Express?</h2>
+                    <p>Adafruit Industries, the manufacturer of CPX was founded by MIT engineering pioneer. Limor "Lady Ada" Fried. We are proud to support Adafruit Industries as a 100% women-owned top ranked manufacturing company in the US. When establishing the company, Limor's goal was to create the best place online for learning electronics and making the best designed products for makers of all ages and skill-levels. </p>
+                    <p>The Adafruit CPX is just that - an all-in-one circuit design board packed full of features such as a processor, sensors, mini-speakers, LED lights, and a USB port for streamlined software integration and a fast feedback loop. The circuit is also multi-device compatible which means it runs successfully across almost any of your favorite operating systems including Windows, Mac, Chromebook and Linux.</p>
+                    <p>Once your CPX device is connected to a computer, you can begin programming interactive projects in a matter of minutes.</p>
+                    <p>The CPX also supports user choice in the programming environment and language they wish to code. Students can implement programs using Python, Microsoft Make Code, C/C++ and JavaScript.</p>
+                </article>
+
+                <SEO title="Why Raspberry Pi?" />
+                <article className="content">
+                    <h2>Why Raspberry Pi?</h2>
+                    <p>The Raspberry Pi foundation is a UK-based charity that works to put the power of computing and digital making into the hands of people all over the world. The nonprofit was born from a desire to enough more hands-on computer education to students and teachers alike.</p>
+                    <p>Through their innovative Raspberry Pi devices, a single-board computer, students can engage deeply with computer science education at a low cost. Unlike a traditional computer, which hides its inner working, a standard Raspberry Pi has all it's components, ports, and features out on display. </p>
+                    <p>The Raspberry Pi also encourages students to think creatively about tasks in a complex, non-linear way.</p>
+                </article>
+
             </div >
         </Layout >
     )
