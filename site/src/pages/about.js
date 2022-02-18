@@ -25,7 +25,7 @@ const AboutPage = ({ data, location }) => {
                     <h2>What is Morgan Stanley Makerspace</h2>
                     <p>An employee designed and run program bringing one-off STEM-based interactive workshops to children and teens.</p>
                     <p>Our most common workshop marries Python programming and hardware with the Adafruit Circuit Playground Express (CPX), a beginner friendly microcontroller that provides fast feedback necessary for new programmers.</p>
-                    <p>We launched our Morgan Stanley Makerspace program with the hope that it would – in the long-term – drive greater digital literacy amongst the young people we’d engage. For as long as the digital industry has thrived in the United States, there has been a gap between those who have access to technology and those who do not. This digital divide is not just access to reliable and affordable internet service, but equitable access to fundamental technology education required to ensure digital literacy and economic opportunity in our ever evolving and increasingly virtual world.</p>
+                    <p>We launched our Morgan Stanley Makerspace program with the hope that it would - in the long-term - drive greater digital literacy amongst the young people we'd engage. For as long as the digital industry has thrived in the United States, there has been a gap between those who have access to technology and those who do not. This digital divide is not just access to reliable and affordable internet service, but equitable access to fundamental technology education required to ensure digital literacy and economic opportunity in our ever evolving and increasingly virtual world.</p>
                     <p>Since the program's launch in 2018, 500+ children and teens have participated dozens of different workshops; 50% of participants resided in a NYC shelter at the time of participation.</p>
                     <h3>Mission</h3>
                     <blockquote>
@@ -42,15 +42,17 @@ const AboutPage = ({ data, location }) => {
                     <br />
                     <h3>Testimonials</h3>
                     <blockquote>
-                        <p>Growing up, I was lucky to learn how to have fun with technology, and not just by consuming.
-                            Not everyone gets the opportunity to 'unveil the magic' behind technology when they're young,
-                            but for many the curiosity exists. MS Makerspaces allow technologists to share this discovery
-                            with children who might otherwise not have the opportunity. As a volunteer I get to see the
-                            sparkle in kids' eyes as they begin their journey as future technologists. My goal is to
-                            contribute to MS Makerspaces growth to reach more communities and children. The gift of education
-                            really makes a difference and the feeling is extremely rewarding.
+                        <p>
+                            "Children are natural consumers of digital information. However, to engage them at a deeper level of
+                            understanding of Computer science, so that they can evaluate, produce, and critique new technology,
+                            we needed to get creative. We needed to introduce electronics and programming in a highly tangible
+                            way early in the education. This led us to the combination of two of the best of breed technologies:
+                            Adafruit's Microcontrollers and Raspberry Pi's laptop-computer. Specifically, Raspberry Pi 400 and
+                            Adafruit CPX (often used by employees to teach their own children to code) - to transform these young
+                            consumers of technology into self-sufficient, digital citizens, who recognize they can be creators of
+                            technology."
                         </p>
-                        <cite>Augusto Ramirez</cite>
+                        <cite>Kumar Vadaparty</cite>
                     </blockquote>
                     <blockquote>
                         <p>
@@ -83,6 +85,7 @@ const AboutPage = ({ data, location }) => {
                     <p>The new initiative leverages physical computing through the Raspberry Pi 400 computer and the Adafruit Feather Wing controllers, in addition to the Adafruit Circuit Playground Express, to teach the fundamentals of computer science education. The end goal? Connect students with limited access to computer science education, helping them move beyond being a consumer of technology into a self-sufficient digital citizen.</p>
                 </article>
 
+
                 <SEO title="Adafruit Circuit Playground Express" />
                 <article className="content">
                     <h2>Why Adafruit Circuit Playground Express?</h2>
@@ -90,6 +93,14 @@ const AboutPage = ({ data, location }) => {
                     <p>The Adafruit CPX is just that - an all-in-one circuit design board packed full of features such as a processor, sensors, mini-speakers, LED lights, and a USB port for streamlined software integration and a fast feedback loop. The circuit is also multi-device compatible which means it runs successfully across almost any of your favorite operating systems including Windows, Mac, Chromebook and Linux.</p>
                     <p>Once your CPX device is connected to a computer, you can begin programming interactive projects in a matter of minutes.</p>
                     <p>The CPX also supports user choice in the programming environment and language they wish to code. Students can implement programs using Python, Microsoft Make Code, C/C++ and JavaScript.</p>
+                    <ul>
+                        <li>Kumar Vadaparty - Distinguished Engineer - Executive Director, Wealth Management Technology Division (Co-Founder) </li>
+                        <li>Kait Szydlowski - Vice President, Tech for Good (Co-Founder) </li>
+                        <li>Dinesh Doshi - Vice President, Wealth Management Technology Division (Lead Anchor, and Curriculum Mgmt.) </li>
+                        <li>Titash Mandal - Wealth Management Technology Division (Lead Anchor and Curriculum Mgmt.)  </li>
+                        <li>Marsha Nichols - Manager, Tech for Good </li>
+                    </ul>
+
                 </article>
 
                 <SEO title="Why Raspberry Pi?" />
@@ -98,6 +109,58 @@ const AboutPage = ({ data, location }) => {
                     <p>The Raspberry Pi foundation is a UK-based charity that works to put the power of computing and digital making into the hands of people all over the world. The nonprofit was born from a desire to enough more hands-on computer education to students and teachers alike.</p>
                     <p>Through their innovative Raspberry Pi devices, a single-board computer, students can engage deeply with computer science education at a low cost. Unlike a traditional computer, which hides its inner working, a standard Raspberry Pi has all it's components, ports, and features out on display. </p>
                     <p>The Raspberry Pi also encourages students to think creatively about tasks in a complex, non-linear way.</p>
+                </article>
+
+                <SEO title="Physical Computing" />
+                <article className="content">
+                    <h2>Levels of Physical Computing</h2>
+                 
+                    <table>
+                        <tr>
+                            <th>Difficulty</th>
+                            <th>Flavor of Computer</th>
+                            <th>Flavor of Adafruit µC</th>
+                            <th>Type of Language</th>
+                        </tr>
+                        <tr>
+                            <td>Level 1 - Intro to Physical Computing</td>
+                            <td></td>
+                            <td>Adafruit CPX</td>
+                            <td>MakeCode</td>
+                        </tr>
+                        <tr>
+                            <td>Level 2 - Intro to Physical Computing</td>
+                            <td>RPI 400 Kit + Monitor Or Windows/Mac</td>
+                            <td></td>
+                            <td>CircuitPython</td>
+                        </tr>
+                        <tr>
+                            <td>Level 3 - Robotics, Bluetooth, WIFI, etc</td>
+                            <td>RPI 400 Kit + Monitor Or Windows/Mac</td>
+                            <td>Adafruit Feather</td>
+                            <td>CircuityPython</td>
+                        </tr>
+                        <tr>
+                            <td>Level 4A - Advanced Physical Computing</td>
+                            <td>RPI 400 Kit + Monitor</td>
+                            <td>CYBERDECK Bonnet for Raspberry Pi 400 + Various I2C Sensors</td>
+                            <td>CircuityPython</td>
+                        </tr>
+                        <tr>
+                            <td>Level 4B - Embedded Computing</td>
+                            <td>RPI 4GB or RPI</td>
+                            <td>Various Adafruit's and other Accessories for RPI or Pi Zero W</td>
+                            <td>Prefer CircuityPython</td>
+                        </tr>
+                        <tr>
+                            <td>Level 5 - Edge Computing (Machine Learning)</td>
+                            <td>Raspberry Pi 8GB</td>
+                            <td>Adafruit Braincraft</td>
+                            <td>CircuityPython</td>
+                        </tr>
+                    </table>
+
+
                 </article>
 
             </div >
