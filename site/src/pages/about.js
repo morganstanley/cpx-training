@@ -93,13 +93,6 @@ const AboutPage = ({ data, location }) => {
                     <p>The Adafruit CPX is just that - an all-in-one circuit design board packed full of features such as a processor, sensors, mini-speakers, LED lights, and a USB port for streamlined software integration and a fast feedback loop. The circuit is also multi-device compatible which means it runs successfully across almost any of your favorite operating systems including Windows, Mac, Chromebook and Linux.</p>
                     <p>Once your CPX device is connected to a computer, you can begin programming interactive projects in a matter of minutes.</p>
                     <p>The CPX also supports user choice in the programming environment and language they wish to code. Students can implement programs using Python, Microsoft Make Code, C/C++ and JavaScript.</p>
-                    <ul>
-                        <li>Kumar Vadaparty - Distinguished Engineer - Executive Director, Wealth Management Technology Division (Co-Founder) </li>
-                        <li>Kait Szydlowski - Vice President, Tech for Good (Co-Founder) </li>
-                        <li>Dinesh Doshi - Vice President, Wealth Management Technology Division (Lead Anchor, and Curriculum Mgmt.) </li>
-                        <li>Titash Mandal - Wealth Management Technology Division (Lead Anchor and Curriculum Mgmt.)  </li>
-                        <li>Marsha Nichols - Manager, Tech for Good </li>
-                    </ul>
 
                 </article>
 
@@ -160,7 +153,18 @@ const AboutPage = ({ data, location }) => {
                         </tr>
                     </table>
 
+                </article>
 
+                
+                <SEO title="Morgan Stanley's Makerspace / STEM Extension Team" />
+                <article className="content">
+                <ul>
+                        <li>Kumar Vadaparty - Distinguished Engineer - Executive Director, Wealth Management Technology Division (Co-Founder) </li>
+                        <li>Kait Szydlowski - Vice President, Tech for Good (Co-Founder) </li>
+                        <li>Dinesh Doshi - Vice President, Wealth Management Technology Division (Lead Anchor, and Curriculum Mgmt.) </li>
+                        <li>Titash Mandal - Wealth Management Technology Division (Lead Anchor and Curriculum Mgmt.)  </li>
+                        <li>Marsha Nichols - Manager, Tech for Good </li>
+                    </ul>
                 </article>
 
             </div >
