@@ -158,6 +158,7 @@ const AboutPage = ({ data, location }) => {
                 
                 <SEO title="Morgan Stanley's Makerspace / STEM Extension Team" />
                 <article className="content">
+                <h2>Morgan Stanley's Makerspace / STEM Extension Team</h2>
                 <ul>
                         <li>Kumar Vadaparty - Distinguished Engineer - Executive Director, Wealth Management Technology Division (Co-Founder) </li>
                         <li>Kait Szydlowski - Vice President, Tech for Good (Co-Founder) </li>
