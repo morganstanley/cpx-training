@@ -1,5 +1,7 @@
 # Makerspace Circuit Playground Express Training Workshops
 
+![Lifecycle Active](https://badgen.net/badge/Lifecycle/Active/green)  
+
 This repository houses the materials that support the Morgan Stanley Makerspace [Circuit Playground Express](https://www.adafruit.com/product/3333) Workshops.
 
 [Learn more here](https://morgan-stanley.github.io/cpx-training/)
