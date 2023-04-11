@@ -39,5 +39,8 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
     "pub": "rm -rf ../docs && mv public ../docs",
     "pubWindows": "rd /S \"../docs\" && move public \"../docs\""
+  },
+  "devDependencies": {
+    "prettier": "^2.8.7"
   }
 }
