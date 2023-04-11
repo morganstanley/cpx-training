@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `CPX Training`,
     description: `Introduction to CircuitPython with CircuitPlayground Express`,
-    siteUrl: 'https://morgan-stanley.github.io/cpx-training/'
+    siteUrl: 'https://morgan-stanley.github.io/cpx-training/',
   },
   pathPrefix: `/cpx-training`,
   plugins: [
@@ -38,8 +38,8 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/setup`,
-        name: `setup`
-      }
+        name: `setup`,
+      },
     },
     {
       resolve: `gatsby-transformer-remark`,
@@ -69,24 +69,6 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/data/`,
-      },
-    },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
-      },
-    },
-    `gatsby-plugin-feed`,
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `22Boxes Gatsby Uno`,
-        short_name: `22Boxes.com`,
-        start_url: `/`,
-        background_color: `#ffffff`,
-        theme_color: `#663399`,
-        display: `minimal-ui`
       },
     },
     `gatsby-plugin-react-helmet`,
