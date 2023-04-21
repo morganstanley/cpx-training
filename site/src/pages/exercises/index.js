@@ -2,7 +2,7 @@ import React from 'react'
 import { graphql, Link } from 'gatsby'
 
 import Layout from '../../components/layout'
-import SEO from '../../components/seo'
+import Seo from '../../components/seo'
 
 const CurriculumPage = ({ data, location }) => {
     const siteTitle = data.site.siteMetadata.title
@@ -27,7 +27,7 @@ const CurriculumPage = ({ data, location }) => {
                         </section>
                     </div>
                 </article>
-                <SEO title="About" />
+                <Seo title="About" />
                 <article className="content">
                     <h2>Single Day Programs</h2>
                     <div>

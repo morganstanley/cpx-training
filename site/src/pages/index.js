@@ -2,7 +2,7 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 
 import Layout from '../components/layout'
-import SEO from '../components/seo'
+import Seo from '../components/seo'
 
 const BlogIndex = ({ data, location }) => {
     const siteTitle = data.site.siteMetadata.title
@@ -25,7 +25,7 @@ const BlogIndex = ({ data, location }) => {
                         </section>
                     </div>
                 </article>
-                <SEO title="Workshops" />
+                <Seo title="Workshops" />
                 <article className="hero hero-exercises">
                     <img src="images/student-computer.jpg" className="background-image" alt="Student with CPX Board" />
                     <div className="pane">

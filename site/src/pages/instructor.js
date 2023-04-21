@@ -2,7 +2,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 
 import Layout from '../components/layout'
-import SEO from '../components/seo'
+import Seo from '../components/seo'
 
 const InstructorPage = ({ data, location }) => {
     const siteTitle = data.site.siteMetadata.title
@@ -20,7 +20,7 @@ const InstructorPage = ({ data, location }) => {
                         </header>
                     </div>
                 </article>
-                <SEO title="About" />
+                <Seo title="About" />
                 <article className="content">
                     <h2>Mission &amp; Philosophy</h2>
                     <p>Train the trainer sessions are a starting point for volunteers of all backgrounds

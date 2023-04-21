@@ -2,7 +2,7 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 
 import Layout from '../../../components/layout'
-import SEO from '../../../components/seo'
+import Seo from '../../../components/seo'
 
 import '../../../styles/global.css'
 import '../../../styles/style.css'
@@ -26,7 +26,7 @@ const BlogIndex = ({ data, location }) => {
                         </header>
                     </div>
                 </article>
-                <SEO title="All posts" />
+                <Seo title="All posts" />
                 <article className="content">
                     <h2>
                         Intro to programming with Adafruit's Circuit Playground Express and MakeCode

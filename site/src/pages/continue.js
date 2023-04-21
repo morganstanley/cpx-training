@@ -2,14 +2,14 @@ import React from 'react'
 import { graphql } from 'gatsby'
 
 import Layout from '../components/layout'
-import SEO from '../components/seo'
+import Seo from '../components/seo'
 
 const ContinuePage = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="Continue" />
+      <Seo title="Continue" />
       <div className="continue-main">
         <article className="hero">
           <img src="images/happy.jpg" className="background-image" alt="Student with CPX Board" />
