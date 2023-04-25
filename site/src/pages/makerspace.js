@@ -2,7 +2,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 
 import Layout from '../components/layout'
-import SEO from '../components/seo'
+import Seo from '../components/seo'
 
 const MakerspacePage = ({ data, location }) => {
     const siteTitle = data.site.siteMetadata.title
@@ -25,7 +25,7 @@ const MakerspacePage = ({ data, location }) => {
                         </section>
                     </div>
                 </article>
-                <SEO title="Make a Makerspace" />
+                <Seo title="Make a Makerspace" />
                 <article className="content">
                     <h2>Motivation</h2>
                     <div className="grid">

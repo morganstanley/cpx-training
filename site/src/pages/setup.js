@@ -2,7 +2,7 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 
 import Layout from '../components/layout'
-import SEO from '../components/seo'
+import Seo from '../components/seo'
 
 const SetupPage = ({ data, location }) => {
     const siteTitle = data.site.siteMetadata.title
@@ -20,7 +20,7 @@ const SetupPage = ({ data, location }) => {
                         </header>
                     </div>
                 </article>
-                <SEO title="Setup" />
+                <Seo title="Setup" />
                 <div className="content">
                     <article>
                         <header>

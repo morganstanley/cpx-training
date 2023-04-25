@@ -2,7 +2,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 
 import Layout from '../components/layout'
-import SEO from '../components/seo'
+import Seo from '../components/seo'
 
 const AboutPage = ({ data, location }) => {
     const siteTitle = data.site.siteMetadata.title
@@ -20,7 +20,7 @@ const AboutPage = ({ data, location }) => {
                         </header>
                     </div>
                 </article>
-                <SEO title="About" />
+                <Seo title="About" />
                 <article className="content">
                     <h2>What is Morgan Stanley Makerspace</h2>
                     <p>An employee designed and run program bringing one-off STEM-based interactive workshops to children and teens.</p>
@@ -78,7 +78,7 @@ const AboutPage = ({ data, location }) => {
                     </blockquote>
                 </article>
 
-                <SEO title="STEM Extension" />
+                <Seo title="STEM Extension" />
                 <article className="content">
                     <h2>What is Morgan Stanley STEM Extension?</h2>
                     <p>Morgan Stanley's STEM Extension program takes our Makerspace workshops to the next-level, providing week-on-week sustained engagement with cohorts of students across New York, New Jersey, and Maryland.</p>
@@ -86,7 +86,7 @@ const AboutPage = ({ data, location }) => {
                 </article>
 
 
-                <SEO title="Adafruit Circuit Playground Express" />
+                <Seo title="Adafruit Circuit Playground Express" />
                 <article className="content">
                     <h2>Why Adafruit Circuit Playground Express?</h2>
                     <p>Adafruit Industries, the manufacturer of CPX was founded by MIT engineering pioneer. Limor "Lady Ada" Fried. We are proud to support Adafruit Industries as a 100% women-owned top ranked manufacturing company in the US. When establishing the company, Limor's goal was to create the best place online for learning electronics and making the best designed products for makers of all ages and skill-levels. </p>
@@ -96,7 +96,7 @@ const AboutPage = ({ data, location }) => {
 
                 </article>
 
-                <SEO title="Why Raspberry Pi?" />
+                <Seo title="Why Raspberry Pi?" />
                 <article className="content">
                     <h2>Why Raspberry Pi?</h2>
                     <p>The Raspberry Pi foundation is a UK-based charity that works to put the power of computing and digital making into the hands of people all over the world. The nonprofit was born from a desire to enough more hands-on computer education to students and teachers alike.</p>
@@ -104,10 +104,10 @@ const AboutPage = ({ data, location }) => {
                     <p>The Raspberry Pi also encourages students to think creatively about tasks in a complex, non-linear way.</p>
                 </article>
 
-                <SEO title="Physical Computing" />
+                <Seo title="Physical Computing" />
                 <article className="content">
                     <h2>Levels of Physical Computing</h2>
-                 
+
                     <table>
                         <tr>
                             <th>Difficulty</th>
@@ -155,11 +155,11 @@ const AboutPage = ({ data, location }) => {
 
                 </article>
 
-                
-                <SEO title="Morgan Stanley's Makerspace / STEM Extension Team" />
+
+                <Seo title="Morgan Stanley's Makerspace / STEM Extension Team" />
                 <article className="content">
-                <h2>Morgan Stanley's Makerspace / STEM Extension Team</h2>
-                <ul>
+                    <h2>Morgan Stanley's Makerspace / STEM Extension Team</h2>
+                    <ul>
                         <li>Kumar Vadaparty - Distinguished Engineer - Executive Director, Wealth Management Technology Division (Co-Founder) </li>
                         <li>Kait Szydlowski - Vice President, Tech for Good (Co-Founder) </li>
                         <li>Dinesh Doshi - Vice President, Wealth Management Technology Division (Lead Anchor, and Curriculum Mgmt.) </li>

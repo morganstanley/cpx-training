@@ -2,6 +2,10 @@
   "name": "makerspace-cpx-intro",
   "description": "Learn the basics of CPX",
   "version": "0.1.0",
+  "engines": {
+    "node": "^18.14.0",
+    "npm": "^9.3.1"
+  },
   "dependencies": {
     "dracula-prism": "^2.1.13",
     "gatsby": "^5.8.1",
