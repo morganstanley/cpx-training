@@ -250,7 +250,7 @@ const AboutPage = ({ data, location }) => {
         <Seo title="Morgan Stanley's Makerspace / STEM Extension Team" />
         <article className="content">
           <h2>Morgan Stanley's Makerspace / STEM Extension Team</h2>
-          <ul>
+          <ul className="credits">
             <li>
               Madeline Hutchinson - Executive Director, Head of Global Tech
               Philanthropy
