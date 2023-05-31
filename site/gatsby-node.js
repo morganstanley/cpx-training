@@ -8,7 +8,10 @@ exports.createPages = async ({ graphql, actions }) => {
     `
       {
         allMarkdownRemark(
-          sort: { order: [DESC, DESC], fields: [frontmatter___level, frontmatter___exercise] }
+          sort: [
+            { frontmatter: { level: ASC } }
+            { frontmatter: { exercise: ASC } }
+          ]
           limit: 1000
         ) {
           edges {
@@ -40,7 +43,8 @@ exports.createPages = async ({ graphql, actions }) => {
     const exercise = path.resolve(`./src/templates/exercise.js`)
 
     exercises.forEach((post, index) => {
-      const previous = index === exercises.length - 1 ? null : exercises[index + 1].node
+      const previous =
+        index === exercises.length - 1 ? null : exercises[index + 1].node
       const next = index === 0 ? null : exercises[index - 1].node
 
       createPage({
@@ -56,15 +60,19 @@ exports.createPages = async ({ graphql, actions }) => {
   }
 
   const cp = result.data.allMarkdownRemark.edges.filter(
-    edge => edge.node.frontmatter.template === 'exercise' && edge.node.frontmatter.category === 'CircuitPython'
+    (edge) =>
+      edge.node.frontmatter.template === 'exercise' &&
+      edge.node.frontmatter.category === 'CircuitPython'
   )
 
   const mc = result.data.allMarkdownRemark.edges.filter(
-    edge => edge.node.frontmatter.template === 'exercise' && edge.node.frontmatter.category === 'MakeCode'
+    (edge) =>
+      edge.node.frontmatter.template === 'exercise' &&
+      edge.node.frontmatter.category === 'MakeCode'
   )
 
-  createWorkshopCurriculum(cp);
-  createWorkshopCurriculum(mc);
+  createWorkshopCurriculum(cp)
+  createWorkshopCurriculum(mc)
 }
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
