@@ -1,53 +1,57 @@
 :root {
-    --main-bg: #FFF;
-    --secondary-bg: #EFEFEF;
-    --tertiary-bg: #3CAA3C;
-    --dark-bg: #080a21;
-    --main-text: #000;
-    --secondary-text: #207cff;
-    --tertiary-text: #ff5f87;
-    --alternate-text-bg: #FFF;
-    --alternate-font: 'Courier New', Courier, monospace;
-    --more-alternate-font: VT323, Terminal, "Courier New", Courier, monospace;
+  --main-bg: #fff;
+  --secondary-bg: #efefef;
+  --tertiary-bg: #3caa3c;
+  --dark-bg: #080a21;
+  --main-text: #000;
+  --secondary-text: #207cff;
+  --tertiary-text: #ff5f87;
+  --alternate-text-bg: #fff;
+  --alternate-font: 'Courier New', Courier, monospace;
+  --more-alternate-font: VT323, Terminal, 'Courier New', Courier, monospace;
 }
 
 body {
-    background-color: var(--main-bg);
-    color: var(--main-text);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 0;
-    padding: 0;
+  background-color: var(--main-bg);
+  color: var(--main-text);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.75em;
 }
 
 a {
-    color: var(--secondary-text);
-    text-decoration: none;
+  color: var(--secondary-text);
+  text-decoration: none;
 }
 
 a:visted {
-    color: #5041ad;
+  color: #5041ad;
 }
 
 h2 {
-    font-size: 3rem;
+  font-size: 3rem;
+  line-height: 3rem;
 }
 
 h3 {
-    font-size: 2rem;
-    margin-bottom: 0;
+  font-size: 2rem;
+  line-height: 2rem;
+  margin-bottom: 0;
 }
 
 blockquote {
-    border-left: 5px solid var(--tertiary-bg);
-    padding-left: 1.5rem;
-    margin-bottom: 2rem;
+  border-left: 5px solid var(--tertiary-bg);
+  padding-left: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 ul li {
-    padding: 0;
-    list-style-type: disc;
+  padding: 0;
+  margin: 0.5rem 0;
+  list-style-type: disc;
 }
 
 footer {
-    height: 15rem;
+  height: 15rem;
 }
