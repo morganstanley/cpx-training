@@ -9,7 +9,7 @@ const ContinuePage = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <Seo title="Continue" />
+      <Seo title="Continue Learning" />
       <div className="continue-main">
         <article className="hero">
           <img

@@ -1,56 +1,56 @@
 article.hero {
-    background-size: cover;
-    background-repeat: no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 article.hero .background-image {
-    margin: -20000px -20000px;
+  margin: -20000px -20000px;
 }
 
 .home-main article.hero {
-    background-image: url('../../static/images/circuitplaygroundexpress.jpg');
+  background-image: url('../../static/images/circuitplaygroundexpress.jpg');
 }
 
 .home-main article.hero.hero-exercises {
-    background-image: url('../../static/images/student-computer.jpg');
+  background-image: url('../../static/images/student-computer.jpg');
 }
 
 .home-main article.hero.hero-train {
-    background-image: url('../../static/images/chelci-beth.jpg');
+  background-image: url('../../static/images/chelci-beth.jpg');
 }
 
 .home-main article.hero.hero-makerspace {
-    background-image: url('../../static/images/teacher-student.jpg');
+  background-image: url('../../static/images/teacher-student.jpg');
 }
 
 .exercises-main article.hero {
-    background-image: url('../../static/images/desk.jpg');
+  background-image: url('../../static/images/desk.jpg');
 }
 
 .setup-main article.hero {
-    background-image: url('../../static/images/happy.jpg');
+  background-image: url('../../static/images/happy.jpg');
 }
 
 .continue-main article.hero {
-    background-image: url('../../static/images/laughing.jpg');
+  background-image: url('../../static/images/laughing.jpg');
 }
 
 .about-main article.hero {
-    background-image: url('../../static/images/happy2.jpg');
+  background-image: url('../../static/images/happy2.jpg');
 }
 
 .curriculum-main article.hero {
-    background-image: url('../../static/images/desk.jpg');
+  background-image: url('../../static/images/desk.jpg');
 }
 
 .trainer-main article.hero {
-    background-image: url('../../static/images/chelci-beth.jpg');
+  background-image: url('../../static/images/chelci-beth.jpg');
 }
 
 .makerspace-main article.hero {
-    background-image: url('../../static/images/learning.jpg');
+  background-image: url('../../static/images/learning.jpg');
 }
 
 .makerspace-main article.hero.case-change {
-    background-image: url('../../static/images/circuitplaygroundexpress.jpg');
+  background-image: url('../../static/images/circuitplaygroundexpress.jpg');
 }
