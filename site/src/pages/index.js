@@ -64,7 +64,7 @@ const BlogIndex = ({ data, location }) => {
               <header className="content">
                 <h3>
                   <span>
-                    <Link to={`/trainer`}>Train the Trainer</Link>
+                    <Link to={`/instructor`}>Train the Trainer</Link>
                   </span>
                 </h3>
               </header>

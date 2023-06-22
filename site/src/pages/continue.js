@@ -43,7 +43,7 @@ const ContinuePage = ({ data, location }) => {
                 </a>
               </h3>
             </header>
-            <section>
+            <article>
               <ul>
                 <li>
                   <a
@@ -64,7 +64,7 @@ const ContinuePage = ({ data, location }) => {
                   </a>
                 </li>
               </ul>
-            </section>
+            </article>
             <header>
               <h3>
                 <a
@@ -94,13 +94,35 @@ const ContinuePage = ({ data, location }) => {
               </h3>
             </header>
             <section>
-              <a
-                href="https://learn.adafruit.com/using-circuit-playground-express-makecode-circuitpython-on-a-chromebook/using-makecode"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Using MakeCode with Circuit Playground Express
-              </a>
+              <ul>
+                <li>
+                  <a
+                    href="https://makecode.adafruit.com/courses/maker/general/coding"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Coding with MakeCode
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://learn.adafruit.com/using-circuit-playground-express-makecode-circuitpython-on-a-chromebook/using-makecode"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Using MakeCode with Circuit Playground Express
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://arcade.makecode.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    MakeCode Arcade
+                  </a>
+                </li>
+              </ul>
             </section>
           </article>
         </div>
