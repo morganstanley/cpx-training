@@ -17,6 +17,7 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 0;
   padding: 0;
+  line-height: 1.75em;
 }
 
 a {
@@ -30,10 +31,12 @@ a:visted {
 
 h2 {
   font-size: 3rem;
+  line-height: 3rem;
 }
 
 h3 {
   font-size: 2rem;
+  line-height: 2rem;
   margin-bottom: 0;
 }
 
@@ -45,6 +48,7 @@ blockquote {
 
 ul li {
   padding: 0;
+  margin: 0.5rem 0;
   list-style-type: disc;
 }
 

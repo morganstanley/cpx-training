@@ -33,7 +33,7 @@ const BlogIndex = ({ data, location }) => {
             </header>
           </div>
         </article>
-        <Seo title="All posts" />
+        <Seo title="MakeCode Curriculum" />
         <article className="content">
           <h2>
             Intro to programming with Adafruit's Circuit Playground Express and
@@ -99,10 +99,10 @@ export const pageQuery = graphql`
       }
     }
     allMarkdownRemark(
-      sort: {
-        order: [ASC, ASC]
-        fields: [frontmatter___level, frontmatter___exercise]
-      }
+      sort: [
+        { frontmatter: { level: ASC } }
+        { frontmatter: { exercise: ASC } }
+      ]
     ) {
       edges {
         node {

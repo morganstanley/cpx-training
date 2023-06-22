@@ -36,7 +36,7 @@ const BlogIndex = ({ data, location }) => {
             </section>
           </div>
         </article>
-        <Seo title="All posts" />
+        <Seo title="CircuitPython | Level 1" />
         <article className="content">
           <h2>
             Programming with CircuitPython on an Adafruit's Circuit Playground
@@ -85,10 +85,10 @@ export const pageQuery = graphql`
       }
     }
     allMarkdownRemark(
-      sort: {
-        order: [ASC, ASC]
-        fields: [frontmatter___level, frontmatter___exercise]
-      }
+      sort: [
+        { frontmatter: { level: ASC } }
+        { frontmatter: { exercise: ASC } }
+      ]
     ) {
       edges {
         node {

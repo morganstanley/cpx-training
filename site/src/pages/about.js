@@ -250,23 +250,48 @@ const AboutPage = ({ data, location }) => {
         <Seo title="Morgan Stanley's Makerspace / STEM Extension Team" />
         <article className="content">
           <h2>Morgan Stanley's Makerspace / STEM Extension Team</h2>
-          <ul>
+          <ul className="credits">
+            <li>
+              Madeline Hutchinson - Executive Director, Head of Global Tech
+              Philanthropy
+            </li>
+            <li>Masha Nichols - Americas Lead, Global Tech Philanthropy</li>
             <li>
               Kumar Vadaparty - Distinguished Engineer - Executive Director,
               Wealth Management Technology Division (Co-Founder){' '}
             </li>
             <li>
-              Kait Szydlowski - Vice President, Tech for Good (Co-Founder){' '}
+              Mimi Flynn - Vice President, Enterprise Tech and Serivces, OSPO
+              (Lead Anchor and Curriculum Mgmt.)
             </li>
             <li>
               Dinesh Doshi - Vice President, Wealth Management Technology
               Division (Lead Anchor, and Curriculum Mgmt.){' '}
             </li>
             <li>
-              Titash Mandal - Wealth Management Technology Division (Lead Anchor
-              and Curriculum Mgmt.){' '}
+              Millicent Auma - Wealth Management Technology Division (Lead
+              Anchor and Curriculum Mgmt.)
             </li>
-            <li>Marsha Nichols - Manager, Tech for Good </li>
+            <li>
+              Chris Wheeler - Vice President, Cyber Data Risk and Resiliance
+              (Baltimore Lead Anchor and Curriculum Mgmt.)
+            </li>
+            <li>
+              Sandy Speakman - Vice President, Cyber Data Risk and Resiliance
+              (Baltimore Lead Anchor and Curriculum Mgmt.)
+            </li>
+            <li>
+              Conner Layson - Cyber Data Risk and Resiliance (Alpharetta Lead
+              Anchor and Curriculum Mgmt.)
+            </li>
+            <li>
+              Jocelyn Hordge - Weath Management Operations (Hybrid Lead Anchor
+              and Curriculum Mgmt.)
+            </li>
+            <li>
+              Antonette Gichohu - Wealth Management Technology Division (Hybrid
+              Lead Anchor and Curriculum Mgmt.)
+            </li>
           </ul>
         </article>
       </div>
