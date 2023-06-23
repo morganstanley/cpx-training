@@ -9,7 +9,7 @@ const SetupPage = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <div className="setup-main">
+      <div className="main setup-main">
         <article className="hero">
           <img
             src="images/happy.jpg"

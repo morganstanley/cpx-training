@@ -170,9 +170,7 @@ ul.exercise-nav li:last-of-type {
   text-align: right;
 }
 
-.trainer-main li,
-.continue-main li,
-.setup-main li {
+.main li {
   margin: 0.5rem 0;
 }
 

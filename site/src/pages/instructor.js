@@ -9,7 +9,7 @@ const InstructorPage = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <div className="trainer-main">
+      <div className="main trainer-main">
         <article className="hero">
           <img
             src="images/chelci-beth.jpg"
