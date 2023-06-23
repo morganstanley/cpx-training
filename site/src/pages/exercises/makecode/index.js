@@ -33,7 +33,7 @@ const BlogIndex = ({ data, location }) => {
             </header>
           </div>
         </article>
-        <Seo title="MakeCode" />
+        <Seo title="MakeCode Curriculum" />
         <article className="content">
           <h2>
             Intro to programming with Adafruit's Circuit Playground Express and

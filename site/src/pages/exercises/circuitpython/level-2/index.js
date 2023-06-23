@@ -85,7 +85,7 @@ export const pageQuery = graphql`
       }
     }
     allMarkdownRemark(
-      sort: : [
+      sort: [
         { frontmatter: { level: ASC } }
         { frontmatter: { exercise: ASC } }
       ]
