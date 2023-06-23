@@ -113,10 +113,10 @@ export const pageQuery = graphql`
       }
     }
     allMarkdownRemark(
-      sort: {
-        order: [ASC, ASC]
-        fields: [frontmatter___level, frontmatter___exercise]
-      }
+      sort: [
+        { frontmatter: { level: ASC } }
+        { frontmatter: { exercise: ASC } }
+      ]
     ) {
       edges {
         node {
