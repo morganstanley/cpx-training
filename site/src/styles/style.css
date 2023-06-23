@@ -58,6 +58,7 @@ article h2 {
   font-family: var(--more-alternate-font);
   color: var(--tertiary-text);
   background: var(--alternate-text-bg);
+  margin-bottom: 0.5rem;
 }
 
 article h3 {
@@ -167,6 +168,10 @@ ul.exercise-nav li {
 
 ul.exercise-nav li:last-of-type {
   text-align: right;
+}
+
+.main li {
+  margin: 0.5rem 0;
 }
 
 .footer-main {

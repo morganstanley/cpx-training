@@ -36,7 +36,7 @@ const BlogIndex = ({ data, location }) => {
             </section>
           </div>
         </article>
-        <Seo title="CircuitPython | Level 1" />
+        <Seo title="CircuitPython | Level 2" />
         <article className="content">
           <h2>
             Programming with CircuitPython on an Adafruit's Circuit Playground
