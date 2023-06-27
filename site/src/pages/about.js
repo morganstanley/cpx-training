@@ -3,6 +3,7 @@ import { graphql } from 'gatsby'
 
 import Layout from '../components/layout'
 import Seo from '../components/seo'
+import SummaryCard from '../components/summary-card'
 
 const AboutPage = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
@@ -196,55 +197,40 @@ const AboutPage = ({ data, location }) => {
         <Seo title="Physical Computing" />
         <article className="content">
           <h2>Levels of Physical Computing</h2>
-
-          <table>
-            <tr>
-              <th>Difficulty</th>
-              <th>Flavor of Computer</th>
-              <th>Flavor of Adafruit µC</th>
-              <th>Type of Language</th>
-            </tr>
-            <tr>
-              <td>Level 1 - Intro to Physical Computing</td>
-              <td></td>
-              <td>Adafruit CPX</td>
-              <td>MakeCode</td>
-            </tr>
-            <tr>
-              <td>Level 2 - Intro to Physical Computing</td>
-              <td>RPI 400 Kit + Monitor Or Windows/Mac</td>
-              <td></td>
-              <td>CircuitPython</td>
-            </tr>
-            <tr>
-              <td>Level 3 - Robotics, Bluetooth, WIFI, etc</td>
-              <td>RPI 400 Kit + Monitor Or Windows/Mac</td>
-              <td>Adafruit Feather</td>
-              <td>CircuityPython</td>
-            </tr>
-            <tr>
-              <td>Level 4A - Advanced Physical Computing</td>
-              <td>RPI 400 Kit + Monitor</td>
-              <td>
-                CYBERDECK Bonnet for Raspberry Pi 400 + Various I2C Sensors
-              </td>
-              <td>CircuityPython</td>
-            </tr>
-            <tr>
-              <td>Level 4B - Embedded Computing</td>
-              <td>RPI 4GB or RPI</td>
-              <td>
-                Various Adafruit's and other Accessories for RPI or Pi Zero W
-              </td>
-              <td>Prefer CircuityPython</td>
-            </tr>
-            <tr>
-              <td>Level 5 - Edge Computing (Machine Learning)</td>
-              <td>Raspberry Pi 8GB</td>
-              <td>Adafruit Braincraft</td>
-              <td>CircuityPython</td>
-            </tr>
-          </table>
+          <SummaryCard
+            name="Level 1 - Intro to Physical Computing"
+            mpType="Adafruit CPX"
+            language="MakeCode"
+          />
+          <SummaryCard
+            name="Level 2 - Intro to Physical Computing"
+            computerType="RPI 400 Kit + Monitor Or Windows/Mac"
+            language="CircuitPython"
+          />
+          <SummaryCard
+            name="Level 3 - Robotics, Bluetooth, WIFI, etc"
+            computerType="RPI 400 Kit + Monitor Or Windows/Mac"
+            mpType="Adafruit Feather"
+            language="CircuitPython"
+          />
+          <SummaryCard
+            name="Level 4A - Advanced Physical Computing"
+            computerType="RPI 400 Kit + Monitor"
+            mpType="CYBERDECK Bonnet for Raspberry Pi 400 + Various I2C Sensors"
+            language="CircuitPython"
+          />
+          <SummaryCard
+            name="Level 4B - Embedded Computing"
+            computerType="RPI 400 Kit + Monitor"
+            mpType="Various Adafruit's and other Accessories for RPI or Pi Zero W"
+            language="CircuitPython"
+          />
+          <SummaryCard
+            name="Level 5 - Edge Computing (Machine Learning)"
+            computerType="Raspberry Pi 8GB"
+            mpType="Adafruit Braincraft"
+            language="CircuitPython"
+          />
         </article>
 
         <Seo title="Morgan Stanley's Makerspace / STEM Extension Team" />

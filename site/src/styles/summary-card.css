@@ -1,0 +1,37 @@
+.summary-card dt,
+.summary-card dd {
+  display: inline-block;
+}
+.summary-card dt {
+  font-weight: bold;
+  width: 200px;
+  text-align: right;
+}
+.summary-card dt::after {
+  content: ':';
+}
+.summary-card dd {
+  margin: 0;
+  padding: 0.5rem;
+  width: 400px;
+}
+
+@media (max-width: 767px) {
+  .summary-card dt,
+  .summary-card dd {
+    display: block;
+  }
+  .summary-card dt {
+    font-weight: bold;
+    width: auto;
+    text-align: left;
+  }
+  .summary-card dt::after {
+    content: ':';
+  }
+  .summary-card dd {
+    margin: 0 0 1rem 0;
+    padding: 0;
+    width: auto;
+  }
+}
