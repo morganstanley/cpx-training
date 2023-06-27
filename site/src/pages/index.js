@@ -39,11 +39,11 @@ const BlogIndex = ({ data, location }) => {
           />
           <div className="pane">
             <header className="content">
-              <h3>
+              <h2>
                 <span>
                   <Link to={`/exercises`}>CPX Training Workshops</Link>
                 </span>
-              </h3>
+              </h2>
             </header>
             <section className="content">
               <span>
@@ -62,11 +62,11 @@ const BlogIndex = ({ data, location }) => {
             />
             <div className="pane">
               <header className="content">
-                <h3>
+                <h2>
                   <span>
                     <Link to={`/instructor`}>Train the Trainer</Link>
                   </span>
-                </h3>
+                </h2>
               </header>
               <section className="content">
                 <span>
@@ -85,11 +85,11 @@ const BlogIndex = ({ data, location }) => {
           />
           <div className="pane">
             <header className="content">
-              <h3>
+              <h2>
                 <span>
                   <Link to={`/makerspace`}>Make a Makerspace</Link>
                 </span>
-              </h3>
+              </h2>
             </header>
             <section className="content">
               <span>
