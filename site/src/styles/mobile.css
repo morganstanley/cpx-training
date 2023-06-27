@@ -1,0 +1,34 @@
+@media (max-width: 767px) {
+  .header-main .content {
+    display: block;
+  }
+  .header-main .content h1 {
+    text-align: center;
+  }
+  .header-nav {
+    display: block;
+    flex-grow: unset;
+    text-align: center;
+  }
+  .header-nav ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+  article.hero h2,
+  article.hero h3 {
+    font-size: 2.5rem;
+  }
+  article.hero .pane section.content span {
+    font-size: 1.5rem;
+  }
+  article.hero .pane {
+    padding-top: 2rem;
+  }
+  article.content .grid {
+    display: block;
+  }
+  blockquote {
+    margin-left: 0;
+  }
+}

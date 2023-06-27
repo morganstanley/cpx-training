@@ -18,9 +18,9 @@ const CurriculumPage = ({ data, location }) => {
           />
           <div className="pane">
             <header className="content">
-              <h3>
+              <h2>
                 <span>CPX Training Workshops</span>
-              </h3>
+              </h2>
             </header>
             <section className="content">
               <span>
@@ -36,7 +36,7 @@ const CurriculumPage = ({ data, location }) => {
           <div>
             <h3>
               <Link to={`/exercises/circuitpython/level-1/`}>
-                Introduction to CircuitPython - Level 1
+                Intro to CircuitPython - Level 1
               </Link>
             </h3>
             <p>
@@ -48,7 +48,7 @@ const CurriculumPage = ({ data, location }) => {
 
             <h3>
               <Link to={`/exercises/circuitpython/level-2/`}>
-                Programming with CircuitPython - Level 2
+                Coding with CircuitPython - Level 2
               </Link>
             </h3>
             <p>
@@ -62,9 +62,7 @@ const CurriculumPage = ({ data, location }) => {
           <h2>Multi-week Programs</h2>
           <div>
             <h3>
-              <Link to={`/exercises/makecode/`}>
-                MakeCode with the Circuit Playground Express
-              </Link>
+              <Link to={`/exercises/makecode/`}>MakeCode</Link>
             </h3>
             <h4>Grades 5-7</h4>
             <p>
@@ -75,9 +73,7 @@ const CurriculumPage = ({ data, location }) => {
             </p>
 
             <h3>
-              <Link to={`/exercises/circuitpython/`}>
-                CircuitPython with the Circuit Playground Express
-              </Link>
+              <Link to={`/exercises/circuitpython/`}>CircuitPython</Link>
             </h3>
             <h4>Grades 6-9</h4>
             <p>
