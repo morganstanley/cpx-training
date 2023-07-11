@@ -30,7 +30,7 @@ const BlogIndex = ({ data, location }) => {
             </section>
           </div>
         </article>
-        <Seo title="Workshops" />
+        <Seo title="Makerspace by Morgan Stanley" />
         <article className="hero hero-exercises">
           <img
             src="images/student-computer.jpg"

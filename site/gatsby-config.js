@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `CPX Training`,
-    description: `Introduction to CircuitPython with CircuitPlayground Express`,
+    title: `Makerspace by Morgan Stanley`,
+    description: `An introduction to coding by professional software engineers`,
     siteUrl: 'https://morgan-stanley.github.io/cpx-training/',
   },
   pathPrefix: `/cpx-training`,
