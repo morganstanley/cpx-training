@@ -20,7 +20,7 @@ const gatsbyRemarkPlugins = [
   },
   `gatsby-remark-copy-linked-files`,
   `gatsby-remark-smartypants`,
-]
+];
 
 const gatsbyPluginMdx = {
   resolve: 'gatsby-plugin-mdx',
@@ -28,17 +28,11 @@ const gatsbyPluginMdx = {
     extensions: [`.md`, `.mdx`],
     gatsbyRemarkPlugins,
   },
-}
+};
 
 const plugins = [
   'gatsby-plugin-image',
   'gatsby-plugin-sitemap',
-  {
-    resolve: 'gatsby-plugin-manifest',
-    options: {
-      icon: `./src/images/icon.png`,
-    },
-  },
   {
     resolve: 'gatsby-source-filesystem',
     options: {
@@ -80,8 +74,8 @@ const plugins = [
       },
     },
   },
-]
+];
 
-exports.plugins = plugins
-exports.gatsbyPluginMdx = gatsbyPluginMdx
-exports.gatsbyRemarkPlugins = gatsbyRemarkPlugins
+exports.plugins = plugins;
+exports.gatsbyPluginMdx = gatsbyPluginMdx;
+exports.gatsbyRemarkPlugins = gatsbyRemarkPlugins;
