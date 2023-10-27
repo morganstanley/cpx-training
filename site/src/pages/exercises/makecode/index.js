@@ -1,20 +1,15 @@
-import React from 'react'
-import { Link, graphql } from 'gatsby'
+import React from 'react';
+import { Link, graphql } from 'gatsby';
 
-import Layout from '../../../components/layout'
-import Seo from '../../../components/seo'
+import Layout from '../../../components/layout';
+import Seo from '../../../components/seo';
 
-import '../../../styles/global.css'
-import '../../../styles/style.css'
+import '../../../styles/global.css';
+import '../../../styles/style.css';
 
 const BlogIndex = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata.title
-  const exercises = data.allMarkdownRemark.edges.filter(
-    (edge) =>
-      edge.node.frontmatter.template === 'exercise' &&
-      edge.node.frontmatter.level === 1 &&
-      edge.node.frontmatter.category === 'MakeCode'
-  )
+  const siteTitle = data.site.siteMetadata.title;
+  const exercises = data.allMdx.nodes;
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -65,8 +60,8 @@ const BlogIndex = ({ data, location }) => {
             and select the "New? Start here" tutorial.
           </p>
         </article>
-        {exercises.map(({ node }) => {
-          const title = node.frontmatter.title || node.fields.slug
+        {exercises.map((node) => {
+          const title = node.frontmatter.title || node.fields.slug;
           return (
             <article key={node.fields.slug}>
               <header className="content">
@@ -82,14 +77,14 @@ const BlogIndex = ({ data, location }) => {
                 />
               </section>
             </article>
-          )
+          );
         })}
       </div>
     </Layout>
-  )
-}
+  );
+};
 
-export default BlogIndex
+export default BlogIndex;
 
 export const pageQuery = graphql`
   query {
@@ -98,30 +93,28 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(
+    allMdx(
+      filter: {
+        internal: { contentFilePath: { regex: "/exercises/makecode//" } }
+      }
       sort: [
         { frontmatter: { level: ASC } }
         { frontmatter: { exercise: ASC } }
       ]
     ) {
-      edges {
-        node {
-          excerpt
-          fields {
-            slug
-          }
-          frontmatter {
-            template
-            title
-            tags
-            description
-            slug
-            category
-            level
-            exercise
-          }
+      nodes {
+        id
+        tableOfContents
+        frontmatter {
+          title
+        }
+        internal {
+          contentFilePath
+        }
+        fields {
+          slug
         }
       }
     }
   }
-`
+`;

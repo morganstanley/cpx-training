@@ -1,11 +1,10 @@
 ---
 template: exercise
 title: Level 2 | Exercise 1 - Variables and Types
-slug: /circuitpython/level-2/exercise-1
 level: 2
 exercise: 1
 category: CircuitPython
-tags: ["Level 2"]
+tags: ['Level 2']
 ---
 
 In level 1, we went over the features of the Circuit Playground Express, but we didn't dig into the basics of programming. These concepts are present in all programming languages in some shape or form.
@@ -13,6 +12,7 @@ In level 1, we went over the features of the Circuit Playground Express, but we 
 In this lesson, we are going to learn about variables and how we can use them to store information in order to use it again later.
 
 ## Color Variables
+
 [From level 1 exercise 2](../L1-E2), we put the following program into the CPX:
 
 ```python
@@ -77,13 +77,13 @@ while True:
     pixels.show()
 ```
 
- * a variable is used to store data to be used by the program
- * this data can be a number, a string, a Boolean, a list or some other data type
- * every variable has a name which can consist of letters, numbers, and the underscore character (_). 
- * no other type of characters can be used to create the variable name and the variable may NOT start with a number. 
- * the equal sign = is used to assign a value to a variable. 
- * that assignment can be from a fixed value or taken from another existing variable
- * it can also be used to change the value of a variable from one value to another after the initial assignment is made
+- a variable is used to store data to be used by the program
+- this data can be a number, a string, a Boolean, a list or some other data type
+- every variable has a name which can consist of letters, numbers, and the underscore character (\_).
+- no other type of characters can be used to create the variable name and the variable may NOT start with a number.
+- the equal sign = is used to assign a value to a variable.
+- that assignment can be from a fixed value or taken from another existing variable
+- it can also be used to change the value of a variable from one value to another after the initial assignment is made
 
 ## Working with lists
 
@@ -155,12 +155,12 @@ colors = [
     PINK,
     RED,
     ORANGE,
-    YELLOW, 
-    GREEN, 
-    CYAN, 
-    PURPLE, 
-    BLUE, 
-    LIGHT_BLUE, 
+    YELLOW,
+    GREEN,
+    CYAN,
+    PURPLE,
+    BLUE,
+    LIGHT_BLUE,
     WHITE
 ]
 

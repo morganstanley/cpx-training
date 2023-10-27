@@ -1,16 +1,15 @@
 ---
 template: exercise
 title: Level 1 | Exercise 2 - Lights
-slug: /circuitpython/level-1/exercise-2
 level: 1
 exercise: 2
 category: CircuitPython
-tags: ["Level 1"]
+tags: ['Level 1']
 ---
 
-Let's explore further. 
+Let's explore further.
 
-We can do all sorts of crazy things by adding to the __while loop__.
+We can do all sorts of crazy things by adding to the **while loop**.
 
 Here we will tell the circuit to turn on some colorful lights.
 
@@ -35,7 +34,7 @@ while True:
     cpx.pixels[9] = (0, 0, 100)
 
     # the [] with a number determines which light to turn on
-    # and the numbers in () deterine the color! 
+    # and the numbers in () deterine the color!
     # It says how much (red, green, blue) we want.
     # Try changing the numbers!
 

@@ -1,25 +1,22 @@
-import React from 'react'
-import { Link, graphql } from 'gatsby'
+import React from 'react';
+import { Link, graphql } from 'gatsby';
 
-import Layout from '../components/layout'
-import Seo from '../components/seo'
+import Layout from '../components/layout';
+import Seo from '../components/seo';
 
-const BlogPostTemplate = ({ data, pageContext, location }) => {
-  const post = data.markdownRemark
-  const siteTitle = data.site.siteMetadata.title
-  const { previous, next } = pageContext
+const BlogPostTemplate = ({ children, data, pageContext, location }) => {
+  const siteTitle = data.site.siteMetadata.title;
+  const pageTitle = pageContext.frontmatter.title;
+  const { previous, next } = pageContext;
 
   return (
     <Layout location={location} title={siteTitle}>
-      <Seo
-        title={post.frontmatter.title}
-        description={post.frontmatter.description || post.excerpt}
-      />
+      <Seo title={pageTitle} description={pageContext.description} />
       <article className="exercise-main content">
         <header>
-          <h2>{post.frontmatter.title}</h2>
+          <h2>{pageTitle}</h2>
         </header>
-        <section dangerouslySetInnerHTML={{ __html: post.html }} />
+        {children}
       </article>
 
       <nav className="content">
@@ -34,33 +31,48 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           <li>
             {next && (
               <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.title} →
+                {next.frontmatter.title}
               </Link>
             )}
           </li>
         </ul>
       </nav>
     </Layout>
-  )
-}
+  );
+};
 
-export default BlogPostTemplate
+export default BlogPostTemplate;
 
 export const pageQuery = graphql`
-  query BlogPostBySlug($slug: String!) {
+  query ($id: String!) {
     site {
       siteMetadata {
         title
       }
     }
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      id
-      excerpt(pruneLength: 160)
-      html
+    mdx(id: { eq: $id }) {
       frontmatter {
         title
-        description
+      }
+      tableOfContents
+    }
+    allMdx(
+      filter: { internal: { contentFilePath: { regex: "/exercises//" } } }
+      sort: [{ frontmatter: { exercise: ASC } }]
+    ) {
+      nodes {
+        id
+        excerpt
+        frontmatter {
+          title
+        }
+        internal {
+          contentFilePath
+        }
+        fields {
+          slug
+        }
       }
     }
   }
-`
+`;

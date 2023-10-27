@@ -1,11 +1,10 @@
 ---
 template: exercise
 title: Level 1 | Exercise 5 - Acceleration
-slug: /circuitpython/level-1/exercise-5
 level: 1
 exercise: 5
 category: CircuitPython
-tags: ["Level 1"]
+tags: ['Level 1']
 ---
 
 The circuit playground has an accelerometer so it can tell when it's moving. Let's see what we can do with this.
@@ -28,7 +27,7 @@ while True:
         x, y, z = cpx.acceleration
 
         print((x, y, z))
-        
+
         if x:
             R = R + abs(int(x))
         if y:

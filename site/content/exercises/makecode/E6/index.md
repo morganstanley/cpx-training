@@ -1,11 +1,10 @@
 ---
 template: exercise
 title: MakeCode | Session 6 | Project
-slug: /makecode/session-6
 level: 1
 exercise: 6
 category: MakeCode
-tags: ["MakeCode"]
+tags: ['MakeCode']
 ---
 
 ### STE(A)M Projects:
@@ -14,7 +13,6 @@ Bring Arts and Science together to build cool stuff.
 [Cup Lamp](https://makecode.adafruit.com/projects/cartoon-network/cup-lamp)
 [CPX Lime Piano](https://learn.adafruit.com/circuit-playground-express-piano-in-the-key-of-lime)
 [Make It a Keyboard](https://learn.adafruit.com/make-it-a-keyboard/microsoft-makecode)
-
 
 Pick [your own project](https://makecode.adafruit.com/projects/) and innovate on top of it!
 
