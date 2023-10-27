@@ -140,23 +140,20 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(
-      filter: { frontmatter: { template: { eq: "continue" } } }
+    allMdx(
+      filter: { internal: { contentFilePath: { regex: "//continue//" } } }
     ) {
-      edges {
-        node {
-          frontmatter {
-            template
-            title
-            tags
-            description
-            slug
-            category
-            link
-          }
-          fields {
-            slug
-          }
+      nodes {
+        id
+        tableOfContents
+        frontmatter {
+          title
+        }
+        internal {
+          contentFilePath
+        }
+        fields {
+          slug
         }
       }
     }
