@@ -1,6 +1,10 @@
-import React from 'react'
+import React from 'react';
+import { MDXProvider } from '@mdx-js/react';
 
-import Header from './header'
+import Footer from './footer';
+import Header from './header';
+
+const shortcodes = {};
 
 function Layout({ location, title, children }) {
   return (
@@ -8,23 +12,14 @@ function Layout({ location, title, children }) {
       <header className="header-main">
         <Header location={location} />
       </header>
-      <main className="body-main">{children}</main>
+      <main className="body-main">
+        <MDXProvider components={shortcodes}>{children}</MDXProvider>
+      </main>
       <footer className="footer-main">
-        <div className="content">
-          Thanks! We hope you found what you are looking for. Please feel free
-          to contribute via{' '}
-          <a
-            href="https://github.com/MorganStanley/cpx-training"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Github
-          </a>
-          .
-        </div>
+        <Footer />
       </footer>
     </div>
-  )
+  );
 }
 
-export default Layout
+export default Layout;
