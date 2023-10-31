@@ -52,8 +52,8 @@ header.content {
   margin-bottom: 0.25rem;
 }
 
-article h3,
-article h2 {
+h3,
+h2 {
   display: inline-block;
   font-family: var(--more-alternate-font);
   color: var(--tertiary-text);
@@ -61,11 +61,11 @@ article h2 {
   margin-bottom: 0.5rem;
 }
 
-article h3 {
+h3 {
   color: var(--secondary-text);
 }
 
-article h4 {
+h4 {
   color: var(--secondary-text);
 }
 

@@ -1,10 +1,12 @@
 import React from 'react';
 import { MDXProvider } from '@mdx-js/react';
+import { Link } from 'gatsby';
 
 import Footer from './footer';
 import Header from './header';
+import Hero from './hero';
 
-const shortcodes = {};
+const shortcodes = { Hero, Link };
 
 function Layout({ location, title, children }) {
   return (

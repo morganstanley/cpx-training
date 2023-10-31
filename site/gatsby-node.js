@@ -1,8 +1,8 @@
-const path = require(`path`)
-const { createFilePath } = require(`gatsby-source-filesystem`)
+const path = require(`path`);
+const { createFilePath } = require(`gatsby-source-filesystem`);
 
 exports.createPages = async ({ graphql, actions }) => {
-  const { createPage } = actions
+  const { createPage } = actions;
 
   const result = await graphql(
     `
@@ -29,18 +29,19 @@ exports.createPages = async ({ graphql, actions }) => {
         }
       }
     `
-  )
+  );
 
   if (result.errors) {
-    throw result.errors
+    throw result.errors;
   }
 
   // Create  pages.
-  const pages = result.data.allMdx.nodes
-  const exercise = path.resolve(`./src/templates/exercise.js`)
+  const pages = result.data.allMdx.nodes;
+  const exerciseTemplate = path.resolve(`./src/templates/exercise.js`);
+  const pageTemplate = path.resolve(`./src/templates/page.js`);
 
   function getCategory(page) {
-    const path = page.internal.contentFilePath
+    const path = page.internal.contentFilePath;
 
     return path
       ? path.includes('/circuitpython/')
@@ -48,40 +49,41 @@ exports.createPages = async ({ graphql, actions }) => {
         : path.includes('/makecode/')
         ? 'makecode'
         : ''
-      : ''
+      : '';
   }
 
   function getTemplate(category) {
     return category
-      ? category.includes('news')
-        ? newsTemplate
-        : category.includes('contribute')
-        ? contributeTemplate
+      ? category.includes('exercise')
+        ? exerciseTemplate
         : pageTemplate
-      : pageTemplate
+      : pageTemplate;
   }
 
   pages.forEach((page, index) => {
+    const category = getCategory(page);
     createPage({
       path: page.fields.slug,
-      component: `${exercise}?__contentFilePath=${page.internal.contentFilePath}`,
+      component: `${getTemplate(category)}?__contentFilePath=${
+        page.internal.contentFilePath
+      }`,
       context: {
         id: page.id,
-        category: getCategory(page),
+        category,
       },
-    })
-  })
-}
+    });
+  });
+};
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
-  const { createNodeField } = actions
+  const { createNodeField } = actions;
 
   if (node.internal.type === `Mdx`) {
-    const value = createFilePath({ node, getNode })
+    const value = createFilePath({ node, getNode });
     createNodeField({
       name: `slug`,
       node,
       value,
-    })
+    });
   }
-}
+};

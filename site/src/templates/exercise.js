@@ -4,7 +4,7 @@ import { Link, graphql } from 'gatsby';
 import Layout from '../components/layout';
 import Seo from '../components/seo';
 
-const BlogPostTemplate = ({ children, data, pageContext, location }) => {
+const ExerciseTemplate = ({ children, data, pageContext, location }) => {
   const siteTitle = data.site.siteMetadata.title;
   const pageTitle = pageContext.frontmatter.title;
   const { previous, next } = pageContext;
@@ -41,7 +41,7 @@ const BlogPostTemplate = ({ children, data, pageContext, location }) => {
   );
 };
 
-export default BlogPostTemplate;
+export default ExerciseTemplate;
 
 export const pageQuery = graphql`
   query ($id: String!) {
@@ -55,24 +55,6 @@ export const pageQuery = graphql`
         title
       }
       tableOfContents
-    }
-    allMdx(
-      filter: { internal: { contentFilePath: { regex: "/exercises//" } } }
-      sort: [{ frontmatter: { exercise: ASC } }]
-    ) {
-      nodes {
-        id
-        excerpt
-        frontmatter {
-          title
-        }
-        internal {
-          contentFilePath
-        }
-        fields {
-          slug
-        }
-      }
     }
   }
 `;
