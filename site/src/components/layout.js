@@ -5,8 +5,9 @@ import { Link } from 'gatsby';
 import Footer from './footer';
 import Header from './header';
 import Hero from './hero';
+import SummaryCard from './summary-card';
 
-const shortcodes = { Hero, Link };
+const shortcodes = { Hero, Link, SummaryCard };
 
 function Layout({ location, title, children }) {
   return (
