@@ -9,7 +9,7 @@ import SummaryCard from './summary-card';
 
 const shortcodes = { Hero, Link, SummaryCard };
 
-function Layout({ location, title, children }) {
+function Layout({ location, children }) {
   return (
     <div className="main">
       <header className="header-main">
