@@ -7,7 +7,7 @@ import Seo from '../../../../components/seo';
 import '../../../../styles/global.css';
 import '../../../../styles/style.css';
 
-const BlogIndex = ({ data, location }) => {
+const BlogICPXLevel2Indexndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title;
   const exercises = data.allMdx.nodes;
 
@@ -70,7 +70,7 @@ const BlogIndex = ({ data, location }) => {
   );
 };
 
-export default BlogIndex;
+export default BlogICPXLevel2Indexndex;
 
 export const pageQuery = graphql`
   query {

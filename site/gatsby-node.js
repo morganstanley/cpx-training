@@ -54,7 +54,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   function getTemplate(category) {
     return category
-      ? category.includes('exercise')
+      ? category.includes('exercises')
         ? exerciseTemplate
         : pageTemplate
       : pageTemplate;
