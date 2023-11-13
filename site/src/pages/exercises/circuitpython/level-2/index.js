@@ -7,7 +7,7 @@ import Seo from '../../../../components/seo';
 import '../../../../styles/global.css';
 import '../../../../styles/style.css';
 
-const BlogICPXLevel2Indexndex = ({ data, location }) => {
+const CPXLevel2Index = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title;
   const exercises = data.allMdx.nodes;
 
@@ -55,13 +55,6 @@ const BlogICPXLevel2Indexndex = ({ data, location }) => {
                   <Link to={node.fields.slug}>{title}</Link>
                 </h3>
               </header>
-              <section className="content">
-                <p
-                  dangerouslySetInnerHTML={{
-                    __html: node.frontmatter.description || node.excerpt,
-                  }}
-                />
-              </section>
             </article>
           );
         })}
@@ -70,7 +63,7 @@ const BlogICPXLevel2Indexndex = ({ data, location }) => {
   );
 };
 
-export default BlogICPXLevel2Indexndex;
+export default CPXLevel2Index;
 
 export const pageQuery = graphql`
   query {

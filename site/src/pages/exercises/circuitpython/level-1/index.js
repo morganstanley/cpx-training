@@ -59,13 +59,6 @@ const CPXLevel1Index = ({ data, location }) => {
                   <Link to={node.fields.slug}>{title}</Link>
                 </h3>
               </header>
-              <section className="content">
-                <p
-                  dangerouslySetInnerHTML={{
-                    __html: node.frontmatter.description || node.excerpt,
-                  }}
-                />
-              </section>
             </article>
           );
         })}

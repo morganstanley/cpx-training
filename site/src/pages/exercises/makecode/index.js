@@ -2,64 +2,20 @@ import React from 'react';
 import { Link, graphql } from 'gatsby';
 
 import Layout from '../../../components/layout';
-import Seo from '../../../components/seo';
 
 import '../../../styles/global.css';
 import '../../../styles/style.css';
 
-const BlogIndex = ({ data, location }) => {
+import Summary from '../../../../content/exercises/makecode/index-summary.mdx';
+
+const MakeCodeIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title;
   const exercises = data.allMdx.nodes;
 
   return (
     <Layout location={location} title={siteTitle}>
       <div className="exercises-main">
-        <article className="hero">
-          <img
-            src="images/desk.jpg"
-            className="background-image"
-            alt="CPX Board with Lights"
-          />
-          <div className="pane">
-            <header className="content">
-              <h2>
-                <span>Circuit Playground Express with MakeCode</span>
-              </h2>
-            </header>
-          </div>
-        </article>
-        <Seo title="MakeCode Curriculum" />
-        <article className="content">
-          <h2>
-            Intro to programming with Adafruit's Circuit Playground Express and
-            MakeCode
-          </h2>
-          <img
-            src="../../images/makecode/blink.png"
-            alt="MakeCode Blink"
-            className="makecode"
-          />
-          <h3>
-            <a
-              href="https://makecode.adafruit.com"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Go to MakeCode
-            </a>
-          </h3>
-          <p>
-            Before jumping in,{' '}
-            <a
-              href="https://makecode.adafruit.com"
-              target="_blank"
-              rel="noreferrer"
-            >
-              go to MakeCode website
-            </a>{' '}
-            and select the "New? Start here" tutorial.
-          </p>
-        </article>
+        <Summary />
         {exercises.map((node) => {
           const title = node.frontmatter.title || node.fields.slug;
           return (
@@ -70,11 +26,7 @@ const BlogIndex = ({ data, location }) => {
                 </h3>
               </header>
               <section className="content">
-                <p
-                  dangerouslySetInnerHTML={{
-                    __html: node.frontmatter.description || node.excerpt,
-                  }}
-                />
+                {node.frontmatter.description}
               </section>
             </article>
           );
@@ -84,7 +36,7 @@ const BlogIndex = ({ data, location }) => {
   );
 };
 
-export default BlogIndex;
+export default MakeCodeIndex;
 
 export const pageQuery = graphql`
   query {

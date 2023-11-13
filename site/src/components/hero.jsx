@@ -1,17 +1,16 @@
-import React from 'react'
+import React from 'react';
 
 function Hero({
   title,
   subtitle,
-  image = 'images/circuitplaygroundexpress.jpg',
+  image = '/images/circuitplaygroundexpress.jpg',
 }) {
+  const backgroundStyle = {
+    backgroundImage: image,
+  };
+
   return (
-    <article className="hero">
-      <img
-        src={image}
-        className="background-image"
-        alt="CPX Board with Lights"
-      />
+    <article className="hero" style={backgroundStyle}>
       <div className="pane">
         <header className="content">
           <h2>
@@ -23,7 +22,7 @@ function Hero({
         </section>
       </div>
     </article>
-  )
+  );
 }
 
-export default Hero
+export default Hero;
