@@ -56,5 +56,23 @@ export const pageQuery = graphql`
       }
       tableOfContents
     }
+    allMdx(
+      filter: { internal: { contentFilePath: { regex: "/exercises//" } } }
+      sort: [{ frontmatter: { exercise: ASC, level: ASC } }]
+    ) {
+      nodes {
+        id
+        excerpt
+        frontmatter {
+          title
+        }
+        internal {
+          contentFilePath
+        }
+        fields {
+          slug
+        }
+      }
+    }
   }
 `;

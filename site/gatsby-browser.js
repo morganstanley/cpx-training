@@ -1,6 +1,5 @@
-import './src/styles/global.css'
-import './src/styles/style.css'
-import './src/styles/hero-images.css'
-import './src/styles/summary-card.css'
-import './src/styles/mobile.css'
-import './static/game'
+import './src/styles/global.css';
+import './src/styles/style.css';
+import './src/styles/hero-images.css';
+import './src/styles/summary-card.css';
+import './src/styles/mobile.css';

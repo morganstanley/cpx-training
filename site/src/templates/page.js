@@ -1,17 +1,24 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 
+import Hero from '../components/hero';
 import Layout from '../components/layout';
 import Seo from '../components/seo';
 
 const PageTemplate = ({ children, data, pageContext, location }) => {
   const siteTitle = data.site.siteMetadata.title;
   const pageTitle = pageContext.frontmatter.title;
-
+  const subTitle = pageContext.frontmatter.subtitle
+    ? pageContext.frontmatter.subtitle
+    : '';
+  const image = pageContext.frontmatter.image
+    ? pageContext.frontmatter.subtitle
+    : '';
   return (
     <Layout location={location} title={siteTitle}>
       <Seo title={pageTitle} description={pageContext.description} />
-      {children}
+      <Hero title={pageTitle} subtitle={subTitle} image={image} />
+      <div className="content">{children}</div>
     </Layout>
   );
 };
@@ -28,6 +35,8 @@ export const pageQuery = graphql`
     mdx(id: { eq: $id }) {
       frontmatter {
         title
+        subtitle
+        image
       }
       tableOfContents
     }

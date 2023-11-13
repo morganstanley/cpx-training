@@ -25,9 +25,6 @@ const MakeCodeIndex = ({ data, location }) => {
                   <Link to={node.fields.slug}>{title}</Link>
                 </h3>
               </header>
-              <section className="content">
-                {node.frontmatter.description}
-              </section>
             </article>
           );
         })}

@@ -3,7 +3,7 @@ import React from 'react';
 function Hero({
   title,
   subtitle,
-  image = '/images/circuitplaygroundexpress.jpg',
+  image = '../images/circuitplaygroundexpress.jpg',
 }) {
   const backgroundStyle = {
     backgroundImage: image,
