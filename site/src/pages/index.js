@@ -1,12 +1,12 @@
-import React from 'react'
-import { Link, graphql } from 'gatsby'
+import React from 'react';
+import { Link, graphql } from 'gatsby';
 
-import Hero from '../components/hero'
-import Layout from '../components/layout'
-import Seo from '../components/seo'
+import Hero from '../components/hero';
+import Layout from '../components/layout';
+import Seo from '../components/seo';
 
 const SiteIndex = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata.title
+  const siteTitle = data.site.siteMetadata.title;
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -27,7 +27,7 @@ const SiteIndex = ({ data, location }) => {
             <header className="content">
               <h2>
                 <span>
-                  <Link to={`/exercises`}>CPX Training Workshops</Link>
+                  <Link to={`/exercises`}>Learn to code</Link>
                 </span>
               </h2>
             </header>
@@ -50,7 +50,7 @@ const SiteIndex = ({ data, location }) => {
               <header className="content">
                 <h2>
                   <span>
-                    <Link to={`/instructor`}>Train the Trainer</Link>
+                    <Link to={`/instructor`}>Teach</Link>
                   </span>
                 </h2>
               </header>
@@ -86,10 +86,10 @@ const SiteIndex = ({ data, location }) => {
         </article>
       </div>
     </Layout>
-  )
-}
+  );
+};
 
-export default SiteIndex
+export default SiteIndex;
 
 export const pageQuery = graphql`
   query {
@@ -99,4 +99,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;
