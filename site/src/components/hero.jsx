@@ -1,16 +1,13 @@
 import React from 'react';
 
-function Hero({
-  title,
-  subtitle,
-  image = '../images/circuitplaygroundexpress.jpg',
-}) {
-  const backgroundStyle = {
-    backgroundImage: image,
+function Hero({ title, subtitle, image }) {
+  const style = {
+    backgroundImage: '../../images/circuitplaygroundexpress.jpg',
+    border: 'red solid 5px',
   };
 
   return (
-    <article className="hero" style={backgroundStyle}>
+    <article className="hero" style={style}>
       <div className="pane">
         <header className="content">
           <h2>

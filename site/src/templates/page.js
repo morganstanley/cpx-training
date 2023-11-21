@@ -12,8 +12,9 @@ const PageTemplate = ({ children, data, pageContext, location }) => {
     ? pageContext.frontmatter.subtitle
     : '';
   const image = pageContext.frontmatter.image
-    ? pageContext.frontmatter.subtitle
-    : '';
+    ? pageContext.frontmatter.image
+    : '../../images/circuitplaygroundexpress.jpg';
+
   return (
     <Layout location={location} title={siteTitle}>
       <Seo title={pageTitle} description={pageContext.description} />
