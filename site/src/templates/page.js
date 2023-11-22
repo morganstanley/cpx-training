@@ -1,5 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
 import Hero from '../components/hero';
 import Layout from '../components/layout';
@@ -11,14 +12,13 @@ const PageTemplate = ({ children, data, pageContext, location }) => {
   const subTitle = pageContext.frontmatter.subtitle
     ? pageContext.frontmatter.subtitle
     : '';
-  const image = pageContext.frontmatter.image
-    ? pageContext.frontmatter.image
-    : '../../images/circuitplaygroundexpress.jpg';
+  const heroImage = getImage(pageContext.frontmatter.heroImage);
 
   return (
     <Layout location={location} title={siteTitle}>
       <Seo title={pageTitle} description={pageContext.description} />
-      <Hero title={pageTitle} subtitle={subTitle} image={image} />
+      <GatsbyImage image={heroImage} alt="" />
+      <Hero title={pageTitle} subtitle={subTitle} />
       <div className="content">{children}</div>
     </Layout>
   );
@@ -37,7 +37,11 @@ export const pageQuery = graphql`
       frontmatter {
         title
         subtitle
-        image
+        heroImage {
+          childImageSharp {
+            gatsbyImageData
+          }
+        }
       }
       tableOfContents
     }
