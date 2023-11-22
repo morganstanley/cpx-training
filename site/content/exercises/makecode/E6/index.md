@@ -1,10 +1,11 @@
 ---
 template: exercise
-title: MakeCode | Session 6 | Project
+title: Project
 level: 1
 exercise: 6
 category: MakeCode
 tags: ['MakeCode']
+description: Create something with the CPX as your final project!
 ---
 
 ### STE(A)M Projects:

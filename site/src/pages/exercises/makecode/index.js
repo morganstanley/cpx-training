@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
 
+import Hero from '../../../components/hero';
 import Layout from '../../../components/layout';
 
 import '../../../styles/global.css';
@@ -15,15 +16,26 @@ const MakeCodeIndex = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <div className="exercises-main">
-        <Summary />
+        <Hero
+          title="Circuit Playground Express with MakeCode"
+          subtitle=""
+          image="../../images/desk.jpg"
+        />
+        <article className="content">
+          <Summary />
+        </article>
         {exercises.map((node) => {
-          const title = node.frontmatter.title || node.fields.slug;
+          const title = node.frontmatter.title;
           return (
             <article key={node.fields.slug}>
               <header className="content">
                 <h3>
-                  <Link to={node.fields.slug}>{title}</Link>
+                  <Link to={node.fields.slug}>
+                    Exercise {node.frontmatter.exercise} |{' '}
+                    {node.frontmatter.title}
+                  </Link>
                 </h3>
+                <p>{node.frontmatter.description}</p>
               </header>
             </article>
           );
@@ -56,6 +68,8 @@ export const pageQuery = graphql`
         tableOfContents
         frontmatter {
           title
+          exercise
+          description
         }
         internal {
           contentFilePath

@@ -1,10 +1,11 @@
 ---
 template: exercise
-title: MakeCode | Session 5 | Touch Sensor
+title: Touch Sensor
 level: 1
 exercise: 5
 category: MakeCode
 tags: ['MakeCode']
+description: Let's dig into the details of using the pads as touch sensors!
 ---
 
 ### Capacitive Touch Sensor

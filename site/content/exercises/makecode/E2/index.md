@@ -1,10 +1,11 @@
 ---
 template: exercise
-title: MakeCode | Session 2 | Basics and Variables
+title: Basics and Variables
 level: 1
 exercise: 2
 category: MakeCode
 tags: ['MakeCode']
+description: Introduction to basic coding concepts such as variables, logic, and loops!
 ---
 
 Read basics of MakeCode.

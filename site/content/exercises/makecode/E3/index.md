@@ -1,10 +1,11 @@
 ---
 template: exercise
-title: MakeCode | Session 3 | Loops and Temp
+title: Loops and Temp
 level: 1
 exercise: 3
 category: MakeCode
 tags: ['MakeCode']
+description: Let's dig into the details of using loops with the tempurature sensor!
 ---
 
 ### Exercise 1 - Loops

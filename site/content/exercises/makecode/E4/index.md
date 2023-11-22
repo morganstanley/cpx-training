@@ -1,10 +1,11 @@
 ---
 template: exercise
-title: MakeCode | Session 4 | Light Sensor
+title: Light Sensor
 level: 1
 exercise: 4
 category: MakeCode
 tags: ['MakeCode']
+description: Let's dig into the details of using the light sensor!
 ---
 
 ### What are light sensors?

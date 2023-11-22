@@ -1,10 +1,11 @@
 ---
 template: exercise
-title: MakeCode | Session 1 | Introduction
+title: Introduction
 level: 1
 exercise: 1
 category: MakeCode
 tags: ['MakeCode']
+description: Choose the sample project that most interests you and dig in!
 ---
 
 Adafruit CPX Sample Projects
