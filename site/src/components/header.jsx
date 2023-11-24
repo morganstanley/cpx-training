@@ -4,7 +4,7 @@ import { Link } from 'gatsby';
 const Header = ({ location }) => {
   const links = {
     Learn: '/exercises',
-    Teach: '/instructor',
+    Teach: '/teach',
     'Make a Makerspace': '/makerspace',
     About: '/about',
   };

@@ -1,8 +1,9 @@
 import React from 'react';
 
 function Hero({ title, subtitle }) {
+  const classnames = `hero hero-${title.split(' ').join('-').toLowerCase()}`;
   return (
-    <article className="hero">
+    <article className={classnames}>
       <div className="pane">
         <header className="content">
           <h2>

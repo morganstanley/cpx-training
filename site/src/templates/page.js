@@ -37,11 +37,6 @@ export const pageQuery = graphql`
       frontmatter {
         title
         subtitle
-        heroImage {
-          childImageSharp {
-            gatsbyImageData
-          }
-        }
       }
       tableOfContents
     }

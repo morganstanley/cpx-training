@@ -24,22 +24,19 @@ const MakeCodeIndex = ({ data, location }) => {
         <article className="content">
           <Summary />
         </article>
-        {exercises.map((node) => {
-          const title = node.frontmatter.title;
-          return (
-            <article key={node.fields.slug}>
-              <header className="content">
-                <h3>
-                  <Link to={node.fields.slug}>
-                    Exercise {node.frontmatter.exercise} |{' '}
-                    {node.frontmatter.title}
-                  </Link>
-                </h3>
-                <p>{node.frontmatter.description}</p>
-              </header>
-            </article>
-          );
-        })}
+        {exercises.map((node) => (
+          <article key={node.fields.slug}>
+            <header className="content">
+              <h3>
+                <Link to={node.fields.slug}>
+                  Exercise {node.frontmatter.exercise} |{' '}
+                  {node.frontmatter.title}
+                </Link>
+              </h3>
+              <p>{node.frontmatter.description}</p>
+            </header>
+          </article>
+        ))}
       </div>
     </Layout>
   );

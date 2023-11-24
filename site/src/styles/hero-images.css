@@ -1,25 +1,26 @@
 article.hero {
   background-size: cover;
   background-repeat: no-repeat;
+  background-image: url('../../static/images/circuitplaygroundexpress.jpg');
 }
 
 article.hero .background-image {
   margin: -20000px -20000px;
 }
 
-.home-main article.hero {
+article.hero {
   background-image: url('../../static/images/circuitplaygroundexpress.jpg');
 }
 
-.home-main article.hero.hero-exercises {
+article.hero.hero-learn {
   background-image: url('../../static/images/student-computer.jpg');
 }
 
-.home-main article.hero.hero-train {
+article.hero.hero-teach {
   background-image: url('../../static/images/chelci-beth.jpg');
 }
 
-.home-main article.hero.hero-makerspace {
+article.hero.hero-make-a-makerspace {
   background-image: url('../../static/images/teacher-student.jpg');
 }
 
@@ -35,7 +36,7 @@ article.hero .background-image {
   background-image: url('../../static/images/laughing.jpg');
 }
 
-.about-main article.hero {
+article.hero.hero-about-makerspace {
   background-image: url('../../static/images/happy2.jpg');
 }
 
