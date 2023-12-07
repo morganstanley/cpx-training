@@ -17,7 +17,7 @@ const SiteIndex = ({ data, location }) => {
                 Express"
         />
         <Seo title="Makerspace by Morgan Stanley" />
-        <article className="hero hero-exercises">
+        <article className="hero hero-learn">
           <img
             src="images/student-computer.jpg"
             className="background-image"
@@ -39,7 +39,7 @@ const SiteIndex = ({ data, location }) => {
             </section>
           </div>
         </article>
-        <article className="hero hero-train">
+        <article className="hero hero-teach">
           <div className="pane">
             <img
               src="images/chelci-beth.jpg"
@@ -63,7 +63,7 @@ const SiteIndex = ({ data, location }) => {
             </div>
           </div>
         </article>
-        <article className="hero hero-makerspace">
+        <article className="hero hero-make-a-makerspace">
           <img
             src="images/teacher-student.jpg"
             className="background-image"
