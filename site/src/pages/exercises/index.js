@@ -1,11 +1,11 @@
-import React from 'react'
-import { graphql, Link } from 'gatsby'
+import React from 'react';
+import { graphql, Link } from 'gatsby';
 
-import Layout from '../../components/layout'
-import Seo from '../../components/seo'
+import Layout from '../../components/layout';
+import Seo from '../../components/seo';
 
 const CurriculumPage = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata.title
+  const siteTitle = data.site.siteMetadata.title;
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -19,7 +19,7 @@ const CurriculumPage = ({ data, location }) => {
           <div className="pane">
             <header className="content">
               <h2>
-                <span>CPX Training Workshops</span>
+                <span>Learn</span>
               </h2>
             </header>
             <section className="content">
@@ -95,10 +95,10 @@ const CurriculumPage = ({ data, location }) => {
         </article>
       </div>
     </Layout>
-  )
-}
+  );
+};
 
-export default CurriculumPage
+export default CurriculumPage;
 
 export const pageQuery = graphql`
   query {
@@ -108,4 +108,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;
