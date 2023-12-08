@@ -42,12 +42,15 @@ const CPXLevel1Index = ({ data, location }) => {
             Intro to CircuitPython with Adafruit's Circuit Playground Express
           </h2>
           <h3>
-            <Link to={`/setup`}>Start Here</Link>
+            <Link to={`/exercises/circuitpython/setup`}>Start Here</Link>
           </h3>
           <p>
             If you haven't set up your Circuit Playground Express board to
             support CircuitPython yet, please refer to the{' '}
-            <Link to={`/setup`}>setup instructions</Link>.
+            <Link to={`/exercises/circuitpython/setup`}>
+              setup instructions
+            </Link>
+            .
           </p>
         </article>
         {exercises.map((node) => {
