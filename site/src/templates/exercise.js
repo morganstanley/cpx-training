@@ -4,9 +4,9 @@ import { Link, graphql } from 'gatsby';
 import Layout from '../components/layout';
 import Seo from '../components/seo';
 
-const ExerciseTemplate = ({ children, pageContext, location }) => {
+const ExerciseTemplate = ({ children, data, pageContext, location }) => {
   const pageTitle = pageContext.frontmatter.title;
-  const { previous, next } = pageContext;
+  const nodes = data.allMdx.nodes;
 
   return (
     <Layout location={location}>
@@ -19,21 +19,16 @@ const ExerciseTemplate = ({ children, pageContext, location }) => {
       </article>
 
       <nav className="content">
-        <ul className="exercise-nav">
-          <li>
-            {previous && (
-              <Link to={previous.fields.slug} rel="prev">
-                ← {previous.frontmatter.title}
-              </Link>
-            )}
-          </li>
-          <li>
-            {next && (
-              <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.title}
-              </Link>
-            )}
-          </li>
+        <ul className="toc">
+          {nodes.map((node) => {
+            const current = location.pathname.includes(node.fields.slug);
+            const title = node.frontmatter.title;
+            return (
+              <li className={current ? 'current' : ''}>
+                <Link to={node.fields.slug}>{title}</Link>
+              </li>
+            );
+          })}
         </ul>
       </nav>
     </Layout>
@@ -43,7 +38,7 @@ const ExerciseTemplate = ({ children, pageContext, location }) => {
 export default ExerciseTemplate;
 
 export const pageQuery = graphql`
-  query ($id: String!) {
+  query ($id: String!, $categoryRegEx: String!) {
     site {
       siteMetadata {
         title
@@ -53,11 +48,17 @@ export const pageQuery = graphql`
       frontmatter {
         title
       }
+      internal {
+        contentFilePath
+      }
       tableOfContents
     }
     allMdx(
-      filter: { internal: { contentFilePath: { regex: "/exercises//" } } }
-      sort: [{ frontmatter: { exercise: ASC, level: ASC } }]
+      filter: { internal: { contentFilePath: { regex: $categoryRegEx } } }
+      sort: [
+        { frontmatter: { level: ASC } }
+        { frontmatter: { exercise: ASC } }
+      ]
     ) {
       nodes {
         id

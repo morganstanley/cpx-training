@@ -180,3 +180,7 @@ ul.exercise-nav li:last-of-type {
   color: var(--tertiary-text);
   background: var(--dark-bg);
 }
+
+ul.toc li.current {
+  font-weight: bold;
+}
