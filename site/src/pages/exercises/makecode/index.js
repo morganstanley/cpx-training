@@ -52,7 +52,7 @@ export const pageQuery = graphql`
     }
     allMdx(
       filter: {
-        internal: { contentFilePath: { regex: "/exercises/makecode//" } }
+        internal: { contentFilePath: { regex: "/exercises\/makecode/E[0-9]+\//" } }
       }
       sort: [
         { frontmatter: { level: ASC } }
