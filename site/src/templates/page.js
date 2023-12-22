@@ -6,8 +6,7 @@ import Hero from '../components/hero';
 import Layout from '../components/layout';
 import Seo from '../components/seo';
 
-const PageTemplate = ({ children, data, pageContext, location }) => {
-  const siteTitle = data.site.siteMetadata.title;
+const PageTemplate = ({ children, pageContext, location }) => {
   const pageTitle = pageContext.frontmatter.title;
   const subTitle = pageContext.frontmatter.subtitle
     ? pageContext.frontmatter.subtitle
@@ -15,7 +14,7 @@ const PageTemplate = ({ children, data, pageContext, location }) => {
   const heroImage = getImage(pageContext.frontmatter.heroImage);
 
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout location={location}>
       <Seo title={pageTitle} description={pageContext.description} />
       <GatsbyImage image={heroImage} alt="" />
       <Hero title={pageTitle} subtitle={subTitle} />

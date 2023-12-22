@@ -4,13 +4,12 @@ import { Link, graphql } from 'gatsby';
 import Layout from '../components/layout';
 import Seo from '../components/seo';
 
-const ExerciseTemplate = ({ children, data, pageContext, location }) => {
-  const siteTitle = data.site.siteMetadata.title;
+const ExerciseTemplate = ({ children, pageContext, location }) => {
   const pageTitle = pageContext.frontmatter.title;
   const { previous, next } = pageContext;
 
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout location={location}>
       <Seo title={pageTitle} description={pageContext.description} />
       <article className="exercise-main content">
         <header>

@@ -9,11 +9,10 @@ import '../../../../styles/global.css';
 import '../../../../styles/style.css';
 
 const CPXLevel2Index = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata.title;
   const exercises = data.allMdx.nodes;
 
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout location={location}>
       <div className="exercises-main">
         <Hero
           title="CPX Training Workshop"

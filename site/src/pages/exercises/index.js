@@ -5,11 +5,9 @@ import Hero from '../../components/hero';
 import Layout from '../../components/layout';
 import Seo from '../../components/seo';
 
-const CurriculumPage = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata.title;
-
+const CurriculumPage = ({ location }) => {
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout location={location}>
       <div className="curriculum-main">
         <Hero
           title="Learn"

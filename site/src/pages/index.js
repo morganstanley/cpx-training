@@ -5,11 +5,9 @@ import Hero from '../components/hero';
 import Layout from '../components/layout';
 import Seo from '../components/seo';
 
-const SiteIndex = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata.title;
-
+const SiteIndex = ({ location }) => {
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout location={location}>
       <div className="home-main">
         <Hero
           title="Building Community Through Code"

@@ -10,11 +10,10 @@ import '../../../styles/style.css';
 import Summary from '../../../../content/exercises/makecode/index-summary.mdx';
 
 const MakeCodeIndex = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata.title;
   const exercises = data.allMdx.nodes;
 
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout location={location}>
       <div className="exercises-main">
         <Hero
           title="Circuit Playground Express with MakeCode"
