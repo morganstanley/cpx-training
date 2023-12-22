@@ -7,11 +7,11 @@ function Hero({ title, subtitle }) {
       <div className="pane">
         <header className="content">
           <h2>
-            <span>{title}</span>
+            <span className="cpx-title">{title}</span>
           </h2>
         </header>
         <section className="content">
-          <span>{subtitle}</span>
+          <span className="cpx-title">{subtitle}</span>
         </section>
       </div>
     </article>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { graphql, Link } from 'gatsby';
 
+import Hero from '../../components/hero';
 import Layout from '../../components/layout';
 import Seo from '../../components/seo';
 
@@ -10,26 +11,11 @@ const CurriculumPage = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <div className="curriculum-main">
-        <article className="hero">
-          <img
-            src="images/circuitplaygroundexpress.jpg"
-            className="background-image"
-            alt="CPX Board"
-          />
-          <div className="pane">
-            <header className="content">
-              <h2>
-                <span>Learn</span>
-              </h2>
-            </header>
-            <section className="content">
-              <span>
-                An interactive introduction to coding. Learn the basics through
-                simple exercises designed to inspire.
-              </span>
-            </section>
-          </div>
-        </article>
+        <Hero
+          title="Learn"
+          subtitle="An interactive introduction to coding. Learn the basics through
+          simple exercises designed to inspire."
+        />
         <Seo title="About" />
         <article className="content">
           <h2>Single Day Programs</h2>

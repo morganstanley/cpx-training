@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
 
+import Hero from '../../../../components/hero';
 import Layout from '../../../../components/layout';
 import Seo from '../../../../components/seo';
 
@@ -14,23 +15,10 @@ const CPXLevel2Index = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <div className="exercises-main">
-        <article className="hero">
-          <img
-            src="images/desk.jpg"
-            className="background-image"
-            alt="CPX Board with Lights"
-          />
-          <div className="pane">
-            <header className="content">
-              <h2>
-                <span>CPX Training Workshop</span>
-              </h2>
-            </header>
-            <section className="content">
-              <span>CircuitPython - Level 2</span>
-            </section>
-          </div>
-        </article>
+        <Hero
+          title="CPX Training Workshop"
+          subtitle="CircuitPython - Level 2"
+        />
         <Seo title="CircuitPython | Level 2" />
         <article className="content">
           <h2>

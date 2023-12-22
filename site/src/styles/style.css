@@ -130,9 +130,9 @@ article.hero h3 {
   background: none;
 }
 
-article.hero .pane section.content span,
-article h2 span,
-article h3 span {
+article.hero .pane section.content span.cpx-title,
+article h2 span.cpx-title,
+article h3 span.cpx-title {
   background: var(--dark-bg);
   font-family: var(--alternate-font);
 }
