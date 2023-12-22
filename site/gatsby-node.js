@@ -52,21 +52,17 @@ exports.createPages = async ({ graphql, actions }) => {
       : '';
   }
 
-  function getTemplate(category) {
-    return category
-      ? category.includes('exercises')
-        ? exerciseTemplate
-        : pageTemplate
-      : pageTemplate;
+  function getTemplate(path) {
+    return path?.includes('exercises') ? exerciseTemplate : pageTemplate;
   }
 
   pages.forEach((page, index) => {
     const category = getCategory(page);
     createPage({
       path: page.fields.slug,
-      component: `${getTemplate(category)}?__contentFilePath=${
+      component: `${getTemplate(
         page.internal.contentFilePath
-      }`,
+      )}?__contentFilePath=${page.internal.contentFilePath}`,
       context: {
         id: page.id,
         category,
