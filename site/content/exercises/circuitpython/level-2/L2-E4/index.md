@@ -1,6 +1,6 @@
 ---
 template: exercise
-title: Level 2 | Exercise 4 - Functions
+title: Functions
 level: 2
 exercise: 4
 category: CircuitPython

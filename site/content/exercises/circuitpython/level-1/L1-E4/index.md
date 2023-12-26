@@ -1,6 +1,6 @@
 ---
 template: exercise
-title: Level 1 | Exercise 4 - Touch
+title: Touch
 level: 1
 exercise: 4
 category: CircuitPython

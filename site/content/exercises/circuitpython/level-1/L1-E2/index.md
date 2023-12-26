@@ -1,6 +1,6 @@
 ---
 template: exercise
-title: Level 1 | Exercise 2 - Lights
+title: Lights
 level: 1
 exercise: 2
 category: CircuitPython

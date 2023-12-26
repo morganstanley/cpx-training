@@ -1,6 +1,6 @@
 ---
 template: exercise
-title: Level 1 | Exercise 5 - Acceleration
+title: Acceleration
 level: 1
 exercise: 5
 category: CircuitPython

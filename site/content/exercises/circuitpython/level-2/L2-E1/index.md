@@ -1,6 +1,6 @@
 ---
 template: exercise
-title: Level 2 | Exercise 1 - Variables and Types
+title: Variables and Types
 level: 2
 exercise: 1
 category: CircuitPython

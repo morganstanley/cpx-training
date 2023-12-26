@@ -1,6 +1,6 @@
 ---
 template: exercise
-title: Level 1 | Exercise 6 - Temperature
+title: Temperature
 level: 1
 exercise: 6
 category: CircuitPython

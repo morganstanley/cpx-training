@@ -1,6 +1,6 @@
 ---
 template: exercise
-title: Level 2 | Exercise 2 - Expression and Statements
+title: Expression and Statements
 level: 2
 exercise: 2
 category: CircuitPython

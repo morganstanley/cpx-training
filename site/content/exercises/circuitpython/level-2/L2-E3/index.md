@@ -1,6 +1,6 @@
 ---
 template: exercise
-title: Level 2 | Exercise 3 - Built-in functions
+title: Built-in functions
 level: 2
 exercise: 3
 category: CircuitPython

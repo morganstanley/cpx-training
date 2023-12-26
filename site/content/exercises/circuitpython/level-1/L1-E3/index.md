@@ -1,6 +1,6 @@
 ---
 template: exercise
-title: Level 1 | Exercise 3 - Buttons
+title: Buttons
 level: 1
 exercise: 3
 category: CircuitPython

@@ -1,6 +1,6 @@
 ---
 template: exercise
-title: Level 1 | Exercise 1 - Blink
+title: Blink
 level: 1
 exercise: 1
 category: CircuitPython
