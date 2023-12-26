@@ -189,7 +189,8 @@ ul.exercise-nav li:last-of-type {
 
 .exercise-nav {
   margin-top: 2rem;
-  flex-grow: ;
+  flex-grow: 1;
+  min-width: 250px;
 }
 
 .nav ul {
