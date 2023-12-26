@@ -1,7 +1,7 @@
 import React from 'react';
-import { Link, graphql } from 'gatsby';
+import { graphql } from 'gatsby';
 
-import Exercises from '../../../components/excercises';
+import ExerciseList from '../../../components/excercises';
 import Hero from '../../../components/hero';
 import Layout from '../../../components/layout';
 
@@ -24,7 +24,7 @@ const MakeCodeIndex = ({ data, location }) => {
         <article className="content">
           <Summary />
         </article>
-        <Exercises nodes={exercises} />
+        <ExerciseList nodes={exercises} />
       </div>
     </Layout>
   );

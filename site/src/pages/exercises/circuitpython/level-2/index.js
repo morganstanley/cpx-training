@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
 
-import Exercises from '../../../../components/excercises';
+import ExerciseList from '../../../../components/excercises';
 import Hero from '../../../../components/hero';
 import Layout from '../../../../components/layout';
 import Seo from '../../../../components/seo';
@@ -34,7 +34,7 @@ const CPXLevel2Index = ({ data, location }) => {
             <Link to={`/setup`}>setup instructions</Link>.
           </p>
         </article>
-        <Exercises nodes={exercises} />
+        <ExerciseList nodes={exercises} />
       </div>
     </Layout>
   );
