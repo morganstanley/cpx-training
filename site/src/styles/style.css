@@ -181,6 +181,62 @@ ul.exercise-nav li:last-of-type {
   background: var(--dark-bg);
 }
 
-ul.toc li.current {
+.exercise-main {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.exercise-nav {
+  margin-top: 2rem;
+  flex-grow: ;
+}
+
+.nav ul {
+  margin: 1rem 0 0 0;
+  padding: 0;
+}
+
+.nav ul li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.nav ul li.current > a {
   font-weight: bold;
+}
+
+.exercise-content {
+  flex-grow: 2;
+}
+
+.exercise-content > h2,
+.exercise-content > h3,
+.exercise-content > h4 {
+  margin-top: var(--spacing-section);
+}
+
+.exercise-content-nav ul {
+  margin: 0 0 1rem 1rem;
+}
+
+@media (max-width: 767px) {
+  .content {
+    width: 95%;
+  }
+
+  .exercise-main,
+  .exercise-content {
+    display: block;
+  }
+
+  .exercise-nav {
+    display: none;
+  }
+}
+
+/* Gatsby Overrides */
+.gatsby-highlight {
+  margin-top: 2rem;
 }
