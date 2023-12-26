@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
 
+import Exercises from '../../../components/excercises';
 import Hero from '../../../components/hero';
 import Layout from '../../../components/layout';
 
@@ -23,19 +24,7 @@ const MakeCodeIndex = ({ data, location }) => {
         <article className="content">
           <Summary />
         </article>
-        {exercises.map((node) => (
-          <article key={node.fields.slug}>
-            <header className="content">
-              <h3>
-                <Link to={node.fields.slug}>
-                  Exercise {node.frontmatter.exercise} |{' '}
-                  {node.frontmatter.title}
-                </Link>
-              </h3>
-              <p>{node.frontmatter.description}</p>
-            </header>
-          </article>
-        ))}
+        <Exercises nodes={exercises} />
       </div>
     </Layout>
   );
@@ -52,7 +41,9 @@ export const pageQuery = graphql`
     }
     allMdx(
       filter: {
-        internal: { contentFilePath: { regex: "/exercises\/makecode/E[0-9]+\//" } }
+        internal: {
+          contentFilePath: { regex: "/exercises/makecode/E[0-9]+//" }
+        }
       }
       sort: [
         { frontmatter: { level: ASC } }

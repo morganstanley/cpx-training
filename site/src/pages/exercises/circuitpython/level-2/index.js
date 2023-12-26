@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
 
+import Exercises from '../../../../components/excercises';
 import Hero from '../../../../components/hero';
 import Layout from '../../../../components/layout';
 import Seo from '../../../../components/seo';
@@ -33,18 +34,7 @@ const CPXLevel2Index = ({ data, location }) => {
             <Link to={`/setup`}>setup instructions</Link>.
           </p>
         </article>
-        {exercises.map((node) => {
-          const title = node.frontmatter.title || node.fields.slug;
-          return (
-            <article key={node.fields.slug}>
-              <header className="content">
-                <h3>
-                  <Link to={node.fields.slug}>{title}</Link>
-                </h3>
-              </header>
-            </article>
-          );
-        })}
+        <Exercises nodes={exercises} />
       </div>
     </Layout>
   );
@@ -75,6 +65,8 @@ export const pageQuery = graphql`
         tableOfContents
         frontmatter {
           title
+          exercise
+          level
         }
         internal {
           contentFilePath
