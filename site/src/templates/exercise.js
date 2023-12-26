@@ -54,7 +54,10 @@ export const pageQuery = graphql`
       tableOfContents
     }
     allMdx(
-      filter: { internal: { contentFilePath: { regex: $categoryRegEx } } }
+      filter: {
+        internal: { contentFilePath: { regex: $categoryRegEx } }
+        frontmatter: { exercise: { ne: null } }
+      }
       sort: [
         { frontmatter: { level: ASC } }
         { frontmatter: { exercise: ASC } }
