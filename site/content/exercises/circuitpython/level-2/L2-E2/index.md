@@ -18,7 +18,7 @@ tags: ['Level 2']
 
 **Pick a previous program: go through the code line by line, which is expression and which is statement?**
 
-[Review the use of console: from Level 1 exercise 6](../L1-E6)
+[Review the use of console: from Level 1 exercise 6](../../level-1/L1-E6)
 
 ```python
 import time

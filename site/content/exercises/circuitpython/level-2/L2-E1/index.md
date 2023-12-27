@@ -13,7 +13,7 @@ In this lesson, we are going to learn about variables and how we can use them to
 
 ## Color Variables
 
-[From level 1 exercise 2](../L1-E2), we put the following program into the CPX:
+[From level 1 exercise 2](../../level-1/L1-E2), we put the following program into the CPX:
 
 ```python
 import board
