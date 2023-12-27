@@ -66,7 +66,6 @@ exports.createPages = async ({ graphql, actions }) => {
       context: {
         id: page.id,
         categoryRegEx: `/${category}//`,
-        levelRegEx: `/${level}/`,
       },
     });
   });

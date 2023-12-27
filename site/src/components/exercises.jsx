@@ -2,12 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 
 const ExerciseList = ({ nodes }) => {
-  let currentLevel;
   return nodes.map((node) => {
-    currentLevel =
-      currentLevel === node.frontmatter.level
-        ? currentLevel
-        : node.frontmatter.level;
     return (
       <article key={node.fields.slug} className="content">
         <header>
