@@ -59,12 +59,14 @@ exports.createPages = async ({ graphql, actions }) => {
   pages.forEach((page) => {
     const category = getCategory(page);
     const path = page.internal.contentFilePath;
+    const level = page.frontmatter.level;
     createPage({
       path: page.fields.slug,
       component: `${getTemplate(path)}?__contentFilePath=${path}`,
       context: {
         id: page.id,
         categoryRegEx: `/${category}//`,
+        levelRegEx: `/${level}/`,
       },
     });
   });

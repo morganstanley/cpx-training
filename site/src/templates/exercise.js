@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
 
+import ExerciseNav from '../components/exercise-nav';
 import Layout from '../components/layout';
 import Seo from '../components/seo';
 
@@ -24,33 +25,7 @@ const ExerciseTemplate = ({ children, data, pageContext, location }) => {
     <Layout location={location}>
       <Seo title={pageTitle} description={pageContext.description} />
       <article className="exercise-main content">
-        <nav className="nav exercise-nav">
-          <ul>
-            {nodes.map((node) => {
-              const current = location.pathname.includes(node.fields.slug);
-              const title = node.frontmatter.title;
-              return (
-                <li className={current ? 'current' : ''}>
-                  <Link to={node.fields.slug}>
-                    {node.frontmatter.exercise} ) {title}
-                  </Link>
-                  {current && (
-                    <nav className="nav exercise-content-nav">
-                      <ul>
-                        {toc &&
-                          toc.map((item) => (
-                            <li>
-                              <Link to={item.url}>{item.title}</Link>
-                            </li>
-                          ))}
-                      </ul>
-                    </nav>
-                  )}
-                </li>
-              );
-            })}
-          </ul>
-        </nav>
+        <ExerciseNav location={location} nodes={nodes} toc={toc} />
         <div className="exercise-content">
           <header>
             <h2>{pageTitle}</h2>
@@ -95,6 +70,8 @@ export const pageQuery = graphql`
     mdx(id: { eq: $id }) {
       frontmatter {
         title
+        level
+        exercise
       }
       internal {
         contentFilePath
@@ -117,6 +94,7 @@ export const pageQuery = graphql`
         frontmatter {
           title
           exercise
+          level
         }
         internal {
           contentFilePath
