@@ -1,11 +1,11 @@
 ---
 template: exercise
-title: MakeCode | Session 3 | Loops and Temp
-slug: /makecode/session-3
+title: Loops and Temp
 level: 1
 exercise: 3
 category: MakeCode
-tags: ["MakeCode"]
+tags: ['MakeCode']
+description: Let's dig into the details of using loops with the tempurature sensor!
 ---
 
 ### Exercise 1 - Loops
@@ -46,8 +46,9 @@ What are sensors and where do you see them in daily life?
 Sensors are devices that sense something around them and lets us use that information to do something with it.
 
 For example:
- - if the weather is warm, then turn on the FAN or Air Conditioner.
- - if the weather is cold, then turn on the Heater
+
+- if the weather is warm, then turn on the FAN or Air Conditioner.
+- if the weather is cold, then turn on the Heater
 
 Let’s try an exercise on lighting up rings based on whether it HOT, COLD or comfortable.
 

@@ -1,95 +1,36 @@
-import React from 'react'
-import { Link, graphql } from 'gatsby'
+import React from 'react';
+import { graphql } from 'gatsby';
 
-import Layout from '../../../components/layout'
-import Seo from '../../../components/seo'
+import ExerciseList from '../../../components/exercises';
+import Hero from '../../../components/hero';
+import Layout from '../../../components/layout';
 
-import '../../../styles/global.css'
-import '../../../styles/style.css'
+import '../../../styles/global.css';
+import '../../../styles/style.css';
 
-const BlogIndex = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata.title
-  const exercises = data.allMarkdownRemark.edges.filter(
-    (edge) =>
-      edge.node.frontmatter.template === 'exercise' &&
-      edge.node.frontmatter.level === 1 &&
-      edge.node.frontmatter.category === 'MakeCode'
-  )
+import Summary from '../../../../content/exercises/makecode/index-summary.mdx';
+
+const MakeCodeIndex = ({ data, location }) => {
+  const exercises = data.allMdx.nodes;
 
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout location={location}>
       <div className="exercises-main">
-        <article className="hero">
-          <img
-            src="images/desk.jpg"
-            className="background-image"
-            alt="CPX Board with Lights"
-          />
-          <div className="pane">
-            <header className="content">
-              <h2>
-                <span>Circuit Playground Express with MakeCode</span>
-              </h2>
-            </header>
-          </div>
-        </article>
-        <Seo title="MakeCode Curriculum" />
+        <Hero
+          title="Circuit Playground Express with MakeCode"
+          subtitle=""
+          image="../../images/desk.jpg"
+        />
         <article className="content">
-          <h2>
-            Intro to programming with Adafruit's Circuit Playground Express and
-            MakeCode
-          </h2>
-          <img
-            src="../../images/makecode/blink.png"
-            alt="MakeCode Blink"
-            className="makecode"
-          />
-          <h3>
-            <a
-              href="https://makecode.adafruit.com"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Go to MakeCode
-            </a>
-          </h3>
-          <p>
-            Before jumping in,{' '}
-            <a
-              href="https://makecode.adafruit.com"
-              target="_blank"
-              rel="noreferrer"
-            >
-              go to MakeCode website
-            </a>{' '}
-            and select the "New? Start here" tutorial.
-          </p>
+          <Summary />
         </article>
-        {exercises.map(({ node }) => {
-          const title = node.frontmatter.title || node.fields.slug
-          return (
-            <article key={node.fields.slug}>
-              <header className="content">
-                <h3>
-                  <Link to={node.fields.slug}>{title}</Link>
-                </h3>
-              </header>
-              <section className="content">
-                <p
-                  dangerouslySetInnerHTML={{
-                    __html: node.frontmatter.description || node.excerpt,
-                  }}
-                />
-              </section>
-            </article>
-          )
-        })}
+        <ExerciseList nodes={exercises} />
       </div>
     </Layout>
-  )
-}
+  );
+};
 
-export default BlogIndex
+export default MakeCodeIndex;
 
 export const pageQuery = graphql`
   query {
@@ -98,30 +39,32 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(
+    allMdx(
+      filter: {
+        internal: {
+          contentFilePath: { regex: "/exercises/makecode/E[0-9]+//" }
+        }
+      }
       sort: [
         { frontmatter: { level: ASC } }
         { frontmatter: { exercise: ASC } }
       ]
     ) {
-      edges {
-        node {
-          excerpt
-          fields {
-            slug
-          }
-          frontmatter {
-            template
-            title
-            tags
-            description
-            slug
-            category
-            level
-            exercise
-          }
+      nodes {
+        id
+        tableOfContents
+        frontmatter {
+          title
+          exercise
+          description
+        }
+        internal {
+          contentFilePath
+        }
+        fields {
+          slug
         }
       }
     }
   }
-`
+`;

@@ -52,8 +52,8 @@ header.content {
   margin-bottom: 0.25rem;
 }
 
-article h3,
-article h2 {
+h3,
+h2 {
   display: inline-block;
   font-family: var(--more-alternate-font);
   color: var(--tertiary-text);
@@ -61,11 +61,11 @@ article h2 {
   margin-bottom: 0.5rem;
 }
 
-article h3 {
+h3 {
   color: var(--secondary-text);
 }
 
-article h4 {
+h4 {
   color: var(--secondary-text);
 }
 
@@ -130,9 +130,9 @@ article.hero h3 {
   background: none;
 }
 
-article.hero .pane section.content span,
-article h2 span,
-article h3 span {
+article.hero .pane section.content span.cpx-title,
+article h2 span.cpx-title,
+article h3 span.cpx-title {
   background: var(--dark-bg);
   font-family: var(--alternate-font);
 }
@@ -179,4 +179,65 @@ ul.exercise-nav li:last-of-type {
   margin: 0;
   color: var(--tertiary-text);
   background: var(--dark-bg);
+}
+
+.exercise-main {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.exercise-nav {
+  margin-top: 2rem;
+  flex-grow: 1;
+  min-width: 250px;
+}
+
+.nav ul {
+  margin: 1rem 0 0 0;
+  padding: 0;
+}
+
+.nav ul li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.nav ul li.current > a {
+  font-weight: bold;
+}
+
+.exercise-content {
+  flex-grow: 2;
+}
+
+.exercise-content > h2,
+.exercise-content > h3,
+.exercise-content > h4 {
+  margin-top: var(--spacing-section);
+}
+
+.exercise-content-nav ul {
+  margin: 0 0 1rem 1rem;
+}
+
+@media (max-width: 767px) {
+  .content {
+    width: 95%;
+  }
+
+  .exercise-main,
+  .exercise-content {
+    display: block;
+  }
+
+  .exercise-nav {
+    display: none;
+  }
+}
+
+/* Gatsby Overrides */
+.gatsby-highlight {
+  margin-top: 2rem;
 }

@@ -1,11 +1,11 @@
 ---
 template: exercise
-title: MakeCode | Session 4 | Light Sensor
-slug: /makecode/session-4
+title: Light Sensor
 level: 1
 exercise: 4
 category: MakeCode
-tags: ["MakeCode"]
+tags: ['MakeCode']
+description: Let's dig into the details of using the light sensor!
 ---
 
 ### What are light sensors?
@@ -18,10 +18,11 @@ Project: Sense the Light in the room and change the color of LED pixels based on
 
 A device that can sense the amount of light in a room.
 Assignment:
- - If the light sensor reading is below 50 turn all neo pixels color to gray.
- - If light sensor readout is above 175 turn all neo pixels to yellow.
- - If light sensor readout is anything else all neo pixels to light blue.
-Objective: Explore Light Sensor from the above assignment.
+
+- If the light sensor reading is below 50 turn all neo pixels color to gray.
+- If light sensor readout is above 175 turn all neo pixels to yellow.
+- If light sensor readout is anything else all neo pixels to light blue.
+  Objective: Explore Light Sensor from the above assignment.
 
 ![e3-1](e4-1.png)
 ![e3-2](e4-2.png)
@@ -39,10 +40,12 @@ Objective: Explore Light Sensor from the above assignment.
 ![e3-14](e4-14.png)
 
 Try taking CPX:
- - dark places like a closet.
- - moderately lighted place like in a room with lights ON.
- - closer to a lamp where it is bright and see how pixels change colors.
+
+- dark places like a closet.
+- moderately lighted place like in a room with lights ON.
+- closer to a lamp where it is bright and see how pixels change colors.
 
 Take it further: Modify the light sensor program to run only when Button A is clicked. Hint, use On Button block from INPUT Blocks.
+
 - Make the program run only once per click.
 - Make the lights change color based on the light level WITHOUT using if-else-block and color the pixels directly.

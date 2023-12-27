@@ -1,37 +1,21 @@
-import React from 'react'
-import { Link, graphql } from 'gatsby'
+import React from 'react';
+import { Link, graphql } from 'gatsby';
 
-import Layout from '../components/layout'
-import Seo from '../components/seo'
+import Hero from '../components/hero';
+import Layout from '../components/layout';
+import Seo from '../components/seo';
 
-const BlogIndex = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata.title
-
+const SiteIndex = ({ location }) => {
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout location={location}>
       <div className="home-main">
-        <article className="hero">
-          <img
-            src="images/circuitplaygroundexpress.jpg"
-            className="background-image"
-            alt="CPX Board with Lights"
-          />
-          <div className="pane">
-            <header className="content">
-              <h2>
-                <span>Building Community Through Code</span>
-              </h2>
-            </header>
-            <section className="content">
-              <span>
-                Introduction to programming with Adafruit's Circuit Playground
-                Express
-              </span>
-            </section>
-          </div>
-        </article>
+        <Hero
+          title="Building Community Through Code"
+          subtitle="Introduction to programming with Adafruit's Circuit Playground
+                Express"
+        />
         <Seo title="Makerspace by Morgan Stanley" />
-        <article className="hero hero-exercises">
+        <article className="hero hero-learn">
           <img
             src="images/student-computer.jpg"
             className="background-image"
@@ -41,7 +25,7 @@ const BlogIndex = ({ data, location }) => {
             <header className="content">
               <h2>
                 <span>
-                  <Link to={`/exercises`}>CPX Training Workshops</Link>
+                  <Link to={`/exercises`}>Learn to code</Link>
                 </span>
               </h2>
             </header>
@@ -53,7 +37,7 @@ const BlogIndex = ({ data, location }) => {
             </section>
           </div>
         </article>
-        <article className="hero hero-train">
+        <article className="hero hero-teach">
           <div className="pane">
             <img
               src="images/chelci-beth.jpg"
@@ -64,7 +48,7 @@ const BlogIndex = ({ data, location }) => {
               <header className="content">
                 <h2>
                   <span>
-                    <Link to={`/instructor`}>Train the Trainer</Link>
+                    <Link to={`/instructor`}>Teach</Link>
                   </span>
                 </h2>
               </header>
@@ -77,7 +61,7 @@ const BlogIndex = ({ data, location }) => {
             </div>
           </div>
         </article>
-        <article className="hero hero-makerspace">
+        <article className="hero hero-make-a-makerspace">
           <img
             src="images/teacher-student.jpg"
             className="background-image"
@@ -100,10 +84,10 @@ const BlogIndex = ({ data, location }) => {
         </article>
       </div>
     </Layout>
-  )
-}
+  );
+};
 
-export default BlogIndex
+export default SiteIndex;
 
 export const pageQuery = graphql`
   query {
@@ -112,30 +96,5 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(
-      sort: [
-        { frontmatter: { level: ASC } }
-        { frontmatter: { exercise: ASC } }
-      ]
-    ) {
-      edges {
-        node {
-          excerpt
-          fields {
-            slug
-          }
-          frontmatter {
-            template
-            title
-            tags
-            description
-            slug
-            category
-            level
-            exercise
-          }
-        }
-      }
-    }
   }
-`
+`;

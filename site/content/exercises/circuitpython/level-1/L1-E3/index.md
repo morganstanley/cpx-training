@@ -1,11 +1,10 @@
 ---
 template: exercise
-title: Level 1 | Exercise 3 - Buttons
-slug: /circuitpython/level-1/exercise-3
+title: Buttons
 level: 1
 exercise: 3
 category: CircuitPython
-tags: ["Level 1"]
+tags: ['Level 1']
 ---
 
 Let's have a listen to the CPX's speakers!

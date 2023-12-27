@@ -1,35 +1,19 @@
-import React from 'react'
-import { graphql, Link } from 'gatsby'
+import React from 'react';
+import { graphql, Link } from 'gatsby';
 
-import Layout from '../../components/layout'
-import Seo from '../../components/seo'
+import Hero from '../../components/hero';
+import Layout from '../../components/layout';
+import Seo from '../../components/seo';
 
-const CurriculumPage = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata.title
-
+const CurriculumPage = ({ location }) => {
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout location={location}>
       <div className="curriculum-main">
-        <article className="hero">
-          <img
-            src="images/circuitplaygroundexpress.jpg"
-            className="background-image"
-            alt="CPX Board"
-          />
-          <div className="pane">
-            <header className="content">
-              <h2>
-                <span>CPX Training Workshops</span>
-              </h2>
-            </header>
-            <section className="content">
-              <span>
-                An interactive introduction to coding. Learn the basics through
-                simple exercises designed to inspire.
-              </span>
-            </section>
-          </div>
-        </article>
+        <Hero
+          title="Learn"
+          subtitle="An interactive introduction to coding. Learn the basics through
+          simple exercises designed to inspire."
+        />
         <Seo title="About" />
         <article className="content">
           <h2>Single Day Programs</h2>
@@ -95,10 +79,10 @@ const CurriculumPage = ({ data, location }) => {
         </article>
       </div>
     </Layout>
-  )
-}
+  );
+};
 
-export default CurriculumPage
+export default CurriculumPage;
 
 export const pageQuery = graphql`
   query {
@@ -108,4 +92,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

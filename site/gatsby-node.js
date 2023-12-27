@@ -1,89 +1,85 @@
-const path = require(`path`)
-const { createFilePath } = require(`gatsby-source-filesystem`)
+const path = require(`path`);
+const { createFilePath } = require(`gatsby-source-filesystem`);
 
 exports.createPages = async ({ graphql, actions }) => {
-  const { createPage } = actions
+  const { createPage } = actions;
 
   const result = await graphql(
     `
       {
-        allMarkdownRemark(
-          sort: [
-            { frontmatter: { level: ASC } }
-            { frontmatter: { exercise: ASC } }
-          ]
-          limit: 1000
-        ) {
-          edges {
-            node {
-              fields {
-                slug
-              }
-              frontmatter {
-                template
-                title
-                tags
-                level
-                exercise
-                category
-              }
+        allMdx {
+          nodes {
+            id
+            tableOfContents
+            frontmatter {
+              template
+              title
+              tags
+              level
+              exercise
+              category
+            }
+            internal {
+              contentFilePath
+            }
+            fields {
+              slug
             }
           }
         }
       }
     `
-  )
+  );
 
   if (result.errors) {
-    throw result.errors
+    throw result.errors;
   }
 
-  // Create exercise pages.
-  function createWorkshopCurriculum(exercises) {
-    const exercise = path.resolve(`./src/templates/exercise.js`)
+  // Create  pages.
+  const pages = result.data.allMdx.nodes;
+  const exerciseTemplate = path.resolve(`./src/templates/exercise.js`);
+  const pageTemplate = path.resolve(`./src/templates/page.js`);
 
-    exercises.forEach((post, index) => {
-      const previous =
-        index === exercises.length - 1 ? null : exercises[index + 1].node
-      const next = index === 0 ? null : exercises[index - 1].node
+  function getCategory(page) {
+    const path = page.internal.contentFilePath;
 
-      createPage({
-        path: post.node.fields.slug,
-        component: exercise,
-        context: {
-          slug: post.node.fields.slug,
-          previous,
-          next,
-        },
-      })
-    })
+    return path
+      ? path.includes('/circuitpython/')
+        ? 'circuitpython'
+        : path.includes('/makecode/')
+        ? 'makecode'
+        : ''
+      : '';
   }
 
-  const cp = result.data.allMarkdownRemark.edges.filter(
-    (edge) =>
-      edge.node.frontmatter.template === 'exercise' &&
-      edge.node.frontmatter.category === 'CircuitPython'
-  )
+  function getTemplate(path) {
+    return path?.includes('exercises') ? exerciseTemplate : pageTemplate;
+  }
 
-  const mc = result.data.allMarkdownRemark.edges.filter(
-    (edge) =>
-      edge.node.frontmatter.template === 'exercise' &&
-      edge.node.frontmatter.category === 'MakeCode'
-  )
-
-  createWorkshopCurriculum(cp)
-  createWorkshopCurriculum(mc)
-}
+  pages.forEach((page) => {
+    const category = getCategory(page);
+    const path = page.internal.contentFilePath;
+    const level = page.frontmatter.level;
+    createPage({
+      path: page.fields.slug,
+      component: `${getTemplate(path)}?__contentFilePath=${path}`,
+      context: {
+        id: page.id,
+        categoryRegEx: `/${category}//`,
+      },
+    });
+  });
+};
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
-  const { createNodeField } = actions
+  const { createNodeField } = actions;
 
-  if (node.internal.type === `MarkdownRemark`) {
-    const value = createFilePath({ node, getNode })
+  if (node.internal.type === `Mdx`) {
+    const value = createFilePath({ node, getNode });
     createNodeField({
       name: `slug`,
       node,
       value,
-    })
+    });
   }
-}
+};

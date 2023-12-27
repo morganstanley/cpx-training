@@ -1,22 +1,22 @@
 ---
 template: exercise
-title: MakeCode | Session 5 | Touch Sensor
-slug: /makecode/session-5
+title: Touch Sensor
 level: 1
 exercise: 5
 category: MakeCode
-tags: ["MakeCode"]
+tags: ['MakeCode']
+description: Let's dig into the details of using the pads as touch sensors!
 ---
-
 
 ### Capacitive Touch Sensor
 
 Project: Sense a touch on the capacitive input
 
 Assignment: Play different music notes and color an LED corresponding to that key touched.
- - Program touch pad A1 to play your own music note and turn all lights to RED
- - Program touch pad A2 to play your own music note and turn all lights GREEN
- - Program touch pad A7 to play your own music note and turn all lights BLUE
+
+- Program touch pad A1 to play your own music note and turn all lights to RED
+- Program touch pad A2 to play your own music note and turn all lights GREEN
+- Program touch pad A7 to play your own music note and turn all lights BLUE
 
 ![e5-1](e5-1.png)
 

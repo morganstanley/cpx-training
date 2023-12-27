@@ -18,11 +18,13 @@ The [GatsbyJS](https://www.gatsbyjs.org) site based on the [gatsby-starter-22box
 ### Develop
 
 Clone this repo and from a CLI (Terminal, CMD, etc) change directory into `/site` and run:
+
 ```
 npm install
 ```
 
 To run preview server:
+
 ```
 npm run start
 ```
@@ -45,7 +47,6 @@ Please note that because the [starter project](https://www.gatsbyjs.org/starters
 ---
 template: exercise
 title: Level 1 | Exercise 1 - Blink
-slug: level-1-exercise-1
 date: "2020-05-01T23:46:37.121Z"
 category: CircuitPython
 tags: ["Level 1"]
@@ -57,11 +58,12 @@ As you can see from the example metadata above, the first exercise (L1 E1) start
 ### Build
 
 The build command will automatically replace the contents of the `/docs` directory with the built code.
+
 ```
 npm run build
 ```
 
-###  Publish
+### Publish
 
 Create a pull request and reach out to the contributing team for a code review and merge.
 

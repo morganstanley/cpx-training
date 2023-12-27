@@ -1,11 +1,10 @@
 ---
 template: exercise
-title: Level 2 | Exercise 3 - Built-in functions
-slug: /circuitpython/level-2/exercise-3
+title: Built-in functions
 level: 2
 exercise: 3
 category: CircuitPython
-tags: ["Level 2"]
+tags: ['Level 2']
 ---
 
 Lets start with [where we left off with variables](../L2-E1).
