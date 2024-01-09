@@ -3,7 +3,7 @@ template: exercise
 title: Acceleration
 level: 1
 exercise: 5
-category: CircuitPython
+category: circuitpython
 tags: ['Level 1']
 ---
 

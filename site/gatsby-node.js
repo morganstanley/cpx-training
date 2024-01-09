@@ -40,32 +40,19 @@ exports.createPages = async ({ graphql, actions }) => {
   const exerciseTemplate = path.resolve(`./src/templates/exercise.js`);
   const pageTemplate = path.resolve(`./src/templates/page.js`);
 
-  function getCategory(page) {
-    const path = page.internal.contentFilePath;
-
-    return path
-      ? path.includes('/circuitpython/')
-        ? 'circuitpython'
-        : path.includes('/makecode/')
-        ? 'makecode'
-        : ''
-      : '';
-  }
-
-  function getTemplate(path) {
-    return path?.includes('exercises') ? exerciseTemplate : pageTemplate;
+  function getTemplate(page) {
+    return page.frontmatter.exercise ? exerciseTemplate : pageTemplate;
   }
 
   pages.forEach((page) => {
-    const category = getCategory(page);
+    const category = page.frontmatter.category;
     const path = page.internal.contentFilePath;
-    const level = page.frontmatter.level;
     createPage({
       path: page.fields.slug,
-      component: `${getTemplate(path)}?__contentFilePath=${path}`,
+      component: `${getTemplate(page)}?__contentFilePath=${path}`,
       context: {
         id: page.id,
-        categoryRegEx: `/${category}//`,
+        category: category,
       },
     });
   });

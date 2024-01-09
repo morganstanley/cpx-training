@@ -3,7 +3,7 @@ template: exercise
 title: Loops and Temp
 level: 1
 exercise: 3
-category: MakeCode
+category: makecode
 tags: ['MakeCode']
 description: Let's dig into the details of using loops with the tempurature sensor!
 ---

@@ -3,7 +3,7 @@ template: exercise
 title: Basics and Variables
 level: 1
 exercise: 2
-category: MakeCode
+category: makecode
 tags: ['MakeCode']
 description: Introduction to basic coding concepts such as variables, logic, and loops!
 ---

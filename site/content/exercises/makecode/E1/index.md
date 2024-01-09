@@ -3,7 +3,7 @@ template: exercise
 title: Introduction
 level: 1
 exercise: 1
-category: MakeCode
+category: makecode
 tags: ['MakeCode']
 description: Choose the sample project that most interests you and dig in!
 ---

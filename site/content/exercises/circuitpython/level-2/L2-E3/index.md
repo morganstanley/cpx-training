@@ -3,7 +3,7 @@ template: exercise
 title: Built-in functions
 level: 2
 exercise: 3
-category: CircuitPython
+category: circuitpython
 tags: ['Level 2']
 ---
 

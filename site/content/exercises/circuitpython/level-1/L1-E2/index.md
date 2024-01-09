@@ -3,7 +3,7 @@ template: exercise
 title: Lights
 level: 1
 exercise: 2
-category: CircuitPython
+category: circuitpython
 tags: ['Level 1']
 ---
 

@@ -3,7 +3,7 @@ template: exercise
 title: Functions
 level: 2
 exercise: 4
-category: CircuitPython
+category: circuitpython
 tags: ['Level 2']
 ---
 

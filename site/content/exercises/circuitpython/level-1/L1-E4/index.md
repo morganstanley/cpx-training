@@ -3,7 +3,7 @@ template: exercise
 title: Touch
 level: 1
 exercise: 4
-category: CircuitPython
+category: circuitpython
 tags: ['Level 1']
 ---
 
