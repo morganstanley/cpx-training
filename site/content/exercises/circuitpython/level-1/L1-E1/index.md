@@ -3,7 +3,7 @@ template: exercise
 title: Blink
 level: 1
 exercise: 1
-category: circuitpython
+category: CircuitPython
 tags: ['Level 1']
 ---
 

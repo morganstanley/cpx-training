@@ -3,7 +3,7 @@ template: exercise
 title: Light Sensor
 level: 1
 exercise: 4
-category: makecode
+category: MakeCode
 tags: ['MakeCode']
 description: Let's dig into the details of using the light sensor!
 ---

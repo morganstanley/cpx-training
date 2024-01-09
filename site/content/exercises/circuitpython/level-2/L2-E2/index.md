@@ -3,7 +3,7 @@ template: exercise
 title: Expression and Statements
 level: 2
 exercise: 2
-category: circuitpython
+category: CircuitPython
 tags: ['Level 2']
 ---
 

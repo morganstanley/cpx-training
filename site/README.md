@@ -48,7 +48,7 @@ Please note that because the [starter project](https://www.gatsbyjs.org/starters
 template: exercise
 title: Level 1 | Exercise 1 - Blink
 date: "2020-05-01T23:46:37.121Z"
-category: circuitpython
+category: CircuitPython
 tags: ["Level 1"]
 ---
 ```

@@ -3,7 +3,7 @@ template: exercise
 title: Buttons
 level: 1
 exercise: 3
-category: circuitpython
+category: CircuitPython
 tags: ['Level 1']
 ---
 

@@ -3,7 +3,7 @@ template: exercise
 title: Temperature
 level: 1
 exercise: 6
-category: circuitpython
+category: CircuitPython
 tags: ['Level 1']
 ---
 

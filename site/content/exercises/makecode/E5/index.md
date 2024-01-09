@@ -3,7 +3,7 @@ template: exercise
 title: Touch Sensor
 level: 1
 exercise: 5
-category: makecode
+category: MakeCode
 tags: ['MakeCode']
 description: Let's dig into the details of using the pads as touch sensors!
 ---

@@ -3,7 +3,7 @@ template: exercise
 title: Project
 level: 1
 exercise: 6
-category: makecode
+category: MakeCode
 tags: ['MakeCode']
 description: Create something with the CPX as your final project!
 ---

@@ -3,7 +3,7 @@ template: exercise
 title: Variables and Types
 level: 2
 exercise: 1
-category: circuitpython
+category: CircuitPython
 tags: ['Level 2']
 ---
 
