@@ -24,13 +24,13 @@ const SiteIndex = ({ location }) => {
           <div className="pane">
             <header className="content">
               <h2>
-                <span>
+                <span className="cpx-title">
                   <Link to={`/exercises`}>Learn to code</Link>
                 </span>
               </h2>
             </header>
             <section className="content">
-              <span>
+              <span className="cpx-title">
                 An interactive introduction to coding. Learn the basics through
                 simple exercises designed to inspire.
               </span>
@@ -47,13 +47,13 @@ const SiteIndex = ({ location }) => {
             <div className="pane">
               <header className="content">
                 <h2>
-                  <span>
+                  <span className="cpx-title">
                     <Link to={`/instructor`}>Teach</Link>
                   </span>
                 </h2>
               </header>
               <section className="content">
-                <span>
+                <span className="cpx-title">
                   Learn how to encourage and inspire young coders as a volunteer
                   in a CPX Training Workshop.
                 </span>
@@ -70,13 +70,13 @@ const SiteIndex = ({ location }) => {
           <div className="pane">
             <header className="content">
               <h2>
-                <span>
+                <span className="cpx-title">
                   <Link to={`/makerspace`}>Make a Makerspace</Link>
                 </span>
               </h2>
             </header>
             <section className="content">
-              <span>
+              <span className="cpx-title">
                 Learn what it takes to create a Makerspace for your community.
               </span>
             </section>
