@@ -28,7 +28,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
-    "style-to-object": "^0.4.4"
+    "style-to-object": "^1.0.5"
   },
   "keywords": [
     "gatsby"
@@ -47,6 +47,6 @@
     "pubWindows": "rd /S \"../docs\" && move public \"../docs\""
   },
   "devDependencies": {
-    "prettier": "^2.8.8"
+    "prettier": "^3.1.1"
   }
 }
