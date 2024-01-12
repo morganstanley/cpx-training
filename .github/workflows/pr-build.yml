@@ -11,6 +11,10 @@ defaults:
 
 jobs:
   build:
+    strategy:
+      matrix:
+        node-version: [20.10.0]
+
     runs-on: ubuntu-latest
 
     steps:
