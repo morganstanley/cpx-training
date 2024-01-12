@@ -14,7 +14,7 @@ const CurriculumPage = ({ location }) => {
           subtitle="An interactive introduction to coding. Learn the basics through
           simple exercises designed to inspire."
         />
-        <Seo title="About" />
+        <Seo title="Learn" />
         <article className="content">
           <h2>Single Day Programs</h2>
           <div>
@@ -46,7 +46,7 @@ const CurriculumPage = ({ location }) => {
           <h2>Multi-week Programs</h2>
           <div>
             <h3>
-              <Link to={`/exercises/makecode/`}>MakeCode</Link>
+              <Link to={`/exercises/makecode/intro`}>MakeCode</Link>
             </h3>
             <h4>Grades 5-7</h4>
             <p>
@@ -67,7 +67,10 @@ const CurriculumPage = ({ location }) => {
               capstone project of the student's creation.
             </p>
 
-            <h3>Robotics</h3>
+            <h3>
+            <Link to={`/exercises/makecode/robotics`}>Robotics</Link>
+
+              </h3>
             <h4>Grades 8-11</h4>
             <p>
               Learn the fundamentals of robotics through combining components
