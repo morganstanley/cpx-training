@@ -18,7 +18,7 @@ const MakeCodeIndex = ({ data, location }) => {
     <Layout location={location}>
       <div className="exercises-main">
         <Hero
-          title="Circuit Playground Express with MakeCode"
+          title="Robotics with MakeCode"
           subtitle=""
           image="../../images/desk.jpg"
         />
