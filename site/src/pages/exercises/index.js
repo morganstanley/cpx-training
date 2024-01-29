@@ -67,17 +67,25 @@ const CurriculumPage = ({ location }) => {
               capstone project of the student's creation.
             </p>
 
-            <h3>
-            <Link to={`/exercises/makecode/robotics`}>Robotics</Link>
-
-              </h3>
+            <h3>Robotics</h3>
             <h4>Grades 8-11</h4>
             <p>
               Learn the fundamentals of robotics through combining components
-              such as sensors, servos and gears to an Adafruit Feather
-              microcontroller board.
+              such as sensors, servos and gears to an Adafruit CircuitPlayground
+              Express microcontroller board.
             </p>
-            <p>More details to come.</p>
+            <ul>
+              <li>
+                <Link to={`/exercises/makecode/robotics`}>
+                  Robotics with MakeCode
+                </Link>
+              </li>
+              <li>
+                <Link to={`/exercises/circuitpython/robotics`}>
+                  Advanced Robotics with CircuitPython
+                </Link>
+              </li>
+            </ul>
           </div>
         </article>
       </div>
