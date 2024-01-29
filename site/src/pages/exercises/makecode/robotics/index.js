@@ -44,7 +44,7 @@ export const pageQuery = graphql`
     allMdx(
       filter: {
         internal: {
-          contentFilePath: { regex: "/exercises/makecode/E[0-9]+//" }
+          contentFilePath: { regex: "/exercises/makecode/robotics/E[0-9]+//" }
         }
       }
       sort: [

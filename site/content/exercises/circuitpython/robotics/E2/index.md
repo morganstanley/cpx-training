@@ -4,7 +4,7 @@ title: More Robotics
 level: 1
 exercise: 2
 category: Robotics
-tags: ['MakeCode']
+tags: ['CircuitPython']
 description: second exercise
 ---
 

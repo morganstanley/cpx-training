@@ -1,6 +1,6 @@
 ---
 template: exercise
-title: Introduction to Robotics
+title: Introduction to Robotics With CircuitPython
 level: 1
 exercise: 1
 category: Robotics

@@ -9,7 +9,7 @@ import Seo from '../../../../components/seo';
 import '../../../../styles/global.css';
 import '../../../../styles/style.css';
 
-import Summary from '../../../../../content/exercises/makecode/index-summary.mdx';
+import Summary from '../../../../../content/exercises/circuitpython/robotics/index-summary.mdx';
 
 const MakeCodeIndex = ({ data, location }) => {
   const exercises = data.allMdx.nodes;
@@ -44,7 +44,9 @@ export const pageQuery = graphql`
     allMdx(
       filter: {
         internal: {
-          contentFilePath: { regex: "/exercises/makecode/E[0-9]+//" }
+          contentFilePath: {
+            regex: "/exercises/circuitpython/robotics/E[0-9]+//"
+          }
         }
       }
       sort: [
