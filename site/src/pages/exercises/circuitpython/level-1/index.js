@@ -1,10 +1,12 @@
 import React from 'react';
-import { Link, graphql } from 'gatsby';
+import { graphql } from 'gatsby';
 
 import ExerciseList from '../../../../components/exercises';
 import Hero from '../../../../components/hero';
 import Layout from '../../../../components/layout';
 import Seo from '../../../../components/seo';
+
+import SetUp from '../../../../../content/exercises/circuitpython/start-here.mdx';
 
 import '../../../../styles/global.css';
 import '../../../../styles/style.css';
@@ -21,24 +23,7 @@ const CPXLevel1Index = ({ data, location }) => {
         />
         <Seo title="CircuitPython | Level 1" />
         <article className="content">
-          <img
-            src="../../../images/circuitpython/mu.png"
-            alt="Mu Blink"
-            className="makecode"
-          />
-          <h2>
-            Intro to CircuitPython with Adafruit's Circuit Playground Express
-          </h2>
-          <h3>
-            <Link to={`/exercises/circuitpython/setup`}>Start Here</Link>
-          </h3>
-          <p>
-            If you haven't set up your Circuit Playground Express board to
-            support CircuitPython yet, please refer to the{' '}
-            <Link to={`/exercises/circuitpython/setup`}>
-              setup instructions
-            </Link>
-          </p>
+          <SetUp />
         </article>
         <ExerciseList nodes={exercises} />
       </div>
