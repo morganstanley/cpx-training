@@ -1,7 +1,7 @@
 ---
 template: exercise
 title: Loops and Temp
-level: 1
+level: 3
 exercise: 3
 category: Robotics
 tags: ['Robotics', 'MakeCode']

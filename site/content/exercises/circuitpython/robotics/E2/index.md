@@ -1,7 +1,7 @@
 ---
 template: exercise
 title: Color Wheel
-level: 1
+level: 4
 exercise: 2
 category: Robotics
 tags: ['CircuitPython']
@@ -49,4 +49,4 @@ Change your Blinky code from Exercise 1 to use LED 0 instead of D13. Try having 
 
 ### Reference Documentation
 
-* [cpx.pixels](https://docs.circuitpython.org/projects/circuitplayground/en/latest/api.html#adafruit_circuitplayground.circuit_playground_base.CircuitPlaygroundBase.pixels)
+- [cpx.pixels](https://docs.circuitpython.org/projects/circuitplayground/en/latest/api.html#adafruit_circuitplayground.circuit_playground_base.CircuitPlaygroundBase.pixels)

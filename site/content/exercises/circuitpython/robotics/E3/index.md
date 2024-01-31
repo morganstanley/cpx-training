@@ -1,7 +1,7 @@
 ---
 template: exercise
 title: Buttons
-level: 1
+level: 4
 exercise: 3
 category: Robotics
 tags: ['CircuitPython']
@@ -24,7 +24,7 @@ while True:
 
 Modify the code above so that only one pixel is on at a time. In other words, if multiple buttons are pressed in a sequence, only the most recent pixel stays on.
 
-*Hint: consider using `cpx.pixels.fill`*
+_Hint: consider using `cpx.pixels.fill`_
 
 ### Challenge Problem 2
 
@@ -32,6 +32,6 @@ Now modify the code so that each pixel is lit only while the user is holding dow
 
 ### Reference Documentation
 
-* [cpx.button_a](https://docs.circuitpython.org/projects/circuitplayground/en/latest/api.html#adafruit_circuitplayground.circuit_playground_base.CircuitPlaygroundBase.button_a)
+- [cpx.button_a](https://docs.circuitpython.org/projects/circuitplayground/en/latest/api.html#adafruit_circuitplayground.circuit_playground_base.CircuitPlaygroundBase.button_a)
 
-* [cpx.button_b](https://docs.circuitpython.org/projects/circuitplayground/en/latest/api.html#adafruit_circuitplayground.circuit_playground_base.CircuitPlaygroundBase.button_b)
+- [cpx.button_b](https://docs.circuitpython.org/projects/circuitplayground/en/latest/api.html#adafruit_circuitplayground.circuit_playground_base.CircuitPlaygroundBase.button_b)

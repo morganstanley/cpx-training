@@ -1,7 +1,7 @@
 ---
 template: exercise
 title: Blinky
-level: 1
+level: 4
 exercise: 1
 category: Robotics
 tags: ['CircuitPython']
@@ -13,6 +13,7 @@ Remember Blinky?
 The very first project from the Makecode Robotics course caused a single LED to cycle back and forth between on and off.
 
 Recall it used a single while loop containing 4 blocks:
+
 1. set the LED to on
 2. sleep for half a second
 3. set the LED to off
@@ -45,6 +46,6 @@ Can you do the same thing using only 2 lines of Python code within the while loo
 
 ### Reference Documentation
 
-* [cpx.red_led](https://docs.circuitpython.org/projects/circuitplayground/en/latest/api.html#adafruit_circuitplayground.circuit_playground_base.CircuitPlaygroundBase.red_led)
+- [cpx.red_led](https://docs.circuitpython.org/projects/circuitplayground/en/latest/api.html#adafruit_circuitplayground.circuit_playground_base.CircuitPlaygroundBase.red_led)
 
-* [time.sleep](https://docs.python.org/3/library/time.html#time.sleep)
+- [time.sleep](https://docs.python.org/3/library/time.html#time.sleep)
