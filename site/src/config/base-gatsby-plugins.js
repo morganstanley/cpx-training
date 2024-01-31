@@ -14,7 +14,6 @@ const gatsbyRemarkPlugins = [
   },
   'gatsby-remark-copy-linked-files',
   'gatsby-remark-smartypants',
-  'gatsby-remark-check-links',
 ];
 
 const gatsbyPluginMdx = {
@@ -56,6 +55,7 @@ const plugins = [
     },
   },
   'gatsby-plugin-react-helmet',
+  'gatsby-plugin-catch-links',
   {
     resolve: 'gatsby-plugin-webfonts',
     options: {
