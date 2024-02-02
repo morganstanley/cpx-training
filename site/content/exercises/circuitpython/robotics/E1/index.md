@@ -23,16 +23,16 @@ Now we do the same thing, just using 4 lines of Python code instead of 4 Makecod
 
 ```python
 # This section lets the system know which libraries we want to use
-from adafruit_circuitplayground.express import cpx
+from adafruit_circuitplayground import cp
 import time
 
 # This section is where our main code goes
 # Everything indented under the 'while True' will repeat forever
 # We call this a 'while loop'
 while True:
-    cpx.red_led = True
+    cp.red_led = True
     time.sleep(0.5)
-    cpx.red_led = False
+    cp.red_led = False
     time.sleep(0.5)
 
 # Note - anything with a '#' infront is a comment and is ignored
@@ -44,8 +44,10 @@ while True:
 
 Can you do the same thing using only 2 lines of Python code within the while loop?
 
-### Reference Documentation
+### References
 
-- [cpx.red_led](https://docs.circuitpython.org/projects/circuitplayground/en/latest/api.html#adafruit_circuitplayground.circuit_playground_base.CircuitPlaygroundBase.red_led)
+- [cp.red_led](https://docs.circuitpython.org/projects/circuitplayground/en/latest/api.html#adafruit_circuitplayground.circuit_playground_base.CircuitPlaygroundBase.red_led)
 
-- [time.sleep](https://docs.python.org/3/library/time.html#time.sleep)
+- [Python: while loops](https://www.w3schools.com/python/python_while_loops.asp)
+
+- [Python: time.sleep](https://docs.python.org/3/library/time.html#time.sleep)
