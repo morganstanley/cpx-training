@@ -5,7 +5,6 @@ level: 4
 exercise: 1
 category: Robotics
 tags: ['CircuitPython']
-description: first exercise
 ---
 
 Remember Blinky?

@@ -5,7 +5,6 @@ level: 4
 exercise: 3
 category: Robotics
 tags: ['CircuitPython']
-description: third exercise
 ---
 
 Now let's use the buttons on the device to turn individual LEDs on and off. We use the `cp.button_a` and `cp.button_b` properties to determine if the given button is being pressed down:

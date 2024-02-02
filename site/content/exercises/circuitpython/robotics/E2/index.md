@@ -5,7 +5,6 @@ level: 4
 exercise: 2
 category: Robotics
 tags: ['CircuitPython']
-description: second exercise
 ---
 
 Technically the Blinky project we created with CircuitPython doesn't do exactly the same thing as the one we previously created with Makecode:

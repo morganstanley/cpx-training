@@ -5,7 +5,6 @@ level: 4
 exercise: 6
 category: Robotics
 tags: ['CircuitPython']
-description: sixth exercise
 ---
 
 Let's have a listen to the device's speakers!

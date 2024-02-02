@@ -5,7 +5,6 @@ level: 4
 exercise: 4
 category: Robotics
 tags: ['CircuitPython']
-description: fourth exercise
 ---
 
 In this lesson, we are going to learn about variables and how we can use them to store information in order to use it again later.

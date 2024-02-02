@@ -5,7 +5,6 @@ level: 4
 exercise: 5
 category: Robotics
 tags: ['CircuitPython']
-description: fifth exercise
 ---
 
 ### Loops
