@@ -48,7 +48,7 @@ const SiteIndex = ({ location }) => {
               <header className="content">
                 <h2>
                   <span className="cpx-title">
-                    <Link to={`/instructor`}>Teach</Link>
+                    <Link to={`/teach`}>Teach</Link>
                   </span>
                 </h2>
               </header>
