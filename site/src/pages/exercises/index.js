@@ -66,6 +66,18 @@ const CurriculumPage = ({ location }) => {
               with the board's sensors and lights through code and ends with a
               capstone project of the student's creation.
             </p>
+            <ul>
+              <li>
+                <Link to={`/exercises/circuitpython/level-1/`}>
+                  Intro to CircuitPython - Level 1
+                </Link>
+              </li>
+              <li>
+                <Link to={`/exercises/circuitpython/level-2/`}>
+                  Coding with CircuitPython - Level 2
+                </Link>
+              </li>
+            </ul>
 
             <h3>Robotics</h3>
             <h4>Grades 8-11</h4>
