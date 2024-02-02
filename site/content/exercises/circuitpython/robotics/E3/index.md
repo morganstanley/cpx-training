@@ -8,30 +8,32 @@ tags: ['CircuitPython']
 description: third exercise
 ---
 
-Now let's use the buttons on the CPX device to turn individual LEDs on and off. We can use the `cpx.button_a` and `cpx.button_b` properties to determine whether the given button is currently pressed down or not:
+Now let's use the buttons on the device to turn individual LEDs on and off. We use the `cp.button_a` and `cp.button_b` properties to determine if the given button is being pressed down:
 
 ```python
-from adafruit_circuitplayground.express import cpx
+from adafruit_circuitplayground import cp
 
 while True:
-    if cpx.button_a:
-        cpx.pixels[0] = (255, 255, 255)
-    elif cpx.button_b:
-        cpx.pixels[1] = (255, 255, 255)
+    if cp.button_a:
+        cp.pixels[0] = (255, 255, 255)
+    elif cp.button_b:
+        cp.pixels[1] = (255, 255, 255)
 ```
 
 ### Challenge Problem 1
 
 Modify the code above so that only one pixel is on at a time. In other words, if multiple buttons are pressed in a sequence, only the most recent pixel stays on.
 
-_Hint: consider using `cpx.pixels.fill`_
+_Hint: consider using `cp.pixels.fill`_
 
 ### Challenge Problem 2
 
-Now modify the code so that each pixel is lit only while the user is holding down the button. As soon as the button is released, all pixels should turn off.
+Now modify the code so that each pixel is on only as long as the user holds down the button.
 
-### Reference Documentation
+### References
 
-- [cpx.button_a](https://docs.circuitpython.org/projects/circuitplayground/en/latest/api.html#adafruit_circuitplayground.circuit_playground_base.CircuitPlaygroundBase.button_a)
+- [Python: if/elif/else](https://www.w3schools.com/python/python_conditions.asp)
 
-- [cpx.button_b](https://docs.circuitpython.org/projects/circuitplayground/en/latest/api.html#adafruit_circuitplayground.circuit_playground_base.CircuitPlaygroundBase.button_b)
+- [cp.button_a](https://docs.circuitpython.org/projects/circuitplayground/en/latest/api.html#adafruit_circuitplayground.circuit_playground_base.CircuitPlaygroundBase.button_a)
+
+- [cp.button_b](https://docs.circuitpython.org/projects/circuitplayground/en/latest/api.html#adafruit_circuitplayground.circuit_playground_base.CircuitPlaygroundBase.button_b)
