@@ -1,120 +1,70 @@
 ---
 template: exercise
-title: Variables
+title: Touch and Serial
 level: 4
 exercise: 4
 category: Robotics
 tags: ['CircuitPython']
 ---
 
-In this lesson, we are going to learn about variables and how we can use them to store information in order to use it again later.
+We've played with lights, sounds, and buttons - now let's play with the touch sensors.
 
-Recall that using variables in Makecode involves clicking "Make a Variable", typing in the name of the variable you want to create, and then dragging the blocks into your code. Things are much easier in Python - we just type the name of the variable and start using it!
+Touching different pins on the board will trigger different lights and sounds.
 
-### Color Variables
+Also try playing with the slide switch to enable and disable it entirely.
 
-[From exercise 2](../E2), we ran the following program:
+The touchpad is assigned by its number on the circuit playground.
 
-```python
-from adafruit_circuitplayground import cp
-
-cp.pixels.brightness = 0.3
-cp.pixels.fill((0, 0, 0))
-
-while True:
-
-    # notice how these lines are similar
-    cp.pixels[0] = (255, 0, 0)
-    cp.pixels[1] = (255, 127, 0)
-    cp.pixels[2] = (0, 255, 0)
-    cp.pixels[3] = (0, 255, 127)
-    cp.pixels[4] = (75, 0, 130)
-    cp.pixels[5] = (60, 0, 255)
-    cp.pixels[6] = (255, 255, 255)
-    cp.pixels[7] = (0, 100, 0)
-    cp.pixels[8] = (100, 0, 0)
-    cp.pixels[9] = (0, 0, 100)
-
-    # the [] with a number determines which light to turn on
-    # and the numbers in () deterine the color!
-    # It says how much (red, green, blue) we want.
-    # Try changing the numbers!
-
-    # this line turns on the lights!
-```
-
-What do those numbers mean? How can we make this more readable?
-
-Make a list of color variables by color name.
+In order to view the output of the `print()` statements, ensure **Serial** is enabled in the Mu Editor.
 
 ```python
 from adafruit_circuitplayground import cp
 
-# Colors
-BLACK = (0, 0, 0)
-RED = (255, 0, 0)
-PINK = (255, 100, 120)
-ORANGE = (255, 100, 0)
-YELLOW = (255, 255, 0)
-GREEN = (0, 255, 0)
-CYAN = (0, 255, 255)
-PURPLE = (255, 0, 255)
-BLUE = (0, 0, 255)
-LIGHT_BLUE = (80, 200, 175)
-WHITE = (255, 255, 255)
-
-cp.pixels.brightness = 0.3
-cp.pixels.fill(BLACK)
-
 while True:
-    cp.pixels[0] = RED
-    cp.pixels[1] = ORANGE
-    cp.pixels[2] = GREEN
-    cp.pixels[3] = CYAN
-    cp.pixels[4] = PURPLE
-    cp.pixels[5] = BLUE
-    cp.pixels[6] = WHITE
-    cp.pixels[7] = YELLOW
-    cp.pixels[8] = PINK
-    cp.pixels[9] = LIGHT_BLUE
-```
-
-- a variable is used to store data to be used by the program
-- this data can be a number, a string, a Boolean, a list or some other data type
-- every variable has a name which can consist of letters, numbers, and the underscore character (\_).
-- no other type of characters can be used to create the variable name and the variable may NOT start with a number.
-- the equal sign = is used to assign a value to a variable.
-- that assignment can be from a fixed value or taken from another existing variable
-- it can also be used to change the value of a variable from one value to another after the initial assignment is made
-
-### Changing Colors
-
-Now let's use the buttons on the device to change the pixel colors. We do this by assigning the value of a variable based on which button is pressed, and then setting the pixel color to the value of the variable.
-
-```python
-from adafruit_circuitplayground import cp
-
-# Colors
-BLACK = (0, 0, 0)
-RED = (255, 0, 0)
-GREEN = (0, 255, 0)
-
-cp.pixels.brightness = 0.3
-color = BLACK
-cp.pixels.fill(color)
-
-while True:
-    if cp.button_a:
-        color = RED
-    elif cp.button_b:
-        color = GREEN
-    cp.pixels[0] = color
+    if cp.switch:
+        print("Slide switch off!")
+        cp.pixels.fill((0, 0, 0))
+        cp.stop_tone()
+        continue
+    if cp.touch_A4:
+        print('Touched A4!')
+        cp.pixels.fill((15, 0, 0))
+        cp.start_tone(262)
+    elif cp.touch_A5:
+        print('Touched A5!')
+        cp.pixels.fill((15, 5, 0))
+        cp.start_tone(294)
+    elif cp.touch_A6:
+        print('Touched A6!')
+        cp.pixels.fill((15, 15, 0))
+        cp.start_tone(330)
+    elif cp.touch_A1:
+        print('Touched A1!')
+        cp.pixels.fill((0, 15, 15))
+        cp.start_tone(392)
+    elif cp.touch_A2 and not cp.touch_A3:
+        print('Touched A2!')
+        cp.pixels.fill((0, 0, 15))
+        cp.start_tone(440)
+    elif cp.touch_A3 and not cp.touch_A2:
+        print('Touched A3!')
+        cp.pixels.fill((5, 0, 15))
+        cp.start_tone(494)
+    elif cp.touch_A2 and cp.touch_A3:
+        print('Touched "8"!')
+        cp.pixels.fill((15, 0, 15))
+        cp.start_tone(523)
+    else:
+        cp.pixels.fill((0, 0, 0))
+        cp.stop_tone()
 ```
 
 ### Challenge Problem
 
-Modify the code so that the buttons change the color for all LEDs, not just LED 0.
+Run the above program and get it to print "Touched 8" to the serial console.
 
 ### References
 
-- [Python: variables](https://www.w3schools.com/python/python_variables.asp)
+- [cp.touch_A1](https://docs.circuitpython.org/projects/circuitplayground/en/latest/api.html#adafruit_circuitplayground.circuit_playground_base.CircuitPlaygroundBase.touch_A1)
+
+- [Python: print](https://www.w3schools.com/python/ref_func_print.asp)

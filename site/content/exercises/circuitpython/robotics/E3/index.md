@@ -1,38 +1,28 @@
 ---
 template: exercise
-title: Buttons
+title: Sounds
 level: 4
 exercise: 3
 category: Robotics
 tags: ['CircuitPython']
 ---
 
-Now let's use the buttons on the device to turn individual LEDs on and off. We use the `cp.button_a` and `cp.button_b` properties to determine if the given button is being pressed down:
+Let's have a listen to the device's speakers!
+
+Here the first number is the pitch, and the second number is the duration of the note. Play different notes depending on which button is pressed.
 
 ```python
 from adafruit_circuitplayground import cp
 
 while True:
     if cp.button_a:
-        cp.pixels[0] = (255, 255, 255)
+        cp.play_tone(329,1)
+        cp.play_tone(261,1)
     elif cp.button_b:
-        cp.pixels[1] = (255, 255, 255)
+        cp.play_tone(440,1)
+        cp.play_tone(400,1)
 ```
-
-### Challenge Problem 1
-
-Modify the code above so that only one pixel is on at a time. In other words, if multiple buttons are pressed in a sequence, only the most recent pixel stays on.
-
-_Hint: consider using `cp.pixels.fill`_
-
-### Challenge Problem 2
-
-Now modify the code so that each pixel is on only as long as the user holds down the button.
 
 ### References
 
-- [Python: if/elif/else](https://www.w3schools.com/python/python_conditions.asp)
-
-- [cp.button_a](https://docs.circuitpython.org/projects/circuitplayground/en/latest/api.html#adafruit_circuitplayground.circuit_playground_base.CircuitPlaygroundBase.button_a)
-
-- [cp.button_b](https://docs.circuitpython.org/projects/circuitplayground/en/latest/api.html#adafruit_circuitplayground.circuit_playground_base.CircuitPlaygroundBase.button_b)
+- [cp.play_tone](https://docs.circuitpython.org/projects/circuitplayground/en/latest/api.html#adafruit_circuitplayground.circuit_playground_base.CircuitPlaygroundBase.play_tone)
