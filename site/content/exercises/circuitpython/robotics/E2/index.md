@@ -9,7 +9,7 @@ tags: ['CircuitPython']
 
 Technically the Blinky project we created with CircuitPython doesn't do exactly the same thing as the one we previously created with Makecode:
 
-![MakeCode Blink](../../../../../public/images/makecode/blink.png)
+![MakeCode Blink](blink.png)
 
 Recall our Python code made use of the `cp.red_led` property, which toggles the small red D13 LED. To light up any of the 10 larger pixels on the device we make use of the `cp.pixels` property:
 
