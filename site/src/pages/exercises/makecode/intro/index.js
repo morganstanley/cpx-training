@@ -1,14 +1,15 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 
-import ExerciseList from '../../../components/exercises';
-import Hero from '../../../components/hero';
-import Layout from '../../../components/layout';
+import ExerciseList from '../../../../components/exercises';
+import Hero from '../../../../components/hero';
+import Layout from '../../../../components/layout';
+import Seo from '../../../../components/seo';
 
-import '../../../styles/global.css';
-import '../../../styles/style.css';
+import '../../../../styles/global.css';
+import '../../../../styles/style.css';
 
-import Summary from '../../../../content/exercises/makecode/index-summary.mdx';
+import Summary from '../../../../../content/exercises/makecode/index-summary.mdx';
 
 const MakeCodeIndex = ({ data, location }) => {
   const exercises = data.allMdx.nodes;
@@ -16,10 +17,11 @@ const MakeCodeIndex = ({ data, location }) => {
   return (
     <Layout location={location}>
       <div className="exercises-main">
+        <Seo title="MakeCode" />
         <Hero
           title="Circuit Playground Express with MakeCode"
           subtitle=""
-          image="../../images/desk.jpg"
+          image="../../../images/desk.jpg"
         />
         <article className="content">
           <Summary />
@@ -42,7 +44,7 @@ export const pageQuery = graphql`
     allMdx(
       filter: {
         internal: {
-          contentFilePath: { regex: "/exercises/makecode/E[0-9]+//" }
+          contentFilePath: { regex: "/exercises/makecode/intro/E[0-9]+//" }
         }
       }
       sort: [

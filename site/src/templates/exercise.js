@@ -61,7 +61,7 @@ const ExerciseTemplate = ({ children, data, pageContext, location }) => {
 export default ExerciseTemplate;
 
 export const pageQuery = graphql`
-  query ($id: String!, $categoryRegEx: String!) {
+  query ($id: String!, $category: String!) {
     site {
       siteMetadata {
         title
@@ -79,10 +79,7 @@ export const pageQuery = graphql`
       tableOfContents
     }
     allMdx(
-      filter: {
-        internal: { contentFilePath: { regex: $categoryRegEx } }
-        frontmatter: { exercise: { ne: null } }
-      }
+      filter: { frontmatter: { category: { eq: $category } } }
       sort: [
         { frontmatter: { level: ASC } }
         { frontmatter: { exercise: ASC } }
@@ -95,6 +92,7 @@ export const pageQuery = graphql`
           title
           exercise
           level
+          category
         }
         internal {
           contentFilePath

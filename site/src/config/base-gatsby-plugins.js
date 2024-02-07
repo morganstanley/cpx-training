@@ -1,25 +1,25 @@
 const gatsbyRemarkPlugins = [
-  `gatsby-remark-autolink-headers`,
+  'gatsby-remark-autolink-headers',
   {
-    resolve: `gatsby-remark-images`,
+    resolve: 'gatsby-remark-images',
     options: {
       maxWidth: 590,
     },
   },
   {
-    resolve: `gatsby-remark-prismjs`,
+    resolve: 'gatsby-remark-prismjs',
     options: {
       showLineNumbers: false,
     },
   },
-  `gatsby-remark-copy-linked-files`,
-  `gatsby-remark-smartypants`,
+  'gatsby-remark-copy-linked-files',
+  'gatsby-remark-smartypants',
 ];
 
 const gatsbyPluginMdx = {
   resolve: 'gatsby-plugin-mdx',
   options: {
-    extensions: [`.md`, `.mdx`],
+    extensions: ['.md', '.mdx'],
     gatsbyRemarkPlugins,
   },
 };
@@ -31,21 +31,21 @@ const plugins = [
     resolve: 'gatsby-source-filesystem',
     options: {
       name: 'content',
-      path: `./content`,
+      path: './content',
     },
     __key: 'content',
   },
   gatsbyPluginMdx,
-  `gatsby-transformer-sharp`,
+  'gatsby-transformer-sharp',
   {
-    resolve: `gatsby-plugin-sharp`,
+    resolve: 'gatsby-plugin-sharp',
     options: {
       defaults: {
-        formats: [`auto`, `webp`],
-        placeholder: `none`,
+        formats: ['auto', 'webp'],
+        placeholder: 'none',
         quality: 50,
         breakpoints: [750, 1080, 1366, 1920],
-        backgroundColor: `transparent`,
+        backgroundColor: 'transparent',
         blurredOptions: {},
         jpgOptions: {},
         pngOptions: {},
@@ -54,9 +54,10 @@ const plugins = [
       },
     },
   },
-  `gatsby-plugin-react-helmet`,
+  'gatsby-plugin-react-helmet',
+  'gatsby-plugin-catch-links',
   {
-    resolve: `gatsby-plugin-webfonts`,
+    resolve: 'gatsby-plugin-webfonts',
     options: {
       fonts: {
         google: [
