@@ -1,0 +1,13 @@
+adafruit_lis3dh==5.2.2
+adafruit_thermistor==3.4.10
+neopixel==6.3.11
+adafruit_crickit==2.3.17
+adafruit_pixelbuf==2.0.4
+adafruit_ble==10.0.5
+adafruit_bluefruit_connect==1.2.13
+adafruit_bus_device==5.2.8
+adafruit_circuitplayground==5.3.4
+adafruit_gizmo==1.3.18
+adafruit_hid==6.0.3
+adafruit_motor==3.4.13
+adafruit_seesaw==1.16.2
