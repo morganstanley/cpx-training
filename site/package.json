@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "@mdx-js/react": "^2.3.0",
-    "dracula-prism": "^2.1.13",
+    "dracula-prism": "^2.1.16",
     "gatsby": "^5.12.10",
     "gatsby-plugin-catch-links": "^5.13.1",
     "gatsby-plugin-image": "^3.12.3",
