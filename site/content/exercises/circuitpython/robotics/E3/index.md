@@ -28,7 +28,7 @@ while True:
 - [cp.play_tone](https://docs.circuitpython.org/projects/circuitplayground/en/latest/api.html#adafruit_circuitplayground.circuit_playground_base.CircuitPlaygroundBase.play_tone)
 
 ## Making Music
-If you want to try out some music here are variables you need to get started. See below for [sample songs](https://github.com/SushQ/cpx-training/edit/main/site/content/exercises/circuitpython/robotics/E3/index.md?plain=1#L77#sample-songs).
+If you want to try out some music here are variables you need to get started. See below for [sample songs](http://opensource.morganstanley.com/exercises/circuitpython/robotics/E3/#sample-songs).
 
 Copy these musical note variables into your code:
 ```python
