@@ -1,6 +1,6 @@
 ---
 template: exercise
-title: Robot Assembly
+title: Crickit and Motors
 level: 4
 exercise: 9
 category: Robotics
