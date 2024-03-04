@@ -1,6 +1,6 @@
 ---
 template: exercise
-title: Bluetooth
+title: Robot Assembly
 level: 4
 exercise: 10
 category: Robotics
