@@ -12,8 +12,6 @@ updates:
     groups:
       gatsby:
         patterns:
-          - '*gatsby*/*'
-          - '*/*gatsby*'
           - 'gatsby*'
 
   - package-ecosystem: github-actions
