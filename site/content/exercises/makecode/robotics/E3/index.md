@@ -8,4 +8,4 @@ tags: ['Robotics', 'MakeCode']
 description: Let's dig into the details of using loops with the tempurature sensor!
 ---
 
-Refer to [This Lesson](https://opensource.morganstanley.com/cpx-training/exercises/makecode/E3/)
+Refer to [This Lesson](../../intro/E3/)
