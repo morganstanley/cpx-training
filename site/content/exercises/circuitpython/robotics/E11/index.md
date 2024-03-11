@@ -1,8 +1,8 @@
 ---
 template: exercise
-title: Crickit and Motors
+title: Robot Assembly
 level: 4
-exercise: 10
+exercise: 11
 category: Robotics
 tags: ['CircuitPython']
 ---
