@@ -71,9 +71,9 @@ while True:
             if isinstance(packet, AccelerometerPacket):
                 x, y, z = packet.x, packet.y, packet.z
                 print((x, y, z))
-                R = 10 * abs(int(x))
-                G = 10 * abs(int(y))
-                B = 10 * abs(int(z))
+                R = abs(int(10 * x))
+                G = abs(int(10 * y))
+                B = abs(int(10 * z))
                 cp.pixels.fill((R, G, B))
 ```
 
