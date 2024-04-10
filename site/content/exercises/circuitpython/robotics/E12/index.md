@@ -7,10 +7,10 @@ category: Robotics
 tags: ['CircuitPython']
 ---
 
-# What are Crickit microchips?
+# What is the CRICKIT?
 
-- Crickit microchips are used along with the Circuit Playground microchips because they can control more powerful motors that the Circuit Playground device (CPX or Bluefruit) could not power by itself.
-- They also have the capability of hooking up additional sensors to the Crickit
+- The CRICKIT board can be used in conjunction with a supported Circuit Playground board (such as the CPX or Bluefruit) to control more powerful motors that the Circuit Playground board could not power by itself.
+- It also has the capability of hooking up additional sensors to the CRICKIT
 
 ![](../../../makecode/robotics/E5/Lesson51.jpg)
 
@@ -24,17 +24,17 @@ Servos are specialized motors that can be programmed to move in precise incremen
 
 # Assembly
 
-- Attach the Circuit Playground device to the Crickit
+- Attach the Circuit Playground board to the CRICKIT
 
-- Use the metal spacers and screws (inside of Crickit bag)
+- Use the metal spacers and screws (inside of CRICKIT bag)
 
-- The micro USB on the CP device should align with the power supply of the Crickit
+- The micro USB on the CP board should align with the power supply of the CRICKIT
 
 ![](../../../makecode/robotics/E6/Assembly3.jpg)
 
 # Programming
 
-After plugging the servo cable into Servo 1 on the Crickit (yellow wire toward the outside), the following program can be run to demonstrate the full range of motion of the servo motor arm:
+After plugging the servo cable into Servo 1 on the CRICKIT (yellow wire toward the outside), the following program can be run to demonstrate the full range of motion of the servo motor arm:
 
 ```python
 from adafruit_crickit import crickit
@@ -99,7 +99,7 @@ If you experiment with the above program enough, it will eventually crash with a
 
 # References
 
-- [servo.angle](https://docs.circuitpython.org/projects/motor/en/latest/api.html#adafruit_motor.servo.Servo.angle)
+- [servo.angle](https://docs.circuitpython.org/projects/motor/en/latest/api.html#adafruit_motor.servo.Servo)
 
 - [ButtonPacket](https://docs.circuitpython.org/projects/bluefruitconnect/en/latest/api.html#adafruit-bluefruit-connect-button-packet)
 
