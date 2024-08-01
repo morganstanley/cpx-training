@@ -4,7 +4,6 @@ import { graphql } from 'gatsby';
 import ExerciseList from '../../../../components/exercises';
 import Hero from '../../../../components/hero';
 import Layout from '../../../../components/layout';
-import Seo from '../../../../components/seo';
 
 import '../../../../styles/global.css';
 import '../../../../styles/style.css';
@@ -17,7 +16,6 @@ const MakeCodeIndex = ({ data, location }) => {
   return (
     <Layout location={location}>
       <div className="exercises-main">
-        <Seo title="MakeCode" />
         <Hero
           title="Circuit Playground Express with MakeCode"
           subtitle=""
@@ -33,6 +31,13 @@ const MakeCodeIndex = ({ data, location }) => {
 };
 
 export default MakeCodeIndex;
+
+export const Head = ({ pageContext }) => (
+  <>
+    <title>{pageContext.frontmatter.title}</title>
+    <meta name="description" content={pageContext.description} />
+  </>
+);
 
 export const pageQuery = graphql`
   query {

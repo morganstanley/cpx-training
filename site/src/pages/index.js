@@ -3,7 +3,6 @@ import { Link, graphql } from 'gatsby';
 
 import Hero from '../components/hero';
 import Layout from '../components/layout';
-import Seo from '../components/seo';
 
 const SiteIndex = ({ location }) => {
   return (
@@ -14,7 +13,6 @@ const SiteIndex = ({ location }) => {
           subtitle="Introduction to programming with Adafruit's Circuit Playground
                 Express"
         />
-        <Seo title="Makerspace by Morgan Stanley" />
         <article className="hero hero-learn">
           <img
             src="images/student-computer.jpg"
@@ -88,6 +86,17 @@ const SiteIndex = ({ location }) => {
 };
 
 export default SiteIndex;
+
+export const Head = () => (
+  <>
+    <title>Makerspace by Morgan Stanley</title>
+    <meta
+      name="description"
+      content="Introduction to programming with Adafruit's Circuit Playground
+                Express"
+    />
+  </>
+);
 
 export const pageQuery = graphql`
   query {

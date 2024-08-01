@@ -4,32 +4,36 @@ const { createFilePath } = require(`gatsby-source-filesystem`);
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
 
-  const result = await graphql(
-    `
-      {
-        allMdx {
-          nodes {
-            id
-            tableOfContents
-            frontmatter {
-              template
-              title
-              tags
-              level
-              exercise
-              category
-            }
-            internal {
-              contentFilePath
-            }
-            fields {
-              slug
-            }
+  const result = await graphql(`
+    {
+      site {
+        siteMetadata {
+          title
+        }
+      }
+      allMdx {
+        nodes {
+          id
+          tableOfContents
+          frontmatter {
+            template
+            title
+            tags
+            level
+            exercise
+            category
+            description
+          }
+          internal {
+            contentFilePath
+          }
+          fields {
+            slug
           }
         }
       }
-    `
-  );
+    }
+  `);
 
   if (result.errors) {
     throw result.errors;
