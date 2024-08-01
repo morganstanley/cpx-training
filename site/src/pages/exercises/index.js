@@ -3,7 +3,6 @@ import { graphql, Link } from 'gatsby';
 
 import Hero from '../../components/hero';
 import Layout from '../../components/layout';
-import Seo from '../../components/seo';
 
 const CurriculumPage = ({ location }) => {
   return (
@@ -14,7 +13,6 @@ const CurriculumPage = ({ location }) => {
           subtitle="An interactive introduction to coding. Learn the basics through
           simple exercises designed to inspire."
         />
-        <Seo title="Learn" />
         <article className="content">
           <h2>Single Day Programs</h2>
           <div>
@@ -106,6 +104,13 @@ const CurriculumPage = ({ location }) => {
 };
 
 export default CurriculumPage;
+
+export const Head = () => (
+  <>
+    <title>CircuitPlayground Express Curriculum</title>
+    <meta name="description" content="CircuitPlayground Express Curriculum" />
+  </>
+);
 
 export const pageQuery = graphql`
   query {

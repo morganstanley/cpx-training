@@ -3,7 +3,6 @@ import { Link, graphql } from 'gatsby';
 
 import ExerciseNav from '../components/exercise-nav';
 import Layout from '../components/layout';
-import Seo from '../components/seo';
 
 function nextPrev(nodes, location) {
   const len = nodes.length;
@@ -23,7 +22,6 @@ const ExerciseTemplate = ({ children, data, pageContext, location }) => {
 
   return (
     <Layout location={location}>
-      <Seo title={pageTitle} description={pageContext.description} />
       <article className="exercise-main content">
         <ExerciseNav location={location} nodes={nodes} toc={toc} />
         <div className="exercise-content">
@@ -59,6 +57,16 @@ const ExerciseTemplate = ({ children, data, pageContext, location }) => {
 };
 
 export default ExerciseTemplate;
+
+export const Head = ({ pageContext }) => (
+  <>
+    <title>
+      {pageContext.title} | Level {pageContext.level} | Exercise{' '}
+      {pageContext.exercise}
+    </title>
+    <meta name="description" content={pageContext.description} />
+  </>
+);
 
 export const pageQuery = graphql`
   query ($id: String!, $category: String!) {

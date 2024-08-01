@@ -25,4 +25,4 @@ Download code of selected project & just have fun with running the example.
 
 Objective: Just copy and paste existing examples and have fun, fun, fun...
 
-Homework: [Read thru all Adafruit features](https://learn.adafruit.com/adafruit-circuit-playground-express)
+Homework: [Read through all Adafruit features](https://learn.adafruit.com/adafruit-circuit-playground-express)

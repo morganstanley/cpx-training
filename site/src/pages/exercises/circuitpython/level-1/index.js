@@ -4,7 +4,6 @@ import { graphql } from 'gatsby';
 import ExerciseList from '../../../../components/exercises';
 import Hero from '../../../../components/hero';
 import Layout from '../../../../components/layout';
-import Seo from '../../../../components/seo';
 
 import SetUp from '../../../../../content/exercises/circuitpython/start-here.mdx';
 
@@ -21,7 +20,6 @@ const CPXLevel1Index = ({ data, location }) => {
           title="CPX Training Workshop"
           subtitle="CircuitPython - Level 1"
         />
-        <Seo title="CircuitPython | Level 1" />
         <article className="content">
           <SetUp />
         </article>
@@ -32,6 +30,16 @@ const CPXLevel1Index = ({ data, location }) => {
 };
 
 export default CPXLevel1Index;
+
+export const Head = () => (
+  <>
+    <title>CircuitPython | Level 1</title>
+    <meta
+      name="description"
+      content="Level 1 CircuitPython curriculum for beginners"
+    />
+  </>
+);
 
 export const pageQuery = graphql`
   query {

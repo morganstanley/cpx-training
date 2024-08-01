@@ -4,7 +4,6 @@ import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
 import Hero from '../components/hero';
 import Layout from '../components/layout';
-import Seo from '../components/seo';
 
 const PageTemplate = ({ children, pageContext, location }) => {
   const pageTitle = pageContext.frontmatter.title;
@@ -15,7 +14,6 @@ const PageTemplate = ({ children, pageContext, location }) => {
 
   return (
     <Layout location={location}>
-      <Seo title={pageTitle} description={pageContext.description} />
       <GatsbyImage image={heroImage} alt="" />
       <Hero title={pageTitle} subtitle={subTitle} />
       <div className="content">{children}</div>
@@ -24,6 +22,13 @@ const PageTemplate = ({ children, pageContext, location }) => {
 };
 
 export default PageTemplate;
+
+export const Head = ({ pageContext }) => (
+  <>
+    <title>{pageContext.title}</title>
+    <meta name="description" content={pageContext?.description} />
+  </>
+);
 
 export const pageQuery = graphql`
   query ($id: String!) {
@@ -36,6 +41,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         subtitle
+        description
       }
       tableOfContents
     }
