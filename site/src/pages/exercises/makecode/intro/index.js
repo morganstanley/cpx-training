@@ -32,10 +32,13 @@ const MakeCodeIndex = ({ data, location }) => {
 
 export default MakeCodeIndex;
 
-export const Head = ({ pageContext }) => (
+export const Head = () => (
   <>
-    <title>{pageContext.frontmatter.title}</title>
-    <meta name="description" content={pageContext.description} />
+    <title>Circuit Playground Express with MakeCode</title>
+    <meta
+      name="description"
+      content="Circuit Playground Express with MakeCode for beginning coders"
+    />
   </>
 );
 
