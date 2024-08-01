@@ -31,6 +31,12 @@
     "react-helmet": "^6.1.0",
     "style-to-object": "^1.0.6"
   },
+  "overrides": {
+    "gatsby": {
+      "axios": "^1.2.1",
+      "webpack-dev-middleware": "^5.3.4"
+    }
+  },
   "keywords": [
     "gatsby"
   ],
