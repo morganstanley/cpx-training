@@ -4,6 +4,8 @@ import { graphql, Link } from 'gatsby';
 import Hero from '../../components/hero';
 import Layout from '../../components/layout';
 
+import { siteFragment } from '../../fragments/site';
+
 const CurriculumPage = ({ location }) => {
   return (
     <Layout location={location}>
@@ -115,9 +117,7 @@ export const Head = () => (
 export const pageQuery = graphql`
   query {
     site {
-      siteMetadata {
-        title
-      }
+      ...SiteMetadata
     }
   }
 `;

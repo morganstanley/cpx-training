@@ -4,6 +4,8 @@ import { Link, graphql } from 'gatsby';
 import ExerciseNav from '../components/exercise-nav';
 import Layout from '../components/layout';
 
+import { siteFragment } from '../fragments/site';
+
 function nextPrev(nodes, location) {
   const len = nodes.length;
   const current = nodes.findIndex((node) =>
@@ -71,9 +73,7 @@ export const Head = ({ pageContext }) => (
 export const pageQuery = graphql`
   query ($id: String!, $category: String!) {
     site {
-      siteMetadata {
-        title
-      }
+      ...SiteMetadata
     }
     mdx(id: { eq: $id }) {
       frontmatter {

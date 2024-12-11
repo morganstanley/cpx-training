@@ -1,15 +1,15 @@
 const path = require(`path`);
 const { createFilePath } = require(`gatsby-source-filesystem`);
 
+import { siteFragment } from './fragments/site';
+
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
 
   const result = await graphql(`
     {
       site {
-        siteMetadata {
-          title
-        }
+        ...SiteMetadata
       }
       allMdx {
         nodes {

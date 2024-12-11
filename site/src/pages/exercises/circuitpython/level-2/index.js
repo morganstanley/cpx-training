@@ -7,6 +7,8 @@ import Layout from '../../../../components/layout';
 
 import SetUp from '../../../../../content/exercises/circuitpython/start-here.mdx';
 
+import { siteFragment } from '../../../../fragments/site';
+
 import '../../../../styles/global.css';
 import '../../../../styles/style.css';
 
@@ -44,9 +46,7 @@ export const Head = () => (
 export const pageQuery = graphql`
   query {
     site {
-      siteMetadata {
-        title
-      }
+      ...SiteMetadata
     }
     allMdx(
       filter: {

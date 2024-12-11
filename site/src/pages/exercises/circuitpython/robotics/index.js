@@ -5,6 +5,8 @@ import ExerciseList from '../../../../components/exercises';
 import Hero from '../../../../components/hero';
 import Layout from '../../../../components/layout';
 
+import { siteFragment } from '../../../../fragments/site';
+
 import '../../../../styles/global.css';
 import '../../../../styles/style.css';
 
@@ -42,9 +44,7 @@ export const Head = () => (
 export const pageQuery = graphql`
   query {
     site {
-      siteMetadata {
-        title
-      }
+      ...SiteMetadata
     }
     allMdx(
       filter: {

@@ -2,6 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 
 import Layout from '../components/layout';
+import { siteFragment } from '../fragments/site';
 
 const NotFoundPage = ({ location }) => {
   return (
@@ -19,9 +20,7 @@ export const Head = () => <title>404: Not Found</title>;
 export const pageQuery = graphql`
   query {
     site {
-      siteMetadata {
-        title
-      }
+      ...SiteMetadata
     }
   }
 `;
