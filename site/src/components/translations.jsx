@@ -1,11 +1,11 @@
 import React, { useCallback, useState } from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 
-import { tocFragment, allExercisesNodes } from '../fragments/documentation';
+import { tocFragment, allExercisesNodes } from '../fragments/exercises';
 import { siteFragment } from '../fragments/site';
 import { getAvailableTranslations } from '../utils/translations';
 
-export default function Toc() {
+export default function Translations() {
   const data = useStaticQuery(graphql`
     query TocQuery {
       site {
@@ -25,5 +25,11 @@ export default function Toc() {
     translations[0]
   );
 
-  return <></>;
+  return (
+    <ul>
+      {translations.map((translation) => (
+        <li>{translation}</li>
+      ))}
+    </ul>
+  );
 }

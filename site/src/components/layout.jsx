@@ -7,6 +7,9 @@ import Header from './header';
 import Hero from './hero';
 import SummaryCard from './summary-card';
 
+import '../styles/global.css';
+import '../styles/style.css';
+
 const shortcodes = { Hero, Link, SummaryCard };
 
 function Layout({ location, children }) {
