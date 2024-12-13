@@ -18,7 +18,7 @@ const NotFoundPage = ({ data, location }) => {
           Sorry, the url you're looking for appears to be missing. Check out the
           sitemap below to find your expected page.
         </p>
-        <SiteMap location={location} nodes={nodes} toc={0} />
+        <SiteMap location={location} nodes={nodes} />
       </div>
     </Layout>
   );
