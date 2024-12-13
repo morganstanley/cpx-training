@@ -3,6 +3,7 @@ import { Link, graphql } from 'gatsby';
 
 import Hero from '../components/hero';
 import Layout from '../components/layout';
+import PageHead from '../components/head';
 
 import { siteFragment } from '../fragments/site';
 
@@ -90,14 +91,13 @@ const SiteIndex = ({ location }) => {
 export default SiteIndex;
 
 export const Head = () => (
-  <>
-    <title>Makerspace by Morgan Stanley</title>
+  <PageHead title="Makerspace by Morgan Stanley">
     <meta
       name="description"
       content="Introduction to programming with Adafruit's Circuit Playground
                 Express"
     />
-  </>
+  </PageHead>
 );
 
 export const pageQuery = graphql`
