@@ -23,7 +23,7 @@ function getLevels(nodes) {
   return potentialValues;
 }
 
-const PageListItems = ({ location, nodes }) => {
+const PageListItems = ({ nodes }) => {
   return nodes.map((node, i) => {
     const title = node.frontmatter.title;
     const exercise = node.frontmatter.exercise;
@@ -57,7 +57,7 @@ const PagesByLevel = ({ levels, location, nodes }) => (
       );
       return (
         <div key={`level-${i}`}>
-          {levels.length > 1 && <h3>Level {level}</h3>}
+          {level !== null && <h3>Level {level}</h3>}
           <ul>
             <PageListItems location={location} nodes={currentLevelNodes} />
           </ul>

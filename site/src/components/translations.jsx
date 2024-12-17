@@ -1,27 +1,20 @@
-import React, { useCallback, useState } from 'react';
+import React, { useState } from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
-
-import { tocFragment, allExercisesNodes } from '../fragments/exercises';
-import { siteFragment } from '../fragments/site';
-import { getAvailableTranslations } from '../utils/translations';
 
 export default function Translations() {
   const data = useStaticQuery(graphql`
-    query TocQuery {
-      site {
-        ...SiteMetadata
-      }
+    query TranslationsQuery {
       allDirectory(filter: { relativeDirectory: { eq: "exercises" } }) {
-        ...AllExerciseDirectories
+        nodes {
+          base
+        }
       }
     }
   `);
 
-  const translations = data.allDirectory.nodes
-    .reverse()
-    .map((node) => node.base);
+  const translations = data.allDirectory.nodes.map((node) => node.base);
 
-  const [selectedTranslation, setSelectedVTranslation] = useState(
+  const [selectedTranslation, setSelectedTranslation] = useState(
     translations[0]
   );
 
