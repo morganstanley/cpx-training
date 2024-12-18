@@ -46,10 +46,10 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "pub": "rm -rf ../docs && mv public ../docs",
-    "pubWindows": "rd /S \"../docs\" && move public \"../docs\""
+    "pub": "rimraf ../docs && mv public ../docs"
   },
   "devDependencies": {
-    "prettier": "^3.4.1"
+    "prettier": "^3.4.1",
+    "rimraf": "^6.0.1"
   }
 }

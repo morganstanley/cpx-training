@@ -28,9 +28,11 @@ while True:
 - [cp.play_tone](https://docs.circuitpython.org/projects/circuitplayground/en/latest/api.html#adafruit_circuitplayground.circuit_playground_base.CircuitPlaygroundBase.play_tone)
 
 ## Making Music
-If you want to try out some music here are variables you need to get started. See below for [sample songs](http://opensource.morganstanley.com/exercises/circuitpython/robotics/E3/#sample-songs).
+
+If you want to try out some music here are variables you need to get started. See below for [sample songs](http://opensource.morganstanley.com/exercises/en-US/circuitpython/robotics/E3/#sample-songs).
 
 Copy these musical note variables into your code:
+
 ```python
 deep_A = 116.541
 deep_B = 123.471
@@ -77,6 +79,7 @@ high_B = 987.767
 # Sample Songs
 
 ## The Star Spangled Banner - USA National Anthem
+
 ```python
 cp.play_tone(mid_G, 0.75)
 cp.play_tone(mid_E, 0.25)
@@ -94,6 +97,7 @@ cp.play_tone(mid_G, 2)
 ```
 
 ## Für Elise - by Ludwig van Beethoven
+
 ```python
 cp.play_tone(high_E, 0.25)
 cp.play_tone(high_D_sharp, 0.25)
