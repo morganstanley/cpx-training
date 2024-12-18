@@ -43,11 +43,12 @@ const ExerciseNav = ({ location, nodes, toc }) => {
     <nav className="nav exercise-nav">
       {levels.map((level, i) => {
         const currentLevel = nodes.filter(
-          (node) => node.frontmatter.level === level
+          (node) =>
+            node.frontmatter.level === level && !!node.frontmatter.exercise
         );
         return (
           <div key={`level-${i}`}>
-            {levels.length > 1 && <h3>Level {level}</h3>}
+            {level !== null && <h3>Level {level}</h3>}
             <ul>
               <ExerciseListItems
                 location={location}

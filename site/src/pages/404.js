@@ -1,11 +1,9 @@
 import React from 'react';
-import { Link, graphql } from 'gatsby';
+import { graphql } from 'gatsby';
 
 import Layout from '../components/layout';
 import PageHead from '../components/head';
 import SiteMap from '../components/site-map';
-
-import { siteFragment } from '../fragments/site';
 
 const NotFoundPage = ({ data, location }) => {
   const nodes = data.allMdx.nodes;
@@ -30,9 +28,6 @@ export const Head = () => <PageHead title="404 Not Found"></PageHead>;
 
 export const pageQuery = graphql`
   query {
-    site {
-      ...SiteMetadata
-    }
     allMdx {
       nodes {
         id

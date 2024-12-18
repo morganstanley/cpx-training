@@ -63,7 +63,7 @@ h2 {
 
 h3::after,
 h2::after {
-  content: '\A';
+  display: block;
 }
 
 h3 {

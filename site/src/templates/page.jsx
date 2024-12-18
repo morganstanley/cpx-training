@@ -32,9 +32,6 @@ export const Head = ({ pageContext }) => (
 
 export const pageQuery = graphql`
   query ($id: String!) {
-    site {
-      ...SiteMetadata
-    }
     mdx(id: { eq: $id }) {
       frontmatter {
         title

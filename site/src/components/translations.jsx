@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { graphql, useStaticQuery } from 'gatsby';
+import React from 'react';
+import { Link, graphql, useStaticQuery } from 'gatsby';
 
 export default function Translations() {
   const data = useStaticQuery(graphql`
@@ -14,15 +14,16 @@ export default function Translations() {
 
   const translations = data.allDirectory.nodes.map((node) => node.base);
 
-  const [selectedTranslation, setSelectedTranslation] = useState(
-    translations[0]
-  );
-
   return (
     <ul>
-      {translations.map((translation) => (
-        <li>{translation}</li>
-      ))}
+      {translations.map((translation) => {
+        const url = `/exercises/${translation}/`;
+        return (
+          <li>
+            <Link to={url}>{translation}</Link>
+          </li>
+        );
+      })}
     </ul>
   );
 }

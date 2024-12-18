@@ -1,11 +1,9 @@
 import React from 'react';
-import { Link, graphql } from 'gatsby';
+import { Link } from 'gatsby';
 
 import Hero from '../components/hero';
 import Layout from '../components/layout';
 import PageHead from '../components/head';
-
-import { siteFragment } from '../fragments/site';
 
 const SiteIndex = ({ location }) => {
   return (
@@ -90,8 +88,8 @@ const SiteIndex = ({ location }) => {
 
 export default SiteIndex;
 
-export const Head = () => (
-  <PageHead title="Makerspace by Morgan Stanley">
+export const Head = ({ data }) => (
+  <PageHead title="Home">
     <meta
       name="description"
       content="Introduction to programming with Adafruit's Circuit Playground
@@ -99,11 +97,3 @@ export const Head = () => (
     />
   </PageHead>
 );
-
-export const pageQuery = graphql`
-  query {
-    site {
-      ...SiteMetadata
-    }
-  }
-`;
