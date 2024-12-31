@@ -41,11 +41,18 @@ exports.createPages = async ({ graphql, actions }) => {
 
   // Create  pages.
   const pages = result.data.allMdx.nodes;
-  const exerciseTemplate = path.resolve(`./src/templates/exercise.js`);
-  const pageTemplate = path.resolve(`./src/templates/page.js`);
+  const exerciseTemplate = path.resolve(`./src/templates/exercise.jsx`);
+  const indexTemplate = path.resolve(`./src/templates/index.jsx`);
+  const pageTemplate = path.resolve(`./src/templates/page.jsx`);
 
   function getTemplate(page) {
-    return page.frontmatter.exercise ? exerciseTemplate : pageTemplate;
+    const path = page.internal.contentFilePath;
+    const isExerciseIndex = path.includes('index') && path.includes('exercise');
+    return page.frontmatter.exercise
+      ? exerciseTemplate
+      : isExerciseIndex
+        ? indexTemplate
+        : pageTemplate;
   }
 
   pages.forEach((page) => {
