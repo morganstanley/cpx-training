@@ -3,6 +3,7 @@ import { Link, graphql } from 'gatsby';
 
 import ExerciseNav from '../components/exercise-nav';
 import Layout from '../components/layout';
+import PageHead from '../components/head';
 
 function nextPrev(nodes, location) {
   const len = nodes.length;
@@ -58,23 +59,17 @@ const ExerciseTemplate = ({ children, data, pageContext, location }) => {
 
 export default ExerciseTemplate;
 
-export const Head = ({ pageContext }) => (
-  <>
-    <title>
-      {pageContext.title} | Level {pageContext.level} | Exercise{' '}
-      {pageContext.exercise}
-    </title>
-    <meta name="description" content={pageContext.description} />
-  </>
-);
+export const Head = ({ pageContext }) => {
+  const title = `${pageContext.frontmatter.title} | Level ${pageContext.frontmatter.level} | Exercise ${pageContext.frontmatter.exercise}`;
+  return (
+    <PageHead title={title}>
+      <meta name="description" content={pageContext.description} />
+    </PageHead>
+  );
+};
 
-export const pageQuery = graphql`
+export const exerciseQuery = graphql`
   query ($id: String!, $category: String!) {
-    site {
-      siteMetadata {
-        title
-      }
-    }
     mdx(id: { eq: $id }) {
       frontmatter {
         title
