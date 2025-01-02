@@ -1,10 +1,10 @@
 ---
 template: exercise
 title: Rainbow Glow
-level: 1
+level: 3
 exercise: 1
 category: ImagiCharm
-tags: ['Level 1']
+tags: ['Level 3']
 ---
 
 Let’s light up the ImagiCharm with a glowing rainbow! Follow the steps below to learn how to make the rainbow glow.
