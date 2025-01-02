@@ -12,6 +12,7 @@ Let’s learn how to create colorful pixels on the ImagiCharm! You’ll light up
 ---
 
 ### Step 1: Turn On a Pixel
+
 Start by turning on one pixel with a specific color. Let’s make the first pixel red.
 
 ```python

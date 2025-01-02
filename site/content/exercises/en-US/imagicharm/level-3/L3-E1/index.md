@@ -12,6 +12,7 @@ Let’s light up the ImagiCharm with a glowing rainbow! Follow the steps below t
 ---
 
 ### Step 1: Start with a Blank Canvas
+
 First, we need to clear the ImagiCharm's display to make sure it’s ready for the rainbow.
 
 ```python
@@ -25,6 +26,7 @@ pixels.clear()
 ---
 
 ### Step 2: Turn on the First Pixel
+
 Let’s start by turning on the top-left pixel with a bright red color.
 
 ```python
@@ -41,6 +43,7 @@ pixels[0][0] = (255, 0, 0)  # Red
 ---
 
 ### Step 3: Add More Colors
+
 Now, let’s turn on more pixels to make a rainbow on the first row.
 
 ```python
@@ -62,6 +65,7 @@ pixels[0][6] = (238, 130, 238)   # Violet
 ---
 
 ### Step 4: Show the Rainbow
+
 Finally, let’s display the rainbow on the ImagiCharm.
 
 ```python
@@ -74,6 +78,7 @@ pixels.show()
 ---
 
 ### Full Code
+
 Here’s the complete code to make your glowing rainbow:
 
 ```python
@@ -95,7 +100,8 @@ pixels.show()
 
 ---
 
-### Explore More!
+### Explore More
+
 - Change the brightness of the pixels.
   *(Hint: Use `pixels.brightness = 0.5` before the `pixels.show()` line.)*
 - Create a second row of rainbow colors. What patterns can you make?

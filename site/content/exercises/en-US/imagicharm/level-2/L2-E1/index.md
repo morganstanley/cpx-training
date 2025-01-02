@@ -14,6 +14,7 @@ This lesson teaches you how to create a pixel that moves across the ImagiCharm a
 ---
 
 ### Full Code: Moving and Bouncing Pixel
+
 Copy and paste the code below into your ImagiCharm to see the moving and bouncing pixel in action!
 
 ```python
