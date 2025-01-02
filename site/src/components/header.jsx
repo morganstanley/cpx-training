@@ -6,7 +6,7 @@ const Header = ({ location }) => {
     Learn: '/exercises',
     Teach: '/teach',
     'Make a Makerspace': '/makerspace',
-    About: '/about',
+    'About': '/about',
   };
 
   function menuLink(text) {

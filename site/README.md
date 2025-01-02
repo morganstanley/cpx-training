@@ -19,13 +19,13 @@ The [GatsbyJS](https://www.gatsbyjs.org) site based on the [gatsby-starter-22box
 
 Clone this repo and from a CLI (Terminal, CMD, etc) change directory into `/site` and run:
 
-```
+```bash
 npm install
 ```
 
 To run preview server:
 
-```
+```bash
 npm run start
 ```
 
@@ -43,7 +43,7 @@ The [`/site/content/exercises`](https://github.com/MorganStanley/cpx-training/tr
 
 Please note that because the [starter project](https://www.gatsbyjs.org/starters/iamtherealgd/gatsby-starter-22boxes-uno/) used for this site is a blog template, the order of the exercises are dependent on the date included in the metadata that must be included at the top of each `index.md`.
 
-```
+```bash
 ---
 template: exercise
 title: Level 1 | Exercise 1 - Blink
@@ -59,7 +59,7 @@ As you can see from the example metadata above, the first exercise (L1 E1) start
 
 The build command will automatically replace the contents of the `/docs` directory with the built code.
 
-```
+```bash
 npm run build
 ```
 
