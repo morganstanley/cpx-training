@@ -75,6 +75,7 @@ export const exerciseQuery = graphql`
         title
         level
         exercise
+        language
       }
       internal {
         contentFilePath
@@ -96,6 +97,7 @@ export const exerciseQuery = graphql`
           exercise
           level
           category
+          language
         }
         internal {
           contentFilePath

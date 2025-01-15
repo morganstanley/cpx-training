@@ -1,6 +1,9 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
+
+
+
 function getCategories(nodes) {
   const potentialValues = [];
   nodes.forEach((node) => {
@@ -23,12 +26,20 @@ function getLevels(nodes) {
   return potentialValues;
 }
 
-const PageListItems = ({ nodes }) => {
+function getLanguage() {
+  return 'fr-CA';
+}
+
+const PageListItems = ({ location, nodes }) => {
   return nodes.map((node, i) => {
     const title = node.frontmatter.title;
     const exercise = node.frontmatter.exercise;
+    const language = node.frontmatter.language || 'en-US';
+    const isCurrentLanguage = location.pathname.includes(language);
+
     const toc = node.tableOfContents.items;
-    return (
+    if (isCurrentLanguage) {
+      return (
       <li key={`exercise-${i}`}>
         <Link to={node.fields.slug}>
           {exercise ? `${exercise} ) ` : ''}
@@ -46,6 +57,7 @@ const PageListItems = ({ nodes }) => {
         </nav>
       </li>
     );
+  }
   });
 };
 
@@ -54,7 +66,8 @@ const PagesByLevel = ({ levels, location, nodes }) => (
     {levels.map((level, i) => {
       const currentLevelNodes = nodes.filter(
         (node) => node.frontmatter.level === level
-      );
+      ).sort((a, b) => (a.frontmatter.exercise > b.frontmatter.exercise) ? 1 : -1)
+      console.log(nodes)
       return (
         <div key={`level-${i}`}>
           {level !== null && <h3>Level {level}</h3>}

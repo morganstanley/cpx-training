@@ -63,6 +63,7 @@ export const pageQuery = graphql`
           exercise
           level
           category
+          language
         }
         internal {
           contentFilePath
