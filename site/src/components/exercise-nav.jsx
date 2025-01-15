@@ -11,16 +11,6 @@ function getLevels(nodes) {
   return potentialValues;
 }
 
-function getLanguages(nodes) {
-  const potentialValues = [];
-  nodes.forEach((node) => {
-    if (!potentialValues.includes(node.frontmatter.language)) {
-      potentialValues.push(node.frontmatter.language);
-    }
-  });
-return potentialValues;
-}
-
 const ExerciseListItems = ({ location, nodes, toc }) => {
   return nodes.map((node, i) => {
     const isCurrentPage = location.pathname.includes(node.fields.slug);
@@ -52,9 +42,6 @@ const ExerciseListItems = ({ location, nodes, toc }) => {
 
 const ExerciseNav = ({ location, nodes, toc }) => {
   const levels = getLevels(nodes);
-  const languages = getLanguages(nodes);
-  console.log('languages :' + languages);
-
   return (
     <nav className="nav exercise-nav">
       {levels.map((level, i) => {

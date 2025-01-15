@@ -1,59 +1,60 @@
 ---
 template: exercise
-title: Touch
+title: Tactile
 level: 1
 exercise: 4
 category: CircuitPython
 tags: ['Level 1']
+language: fr-CA
 ---
 
-We've played with lights and sound, now let's play with touch!
+Nous avons joué avec les lumières et les sons, maintenant amusons-nous avec le toucher !
 
-Touching different pins on the Express board will trigger different lights and sounds.
+Toucher différents contacts du CPX déclenche différents sons et lumières !
 
-Also try playing with the slide switch to enable and disable it entirely.
+Nous pouvons aussi utiliser l'interrupteur pour completement activer ou desactiver les sons et lumières.
 
-The touchpad is assigned by its number on the circuit playground.
+Les contacts tactiles sont assignés par numéro sur le CPX.
 
 ```python
 from adafruit_circuitplayground.express import cpx
 
 while True:
     if cpx.switch:
-        print("Slide switch off!")
+        print("Système éteint !")
         cpx.pixels.fill((0, 0, 0))
         cpx.stop_tone()
         continue
     if cpx.touch_A4:
-        print('Touched A4!')
+        print('Touché A4!')
         cpx.pixels.fill((15, 0, 0))
         cpx.start_tone(262)
     elif cpx.touch_A5:
-        print('Touched A5!')
+        print('Touch A5!')
         cpx.pixels.fill((15, 5, 0))
         cpx.start_tone(294)
     elif cpx.touch_A6:
-        print('Touched A6!')
+        print('Tocuhé A6!')
         cpx.pixels.fill((15, 15, 0))
         cpx.start_tone(330)
     elif cpx.touch_A7:
-        print('Touched A7!')
+        print('Touché A7!')
         cpx.pixels.fill((0, 15, 0))
         cpx.start_tone(349)
     elif cpx.touch_A1:
-        print('Touched A1!')
+        print('Touché A1!')
         cpx.pixels.fill((0, 15, 15))
         cpx.start_tone(392)
     elif cpx.touch_A2 and not cpx.touch_A3:
-        print('Touched A2!')
+        print('Touché A2!')
         cpx.pixels.fill((0, 0, 15))
         cpx.start_tone(440)
     elif cpx.touch_A3 and not cpx.touch_A2:
-        print('Touched A3!')
+        print('Touché A3!')
         cpx.pixels.fill((5, 0, 15))
         cpx.start_tone(494)
     elif cpx.touch_A2 and cpx.touch_A3:
-        print('Touched "8"!')
+        print('Touché "8"!')
         cpx.pixels.fill((15, 0, 15))
         cpx.start_tone(523)
     else:

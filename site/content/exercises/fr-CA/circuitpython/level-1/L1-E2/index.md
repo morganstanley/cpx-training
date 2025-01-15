@@ -1,17 +1,18 @@
 ---
 template: exercise
-title: Lights
+title: Lumières
 level: 1
 exercise: 2
 category: CircuitPython
 tags: ['Level 1']
+language: fr-CA
 ---
 
-Let's explore further.
+Continuons à explorer un peu plus loin.
 
-We can do all sorts of crazy things by adding to the **while loop**.
+Nous pouvons faire toutes sorte de choses amusantes en ajoutant du code a la **boucle while** (tant que)
 
-Here we will tell the circuit to turn on some colorful lights.
+Ici nous allons indiquer au circuit d'allumer des lumières avec diverses couleurs.
 
 ```python
 from adafruit_circuitplayground.express import cpx
@@ -21,7 +22,7 @@ cpx.pixels.fill((0, 0, 0))
 
 while True:
 
-    # notice how these lines are similar
+    # remarque comme ces lignes sont similaires
     cpx.pixels[0] = (255, 0, 0)
     cpx.pixels[1] = (255, 127, 0)
     cpx.pixels[2] = (0, 255, 0)
@@ -33,11 +34,11 @@ while True:
     cpx.pixels[8] = (100, 0, 0)
     cpx.pixels[9] = (0, 0, 100)
 
-    # the [] with a number determines which light to turn on
-    # and the numbers in () deterine the color!
-    # It says how much (red, green, blue) we want.
-    # Try changing the numbers!
+    # les [] avec un chiffre déterminent quelle lumière allumer
+    # et les nombres entre parenthèses déterminent la couleur !
+    # Cela indique combien de (rouge, vert, bleu) nous voulons.
+    # Essaye de changer les nombres!
 
-    # this line turns on the lights!
+    # Cette ligne allume les lumières
     cpx.pixels.show()
 ```

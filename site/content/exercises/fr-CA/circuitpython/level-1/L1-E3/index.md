@@ -1,18 +1,18 @@
 ---
 template: exercise
-title: Buttons
+title: Boutons
 level: 1
 exercise: 3
 category: CircuitPython
 tags: ['Level 1']
+language: fr-CA
 ---
 
-Let's have a listen to the CPX's speakers!
+Ecoutons maintenant le haut-parleur du CPX !
 
-Here the first number is the pitch, and the second number is the duration of the note.
+Ici, le premier nombre est la tonalité (fréquence), le second est la durée de la note.
 
-The 'if statement' is going to check which button we pressed, and play the correspondng
-note.
+L'instruction 'if' (si) permet de vérifier quel bouton est pressé et joue la note correspondante.
 
 ```python
 from adafruit_circuitplayground.express import cpx

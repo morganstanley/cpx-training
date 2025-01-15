@@ -1,23 +1,25 @@
 ---
 template: exercise
-title: Acceleration
+title: Accélération
 level: 1
 exercise: 5
 category: CircuitPython
 tags: ['Level 1']
+language: fr-CA
 ---
 
-The circuit playground has an accelerometer so it can tell when it's moving. Let's see what we can do with this.
+Le CPX est équipé d'un accéléromètre et peut donc indiquer quand il bouge. Voyons ce que nous pouvons faire avec ça.
 
 ```python
 from adafruit_circuitplayground.express import cpx
 import time
 
-# Main loop gets x, y and z axis acceleration, prints the values, and turns on
-# red, green and blue, at levels related to the x, y and z values.
+# La boucle principale recoit l'accéleration sur les axes x, y, z, affiche les valeurs et allume les
+# lumières proportionellement à l'accéleration sur chaque axe (rouge : axe x, vert : axe y, bleu : axe z).
+
 while True:
     if cpx.switch:
-        print("Slide switch off!")
+        print("Interrupteur à OFF!")
         cpx.pixels.fill((0, 0, 0))
         continue
     else:

@@ -1,29 +1,29 @@
 ---
 template: exercise
-title: Blink
+title: Clignotement
 level: 1
 exercise: 1
 category: CircuitPython
 tags: ['Level 1']
+language: fr-CA
 ---
-
-All Circuit Playground code follows a similar format. Let's start with a small example.
-
+Tout les programmes Circuit Playground suivent un format similaire. Commençons par un exemple simple.
 ![CPX Blink](blink.gif)
 
 ```python
-# This section lets the system know which libraries we want to use
+# Cette section permet au systeme de savoir quelles librairies on veut utiliser
 from adafruit_circuitplayground.express import cpx
 import time
 
-# This section is where our main code goes
-# Everything indented under the 'while True' will repeat forever
-# We call this a 'while loop'
+# Cette section est là où nous allons placer notre programme principal
+# Tout ce qui est indenté après 'while True' se répétera à l'infini
+# Cela s'appel une boucle 'while' ou 'tant que'
+
 while True:
     cpx.red_led = True
     time.sleep(0.5)
     cpx.red_led = False
     time.sleep(0.5)
 
-# Note - anything with a '#' infront is a comment and is ignored
+# Note - Tout ce qui commence avec un '#' est un commentaire et est ignoré
 ```
