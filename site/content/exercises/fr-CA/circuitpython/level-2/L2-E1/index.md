@@ -1,19 +1,20 @@
 ---
 template: exercise
-title: Variables and Types
+title: Variables et Types
 level: 2
 exercise: 1
 category: CircuitPython
 tags: ['Level 2']
+language: fr-CA
 ---
 
-In level 1, we went over the features of the Circuit Playground Express, but we didn't dig into the basics of programming. These concepts are present in all programming languages in some shape or form.
+Dans le niveau 1, nous avons appris les fonctionalité du CPX, mais nous n'avons pas approfondi les base de la programmation. Ces concepts sont présents dans tous les languages de programation sous une forme ou une autre.
 
-In this lesson, we are going to learn about variables and how we can use them to store information in order to use it again later.
+Dans cette leçon, nous allons découvrir les variables et apprendre comment les utiliser pour enregistrer de l'information que l'on peut réutiliser plus tard.
 
-## Color Variables
+## Variables en couleur
 
-[From level 1 exercise 2](../../level-1/L1-E2), we put the following program into the CPX:
+[Dans l'exercie 2 du niveau 1](../../level-1/L1-E2), nous avons envoyé le programme suivant au CPX :
 
 ```python
 import board
@@ -38,9 +39,9 @@ while True:
     pixels.show()
 ```
 
-What do those numbers mean? How can we make this more readable?
+Que signifient tous ces nombres ? Comment pouvons nous rendre ceci plus lisible ?
 
-Make a list of color variables by color name.
+Créons une list de variable de couleurs organisée par nom.
 
 ```python
 import board
@@ -49,49 +50,49 @@ import neopixel
 pixels = neopixel.NeoPixel(board.NEOPIXEL, 10, brightness=.1)
 
 # Colors
-BLACK = (0, 0, 0)
-RED = (255, 0, 0)
-PINK = (255, 100, 120)
+NOIR = (0, 0, 0)
+ROUGE = (255, 0, 0)
+ROSE = (255, 100, 120)
 ORANGE = (255, 100, 0)
-YELLOW = (255, 255, 0)
-GREEN = (0, 255, 0)
+JAUNE = (255, 255, 0)
+VERT = (0, 255, 0)
 CYAN = (0, 255, 255)
-PURPLE = (255, 0, 255)
-BLUE = (0, 0, 255)
-LIGHT_BLUE = (80, 200, 175)
-WHITE = (255, 255, 255)
+VIOLET = (255, 0, 255)
+BLEU = (0, 0, 255)
+BLEU_CLAIR = (80, 200, 175)
+BLANC = (255, 255, 255)
 
-pixels.fill(BLACK)
+pixels.fill(NOIR)
 
 while True:
-    pixels[0] = RED
+    pixels[0] = ROUGE
     pixels[1] = ORANGE
-    pixels[2] = GREEN
+    pixels[2] = VERT
     pixels[3] = CYAN
-    pixels[4] = PURPLE
-    pixels[5] = BLUE
-    pixels[6] = WHITE
-    pixels[7] = YELLOW
-    pixels[8] = PINK
-    pixels[9] = LIGHT_BLUE
+    pixels[4] = VIOLET
+    pixels[5] = BLEU
+    pixels[6] = BLANC
+    pixels[7] = JAUNE
+    pixels[8] = ROSE
+    pixels[9] = BLEU_CLAIR
     pixels.show()
 ```
 
-- a variable is used to store data to be used by the program
-- this data can be a number, a string, a Boolean, a list or some other data type
-- every variable has a name which can consist of letters, numbers, and the underscore character (\_).
-- no other type of characters can be used to create the variable name and the variable may NOT start with a number.
-- the equal sign = is used to assign a value to a variable.
-- that assignment can be from a fixed value or taken from another existing variable
-- it can also be used to change the value of a variable from one value to another after the initial assignment is made
+- une variable est utilisée pour enregistrer une donnée utilisée par le programme.
+- cette donnée peut être un nombre, une chaîne de caractère, une valeur logique (booléene), une list ou encore d'autre types de données.
+- chaque variable a un nom qui peut être composé de lettres, chiffres et du caractère '\_' (underscore/tiret bas).
+- aucun autre caractère (par exemple #$^*) ne peut être utilisé pour le nom et le nom ne doit PAS commencer par un chiffre.
+- le signe égal '=' est utilisé pour assigner (donner) une valeur à la variable.
+- on peut attribuer à une variable une valeur fixe ou encore une autre variable.
+- on peut aussi changer la valeur de la variable à une nouvelle valeur depuis la première assignation.
 
-## Working with lists
+## Utiliser les listes
 
-Eventually come to this:
+Nous voulons arriver à ça :
 
 ```python
-# Learn more https://realpython.com/python-variables/
-# and https://realpython.com/python-data-types/
+# Apprends en plus https://realpython.com/python-variables/
+# et https://realpython.com/python-data-types/
 import time
 
 import board
@@ -99,36 +100,36 @@ import neopixel
 
 pixels = neopixel.NeoPixel(board.NEOPIXEL, 10, brightness=.1)
 
-# Colors
-BLACK = (0, 0, 0)
-RED = (255, 0, 0)
-PINK = (255, 100, 120)
+# Couleurs
+NOIR = (0, 0, 0)
+ROUGE = (255, 0, 0)
+ROSE = (255, 100, 120)
 ORANGE = (255, 100, 0)
-YELLOW = (255, 255, 0)
-GREEN = (0, 255, 0)
+JAUNE = (255, 255, 0)
+VERT = (0, 255, 0)
 CYAN = (0, 255, 255)
-PURPLE = (255, 0, 255)
-BLUE = (0, 0, 255)
-LIGHT_BLUE = (80, 200, 175)
-WHITE = (255, 255, 255)
+VIOLET = (255, 0, 255)
+BLEU = (0, 0, 255)
+BLEU_CLAIR = (80, 200, 175)
+BLANC = (255, 255, 255)
 
 pixels = pixels
-pixels.fill(BLACK)
+pixels.fill(NOIR)
 pixels.show()
 
 while True:
     for i in range(len(pixels)):
-        pixels[i] = RED
+        pixels[i] = ROUGE
         time.sleep(.05)
     time.sleep(1)
 
     for i in range(len(pixels)):
-        pixels[i] = GREEN
+        pixels[i] = VERT
         time.sleep(.05)
     time.sleep(1)
 ```
 
-How can we streamline this so that we don't have to enter a color for each `for` block?
+Comment pouvons nous uniformiser ceci, de manière à ne pas avoir à spécifier une couleur pour chaque boucle 'for' ?
 
 ```python
 import time
@@ -139,37 +140,37 @@ import neopixel
 pixels = neopixel.NeoPixel(board.NEOPIXEL, 10, brightness=.1)
 
 # Colors
-BLACK = (0, 0, 0)
-RED = (255, 0, 0)
-PINK = (255, 100, 120)
+NOIR = (0, 0, 0)
+ROUGE = (255, 0, 0)
+ROSE = (255, 100, 120)
 ORANGE = (255, 100, 0)
-YELLOW = (255, 255, 0)
-GREEN = (0, 255, 0)
+JAUNE = (255, 255, 0)
+VERT = (0, 255, 0)
 CYAN = (0, 255, 255)
-PURPLE = (255, 0, 255)
-BLUE = (0, 0, 255)
-LIGHT_BLUE = (80, 200, 175)
-WHITE = (255, 255, 255)
+VIOLET = (255, 0, 255)
+BLEU = (0, 0, 255)
+BLEU_CLAIR = (80, 200, 175)
+BLANC = (255, 255, 255)
 
-colors = [
-    PINK,
-    RED,
+couleurs = [
+    ROSE,
+    ROUGE,
     ORANGE,
-    YELLOW,
-    GREEN,
+    JAUNE,
+    VERT,
     CYAN,
-    PURPLE,
-    BLUE,
-    LIGHT_BLUE,
-    WHITE
+    VIOLET,
+    BLEU,
+    BLEU_CLAIR,
+    BLANC
 ]
 
-pixels.fill(BLACK)
+pixels.fill(NOIR)
 pixels.show()
 
 while True:
     for i in range(len(pixels)):
-        pixels[i] = colors[i]
+        pixels[i] = couleurs[i]
         time.sleep(.05)
     time.sleep(1)
 

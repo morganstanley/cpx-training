@@ -1,50 +1,50 @@
 ---
 template: exercise
-title: Functions
+title: Les Fonctions
 level: 2
 exercise: 4
 category: CircuitPython
 tags: ['Level 2']
+language: fr-CA
 ---
 
-Lets start with [where we left off with variables](../L2-E1).
+Reprenons [là où nous en étions avec les variables](../L2-E1).
 
 ```python
-def my_function(x):
-  return x + 1
+def ma_fonction(x):
+    return x + 1
 
-def findvolume(length=1, width=1, depth=1):
-    print("Length = " + str(length))
-    print("Width = " + str(width))
-    print("Depth = " + str(depth))
-    return length * width * depth
+def trouver_volume(longueur=1, largeur=1, profondeur=1):
+        print("Longueur = " + str(longueur))
+        print("Largeur = " + str(largeur))
+        print("Profondeur = " + str(profondeur))
+        return longueur * largeur * profondeur
 
-findvolume(1, 2, 3)
-findvolume(length=5, depth=2, width=4)
-findvolume(2, depth=3, width=4)
+trouver_volume(1, 2, 3)
+trouver_volume(longueur=5, profondeur=2, largeur=4)
+trouver_volume(2, profondeur=3, largeur=4)
 ```
 
-- Some tasks need to be performed multiple times within a program.
-- Rather than rewrite the same code in multiple places, a function may be defined using the def keyword.
-- Function definitions may include parameters, providing data input to the function.
-- Functions may return a value using the return keyword followed by the value to return.
+- Certaines tâches nécessitent d'être remplies plusieurs fois dans un programme.
+- Plutôt que de réécrire le même code à plusieurs endroits, une fonction peut être définie en utilisant le mot-clé def.
+- Les définitions de fonctions peuvent inclure des paramètres, fournissant des données d'entrée à la fonction.
 
-**Calling a function**: `makeLight()` wriing the function name followed by parentheses
+**Appeler une fonction**: `allumerLumiere()` en écrivant le nom de la fonction suivi de parenthèses
 
-**Defining a function**: `def` keyword followed by the name of the function, parentheses, and a colon
+**Définir une fonction**: mot-clé `def` suivi du nom de la fonction, de parenthèses et d'un deux-points
 
-- The body of the function, or the code for what the function will actually do, comes after the colon on an **indented** line
+- Le corps de la fonction, ou le code de ce que la fonction fera réellement, vient après le deux-points sur une ligne **indentée**
 
-**Function parameters**:
+**Paramètres de fonction**:
 
-- Sometimes functions require input to provide data for their code. This input is defined using parameters.
-- Parameters are variables that are defined in the function definition.
-- They are assigned the values which were passed as arguments when the function was called, elsewhere in the code.
+- Parfois, les fonctions nécessitent des entrées pour fournir des données à leur code. Ces entrées sont définies à l'aide de paramètres.
+- Les paramètres sont des variables définies dans la définition de la fonction.
+- Ils reçoivent les valeurs qui ont été passées en tant qu'arguments lorsque la fonction a été appelée, ailleurs dans le code.
 
-**Function arguments**:
+**Arguments de fonction**:
 
-- Parameters in python are variables— placeholders for the actual values the function needs
-- When the function is called, these values are passed in as arguments.
+- Les paramètres en python sont des variables— des espaces réservés pour les valeurs réelles dont la fonction a besoin
+- Lorsque la fonction est appelée, ces valeurs sont passées en tant qu'arguments.
 
 ```python
 import time
@@ -54,79 +54,79 @@ import neopixel
 
 pixels = neopixel.NeoPixel(board.NEOPIXEL, 10, brightness=.1)
 
-# Colors
-BLACK = (0, 0, 0)
-RED = (255, 0, 0)
-PINK = (255, 100, 120)
+# Couleurs
+NOIR = (0, 0, 0)
+ROUGE = (255, 0, 0)
+ROSE = (255, 100, 120)
 ORANGE = (255, 100, 0)
-YELLOW = (255, 255, 0)
-GREEN = (0, 255, 0)
+JAUNE = (255, 255, 0)
+VERT = (0, 255, 0)
 CYAN = (0, 255, 255)
-PURPLE = (255, 0, 255)
-BLUE = (0, 0, 255)
-LIGHT_BLUE = (80, 200, 175)
-WHITE = (255, 255, 255)
+VIOLET = (255, 0, 255)
+BLEU = (0, 0, 255)
+BLEU_CLAIR = (80, 200, 175)
+BLANC = (255, 255, 255)
 
-colors = [
-    PINK,
-    RED,
-    ORANGE,
-    YELLOW,
-    GREEN,
-    CYAN,
-    PURPLE,
-    BLUE,
-    LIGHT_BLUE,
-    WHITE
+couleurs = [
+        ROSE,
+        ROUGE,
+        ORANGE,
+        JAUNE,
+        VERT,
+        CYAN,
+        VIOLET,
+        BLEU,
+        BLEU_CLAIR,
+        BLANC
 ]
 
-pixels.fill(BLACK)
+pixels.fill(NOIR)
 pixels.show()
 
 while True:
-    for i in range(len(pixels)):
-        pixels[i] = colors[i]
-        time.sleep(.05)
-    time.sleep(1)
+        for i in range(len(pixels)):
+                pixels[i] = couleurs[i]
+                time.sleep(.05)
+        time.sleep(1)
 
 ```
 
-And make a function out of the behavior:
+Et faire une fonction du comportement:
 
 ```python
-def simpleCircle(wait):
-    # Colors
-    RED = (255, 0, 0)
-    PINK = (255, 100, 120)
-    ORANGE = (255, 100, 0)
-    YELLOW = (255, 255, 0)
-    GREEN = (0, 255, 0)
-    CYAN = (0, 255, 255)
-    PURPLE = (255, 0, 255)
-    BLUE = (0, 0, 255)
-    LIGHT_BLUE = (80, 200, 175)
-    WHITE = (255, 255, 255)
+def cercleSimple(temps):
+        # Couleurs
+        ROUGE = (255, 0, 0)
+        ROSE = (255, 100, 120)
+        ORANGE = (255, 100, 0)
+        JAUNE = (255, 255, 0)
+        VERT = (0, 255, 0)
+        CYAN = (0, 255, 255)
+        VIOLET = (255, 0, 255)
+        BLEU = (0, 0, 255)
+        BLEU_CLAIR = (80, 200, 175)
+        BLANC = (255, 255, 255)
 
-    colors = [
-        PINK,
-        RED,
-        ORANGE,
-        YELLOW,
-        GREEN,
-        CYAN,
-        PURPLE,
-        BLUE,
-        LIGHT_BLUE,
-        WHITE
-    ]
+        couleurs = [
+                ROSE,
+                ROUGE,
+                ORANGE,
+                JAUNE,
+                VERT,
+                CYAN,
+                VIOLET,
+                BLEU,
+                BLEU_CLAIR,
+                BLANC
+        ]
 
-    for i in range(len(pixels)):
-        pixels[i] = colors[i]
-        time.sleep(.05)
-    time.sleep(1)
+        for i in range(len(pixels)):
+                pixels[i] = couleurs[i]
+                time.sleep(.05)
+        time.sleep(1)
 ```
 
-How to use:
+Comment utiliser:
 
 ```python
 # CircuitPlaygroundExpress_NeoPixel
@@ -141,45 +141,45 @@ pixels = neopixel.NeoPixel(board.NEOPIXEL, 10, brightness=.1)
 pixels.fill((0, 0, 0))
 pixels.show()
 
-# choose which demos to play
-# 1 means play, 0 means don't!
-simpleCircleDemo = 1
+# choisir quelles démos jouer
+# 1 signifie jouer, 0 signifie ne pas jouer!
+demoCercleSimple = 1
 
-def simpleCircle(wait):
-    # Colors
-    RED = (255, 0, 0)
-    PINK = (255, 100, 120)
-    ORANGE = (255, 100, 0)
-    YELLOW = (255, 255, 0)
-    GREEN = (0, 255, 0)
-    CYAN = (0, 255, 255)
-    PURPLE = (255, 0, 255)
-    BLUE = (0, 0, 255)
-    LIGHT_BLUE = (80, 200, 175)
-    WHITE = (255, 255, 255)
+def cercleSimple(temps):
+        # Couleurs
+        ROUGE = (255, 0, 0)
+        ROSE = (255, 100, 120)
+        ORANGE = (255, 100, 0)
+        JAUNE = (255, 255, 0)
+        VERT = (0, 255, 0)
+        CYAN = (0, 255, 255)
+        VIOLET = (255, 0, 255)
+        BLEU = (0, 0, 255)
+        BLEU_CLAIR = (80, 200, 175)
+        BLANC = (255, 255, 255)
 
-    colors = [
-        PINK,
-        RED,
-        ORANGE,
-        YELLOW,
-        GREEN,
-        CYAN,
-        PURPLE,
-        BLUE,
-        LIGHT_BLUE,
-        WHITE
-    ]
+        couleurs = [
+                ROSE,
+                ROUGE,
+                ORANGE,
+                JAUNE,
+                VERT,
+                CYAN,
+                VIOLET,
+                BLEU,
+                BLEU_CLAIR,
+                BLANC
+        ]
 
-    for i in range(len(pixels)):
-        pixels[i] = colors[i]
-        time.sleep(wait)
-    time.sleep(1)
+        for i in range(len(pixels)):
+                pixels[i] = couleurs[i]
+                time.sleep(temps)
+        time.sleep(1)
 
 
 while True:
-    if simpleCircleDemo:
-        print('Simple Circle Demo')
-        simpleCircle(.05)
-    pixels.fill((0, 0, 0))
+        if demoCercleSimple:
+                print('Démo Cercle Simple')
+                cercleSimple(.05)
+        pixels.fill((0, 0, 0))
 ```

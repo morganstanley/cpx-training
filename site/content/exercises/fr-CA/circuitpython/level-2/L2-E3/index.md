@@ -1,72 +1,72 @@
 ---
 template: exercise
-title: Built-in functions
+title: Functions Natives de Python
 level: 2
 exercise: 3
 category: CircuitPython
 tags: ['Level 2']
+language: fr-CA
 ---
 
-Lets start with [where we left off with variables](../L2-E1).
+Reprenons [là où nous en étions avec les variables](../L2-E1).
 
-We are using two built-in functions in this script, can you find them?
+Nous utilisons deux des fonctions natives de Python dans ce script, peux-tu les trouver ?
 
 ```python
-# Learn more https://realpython.com/python-variables/
-# and https://realpython.com/python-data-types/
+# Apprends en plus https://realpython.com/python-variables/
+# et https://realpython.com/python-data-types/
 import time
 
 import board
 import neopixel
 
-pixels = neopixel.NeoPixel(board.NEOPIXEL, 10, brightness=.2)
+pixels = neopixel.NeoPixel(board.NEOPIXEL, 10, brightness=.1)
 
-# Colors
-BLACK = (0, 0, 0)
-RED = (255, 0, 0)
-PINK = (255, 100, 120)
+# Couleurs
+NOIR = (0, 0, 0)
+ROUGE = (255, 0, 0)
+ROSE = (255, 100, 120)
 ORANGE = (255, 100, 0)
-YELLOW = (255, 255, 0)
-GREEN = (0, 255, 0)
+JAUNE = (255, 255, 0)
+VERT = (0, 255, 0)
 CYAN = (0, 255, 255)
-PURPLE = (255, 0, 255)
-BLUE = (0, 0, 255)
-LIGHT_BLUE = (80, 200, 175)
-WHITE = (255, 255, 255)
+VIOLET = (255, 0, 255)
+BLEU = (0, 0, 255)
+BLEU_CLAIR = (80, 200, 175)
+BLANC = (255, 255, 255)
 
 pixels = pixels
-pixels.fill(BLACK)
+pixels.fill(NOIR)
 pixels.show()
 
 while True:
     for i in range(len(pixels)):
-        pixels[i] = RED
+        pixels[i] = ROUGE
         time.sleep(.05)
     time.sleep(1)
 
     for i in range(len(pixels)):
-        pixels[i] = GREEN
+        pixels[i] = VERT
         time.sleep(.05)
     time.sleep(1)
 
 ```
+## C'est quoi les fonctions natives ?
 
-## What are built-in functions?
+Les fonctions natives sont des outils pratiques qui font partie du language Python (et d'autres languages), qui aide les développeurs à remplir des tâches courantes, comme trouver la longueur d'une liste ou définir la séquence d'une boucle.
 
-Built-in functions are handy tools built into the Python language (and other languages) that help programmers do common things, like get the length of a list or range of a loop.
+### Longueur : `len(s)`
 
-### `len(s)`
+Retourne la longueur (le nombre d'éléments) d'un objet. L'argument peut être une séquence (une chaîne, des octets (bytes), des n-uplets (tuples), listes ou séquences) ou encore une collection (un dictionnaire, un ensemble (set), etc. )
 
-Return the length (the number of items) of an object. The argument may be a sequence (such as a string, bytes, tuple, list, or range) or a collection (such as a dictionary, set, or frozen set).
+### Séquence : `range(stop)`
 
-### `range(stop)`
-
-Rather than being a function, range is actually an immutable sequence type, as documented in [Ranges and Sequence Types — list, tuple, range](https://docs.python.org/3/library/stdtypes.html#range).
+Plutôt que d'être une fonction, 'range' est en fait une séquence immuable (qui ne change pas), tel que documenté dans [séquence et Séquence — listes, n-upletst, séquences](https://docs.python.org/fr/3/library/stdtypes.html#range).
 
 ### Documentation
 
-All programmers use references to plan and build their code. The details of the built-in functions above is from documentation.
+Tous les développeurs utilisent la documentation comme référence pour planifier et construire leur code. Les détails sur les fonctions natives ci-dessus sont issus de la documentation.
 
-Feel free to look through and explore the documentation of the built-in functions. You can find all kinds of interesting tools for your projects. Experiment to learn more.
+Prends le temps de jeter un oeil et d'explorer la documentation. Tu pourras trouver toute sorte d'outils intéressants pour tes projets. Fais des expériences pour en apprendre plus.
 
-[Built-In Function Reference](https://docs.python.org/3/library/functions.html)
+[Référence sur les Fonctions Natives](https://docs.python.org/fr/3/library/functions.html)

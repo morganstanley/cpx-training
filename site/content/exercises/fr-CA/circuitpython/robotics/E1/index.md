@@ -49,4 +49,4 @@ Can you do the same thing using only 2 lines of Python code within the while loo
 
 - [Python: while loops](https://www.w3schools.com/python/python_while_loops.asp)
 
-- [Python: time.sleep](https://docs.python.org/3/library/time.html#time.sleep)
+- [Python: time.sleep](https://docs.python.org/fr/3/library/time.html#time.sleep)

@@ -92,7 +92,7 @@ Return the length (the number of items) of an object. The argument may be a sequ
 
 #### `range(stop)`
 
-Rather than being a function, range is actually an immutable sequence type, as documented in [Ranges and Sequence Types — list, tuple, range](https://docs.python.org/3/library/stdtypes.html#range).
+Rather than being a function, range is actually an immutable sequence type, as documented in [Ranges and Sequence Types — list, tuple, range](https://docs.python.org/fr/3/library/stdtypes.html#range).
 
 ### Challenge Problem
 
@@ -108,4 +108,4 @@ Modify the program above to make Button A a "clear" button: when the user presse
 
 - [Python: range](https://www.w3schools.com/python/ref_func_range.asp)
 
-- [Built-In Function Reference](https://docs.python.org/3/library/functions.html)
+- [Built-In Function Reference](https://docs.python.org/fr/3/library/functions.html)
