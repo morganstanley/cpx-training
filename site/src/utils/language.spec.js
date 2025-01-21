@@ -1,46 +1,149 @@
-import { getCurrentLanguage, getLanguage } from './version-docs';
-import { allDocs, slug, versions } from '../../__mocks__/documentation';
+import { getCurrentLanguage, getLanguage } from './language';
+import { allExercises, slug, languages } from '../../__mocks__/exercises';
 
 test('Gets documentation by version', () => {
-  expect(getLanguage(allDocs, '1.0')).toEqual([
+  expect(getLanguage(allExercises, 'en-US')).toEqual([
     {
-      id: '41748935-af24-51c3-8d32-458375e4246c',
-      excerpt:
-        'This static site generator processes MDX  in addition to traditional Markdown  files.  allows for the use of JSX components within Markdown.…',
+      id: '105d960d-43f9-5c51-9367-5f01020cec2c',
+      tableOfContents: {
+        items: [
+          {
+            url: '#learn',
+            title: 'Learn',
+            items: [
+              {
+                url: '#multi-week-programs',
+                title: 'Multi-Week Programs',
+                items: [
+                  {
+                    url: '#introduction-to-makecode',
+                    title: 'Introduction to MakeCode',
+                  },
+                  {
+                    url: '#introduction-to-circuitpython',
+                    title: 'Introduction to CircuitPython',
+                  },
+                  {
+                    url: '#robotics',
+                    title: 'Robotics',
+                  },
+                ],
+              },
+              {
+                url: '#single-day-programs',
+                title: 'Single-Day Programs',
+                items: [
+                  {
+                    url: '#intro-to-circuitpython---level-1',
+                    title: 'Intro to CircuitPython - Level 1',
+                  },
+                  {
+                    url: '#coding-with-circuitpython---level-2',
+                    title: 'Coding with CircuitPython - Level 2',
+                  },
+                  {
+                    url: '#imagicharm-lessons',
+                    title: 'ImagiCharm Lessons',
+                    items: [
+                      {
+                        url: '#colorful-pixels---level-1',
+                        title: 'Colorful Pixels - Level 1',
+                      },
+                      {
+                        url: '#moving-pixels---level-2',
+                        title: 'Moving Pixels - Level 2',
+                      },
+                      {
+                        url: '#rainbow-glow---level-3',
+                        title: 'Rainbow Glow - Level 3',
+                      },
+                    ],
+                  },
+                ],
+              },
+              {
+                url: '#get-started-today',
+                title: 'Get Started Today!',
+              },
+            ],
+          },
+        ],
+      },
       frontmatter: {
-        title: 'Components',
+        template: null,
+        title: 'Learn',
+        tags: null,
+        level: null,
+        exercise: null,
+        category: null,
+        description: null,
       },
       internal: {
         contentFilePath:
-          '/Users/mimiflynn/Projects/MS/ms-gh-pages/site/content/documentation/1.0/components.mdx',
+          '/home/mimiflynn/Projects/cpx-training/site/content/exercises/en-US/index.mdx',
       },
       fields: {
-        slug: '/documentation/1.0/components/',
+        slug: '/exercises/en-US/',
+      },
+    },
+  ]);
+
+  expect(getLanguage(allExercises, 'en-US')).toEqual([
+    {
+      id: '13955014-01d7-5704-a740-96a897379a56',
+      tableOfContents: {
+        items: [
+          {
+            url: '#introduction-to-circuitpython---level-1',
+            title: 'Introduction to CircuitPython - Level 1',
+          },
+          {
+            url: '#programming-with-circuitpython---level-2',
+            title: 'Programming with CircuitPython - Level 2',
+          },
+          {
+            url: '#programming-with-circuitpython---robotics',
+            title: 'Programming with CircuitPython - Robotics',
+          },
+        ],
+      },
+      frontmatter: {
+        template: null,
+        title: 'CircuitPython',
+        tags: null,
+        level: null,
+        exercise: null,
+        category: 'CircuitPython',
+        description: null,
+      },
+      internal: {
+        contentFilePath:
+          '/home/mimiflynn/Projects/cpx-training/site/content/exercises/fr-CA/circuitpython/index.mdx',
+      },
+      fields: {
+        slug: '/exercises/fr-CA/circuitpython/',
       },
     },
   ]);
 });
 
-test('Gets version of current documentation', () => {
+test('Gets language of current exercise', () => {
+  expect(getCurrentLanguage('/exercises/en-US/index.mdx', languages)).toEqual(
+    'en-US'
+  );
+  expect(getCurrentLanguage('/exercises/fr-CA/index.mdx', languages)).toEqual(
+    'fr-CA'
+  );
   expect(
-    getCurrentLanguage('/documentation/1.0/components/', versions)
-  ).toEqual('1.0');
-  expect(
-    getCurrentLanguage('/documentation/2.0/components/', versions)
-  ).toEqual('2.0');
-  expect(
-    getCurrentLanguage('/documentation/stuff/components/', [
-      ...versions,
-      'stuff',
-    ])
+    getCurrentLanguage('/exercises/stuff/components/', [...versions, 'stuff'])
   ).toEqual('stuff');
   expect(
-    getCurrentLanguage('/documentation/3.4.1-rc3/components/', [
+    getCurrentLanguage('/exercises/3.4.1-rc3/components/', [
       ...versions,
       '3.4.1-rc3',
     ])
   ).toEqual('3.4.1-rc3');
   expect(
-    getCurrentLanguage('/documentation/3.4.1-rc3/components/', versions)
+    getCurrentLanguage('/exercises/3.4.1-rc3/components/', versions)
   ).toEqual(undefined);
 });
