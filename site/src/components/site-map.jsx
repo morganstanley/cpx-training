@@ -24,31 +24,29 @@ function getLevels(nodes) {
 }
 
 const PageListItems = ({ nodes }) => {
-  return nodes
-    .sort((a, b) => a.exercise - b.exercise)
-    .map((node, i) => {
-      const title = node.frontmatter.title;
-      const exercise = node.frontmatter.exercise;
-      const toc = node.tableOfContents.items;
-      return (
-        <li key={`exercise-${i}`}>
-          <Link to={node.fields.slug}>
-            {exercise ? `${exercise} ) ` : ''}
-            {title}
-          </Link>
-          <nav className="nav exercise-content-nav">
-            <ul>
-              {toc &&
-                toc.map((item, j) => (
-                  <li key={`toc-${j}`}>
-                    <Link to={item.url}>{item.title}</Link>
-                  </li>
-                ))}
-            </ul>
-          </nav>
-        </li>
-      );
-    });
+  return nodes.map((node, i) => {
+    const title = node.frontmatter.title;
+    const exercise = node.frontmatter.exercise;
+    const toc = node.tableOfContents.items;
+    return (
+      <li key={`exercise-${i}`}>
+        <Link to={node.fields.slug}>
+          {exercise ? `${exercise} ) ` : ''}
+          {title}
+        </Link>
+        <nav className="nav exercise-content-nav">
+          <ul>
+            {toc &&
+              toc.map((item, j) => (
+                <li key={`toc-${j}`}>
+                  <Link to={item.url}>{item.title}</Link>
+                </li>
+              ))}
+          </ul>
+        </nav>
+      </li>
+    );
+  });
 };
 
 const PagesByLevel = ({ levels, location, nodes }) => (
