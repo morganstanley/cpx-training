@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { graphql } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
@@ -6,6 +6,8 @@ import Hero from '../components/hero';
 import Layout from '../components/layout';
 import PageHead from '../components/head';
 import SiteMap from '../components/site-map';
+
+import { getCurrentLanguage, getLanguage } from '../utils/language';
 
 const ExerciseIndexTemplate = ({ children, data, pageContext, location }) => {
   const pageTitle = pageContext.frontmatter.title;
@@ -15,7 +17,13 @@ const ExerciseIndexTemplate = ({ children, data, pageContext, location }) => {
   const heroImage = getImage(pageContext.frontmatter.heroImage);
   const category = pageContext.frontmatter.category;
   const level = pageContext.frontmatter.level;
-  const nodes = data.allMdx.nodes.filter(
+  const slug = data.mdx.fields.slug;
+  const languages = useMemo(
+    () => data.allDirectory.nodes.map((node) => node.base),
+    [data.allDirectory.nodes]
+  );
+  const selectedLanguage = getCurrentLanguage(slug, languages);
+  const nodes = getLanguage(data.allMdx.nodes, selectedLanguage).filter(
     (node) =>
       node.frontmatter.category === category &&
       node.frontmatter.level === level &&
@@ -44,7 +52,15 @@ export const Head = ({ pageContext }) => (
 
 export const pageQuery = graphql`
   query ($id: String!) {
+    allDirectory(filter: { relativeDirectory: { eq: "exercises" } }) {
+      nodes {
+        base
+      }
+    }
     mdx(id: { eq: $id }) {
+      fields {
+        slug
+      }
       frontmatter {
         title
         subtitle

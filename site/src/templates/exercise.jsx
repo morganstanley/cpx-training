@@ -78,7 +78,15 @@ export const Head = ({ pageContext }) => {
 
 export const exerciseQuery = graphql`
   query ($id: String!, $category: String!) {
+    allDirectory(filter: { relativeDirectory: { eq: "exercises" } }) {
+      nodes {
+        base
+      }
+    }
     mdx(id: { eq: $id }) {
+      fields {
+        slug
+      }
       frontmatter {
         title
         level

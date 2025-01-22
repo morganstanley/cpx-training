@@ -26,39 +26,32 @@ function getLevels(nodes) {
   return potentialValues;
 }
 
-function getLanguage() {
-  return 'fr-CA';
-}
-
-const PageListItems = ({ location, nodes }) => {
-  return nodes.map((node, i) => {
-    const title = node.frontmatter.title;
-    const exercise = node.frontmatter.exercise;
-    const language = node.frontmatter.language || 'en-US';
-    const isCurrentLanguage = location.pathname.includes(language);
-
-    const toc = node.tableOfContents.items;
-    if (isCurrentLanguage) {
+const PageListItems = ({ nodes }) => {
+  return nodes
+    .sort((a, b) => a.exercise - b.exercise)
+    .map((node, i) => {
+      const title = node.frontmatter.title;
+      const exercise = node.frontmatter.exercise;
+      const toc = node.tableOfContents.items;
       return (
-      <li key={`exercise-${i}`}>
-        <Link to={node.fields.slug}>
-          {exercise ? `${exercise} ) ` : ''}
-          {title}
-        </Link>
-        <nav className="nav exercise-content-nav">
-          <ul>
-            {toc &&
-              toc.map((item, j) => (
-                <li key={`toc-${j}`}>
-                  <Link to={item.url}>{item.title}</Link>
-                </li>
-              ))}
-          </ul>
-        </nav>
-      </li>
-    );
-  }
-  });
+        <li key={`exercise-${i}`}>
+          <Link to={node.fields.slug}>
+            {exercise ? `${exercise} ) ` : ''}
+            {title}
+          </Link>
+          <nav className="nav exercise-content-nav">
+            <ul>
+              {toc &&
+                toc.map((item, j) => (
+                  <li key={`toc-${j}`}>
+                    <Link to={item.url}>{item.title}</Link>
+                  </li>
+                ))}
+            </ul>
+          </nav>
+        </li>
+      );
+    });
 };
 
 const PagesByLevel = ({ levels, location, nodes }) => (
