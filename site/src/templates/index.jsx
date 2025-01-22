@@ -70,7 +70,12 @@ export const pageQuery = graphql`
       }
       tableOfContents
     }
-    allMdx {
+    allMdx(
+      sort: [
+        { frontmatter: { level: ASC } }
+        { frontmatter: { exercise: ASC } }
+      ]
+    ) {
       nodes {
         id
         tableOfContents
