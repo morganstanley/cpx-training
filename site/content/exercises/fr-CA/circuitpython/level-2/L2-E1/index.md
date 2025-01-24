@@ -5,7 +5,6 @@ level: 2
 exercise: 1
 category: CircuitPython
 tags: ['Level 2']
-language: fr-CA
 ---
 
 Dans le niveau 1, nous avons appris les fonctionalité du CPX, mais nous n'avons pas approfondi les base de la programmation. Ces concepts sont présents dans tous les languages de programation sous une forme ou une autre.

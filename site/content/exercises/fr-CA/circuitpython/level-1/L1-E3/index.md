@@ -5,7 +5,6 @@ level: 1
 exercise: 3
 category: CircuitPython
 tags: ['Level 1']
-language: fr-CA
 ---
 
 Ecoutons maintenant le haut-parleur du CPX !

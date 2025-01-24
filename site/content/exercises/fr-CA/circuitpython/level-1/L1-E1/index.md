@@ -5,7 +5,6 @@ level: 1
 exercise: 1
 category: CircuitPython
 tags: ['Level 1']
-language: fr-CA
 ---
 Tout les programmes Circuit Playground suivent un format similaire. Commençons par un exemple simple.
 ![CPX Blink](blink.gif)

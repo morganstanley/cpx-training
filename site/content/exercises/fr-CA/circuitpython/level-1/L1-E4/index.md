@@ -5,7 +5,6 @@ level: 1
 exercise: 4
 category: CircuitPython
 tags: ['Level 1']
-language: fr-CA
 ---
 
 Nous avons joué avec les lumières et les sons, maintenant amusons-nous avec le toucher !

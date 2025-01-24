@@ -5,7 +5,6 @@ level: 1
 exercise: 6
 category: CircuitPython
 tags: ['Level 1']
-language: fr-CA
 ---
 
 Ce programme va afficher la température actuelle dans l'affichage du MuEditor.

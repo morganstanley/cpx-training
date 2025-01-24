@@ -5,7 +5,6 @@ level: 1
 exercise: 2
 category: CircuitPython
 tags: ['Level 1']
-language: fr-CA
 ---
 
 Continuons à explorer un peu plus loin.

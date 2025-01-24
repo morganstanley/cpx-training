@@ -5,7 +5,6 @@ level: 2
 exercise: 3
 category: CircuitPython
 tags: ['Level 2']
-language: fr-CA
 ---
 
 Reprenons [là où nous en étions avec les variables](../L2-E1).

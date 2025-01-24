@@ -5,7 +5,6 @@ level: 2
 exercise: 2
 category: CircuitPython
 tags: ['Level 2']
-language: fr-CA
 ---
 
 ### Définitions
