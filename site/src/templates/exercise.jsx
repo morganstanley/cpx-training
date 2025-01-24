@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { Link, graphql } from 'gatsby';
 
 import ExerciseNav from '../components/exercise-nav';
 import Layout from '../components/layout';
 import PageHead from '../components/head';
+
+import { getCurrentLanguage, getLanguage } from '../utils/language';
 
 function nextPrev(nodes, location) {
   const len = nodes.length;
@@ -18,7 +20,13 @@ function nextPrev(nodes, location) {
 const ExerciseTemplate = ({ children, data, pageContext, location }) => {
   const pageTitle = pageContext.frontmatter.title;
   const toc = data.mdx.tableOfContents.items;
-  const nodes = data.allMdx.nodes;
+  const slug = data.mdx.fields.slug;
+  const languages = useMemo(
+    () => data.allDirectory.nodes.map((node) => node.base),
+    [data.allDirectory.nodes]
+  );
+  const selectedLanguage = getCurrentLanguage(slug, languages);
+  const nodes = getLanguage(data.allMdx.nodes, selectedLanguage);
   const [next, previous] = nextPrev(nodes, location);
 
   return (
@@ -70,7 +78,15 @@ export const Head = ({ pageContext }) => {
 
 export const exerciseQuery = graphql`
   query ($id: String!, $category: String!) {
+    allDirectory(filter: { relativeDirectory: { eq: "exercises" } }) {
+      nodes {
+        base
+      }
+    }
     mdx(id: { eq: $id }) {
+      fields {
+        slug
+      }
       frontmatter {
         title
         level
