@@ -105,4 +105,3 @@ venv.bak/
 
 docs/
 site/public
-site/package-lock.json
