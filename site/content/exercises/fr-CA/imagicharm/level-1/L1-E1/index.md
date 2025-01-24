@@ -1,21 +1,21 @@
 ---
 template: exercise
-title: Colorful Pixels
+title: Des Pixels en couleurs
 level: 1
 exercise: 1
 category: ImagiCharm
-tags: ['Level 1']
+tags: ['Niveau 1']
 ---
 
 Let’s learn how to create colorful pixels on the ImagiCharm! You’ll light up individual pixels with different colors.
+Apprenons comment créer des pixels de couleurs sur l'ImagiCharm ! Tu vas allumer des pixels individuels de couleurs différentes.
 
 ---
 
-### Step 1: Turn On a Pixel
-
+### Étape 1 : Allume un Pixel
 Start by turning on one pixel with a specific color. Let’s make the first pixel red.
-
+Commence par allumer ubn pixel avec une couleur spécifique. Allumons le premier en rouge !
 ```python
-# Turn on the first pixel
-pixels[0][0] = (255, 0, 0)  # Red
+# Allume le premier pixel
+pixels[0][0] = (255, 0, 0)  # Rouge
 pixels.show()

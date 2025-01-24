@@ -7,7 +7,7 @@ category: CircuitPython
 tags: ['Level 1']
 ---
 
-Ecoutons maintenant le haut-parleur du CPX !
+Écoutons maintenant le haut-parleur du CPX !
 
 Ici, le premier nombre est la tonalité (fréquence), le second est la durée de la note.
 

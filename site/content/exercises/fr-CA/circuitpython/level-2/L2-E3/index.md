@@ -60,7 +60,7 @@ Retourne la longueur (le nombre d'éléments) d'un objet. L'argument peut être 
 
 ### Séquence : `range(stop)`
 
-Plutôt que d'être une fonction, 'range' est en fait une séquence immuable (qui ne change pas), tel que documenté dans [séquence et Séquence — listes, n-upletst, séquences](https://docs.python.org/fr/3/library/stdtypes.html#range).
+Plutôt que d'être une fonction, 'range' est en fait une séquence immuable (qui ne change pas), tel que documenté dans [séquence et Séquence — listes, n-uplets, séquences](https://docs.python.org/fr/3/library/stdtypes.html#range).
 
 ### Documentation
 

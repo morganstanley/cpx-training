@@ -1,38 +1,37 @@
 ---
 template: exercise
-title: Moving Pixels
+title: Animons des Pixels
 level: 2
 exercise: 1
 category: ImagiCharm
-tags: ['Level 2']
+tags: ['Niveau 2']
 ---
 
-### Moving Pixels Lesson
+### Animons des Pixels
 
-This lesson teaches you how to create a pixel that moves across the ImagiCharm and bounces back when it reaches the edges.
-
+Cette leçon apprend comment créer un pixel qui se déplace sur l'ImagiCharm et rebondit lorsqu'il touche un bord.
 ---
 
-### Full Code: Moving and Bouncing Pixel
+### Code Complet : Pixel en Mouvement et Rebondissant
 
-Copy and paste the code below into your ImagiCharm to see the moving and bouncing pixel in action!
+Copiez et collez le code ci-dessous dans votre ImagiCharm pour voir le pixel en mouvement et rebondissant en action !
 
 ```python
 import time
 
-# Make the pixel bounce in the first row
-direction = 1  # 1 for moving right, -1 for moving left
-position = 0  # Start at the first column
+# Faire rebondir le pixel dans la première rangée
+direction = 1  # 1 pour aller à droite, -1 pour aller à gauche
+position = 0  # Commencer à la première colonne
 
 while True:
-    pixels.clear()  # Clear the display
-    pixels[0][position] = (0, 255, 0)  # Green pixel
-    pixels.show()  # Update the ImagiCharm display
-    time.sleep(0.3)  # Pause to make movement visible
+    pixels.clear()  # Effacer l'affichage
+    pixels[0][position] = (0, 255, 0)  # Pixel vert
+    pixels.show()  # Mettre à jour l'affichage de l'ImagiCharm
+    time.sleep(0.3)  # Pause pour rendre le mouvement visible
 
-    # Update the position
+    # Mettre à jour la position
     position += direction
 
-    # Reverse direction if the pixel reaches the edges
-    if position == 7 or position == 0:
+    # Inverser la direction si le pixel atteint les bords
+    if position == 7 ou position == 0:
         direction *= -1

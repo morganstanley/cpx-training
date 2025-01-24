@@ -1,109 +1,109 @@
 ---
 template: exercise
-title: Rainbow Glow
+title: Fait briller l'Arc-en-ciel
 level: 3
 exercise: 1
 category: ImagiCharm
-tags: ['Level 3']
+tags: ['Niveau 3']
 ---
 
-Let’s light up the ImagiCharm with a glowing rainbow! Follow the steps below to learn how to make the rainbow glow.
+Illuminons l'ImagiCharm avec un arc-en-ciel ! Suit les étapes ci-dessous pour apprendre à faire briller l'arc-en-ciel.
 
 ---
 
-### Step 1: Start with a Blank Canvas
+### Étape 1 : Commence avec une Toile Vierge
 
-First, we need to clear the ImagiCharm's display to make sure it’s ready for the rainbow.
+Tout d'abord, nous devons effacer l'affichage de l'ImagiCharm pour nous assurer qu'il est prêt pour l'arc-en-ciel.
 
 ```python
-# Create a blank canvas
+# Efface l'affichage
 pixels.clear()
 ```
 
-- **What This Does**: Clears the screen so nothing is left from before.
-- Try running just this line. What happens on the ImagiCharm?
+- **Ce que cela fait** : Efface l'écran pour qu'il ne reste rien d'avant.
+- Essaye d'exécuter juste cette ligne. Que se passe-t-il sur l'ImagiCharm ?
 
 ---
 
-### Step 2: Turn on the First Pixel
+### Étape 2 : Allumez le Premier Pixel
 
-Let’s start by turning on the top-left pixel with a bright red color.
+Commençons par allumer le pixel en haut à gauche avec une couleur rouge vif.
 
 ```python
-# Turn on the first pixel
-pixels[0][0] = (255, 0, 0)  # Red
+# Allume le premier pixel
+pixels[0][0] = (255, 0, 0)  # Rouge
 ```
 
-- **Explanation**:
-  - **`pixels[0][0]`**: This picks the first pixel in the top-left corner.
-  - **`(255, 0, 0)`**: This means the pixel will glow red (255 for red, 0 for green and blue).
+- **Explication** :
+  - **`pixels[0][0]`** : Cela sélectionne le premier pixel dans le coin supérieur gauche.
+  - **`(255, 0, 0)`** : Cela signifie que le pixel brillera en rouge (255 pour le rouge, 0 pour le vert et le bleu).
 
-- **Challenge**: Can you change this to green? (Hint: Set the second number to 255.)
+- **Défi** : Peux-tu changer cela en vert ? (Indice : Règle le deuxième nombre à 255.)
 
 ---
 
-### Step 3: Add More Colors
+### Étape 3 : Ajoute Plus de Couleurs
 
-Now, let’s turn on more pixels to make a rainbow on the first row.
+Maintenant, allumons plus de pixels pour faire un arc-en-ciel sur la première rangée.
 
 ```python
-# Turn on the pixels for a rainbow!
+# Allume les pixels pour créer un arc-en-ciel !
 pixels[0][1] = (255, 165, 0)     # Orange
-pixels[0][2] = (255, 255, 0)     # Yellow
-pixels[0][3] = (0, 255, 0)       # Green
-pixels[0][4] = (0, 0, 255)       # Blue
+pixels[0][2] = (255, 255, 0)     # Jaune
+pixels[0][3] = (0, 255, 0)       # Vert
+pixels[0][4] = (0, 0, 255)       # Bleu
 pixels[0][5] = (75, 0, 130)      # Indigo
 pixels[0][6] = (238, 130, 238)   # Violet
 ```
 
-- **Explanation**:
-  - Each pixel in the row is assigned a color.
-  - The colors of the rainbow are added one by one, using `(red, green, blue)` values.
+- **Explication** :
+  - Chaque pixel de la rangée est assigné à une couleur.
+  - Les couleurs de l'arc-en-ciel sont ajoutées une par une, en utilisant les valeurs `(rouge, vert, bleu)`.
 
-- **Activity**: Try changing one of the colors. What happens if you mix red and blue?
+- **Activité** : Essaye de changer une des couleurs. Que se passe-t-il si tu mélanges le rouge et le bleu ?
 
 ---
 
-### Step 4: Show the Rainbow
+### Étape 4 : Affiche l'Arc-en-ciel
 
-Finally, let’s display the rainbow on the ImagiCharm.
+Enfin, affichons l'arc-en-ciel sur l'ImagiCharm.
 
 ```python
-# Show the rainbow on the ImagiCharm!
+# Affiche l'arc-en-ciel sur l'ImagiCharm !
 pixels.show()
 ```
 
-- **What This Does**: Lights up all the pixels we set!
+- **Ce que cela fait** : Allume tous les pixels que nous avons définis !
 
 ---
 
-### Full Code
+### Code Complet
 
-Here’s the complete code to make your glowing rainbow:
+Voici le code complet pour faire briller ton arc-en-ciel :
 
 ```python
-# Create a blank canvas
+# Efface l'affichage
 pixels.clear()
 
-# Turn on the pixels for a rainbow!
-pixels[0][0] = (255, 0, 0)       # Red
+# Allume les pixels pour un arc-en-ciel !
+pixels[0][0] = (255, 0, 0)       # Rouge
 pixels[0][1] = (255, 165, 0)     # Orange
-pixels[0][2] = (255, 255, 0)     # Yellow
-pixels[0][3] = (0, 255, 0)       # Green
-pixels[0][4] = (0, 0, 255)       # Blue
+pixels[0][2] = (255, 255, 0)     # Jaune
+pixels[0][3] = (0, 255, 0)       # Vert
+pixels[0][4] = (0, 0, 255)       # Bleu
 pixels[0][5] = (75, 0, 130)      # Indigo
 pixels[0][6] = (238, 130, 238)   # Violet
 
-# Show the rainbow on the ImagiCharm!
+# Affiche l'arc-en-ciel sur l'ImagiCharm !
 pixels.show()
 ```
 
 ---
 
-### Explore More
+### Explore d'avantage
 
-- Change the brightness of the pixels.
-  *(Hint: Use `pixels.brightness = 0.5` before the `pixels.show()` line.)*
-- Create a second row of rainbow colors. What patterns can you make?
+- Change la luminosité des pixels.
+  *(Indice : Utilisez `pixels.brightness = 0.5` avant la ligne `pixels.show()`.)*
+- Crée une deuxième rangée de couleurs arc-en-ciel. Quels motifs pouvez-vous créer ?
 
-Press "Run" to see your rainbow glow! 🌈
+Appui sur "Exécuter" pour voir votre arc-en-ciel briller ! 🌈

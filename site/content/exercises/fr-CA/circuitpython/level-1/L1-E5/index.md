@@ -13,8 +13,8 @@ Le CPX est équipé d'un accéléromètre et peut donc indiquer quand il bouge. 
 from adafruit_circuitplayground.express import cpx
 import time
 
-# La boucle principale recoit l'accéleration sur les axes x, y, z, affiche les valeurs et allume les
-# lumières proportionellement à l'accéleration sur chaque axe (rouge : axe x, vert : axe y, bleu : axe z).
+# La boucle principale reçoit l'accéleration sur les axes x, y, z, affiche les valeurs et allume les
+# lumières proportionnellement à l'accéleration sur chaque axe (rouge : axe x, vert : axe y, bleu : axe z).
 
 while True:
     if cpx.switch:

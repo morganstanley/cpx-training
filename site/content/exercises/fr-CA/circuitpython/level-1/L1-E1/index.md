@@ -10,7 +10,7 @@ Tout les programmes Circuit Playground suivent un format similaire. Commençons 
 ![CPX Blink](blink.gif)
 
 ```python
-# Cette section permet au systeme de savoir quelles librairies on veut utiliser
+# Cette section permet au système de savoir quelles librairies on veut utiliser
 from adafruit_circuitplayground.express import cpx
 import time
 

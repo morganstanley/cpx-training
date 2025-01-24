@@ -7,13 +7,13 @@ category: CircuitPython
 tags: ['Level 2']
 ---
 
-Dans le niveau 1, nous avons appris les fonctionalité du CPX, mais nous n'avons pas approfondi les base de la programmation. Ces concepts sont présents dans tous les languages de programation sous une forme ou une autre.
+Dans le niveau 1, nous avons appris les fonctionnalité du CPX, mais nous n'avons pas approfondi les base de la programmation. Ces concepts sont présents dans tous les languages de programmation sous une forme ou une autre.
 
 Dans cette leçon, nous allons découvrir les variables et apprendre comment les utiliser pour enregistrer de l'information que l'on peut réutiliser plus tard.
 
 ## Variables en couleur
 
-[Dans l'exercie 2 du niveau 1](../../level-1/L1-E2), nous avons envoyé le programme suivant au CPX :
+[Dans l’exercice 2 du niveau 1](../../level-1/L1-E2), nous avons envoyé le programme suivant au CPX :
 
 ```python
 import board
@@ -78,7 +78,7 @@ while True:
 ```
 
 - une variable est utilisée pour enregistrer une donnée utilisée par le programme.
-- cette donnée peut être un nombre, une chaîne de caractère, une valeur logique (booléene), une list ou encore d'autre types de données.
+- cette donnée peut être un nombre, une chaîne de caractère, une valeur logique (booléenne), une list ou encore d'autre types de données.
 - chaque variable a un nom qui peut être composé de lettres, chiffres et du caractère '\_' (underscore/tiret bas).
 - aucun autre caractère (par exemple #$^*) ne peut être utilisé pour le nom et le nom ne doit PAS commencer par un chiffre.
 - le signe égal '=' est utilisé pour assigner (donner) une valeur à la variable.
