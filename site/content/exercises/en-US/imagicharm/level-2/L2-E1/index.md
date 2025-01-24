@@ -5,7 +5,6 @@ level: 2
 exercise: 1
 category: ImagiCharm
 tags: ['Level 2']
-language: fr-CA
 ---
 
 ### Moving Pixels Lesson
