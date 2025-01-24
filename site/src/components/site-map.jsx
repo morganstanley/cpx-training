@@ -1,9 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
-
-
-
 function getCategories(nodes) {
   const potentialValues = [];
   nodes.forEach((node) => {
@@ -57,8 +54,7 @@ const PagesByLevel = ({ levels, location, nodes }) => (
     {levels.map((level, i) => {
       const currentLevelNodes = nodes.filter(
         (node) => node.frontmatter.level === level
-      ).sort((a, b) => (a.frontmatter.exercise > b.frontmatter.exercise) ? 1 : -1)
-      console.log(nodes)
+      );
       return (
         <div key={`level-${i}`}>
           {level !== null && <h3>Level {level}</h3>}

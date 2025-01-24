@@ -14,34 +14,31 @@ function getLevels(nodes) {
 const ExerciseListItems = ({ location, nodes, toc }) => {
   return nodes.map((node, i) => {
     const isCurrentPage = location.pathname.includes(node.fields.slug);
-    const language = node.frontmatter.language || 'en-US';
-    const isCurrentLanguage = location.pathname.includes(language);
     const title = node.frontmatter.title;
-    if(isCurrentLanguage) {
-      return (
-        <li className={isCurrentPage ? 'current' : ''} key={`exercise-${i}`}>
-          <Link to={node.fields.slug}>
-            {node.frontmatter.exercise} ) {title}
-          </Link>
-          {isCurrentPage && toc && (
-            <nav className="nav exercise-content-nav">
-              <ul>
-                {toc.map((item, j) => (
-                  <li key={`toc-${j}`}>
-                    <Link to={item.url}>{item.title}</Link>
-                  </li>
-                ))}
-              </ul>
-            </nav>
-          )}
-        </li>
-      );
-    }
+    return (
+      <li className={isCurrentPage ? 'current' : ''} key={`exercise-${i}`}>
+        <Link to={node.fields.slug}>
+          {node.frontmatter.exercise} ) {title}
+        </Link>
+        {isCurrentPage && toc && (
+          <nav className="nav exercise-content-nav">
+            <ul>
+              {toc.map((item, j) => (
+                <li key={`toc-${j}`}>
+                  <Link to={item.url}>{item.title}</Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        )}
+      </li>
+    );
   });
 };
 
 const ExerciseNav = ({ location, nodes, toc }) => {
   const levels = getLevels(nodes);
+
   return (
     <nav className="nav exercise-nav">
       {levels.map((level, i) => {
