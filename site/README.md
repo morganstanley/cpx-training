@@ -15,6 +15,11 @@ The [GatsbyJS](https://www.gatsbyjs.org) site based on the [gatsby-starter-22box
 - [GatsbyJS](https://www.gatsbyjs.org/docs/quick-start)
 - Text Editor ([VSCode](https://code.visualstudio.com), [Sublime Text](https://www.sublimetext.com))
 
+### Language support in vscode
+
+If you want you can use C-Spell plugins to help validate spelling in multiple languages (english and french configured in settings shipped with the project. If you want to add more, please update settings)
+
+
 ### Develop
 
 Clone this repo and from a CLI (Terminal, CMD, etc) change directory into `/site` and run:
