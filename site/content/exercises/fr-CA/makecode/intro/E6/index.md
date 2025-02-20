@@ -1,26 +1,26 @@
 ---
 template: exercise
-title: Project
+title: Projet
 level: 1
 exercise: 6
 category: MakeCode
 tags: ['MakeCode']
-description: Create something with the CPX as your final project!
+description: Créez quelque chose avec le CPX comme projet final !
 ---
 
-### STE(A)M Projects:
+### Projets STE(A)M :
 
-Bring Arts and Science together to build cool stuff.
-[Cup Lamp](https://makecode.adafruit.com/projects/cartoon-network/cup-lamp)
-[CPX Lime Piano](https://learn.adafruit.com/circuit-playground-express-piano-in-the-key-of-lime)
-[Make It a Keyboard](https://learn.adafruit.com/make-it-a-keyboard/microsoft-makecode)
+Alliez Arts et Sciences pour créer des choses cool.
+[Lampe Gobelet](https://makecode.adafruit.com/projects/cartoon-network/cup-lamp)
+[Piano-Lime CPX](https://learn.adafruit.com/circuit-playground-express-piano-in-the-key-of-lime)
+[Transformez-le en Clavier](https://learn.adafruit.com/make-it-a-keyboard/microsoft-makecode)
 
-Pick [your own project](https://makecode.adafruit.com/projects/) and innovate on top of it!
+Choisissez [votre propre projet](https://makecode.adafruit.com/projects/) et innovez dessus !
 
-Objective:
+Objectif :
 
-Tinker with creativity, craft it yourself and apply the basic CPX skills learned in prior sessions to build and innovate.
+Expérimentez avec créativité, fabriquez-le vous-même et appliquez les compétences de base CPX apprises lors des sessions précédentes pour construire et innover.
 
-#### Engineering Notebook
+#### Carnet d'Ingénierie
 
-Take notes throughout your project. Keep track of your project goal and the steps you took to reach that goal. If you try to achieve this goal in different ways, keep track of those ways and write about what worked and what didn't and theories on why it did or didn't work.
+Prenez des notes tout au long de votre projet. Suivez votre objectif de projet et les étapes que vous avez suivies pour atteindre cet objectif. Si vous essayez d'atteindre cet objectif de différentes manières, notez ces manières et écrivez ce qui a fonctionné et ce qui n'a pas fonctionné, ainsi que des théories sur pourquoi cela a fonctionné ou non.

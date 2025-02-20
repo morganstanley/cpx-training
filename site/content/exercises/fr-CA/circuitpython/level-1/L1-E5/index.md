@@ -4,7 +4,7 @@ title: Accélération
 level: 1
 exercise: 5
 category: CircuitPython
-tags: ['Level 1']
+tags: ['Niveau 1']
 ---
 
 Le CPX est équipé d'un accéléromètre et peut donc indiquer quand il bouge. Voyons ce que nous pouvons faire avec ça.

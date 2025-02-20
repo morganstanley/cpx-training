@@ -4,7 +4,7 @@ title: Clignotement
 level: 1
 exercise: 1
 category: CircuitPython
-tags: ['Level 1']
+tags: ['Niveau 1']
 ---
 Tout les programmes Circuit Playground suivent un format similaire. Commençons par un exemple simple.
 ![CPX Blink](blink.gif)

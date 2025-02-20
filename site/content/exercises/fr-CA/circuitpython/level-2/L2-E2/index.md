@@ -4,7 +4,7 @@ title: Expression et Instructions
 level: 2
 exercise: 2
 category: CircuitPython
-tags: ['Level 2']
+tags: ['Niveau 2']
 ---
 
 ### Définitions

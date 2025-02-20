@@ -4,7 +4,7 @@ title: Lumières
 level: 1
 exercise: 2
 category: CircuitPython
-tags: ['Level 1']
+tags: ['Niveau 1']
 ---
 
 Continuons à explorer un peu plus loin.

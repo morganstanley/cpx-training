@@ -4,7 +4,7 @@ title: Les Fonctions
 level: 2
 exercise: 4
 category: CircuitPython
-tags: ['Level 2']
+tags: ['Niveau 2']
 ---
 
 Reprenons [là où nous en étions avec les variables](../L2-E1).

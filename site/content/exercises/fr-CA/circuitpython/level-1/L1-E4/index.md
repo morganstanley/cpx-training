@@ -4,7 +4,7 @@ title: Tactile
 level: 1
 exercise: 4
 category: CircuitPython
-tags: ['Level 1']
+tags: ['Niveau 1']
 ---
 
 Nous avons joué avec les lumières et les sons, maintenant amusons-nous avec le toucher !

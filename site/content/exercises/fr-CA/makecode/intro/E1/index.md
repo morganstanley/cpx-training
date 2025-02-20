@@ -5,12 +5,12 @@ level: 1
 exercise: 1
 category: MakeCode
 tags: ['MakeCode']
-description: Choose the sample project that most interests you and dig in!
+description: Choisissez le projet d'exemple qui vous intéresse le plus et plongez dedans !
 ---
 
-Adafruit CPX Sample Projects
+Projets d'exemples Adafruit CPX
 
-Participants to pick at least 3 projects from the list of the below pre-selected projects.
+Les participants doivent choisir au moins 3 projets parmi la liste des projets pré-sélectionnés ci-dessous.
 
 - [Blinky](https://makecode.adafruit.com/examples/blinky)
 - [Animation Shaker](https://makecode.adafruit.com/examples/animation-shaker)
@@ -19,10 +19,10 @@ Participants to pick at least 3 projects from the list of the below pre-selected
 - [Spin It](https://makecode.adafruit.com/examples/spin-it)
 - [Metronome](https://makecode.adafruit.com/examples/metronome)
 
-Download code of selected project & just have fun with running the example.
+Téléchargez le code du projet sélectionné et amusez-vous en exécutant l'exemple.
 
-[Make Code Introduction](https://learn.adafruit.com/makecode)
+[Introduction à MakeCode](https://learn.adafruit.com/makecode-fr)
 
-Objective: Just copy and paste existing examples and have fun, fun, fun...
+Objectif : Copiez et collez simplement les exemples existants et amusez-vous, amusez-vous, amusez-vous...
 
-Homework: [Read through all Adafruit features](https://learn.adafruit.com/adafruit-circuit-playground-express)
+Devoirs : [Apprenez-en plus sur toutes les fonctionnalités d'Adafruit](https://learn.adafruit.com/adafruit-circuit-playground-express)

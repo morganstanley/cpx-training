@@ -4,7 +4,7 @@ title: Boutons
 level: 1
 exercise: 3
 category: CircuitPython
-tags: ['Level 1']
+tags: ['Niveau 1']
 ---
 
 Écoutons maintenant le haut-parleur du CPX !

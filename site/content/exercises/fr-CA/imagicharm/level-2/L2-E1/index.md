@@ -10,7 +10,9 @@ tags: ['Niveau 2']
 ### Animons des Pixels
 
 Cette leçon apprend comment créer un pixel qui se déplace sur l'ImagiCharm et rebondit lorsqu'il touche un bord.
+
 ---
+
 
 ### Code Complet : Pixel en Mouvement et Rebondissant
 
