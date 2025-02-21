@@ -18,5 +18,35 @@
     "**/node_modules": true
   },
   "javascript.preferences.quoteStyle": "single",
-  "diffEditor.ignoreTrimWhitespace": false
+  "diffEditor.ignoreTrimWhitespace": false,
+
+  "cSpell.language": "en,fr",
+  "cSpell.dictionaries": ["en", "fr"],
+  "cSpell.languageSettings": [
+    {
+      "languageId": "plaintext",
+      "dictionaries": ["en", "fr"]
+    },
+    {
+      "languageId": "markdown",
+      "dictionaries": ["en", "fr"]
+    },
+    {
+      "languageId": "javascript",
+      "dictionaries": ["en", "fr"]
+    },
+    {
+      "languageId": "python",
+      "dictionaries": ["en", "fr"]
+    }
+  ],
+  "cSpell.enabledLanguageIds": [
+    "plaintext",
+    "markdown",
+    "javascript",
+    "python"
+  ],
+  "cSpell.words": [
+    "l'accéleration"
+  ]
 }

@@ -1,0 +1,143 @@
+---
+order: 1
+title: Configuration du Circuit Playground Bluefruit
+---
+
+## Commencez ici
+
+Un guide pour configurer le Adafruit Circuit Playground Bluefruit pour notre programme.
+
+### Qu'est-ce que le Circuit Playground Bluefruit ?
+
+Le Circuit Playground Bluefruit est très similaire au Circuit Playground Express, sauf qu'il prend en charge le Bluetooth Low Energy au lieu de l'infrarouge (IR) !
+
+Adafruit propose également une application gratuite sur [iOS](https://apps.apple.com/us/app/bluefruit-connect/id830125974) et [Android](https://play.google.com/store/apps/details?id=com.adafruit.bluefruit.le.connect) pour interagir avec l'appareil via Bluetooth.
+
+### Vérification du Bootloader
+
+[CircuitPython.org](https://circuitpython.org/) fournit des fichiers .uf2 qui facilitent l'installation de CircuitPython sur l'appareil. Cependant, les appareils Bluefruit peuvent être livrés avec un bootloader beaucoup plus ancien. Par exemple, si vous exécutez ceci :
+
+```bash
+$ cat /media/pi/CPLAYBTBOOT/INFO_UF2.TXT
+UF2 Bootloader 0.2.9 lib/nrfx (v1.1.0-1-g096e770) lib/tinyusb (legacy-755-g55874813) s140 6.1.1
+Model: Adafruit Feather nRF52840 Express
+Board-ID: nRF52840-Feather-revD
+Bootloader: s140 6.1.1
+Date: Feb 22 2019
+```
+
+Notez que le bootloader UF2 est antérieur à la version 0.4.0, qui est la version minimale requise pour utiliser les fichiers .uf2 pour installer CircuitPython. Mettons-le donc à jour.
+
+### Mise à jour du Bootloader
+
+*Veuillez noter que cette étape n'est pas nécessaire si le bootloader est en version 0.4.0 ou plus récente ! (voir ci-dessus)*
+
+Trouvez la dernière version du bootloader .zip [ici](https://github.com/adafruit/Adafruit_nRF52_Bootloader/releases) et téléchargez la dernière version, spécifiquement un fichier nommé :
+`circuitplayground_nrf52840_bootloader-0.8.2_s140_6.1.1.zip` (ou la dernière version).
+
+Pour flasher cela sur l'appareil, utilisez `adafruit-nrfutil`. Vous pouvez l'installer via `pip3 install --user adafruit-nrfutil`.
+
+À partir de là, vous pouvez mettre à jour le firmware avec le bootloader mis à jour :
+
+```bash
+adafruit-nrfutil --verbose dfu serial --package /home/pi/Downloads/circuitplayground_nrf52840_bootloader-0.8.3_s140_6.1.1.zip \
+  -p /dev/ttyACM0 -b 115200 --singlebank --touch 1200
+```
+
+```
+Touched serial port /dev/ttyACM0
+Opened serial port /dev/ttyACM0
+Starting DFU upgrade of type 3, SoftDevice size: 151016, bootloader size: 39000, application size: 0
+Sending DFU start packet
+Sending DFU init packet
+Sending firmware file
+########################################
+Activating new firmware
+
+DFU upgrade took 20.90584897994995s
+Device programmed.
+```
+
+Les 10 neopixels devraient montrer du vert et le volume CPLAYBTBOOT devrait être de retour.
+
+```bash
+$ cat /media/pi/CPLAYBTBOOT/INFO_UF2.TXT
+UF2 Bootloader 0.8.3 lib/nrfx (v2.0.0) lib/tinyusb (0.12.0-145-g9775e7691) lib/uf2 (remotes/origin/configupdate-9-gadbb8c7)
+```
+
+### Installation de CircuitPython sur l'appareil
+
+Téléchargeons maintenant le fichier UF2 de circuitpython depuis le [site de téléchargement de CircuitPython pour BlueFruit](https://circuitpython.org/board/circuitplayground_bluefruit/).
+
+Vous pouvez le glisser ou le copier sur le volume comme indiqué ci-dessous :
+
+```bash
+$ cp adafruit-circuitpython-circuitplayground_bluefruit-en_US-8.2.9.uf2 /media/pi/CPLAYBTBOOT/
+```
+
+Les 10 neopixels devraient devenir rouges et la LED rouge pulsera légèrement.
+
+Vous devriez maintenant voir un lecteur `CIRCUITPY`, ce qui signifie que nous avons installé CircuitPython ! La dernière chose que nous devons faire est d'installer les bibliothèques python.
+Celles-ci se trouvent ici dans circuitpython :
+
+```bash
+$ ls /media/pi/CIRCUITPY/lib
+(no output!)
+```
+
+Pour installer les bibliothèques, nous utiliserons un outil adafruit appelé `circup` qui fonctionne de manière similaire à pip de python, sauf pour CircuitPython :
+
+```bash
+$ pip3 install --user circup
+```
+
+Téléchargeons la liste des bibliothèques requises depuis [ici](https://github.com/morganstanley/cpx-training/blob/main/code/Level%202%20-%20Intro%20to%20Programming/circup_libs_robotics.txt).
+
+```
+$ circup install -r ~/Downloads/circup_libs_robotics_02_08_24.txt
+Found device at /media/pi/CIRCUITPY, running CircuitPython 8.2.9.
+Searching for dependencies for: ['adafruit_ble', 'adafruit_bluefruit_connect', 'adafruit_bus_device', 'adafruit_circuitplayground', 'adafruit_crickit', 'adafruit_gizmo', 'adafruit_hid', 'adafruit_lis3dh', 'adafruit_motor', 'adafruit_pixelbuf', 'adafruit_seesaw', 'adafruit_thermistor', 'found device at /media/pi/circuitpy, running circuitpython 8.2.9.', 'neopixel']
+WARNING:
+    found device at /media/pi/circuitpy, running circuitpython 8.2.9. is not a known CircuitPython library.
+WARNING:
+    typing-extensions is not a known CircuitPython library.
+WARNING:
+    typing-extensions is not a known CircuitPython library.
+Ready to install: ['adafruit_ble', 'adafruit_bluefruit_connect', 'adafruit_bus_device', 'adafruit_circuitplayground', 'adafruit_crickit', 'adafruit_gizmo', 'adafruit_hid', 'adafruit_il0373', 'adafruit_lis3dh', 'adafruit_motor', 'adafruit_pixelbuf', 'adafruit_seesaw', 'adafruit_ssd1681', 'adafruit_st7789', 'adafruit_thermistor', 'neopixel']
+
+Installed 'adafruit_ble'.
+Installed 'adafruit_bluefruit_connect'.
+Installed 'adafruit_bus_device'.
+Installed 'adafruit_circuitplayground'.
+Installed 'adafruit_crickit'.
+Installed 'adafruit_gizmo'.
+Installed 'adafruit_hid'.
+Installed 'adafruit_il0373'.
+Installed 'adafruit_lis3dh'.
+Installed 'adafruit_motor'.
+Installed 'adafruit_pixelbuf'.
+Installed 'adafruit_seesaw'.
+Installed 'adafruit_ssd1681'.
+Installed 'adafruit_st7789'.
+Installed 'adafruit_thermistor'.
+Installed 'neopixel'.
+```
+
+Vérifions maintenant ce répertoire :
+
+```bash
+$ ls /media/pi/CIRCUITPY/lib
+adafruit_ble               adafruit_crickit.mpy       adafruit_lis3dh.mpy        adafruit_ssd1681.mpy
+adafruit_bluefruit_connect adafruit_gizmo             adafruit_motor             adafruit_st7789.mpy
+adafruit_bus_device        adafruit_hid               adafruit_pixelbuf.mpy      adafruit_thermistor.mpy
+adafruit_circuitplayground adafruit_il0373.mpy        adafruit_seesaw            neopixel.mpy
+```
+
+Excellent ! Nos bibliothèques sont installées et nous sommes prêts à coder. Vous pouvez suivre ce flux pour installer d'autres
+bibliothèques CircuitPython dont vous pourriez avoir besoin lors de l'ajout d'autres composants au robot.
+
+### Références :
+- [https://learn.adafruit.com/adafruit-circuit-playground-bluefruit/overview](https://learn.adafruit.com/adafruit-circuit-playground-bluefruit/overview)
+- [https://learn.adafruit.com/adafruit-circuit-playground-bluefruit/update-bootloader](https://learn.adafruit.com/adafruit-circuit-playground-bluefruit/update-bootloader)
+- [https://learn.adafruit.com/circuitpython-nrf52840/bluefruit-le-connect-basics](https://learn.adafruit.com/circuitpython-nrf52840/bluefruit-le-connect-basics)
+- [https://github.com/adafruit/circup](https://github.com/adafruit/circup)
