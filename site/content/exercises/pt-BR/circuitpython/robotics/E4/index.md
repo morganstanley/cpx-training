@@ -59,7 +59,7 @@ while True:
         cp.stop_tone()
 ```
 
-### Desafi
+### Desafio
 
 Execute o programa acima e faça com que ele exiba "Touched 8" no console serial.
 
