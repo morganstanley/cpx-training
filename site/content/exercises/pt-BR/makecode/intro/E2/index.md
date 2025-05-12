@@ -13,7 +13,7 @@ Leia o básico de MakeCode.
 - [Variáveis](https://makecode.adafruit.com/blocks/variables)
 - [Lógica](https://makecode.adafruit.com/blocks/logic)
 - [Loops](https://makecode.adafruit.com/blocks/loops)
-- Basic Built In Objects:
+- Objetos básicos incorporados:
   - [Matemática](https://makecode.adafruit.com/reference/math)
   - [Texto](https://makecode.adafruit.com/reference/text)
   - [Matrizes](https://makecode.adafruit.com/reference/arrays)
