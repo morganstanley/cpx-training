@@ -45,7 +45,7 @@ description: Colocando tudo junto e código final
 # Montagem do Robô – Prendendo CPX ao Crickit
 
 - Fixe o CPX ao Crickit
-- Utilize os espaçadores e parafusos de metal (dentro da bolsa do Crickit)
+- Utilize os espaçadores e parafusos de metal \(dentro da bolsa do Crickit\)
 - O micro USB do CPX deve estar alinhado com a fonte de alimentação do Crickit
 
 ![](Assembly3.jpg)
@@ -62,8 +62,8 @@ description: Colocando tudo junto e código final
 # Montagem do Robô – Prendendo fios do motor e fonte de alimentação
 
 - Conecte os fios do motor e a fonte de alimentação ao Crickit
-- Parafuse os fios do motor nas portas.
-- Preto, Vermelho, Preto, Vermelho
+- Parafuse os fios do motor nas portas\.
+- Preto\, Vermelho\, Preto\, Vermelho
 - Passe a fonte de alimentação por baixo do corpo e até a porta de alimentação.
 
 ![](Assembly5.jpg)

@@ -7,7 +7,7 @@ category: CircuitPython
 tags: ['Level 1']
 ---
 
-Este código imprimirá a temperatura atual no visor do MuEditor. Clique no botão Serial no MuEditor para ver a saída de dados brutos ou no botão Plotter para ver um gráfico.
+Este código mostrará a temperatura atual no visor do MuEditor. Clique no botão Serial no MuEditor para ver a saída de dados brutos ou no botão Plotter para ver um gráfico.
 
 ```python
 import time

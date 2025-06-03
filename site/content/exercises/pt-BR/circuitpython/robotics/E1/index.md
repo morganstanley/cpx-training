@@ -11,7 +11,7 @@ Lembra do Blinky?
 
 O primeiro projeto do curso de Robótica Makecode fazia com que um único LED alternasse entre ligado e desligado.
 
-Lembre-se de que ele usava um único loop "while" contendo 4 blocos.:
+Lembre-se de que ele usava um único loop "while" contendo 4 blocos:
 
 1. ligue o LED
 2. deixe em repouso por meio segundo

@@ -103,7 +103,7 @@ pixels.show()
 ### Explore Mais
 
 - Altere o brilho dos pixels.
-*(Dica: Use `pixels.brightness = 0.5` antes da linha `pixels.show()`.)*
+  *(Dica: Use `pixels.brightness = 0.5` antes da linha `pixels.show()`.)*
 - Crie uma segunda linha de cores do arco-íris. Que padrões você consegue criar?
 
 Pressione "Run" para ver seu arco-íris brilhar! 🌈

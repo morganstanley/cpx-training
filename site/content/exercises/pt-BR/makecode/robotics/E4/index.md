@@ -30,7 +30,7 @@ IR Transmissor e Receptor
 
 # Infravermelho no MakeCode
 
-O simulador apresenta dois dispositivos CPX: um atuará como o transmissor remoto e o outro receberá.
+O simulador apresenta dois dispositivos CPX: um atuará como o transmissor remoto \(remetente\) e o outro receberá.
 
 O receptor utiliza um bloco lógico para realizar diferentes ações com base no valor transmitido.
 

@@ -42,7 +42,7 @@ len(groceries)
 3
 ```
 
-Também podemos definir nossas próprias funções usando a palavra-chave `def`. Semelhante às instruções `if` e aos laços `while`, devemos terminar a linha com dois pontos `:` e recuar as linhas de código dentro da função. Use a palavra-chave `return` para que uma função retorne um valor. Por exemplo, aqui está uma função que recebe um parâmetro string e retorna uma string com uma saudação personalizada:
+Também podemos definir nossas próprias funções usando a palavra-chave `def`. Semelhante às instruções `if` e aos loops `while`, devemos terminar a linha com dois pontos `:` e recuar as linhas de código dentro da função. Use a palavra-chave `return` para que uma função retorne um valor. Por exemplo, aqui está uma função que recebe um parâmetro string e retorna uma string com uma saudação personalizada:
 
 ```python
 def make_greeting(first_name):
@@ -61,4 +61,4 @@ Hello, Bob!
 
 ## Exercício
 
-Altere a função `make_greeting` acima para aceitar dois parâmetros, first_name e last_name, e retornar uma saudação com o nome completo do usuário.
+Altere a função `make_greeting` acima para aceitar dois parâmetros, first_name e last_name (nome e sobrenome), e retornar uma saudação com o nome completo do usuário.

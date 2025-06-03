@@ -35,4 +35,4 @@ Bob ainda é jovem
 
 ## Exercício
 
-Escreva um jogo em que o jogador precisa adivinhar um número secreto. Primeiro, armazene o número em uma variável chamada `secret`. Em seguida, use um laço `while` que pede ao jogador para adivinhar o número até que ele esteja correto. Certifique-se de dar dicas ao jogador, como "muito alto" ou "muito baixo", com base nos palpites.
+Escreva um jogo em que o jogador precisa adivinhar um número secreto. Primeiro, armazene o número em uma variável chamada `secret`. Em seguida, use um loop `while` que pede ao jogador para adivinhar o número até que ele esteja correto. Certifique-se de dar dicas ao jogador, como "muito alto" ou "muito baixo", com base nos palpites.

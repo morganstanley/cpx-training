@@ -38,6 +38,6 @@ a é igual a b
 ```
 
 ## Exercícios
-1. Crie uma instrução `if` que verifica se o valor armazenado na variável `temperatura` está entre 20 e 30 e, se estiver, imprima a mensagem "Bom tempo!"
+1. Crie uma instrução `if` que verifica se o valor armazenado na variável `temperatura` está entre 20 e 30 e, se estiver, mostre a mensagem "Bom tempo!"
 
-2. Expanda a instrução `if` anterior em uma instrução `if`/`elif`/`else` que imprima "Está congelando!" se a temperatura estiver abaixo de 0, "Está frio!" se estiver entre 0 e 20, e "Está quente!" se estiver acima de 20.
+2. Expanda a instrução `if` anterior em uma instrução `if`/`elif`/`else` que mostre "Está congelando!" se a temperatura estiver abaixo de 0, "Está frio!" se estiver entre 0 e 20, e "Está quente!" se estiver acima de 20.

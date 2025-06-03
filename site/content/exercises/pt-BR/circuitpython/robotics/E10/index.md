@@ -28,7 +28,7 @@ Outras são fornecidas pelos módulos do Adafruit:
 
 ### Definindo suas próprias funções
 
-Lembre-se de como usamos loops e listas para simplificar nosso código quando precisávamos executar uma tarefa várias vezes. Funções são outra técnica para simplificar nosso código e evitar que tenhamos que reescrever o mesmo código em vários lugares.
+Lembre-se de como usamos loops e listas para simplificar nosso código quando precisávamos executar uma tarefa várias vezes. Funções são outra técnica para simplificar nosso programa e evitar que tenhamos que reescrever o mesmo código em vários lugares.
 
 Voltemos ao programa Touch/Serial do Exercício 4:
 ```python
@@ -74,7 +74,6 @@ while True:
 ```
 
 Observe que cada vez que um touchpad é tocado, as mesmas 3 ações são executadas: imprimir no console serial, colorir pixels e emitir um sinal sonoro. Esta é uma oportunidade perfeita para simplificar nosso código definindo uma função:
-
 ```python
 from adafruit_circuitplayground import cp
 

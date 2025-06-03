@@ -9,7 +9,7 @@ tags: ['CircuitPython']
 
 ### Loops
 
-Agora, suponha que, em vez de acender todos os LEDs de uma só vez, gostaríamos de acendê-los um a um, com uma breve pausa entre cada um. A princípio, você pode pensar que isso exigiria 20 linhas de código Python: 1 `cp.pixel` mais 1 `time.sleep` para cada um dos 10 LEDs. Lembre-se do Makecode: podemos simplificar isso usando loops - veja como um loo´p `for` pode ser implementado em Python:
+Agora, suponha que, em vez de acender todos os LEDs de uma só vez, gostaríamos de acendê-los um a um, com uma breve pausa entre cada um. A princípio, você pode pensar que isso exigiria 20 linhas de código Python: 1 `cp.pixel` mais 1 `time.sleep` para cada um dos 10 LEDs. Lembre-se do Makecode: podemos simplificar isso usando loops - veja como um loop `for` pode ser implementado em Python:
 
 ```python
 from adafruit_circuitplayground import cp

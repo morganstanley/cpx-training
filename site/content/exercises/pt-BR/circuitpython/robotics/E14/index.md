@@ -81,7 +81,6 @@ Tente usar seu celular para fazer o robô se mover para frente e para trás e ob
 # Acelerômetro: Esquerda/Direita
 
 Agora vamos adicionar a capacidade de virar para a esquerda e para a direita alterando os aceleradores do motor para valores diferentes com base na medição do acelerômetro ao longo do eixo X:
-
 ```python
 def handle_accelerometer_packet(packet):
     print(f"X={packet.x}, Y={packet.y}, Z={packet.z}")
@@ -94,7 +93,6 @@ def handle_accelerometer_packet(packet):
 # Servo: Virando a cabeça
 
 Agora vamos anexar o servo da lição anterior e girar o braço do servo para frente e para trás usando o painel de controle do aplicativo do seu telefone:
-
 ```python
 # Comece com o braço na metade do caminho
 angle = 90

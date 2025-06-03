@@ -16,7 +16,7 @@ tags: ['Level 2']
   - atribuição: `x = 1`
   - declarações for, while, if, import
 
-**Selecione um programa anterior: analise o código linha por linha, qual é expressão e qual é decalração?**
+**Selecione um programa anterior: analise o código linha por linha, qual é a expressão e qual é a declaração?**
 
 [Revise o uso do console: do exercício 6 do Nível 1](../../level-1/L1-E6)
 

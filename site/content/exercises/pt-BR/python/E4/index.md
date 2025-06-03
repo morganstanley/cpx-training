@@ -18,7 +18,7 @@ print(groceries)
 ['ovos', 'leite', 'pão', 'café']
 ```
 
-Você acessa os itens da lista usando um **index** (índice). O primeiro item tem índice `[0]`, o segundo tem índice `[1]`, e assim por diante. Isso permite que você imprima itens individuais:
+Você acessa os itens da lista usando um **index** (índice). O primeiro item tem índice `[0]`, o segundo tem índice `[1]`, e assim por diante. Isso permite que você mostre itens individuais:
 
 ```python
 print(groceries[2])
@@ -83,7 +83,7 @@ print(big_list)
 
      _Dica: use a_ *função* `append()`
    * Altere 'banana' para 'pera'
-   * Imprima a lista final
+   * Exiba a lista final
 
 2. Crie uma lista de quatro números consecutivos
     * Adicione o primeiro e o último elementos da lista
@@ -91,5 +91,5 @@ print(big_list)
     * As duas somas são iguais ou diferentes?
 
 3. Faça uma lista dos seus jogos favoritos e atribua-a a uma variável chamada `jogos`. Faça uma lista das suas comidas favoritas e atribua-a a uma variável chamada `comidas`. Agora, combine essas listas em uma nova lista chamada `favoritos`.
-    * Agora remova o terceiro elemento de `favoritos` e imprima a nova lista de `favoritos`
+    * Agora remova o terceiro elemento de `favoritos` e mostre a nova lista de `favoritos`
     * A remoção do elemento de `favoritos` afetou `jogos` ou `alimentos`?

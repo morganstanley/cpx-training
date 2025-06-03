@@ -18,7 +18,7 @@ print(hello)
 Hello, World!
 ```
 
-Se você quiser usar uma aspa simples dentro de uma string (como um apóstrofo), você tem duas opções: (1) colocar a string entre aspas duplas ou (2) usar **string escaping**, o que significa adicionar uma barra invertida antes da aspa:
+Se você quiser usar uma aspa simples dentro de uma string (como um apóstrofo), você tem duas opções: (1) colocar a string entre aspas duplas ou (2) usar **string escaping**, que significa adicionar uma barra invertida antes da aspa:
 
 Usando aspas duplas:
 ```python
@@ -65,7 +65,7 @@ print(greeting)
 Hello Bob
 ```
 
-Outro exemplo usando inteiros dentro de uma string f:
+Outro exemplo usando inteiros dentro de uma f-string:
 ```python
 coins = 15
 score = f'Atualmente você tem {coins} moedas. Após este nível, você terá {coins + 10}'
@@ -86,8 +86,8 @@ Quando eu digo "Toc. Toc.", você diz "Quem está aí?"
     *Dica: use string escaping. Tem duas soluções possíveis.*
 
 2. Crie duas variáveis, uma que armazene seu primeiro nome e outra que armazene seu sobrenome. Use-as para criar e imprimir duas novas strings:
-* Uma que o cumprimente pelo nome, por exemplo: "Olá, João Silva!"
-* Uma que imprima seu nome como ele poderia aparecer em um registro oficial (sobrenome, nome). Por exemplo: "Silva, João"
+    * Uma que o cumprimente pelo nome, por exemplo: "Olá, João Silva!"
+    * Uma que mostre seu nome como ele poderia aparecer em um registro oficial (sobrenome, nome). Por exemplo: "Silva, João"
 
     *Dica: use f-strings*
 

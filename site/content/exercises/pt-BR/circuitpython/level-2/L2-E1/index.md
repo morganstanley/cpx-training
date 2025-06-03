@@ -48,7 +48,7 @@ import neopixel
 
 pixels = neopixel.NeoPixel(board.NEOPIXEL, 10, brightness=.1)
 
-# Colors
+# Cores
 BLACK = (0, 0, 0)
 RED = (255, 0, 0)
 PINK = (255, 100, 120)

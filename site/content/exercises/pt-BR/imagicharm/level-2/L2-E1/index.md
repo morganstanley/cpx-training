@@ -7,9 +7,9 @@ category: ImagiCharm
 tags: ['Level 2']
 ---
 
-### Lição sobre mover pixels
+### Aula sobre mover pixels
 
-Esta lição ensina como criar um pixel que se move pelo ImagiCharm e retorna quando atinge as bordas.
+Esta aula ensina como criar um pixel que se move pelo ImagiCharm e retorna quando atinge as bordas.
 
 ---
 
@@ -22,7 +22,7 @@ import time
 
 # Faça o pixel saltar na primeira linha
 direction = 1  # 1 para mover para a direita, -1 para mover para a esquerda
-position = 0  # Comece na primeira coluna 
+position = 0  # Comece na primeira coluna
 
 while True:
     pixels.clear()  # Limpe a tela

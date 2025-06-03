@@ -1,6 +1,6 @@
 ---
 template: exercise
-title: For Loops
+title: Loops For
 level: 1
 exercise: 11
 category: Python
@@ -62,11 +62,11 @@ café
 
 ## Exercício
 
-Modifique o último exemplo acima para imprimir uma lista de compras numerada. Por exemplo:
+Modifique o último exemplo acima para exibir uma lista de compras numerada. Por exemplo:
 ```
 1. ovos
 2. leite
 3. pão
 4. café
 ```
-*Dica: use as funções * `len` *e* `range` *e comece sua lista em "1.", não em "0."*
+*Dica: use as funções* `len` *e* `range` *e comece sua lista em "1.", não em "0."*

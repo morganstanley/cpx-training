@@ -72,7 +72,7 @@ description: Variáveis ​​e Blocos Lógicos
 
 - O que são blocos lógicos?
   - Blocos lógicos são essencialmente um bloco de código. Os comandos dentro desse bloco de código só serão executados sob certas condições.
-- Quais são os exemplos de blocos lógicos??
+- Quais são os exemplos de blocos lógicos?
   - Um exemplo de bloco lógico seria uma instrução "Se...então".
   - "Se a temperatura estiver abaixo de 50 graus, então vista um casaco"
 - O que é lógica na vida cotidiana?
@@ -97,7 +97,7 @@ description: Variáveis ​​e Blocos Lógicos
   - Crie uma variável chamada " lightonoff ".
   - Defina a variável " lightonoff " com o valor "0"
   - Crie uma instrução "if……else"
-  - Para a instrução "If……else", defina os critérios de forma que, se o valor de "lightonoff" for igual a "0", a cor do pixel em "0" seja preta.
+  - Para a instrução "If……else", defina os critérios de forma que, se o valor de "lightonoff" for igual a "0", a cor do pixel em "0" será preta.
   - Se o valor de "lightonoff" não for igual a "0", faça a luz LED 0 piscar em vermelho e branco.
   - Para fazer a luz LED 0 piscar em vermelho/branco, você precisará definir a cor do pixel como vermelho, pausar, depois defini-la como branca e, por fim, pausar.
 - _Perguntas_:

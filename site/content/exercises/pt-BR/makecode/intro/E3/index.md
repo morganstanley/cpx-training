@@ -15,17 +15,17 @@ Algo que requer execução contínua por um determinado período de tempo ou ind
 
 Exemplo de Loops de Contagem: Escovar os dentes
 
-escovar os dentes inferiores esquerdos
-escovar os dentes inferiores direitos
-escovar os dentes superiores esquerdos
-escovar os dentes superiores direitos
+escovar os dentes inferiores esquerdos\
+escovar os dentes inferiores direitos\
+escovar os dentes superiores esquerdos\
+escovar os dentes superiores direitos\
 Repita 3 vezes
 
-Exemplo de Loops Condicionais: Festa
+Exemplo de Loops Condicionais: Dança
 
-Palmas
-Passo para a esquerda
-Passo para a direita
+Palmas\
+Passo para a esquerda\
+Passo para a direita\
 Repita até cansar
 
 • Você pode dar um exemplo de algo que exija ser executado um determinado número de vezes ou
@@ -69,7 +69,7 @@ Projeto: Tarefa para iluminar pixels de números ÍMPARES e pixels de números p
 
 Tarefa:
 
-1. Primeiro, acenda todos os leds de pixel neo numerados ÍMPARES (1, 3, 5, 7 e 9) em VERMELHO.
+1. Primeiro, acenda todos os leds numerados ÍMPARES (1, 3, 5, 7 e 9) em VERMELHO.
 2. Aguarde 2 segundos.
 3. Em seguida, acenda todos os leds de números PARES (2, 4, 6, 8 e 10) em VERDE.
 4. Aguarde 2 segundos.

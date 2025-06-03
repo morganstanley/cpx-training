@@ -1,13 +1,13 @@
 ---
 template: exercise
-title: Data Types
+title: Tipos de Dados
 level: 1
 exercise: 8
 category: Python
 tags: ['Python']
 ---
 
-Variáveis ​​podem armazenar dados de diferentes tipos — até agora, discutimos números (inteiros e flutuantes), strings, listas e booleanos. Você pode determinar o tipo de uma variável usando `type()`:
+Variáveis ​​podem armazenar dados de diferentes tipos — até agora, discutimos números, strings, listas e booleanos. Você pode determinar o tipo de uma variável usando `type()`:
 
 
 ```python
@@ -47,4 +47,4 @@ bool
 
 ## Exercício
 
-O que é `type('45')` e por que isso é diferente do primeiro exemplo acima?
+O que é `type('45')` e por que é diferente do primeiro exemplo acima?

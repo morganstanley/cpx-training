@@ -22,7 +22,7 @@ Tarefa:
 - Se a leitura do sensor de luz for inferior a 50, acender todos os neopixels em cinza.
 - Se a leitura do sensor de luz for superior a 175, acender todos os neopixels em amarelo.
 - Se a leitura do sensor de luz for qualquer outro valor, acender todos os neopixels em azul claro.
-Objetivo: Explorar o Sensor de Luz da tarefa acima.
+  Objetivo: Explorar o Sensor de Luz da tarefa acima.
 
 ![e3-1](e4-1.png)
 ![e3-2](e4-2.png)

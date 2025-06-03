@@ -1,13 +1,13 @@
 ---
 template: exercise
-title: While Loops
+title: Loops While
 level: 1
 exercise: 7
 category: Python
 tags: ['Python']
 ---
 
-Um loop `while` repete um bloco de código enquanto uma condição específica for `True`. Aqui está um exemplo que imprime os números de 1 a 5:
+Um loop `while` repete um bloco de código enquanto uma condição específica for `True` (verdadeira). Aqui está um exemplo que exibe os números de 1 a 5:
 
 
 ```python
@@ -46,4 +46,4 @@ while True:
 
 ## Exercício
 
-Escreva um loop while que imprima os números de 15 a 20.
+Escreva um loop while que exiba os números de 15 a 20.

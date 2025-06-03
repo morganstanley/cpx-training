@@ -93,7 +93,7 @@ while True:
                         adjust_angle(-20)
 ```
 
-# Desafi
+# Desafio
 
 Se você testar o programa acima bastante, ele eventualmente travará com uma exceção `ValueError` (Dica: tente girá-lo além de sua amplitude total de movimento). Adicione dois blocos `if` à função `adjust_angle` que impedirão que o ângulo saia de sua amplitude válida.
 

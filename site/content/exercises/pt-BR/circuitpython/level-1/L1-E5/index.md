@@ -13,7 +13,8 @@ O circuit playground tem um acelerômetro para detectar quando está em moviment
 from adafruit_circuitplayground.express import cpx
 import time
 
-# O loop principal obtém a aceleração dos eixos x, y e z, imprime os valores e ativa vermelho, verde e azul, em níveis relacionados aos valores x, y e z.
+# O loop principal obtém a aceleração dos eixos x, y e z, imprime os valores e
+# ativa vermelho, verde e azul, em níveis relacionados aos valores x, y e z.
 while True:
     if cpx.switch:
         print("Interruptor desligado!")

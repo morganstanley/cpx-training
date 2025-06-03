@@ -54,8 +54,8 @@ Na última lição, fixamos a placa Bluefruit ao Crickit. Agora vamos construir 
 # Conecte os fios do motor e a fonte de alimentação
 
 - Conecte os fios do motor e a fonte de alimentação ao Crickit
-- Parafuse os fios do motor nas portas.
-- Preto, Vermelho, Preto, Vermelho
+- Parafuse os fios do motor nas portas\.
+- Preto\, Vermelho\, Preto\, Vermelho
 - Passe a fonte de alimentação por baixo do corpo e até a porta de alimentação.
 
 ![](Assembly5.jpg)

@@ -33,7 +33,7 @@ findvolume(2, depth=3, width=4)
 
 **Definindo a função**: palavra-chave `def` seguida do nome da função, parênteses e dois pontos
 
-- O corpo da função, ou o código que a função realmente fará, vem depois dos dois pontos em uma linha **recuada**
+- O corpo da função, ou o código que a função realmente executará, vem depois dos dois pontos em uma linha **recuada**
 
 **Paramêtros da função**:
 
@@ -91,7 +91,7 @@ while True:
 
 ```
 
-And make a function out of the behavior:
+E faça uma função do comportamento:
 
 ```python
 def simpleCircle(wait):
@@ -142,7 +142,7 @@ pixels.fill((0, 0, 0))
 pixels.show()
 
 # escolha quais demos tocar
-#1 significa tocar, 0 significa não tocar!
+# 1 significa tocar, 0 significa não tocar!
 simpleCircleDemo = 1
 
 def simpleCircle(wait):
