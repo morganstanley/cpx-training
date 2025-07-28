@@ -2,11 +2,12 @@ import math
 import time
 from adafruit_circuitplayground.express import cpx
 
+
 def play_song(song_number):
     # 1: Jingle bells
     # 2: Let It Snow
 
-    whole_note = 1.5 
+    whole_note = 1.5
     half_note = whole_note / 2
     quarter_note = whole_note / 4
     dotted_quarter_note = quarter_note * 1.5
@@ -67,8 +68,9 @@ def play_song(song_number):
             time.sleep(let_it_snow_song[n][1])
             cpx.stop_tone()
 
+
 while True:
-    if cpx.switch: 
+    if cpx.switch:
         play_song(1)
     else:
         play_song(2)

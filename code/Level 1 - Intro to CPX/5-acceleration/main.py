@@ -15,7 +15,7 @@ while True:
         x, y, z = cpx.acceleration
 
         print((x, y, z))
-        
+
         if x:
             R = R + abs(int(x))
         if y:
