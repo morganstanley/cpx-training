@@ -3,7 +3,7 @@ import time
 import board
 import neopixel
 
-pixels = neopixel.NeoPixel(board.NEOPIXEL, 10, brightness=.1)
+pixels = neopixel.NeoPixel(board.NEOPIXEL, 10, brightness=0.1)
 
 # Colors
 BLACK = (0, 0, 0)
@@ -25,10 +25,10 @@ pixels.show()
 while True:
     for i in range(len(pixels)):
         pixels[i] = RED
-        time.sleep(.05)
+        time.sleep(0.05)
     time.sleep(1)
 
     for i in range(len(pixels)):
         pixels[i] = GREEN
-        time.sleep(.05)
+        time.sleep(0.05)
     time.sleep(1)

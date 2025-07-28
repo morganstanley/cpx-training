@@ -4,7 +4,6 @@ cpx.pixels.brightness = 0.3
 cpx.pixels.fill((0, 0, 0))
 
 while True:
-
     # notice how these lines are similar
     cpx.pixels[0] = (255, 0, 0)
     cpx.pixels[1] = (255, 127, 0)
@@ -18,7 +17,7 @@ while True:
     cpx.pixels[9] = (0, 0, 100)
 
     # the [] with a number determines which light to turn on
-    # and the numbers in () deterine the color! 
+    # and the numbers in () deterine the color!
     # It says how much (red, green, blue) we want.
     # Try changing the numbers!
 

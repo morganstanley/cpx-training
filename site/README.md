@@ -32,6 +32,29 @@ To run preview server:
 
 ```bash
 npm run start
+
+---
+
+## Notes from Experienced Instructors
+
+### General Guidance
+
+- Plan your sessions with clear learning objectives.
+- Use hands-on activities and encourage questions.
+- Adapt pacing based on student feedback.
+
+---
+
+## Sample Timeline & Budget
+
+> If images are broken, convert the `.xcf` files in `/site/raw-assets/` to `.png` or `.jpg` using GIMP or an online converter, then place them in `/site/static/images/`.
+
+Sample Timeline:
+![Sample Timeline](../static/images/timeline.png)
+
+Sample Budget:
+![Sample Budget](../static/images/budget.png)
+
 ```
 
 And load [http://localhost:8000](http://localhost:8000) in your browser of choice.
@@ -42,7 +65,6 @@ The main content for the site lives in the [`/site/content`](https://github.com/
 
 [MarkDown Reference](https://daringfireball.net/projects/markdown/syntax)
 
-#### Exercises
 
 The [`/site/content/exercises`](https://github.com/MorganStanley/cpx-training/tree/master/site/content/exercises) directory contains directories name for the corresponding level and exercise. [`/site/content/exercises/L1-E1`](https://github.com/MorganStanley/cpx-training/tree/master/site/content/exercises/L1-E1) should contain Level 1 Exercise 1 details and code. The main content is build from the `index.md` file contained in each of these directories.
 
@@ -55,7 +77,6 @@ title: Level 1 | Exercise 1 - Blink
 date: "2020-05-01T23:46:37.121Z"
 category: CircuitPython
 tags: ["Level 1"]
----
 ```
 
 As you can see from the example metadata above, the first exercise (L1 E1) starts on May 1, and the last one (L1 E6) is May 6. The index page listing the exercises lists them from earliest to latest which also drives the menu at the bottom of each exercise page for the previous and next exercises. I didn't really want to go through and modify the whole site structure to include an order metadata field, but if you want to change the whole thing around, please do. If not, just go ahead and add new exercises with newer and newer dates.
@@ -66,7 +87,6 @@ The build command will automatically replace the contents of the `/docs` directo
 
 ```bash
 npm run build
-```
 
 ### Publish
 
