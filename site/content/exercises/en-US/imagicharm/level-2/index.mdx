@@ -4,7 +4,107 @@ category: ImagiCharm
 level: 2
 ---
 
-# ImagiCharm - Level 2
+> **Duration:** ~45 minutes
+> **Prerequisites:** Level 1 or basic Python
 
-### [Lesson 1: Moving Pixels](./L2-E1)
-Create animations by moving a pixel across your ImagiCharm. Learn looping techniques and animations!
+[Learn more about ImagiCharm](https://imagicharm.com/) | [Project Gallery](https://imagicharm.com/projects)
+
+## Lesson 1: Programming Concepts
+Learn how to animate pixels and create simple movement effects on your ImagiCharm. Practice using loops and functions for animation!
+
+### Activity 1: Variables and Expressions
+```python
+led_count = 5
+print(f"Number of LEDs: {led_count}")
+```
+
+### Activity 2: Functions
+```python
+def blink_led(times):
+    for i in range(times):
+        print(f"Blink {i+1}")
+
+blink_led(3)
+```
+
+### Activity 3: User Input
+```python
+try:
+    name = input("Enter your name: ")
+    print(f"Hello, {name}!")
+except Exception:
+    print("Input not supported in this environment.")
+```
+
+### Activity 4: Simple Animation
+```python
+import time
+import sys
+def animate_pixels():
+    colors = [(255,0,0), (0,255,0), (0,0,255)]
+    for color in colors:
+        sys.stdout.write(f"\rAnimating pixel: {color}")
+        sys.stdout.flush()
+        time.sleep(0.5)
+    print("\nAnimation complete!")
+
+animate_pixels()
+```
+
+---
+
+## Combined Solutions & Animations
+
+### Variables and Expressions
+```python
+led_count = 5
+print(f"Number of LEDs: {led_count}")
+```
+
+### Function to Blink LED
+```python
+def blink_led(times):
+    for i in range(times):
+        print(f"Blink {i+1}")
+
+blink_led(3)
+```
+
+### User Input
+```python
+try:
+    name = input("Enter your name: ")
+    print(f"Hello, {name}!")
+except Exception:
+    print("Input not supported in this environment.")
+```
+
+### Simple Animation
+```python
+import time
+import sys
+def animate_pixels():
+    colors = [(255,0,0), (0,255,0), (0,0,255)]
+    for color in colors:
+        sys.stdout.write(f"\rAnimating pixel: {color}")
+        sys.stdout.flush()
+        time.sleep(0.5)
+    print("\nAnimation complete!")
+
+animate_pixels()
+```
+
+---
+
+## Project Info
+- **Device:** ImagiCharm
+- **Language:** Python
+- **Skills:** Variables, functions, user input, animation
+- **External Resources:**
+  - [ImagiCharm Docs](https://imagicharm.com/docs)
+  - [ImagiCharm Community](https://community.imagicharm.com/)
+
+---
+
+[Next: Level 3 – Rainbow Glow & Patterns](/exercises/en-US/imagicharm/level-3/)
+[Previous: Level 1 – Moving Pixels](/exercises/en-US/imagicharm/level-1/)

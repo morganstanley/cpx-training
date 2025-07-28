@@ -1,57 +1,246 @@
+/* Ensure headings always start on a new line and have spacing */
+h1, h2, h3, h4, h5, h6 {
+  display: block;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  width: 100%;
+}
 :root {
-  --main-bg: #fff;
-  --secondary-bg: #efefef;
-  --tertiary-bg: #3caa3c;
-  --dark-bg: #080a21;
-  --main-text: #000;
-  --secondary-text: #207cff;
-  --tertiary-text: #ff5f87;
+  --main-bg: #f5f7fa;
+  --secondary-bg: #eaf4fb;
+  --tertiary-bg: #2563eb;
+  --dark-bg: #0a2540;
+  --main-text: #1a202c;
+  --secondary-text: #2563eb;
+  --tertiary-text: #60a5fa;
+  --accent: #ff5f87;
   --alternate-text-bg: #fff;
-  --alternate-font: 'Courier New', Courier, monospace;
-  --more-alternate-font: VT323, Terminal, 'Courier New', Courier, monospace;
+  --alternate-font: 'Inter', 'Roboto', Arial, sans-serif;
+  --more-alternate-font: 'Inter', 'Roboto', Arial, sans-serif;
+  --shadow: 0 4px 24px rgba(60,72,88,0.08);
+  --shadow-hover: 0 8px 32px rgba(60,72,88,0.16);
+  --transition: 0.3s cubic-bezier(.25,.8,.25,1);
 }
 
 body {
-  background-color: var(--main-bg);
+  background: linear-gradient(120deg, var(--main-bg) 60%, var(--secondary-bg) 100%);
   color: var(--main-text);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: var(--alternate-font);
   margin: 0;
   padding: 0;
   line-height: 1.75em;
+  font-size: 1.1rem;
 }
 
 a {
-  color: var(--secondary-text);
+  color: var(--tertiary-bg);
   text-decoration: none;
+  font-weight: 500;
+  transition: color var(--transition), box-shadow var(--transition);
+  box-shadow: 0 2px 0 var(--accent);
+  border-radius: 4px;
+  padding: 0.25em 0.5em;
 }
 
 a:visted {
-  color: #5041ad;
+  color: var(--accent);
 }
 
+a:hover, a:focus {
+  background: var(--secondary-bg);
+  color: var(--accent);
+  box-shadow: 0 4px 8px rgba(60,72,88,0.12);
+}
+/* Visually hidden utility for accessibility */
+.visually-hidden {
+  position: absolute !important;
+  height: 1px; width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+}
+
+/* Avatar/profile image */
+.avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(60,72,88,0.12);
+  transition: box-shadow var(--transition), transform var(--transition);
+}
+.avatar:hover {
+  box-shadow: var(--shadow-hover);
+  transform: scale(1.08) rotate(-2deg);
+}
+
+/* Loading spinner */
+.spinner {
+  border: 4px solid var(--secondary-bg);
+  border-top: 4px solid var(--accent);
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  animation: spin 1s linear infinite;
+  margin: 1rem auto;
+}
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Animated card pop effect */
+.card {
+  animation: cardPopIn 0.7s cubic-bezier(.25,.8,.25,1);
+}
+@keyframes cardPopIn {
+  0% { opacity: 0; transform: scale(0.95) translateY(20px); }
+  100% { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+/* Section fade-in effect */
+.section {
+  animation: fadeInSection 0.8s cubic-bezier(.25,.8,.25,1);
+}
+@keyframes fadeInSection {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive container and cards */
+@media (max-width: 767px) {
+  .container, .card, .section {
+    padding: 1rem;
+    margin: 0.5rem;
+  }
+}
+
+
 h2 {
-  font-size: 3rem;
-  line-height: 3rem;
+  font-size: 2.5rem;
+  line-height: 2.7rem;
+  font-weight: 700;
+  color: var(--tertiary-bg);
+  margin-bottom: 1rem;
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   line-height: 2rem;
-  margin-bottom: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: var(--secondary-text);
 }
 
 blockquote {
-  border-left: 5px solid var(--tertiary-bg);
+  border-left: 5px solid var(--accent);
   padding-left: 1.5rem;
   margin-bottom: 2rem;
+  background: var(--secondary-bg);
+  font-style: italic;
 }
 
 ul li {
   padding: 0;
   margin: 0.5rem 0;
   list-style-type: disc;
+  font-size: 1rem;
 }
 
 footer {
-  height: 15rem;
+  min-height: 8rem;
+  background: var(--dark-bg);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+/* Focus states for accessibility */
+a:focus, .button:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* Container utility */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Section backgrounds */
+.section {
+  background: var(--secondary-bg);
+  border-radius: 12px;
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+}
+
+/* Spacing utilities */
+.mt-2 { margin-top: 2rem; }
+.mb-2 { margin-bottom: 2rem; }
+.pt-2 { padding-top: 2rem; }
+.pb-2 { padding-bottom: 2rem; }
+
+/* Form elements */
+input, select, textarea {
+  font-family: var(--alternate-font);
+  border: 1px solid var(--tertiary-bg);
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  background: #fff;
+  transition: border-color 0.2s;
+}
+input:focus, select:focus, textarea:focus {
+  border-color: var(--accent);
+}
+
+/* Table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+  background: #fff;
+}
+th, td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--secondary-bg);
+  text-align: left;
+}
+th {
+  background: var(--tertiary-bg);
+  color: #fff;
+  font-weight: 600;
+}
+
+/* Card styles */
+.card {
+  background: var(--secondary-bg);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 24px rgba(60,72,88,0.08);
+  transition: box-shadow 0.2s;
+}
+.card:hover {
+  box-shadow: 0 6px 24px rgba(60,72,88,0.12);
+}
+
+/* Button styles */
+.button {
+  background: var(--tertiary-bg);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.button:hover {
+  background: #174ea6;
+  color: #eaf4fb;
 }

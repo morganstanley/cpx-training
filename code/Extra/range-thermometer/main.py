@@ -36,6 +36,7 @@ def set_pixels():
     pixels[8] = RED
     pixels[9] = RED
 
+
 set_pixels()
 
 

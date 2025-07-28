@@ -6,5 +6,100 @@ level: 1
 
 # ImagiCharm - Level 1
 
-### [Lesson 1: Moving Pixels](./L1-E1)
-Learn the basics of lighting up individual pixels with different colors on your ImagiCharm. A perfect starting point for new coders!
+> **Duration:** ~30 minutes
+> **Prerequisites:** None (Beginner friendly)
+
+[Learn more about ImagiCharm](https://imagicharm.com/) | [Project Gallery](https://imagicharm.com/projects)
+
+## Lesson 1: Moving Pixels
+Let’s learn how to create colorful pixels on the ImagiCharm! You’ll light up individual pixels with different colors.
+
+### Step 1: Turn On a Pixel
+Start by turning on one pixel with a specific color. Let’s make the first pixel red.
+
+```python
+# Turn on the first pixel
+pixels[0][0] = (255, 0, 0)  # Red
+pixels.show()
+```
+
+### Step 2: Try Other Colors
+Change the color values to light up the pixel with green or blue.
+
+```python
+pixels[0][0] = (0, 255, 0)  # Green
+pixels.show()
+
+pixels[0][0] = (0, 0, 255)  # Blue
+pixels.show()
+```
+
+### Step 3: Light Up More Pixels
+Try lighting up more pixels with different colors!
+
+```python
+pixels[1][2] = (255, 255, 0)  # Yellow
+pixels[2][3] = (255, 0, 255)  # Magenta
+pixels.show()
+```
+
+## Combined Solutions & Animations
+
+### Blink an LED
+```python
+# Solution: Blink an LED on Imagicharm
+pixels[0][0] = (255, 0, 0)  # Red
+pixels.show()
+```
+
+### Respond to Button Press
+```python
+# Solution: Respond to button press
+if button_a.is_pressed():
+    pixels[0][0] = (0, 255, 0)  # Green
+    pixels.show()
+```
+
+### Display a Message
+```python
+# Solution: Display a message
+message = "Hello from Imagicharm!"
+print(message)
+```
+
+## Animation Example: Color Cycle
+```python
+# Simple animation: cycle through colors
+import time
+colors = [(255,0,0), (0,255,0), (0,0,255)]
+for color in colors:
+    pixels[0][0] = color
+    pixels.show()
+    time.sleep(0.5)
+```
+
+## Animation Example: Bouncing Pixel
+```python
+# Animation: Bouncing pixel across the row
+import time
+for i in range(7):
+    pixels.clear()
+    pixels[0][i] = (0, 255, 255)  # Cyan
+    pixels.show()
+    time.sleep(0.3)
+```
+
+---
+
+## Project Info
+- **Device:** ImagiCharm
+- **Language:** Python
+- **Skills:** Coding basics, color mixing, simple animation
+- **External Resources:**
+  - [ImagiCharm Docs](https://imagicharm.com/docs)
+  - [ImagiCharm Community](https://community.imagicharm.com/)
+
+---
+
+[Next: Level 2 – Programming Concepts](/exercises/en-US/imagicharm/level-2/)
+[Previous: Workshop Home](/exercises/)

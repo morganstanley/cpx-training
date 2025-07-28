@@ -6,7 +6,7 @@ import time
 import board
 import neopixel
 
-pixels = neopixel.NeoPixel(board.NEOPIXEL, 10, brightness=.1)
+pixels = neopixel.NeoPixel(board.NEOPIXEL, 10, brightness=0.1)
 pixels.fill((0, 0, 0))
 pixels.show()
 
@@ -62,52 +62,41 @@ def simpleCircle(wait):
     LIGHT_BLUE = (80, 200, 175)
     WHITE = (255, 255, 255)
 
-    colors = [
-        PINK,
-        RED,
-        ORANGE,
-        YELLOW,
-        GREEN,
-        CYAN,
-        PURPLE,
-        BLUE,
-        LIGHT_BLUE,
-        WHITE
-    ]
+    colors = [PINK, RED, ORANGE, YELLOW, GREEN, CYAN, PURPLE, BLUE, LIGHT_BLUE, WHITE]
 
     for i in range(len(pixels)):
         pixels[i] = colors[i]
-        time.sleep(.05)
+        time.sleep(0.05)
     time.sleep(1)
 
 
 while True:
     if simpleCircleDemo:
-        print('Simple Circle Demo')
-        simpleCircle(.05)
+        print("Simple Circle Demo")
+        simpleCircle(0.05)
 
     if flashDemo:  # this will play if flashDemo = 1 up above
-        print('Flash Demo')
+        print("Flash Demo")
         pixels.fill((255, 0, 0))
         pixels.show()
-        time.sleep(.25)
+        time.sleep(0.25)
 
         pixels.fill((0, 255, 0))
         pixels.show()
-        time.sleep(.25)
+        time.sleep(0.25)
 
         pixels.fill((0, 0, 255))
         pixels.show()
-        time.sleep(.25)
+        time.sleep(0.25)
 
         pixels.fill((255, 255, 255))
         pixels.show()
-        time.sleep(.25)
+        time.sleep(0.25)
 
     if rainbowDemo:
-        print('Rainbow Demo')
-        rainbow(.001)
+        print("Rainbow Demo")
+        rainbow(0.001)
 
     if rainbowCycleDemo:
-        print('Rainbow Cycle Demo')
-        rainbow_cycle(.001)
+        print("Rainbow Cycle Demo")
+        rainbow_cycle(0.001)
