@@ -10,4 +10,4 @@ tags: ['MakeCode']
 Try out some games developed by others:
 * [Shark Attack](https://makecode.com/_CfgXvMf5kAho)
 * [Jumper](https://makecode.com/_heUXVcER7h8Y)
-* [Castle](https://makecode.com/_ea7MjW0i5Umr)
+* [Run Dog Run](https://makecode.com/_ea7MjW0i5Umr)
