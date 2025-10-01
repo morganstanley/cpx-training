@@ -1,7 +1,7 @@
 {
-  "name": "@morgan-stanley/makerspace-cpx-intro",
-  "description": "Learn the basics of CPX",
-  "version": "0.1.0",
+  "name": "@morgan-stanley/makerspace",
+  "description": "Makerspace Tech Education Site",
+  "version": "0.2.0",
   "engines": {
     "node": "^22.13.0",
     "npm": "^11.0.0"

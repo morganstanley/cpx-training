@@ -11,8 +11,7 @@ const SiteIndex = ({ location }) => {
       <div className="home-main">
         <Hero
           title="Building Community Through Code"
-          subtitle="Introduction to programming with Adafruit's Circuit Playground
-                Express"
+          subtitle="Intro to Programming"
         />
         <article className="hero hero-learn">
           <img

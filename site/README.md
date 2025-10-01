@@ -19,7 +19,6 @@ The [GatsbyJS](https://www.gatsbyjs.org) site based on the [gatsby-starter-22box
 
 If you want you can use C-Spell plugins to help validate spelling in multiple languages (english and french configured in settings shipped with the project. If you want to add more, please update settings)
 
-
 ### Develop
 
 Clone this repo and from a CLI (Terminal, CMD, etc) change directory into `/site` and run:
@@ -61,12 +60,11 @@ And load [http://localhost:8000](http://localhost:8000) in your browser of choic
 
 ### Updating Content
 
-The main content for the site lives in the [`/site/content`](https://github.com/MorganStanley/cpx-training/tree/master/site/content) directory.
+The main content for the site lives in the [`/site/content`](https://github.com/MorganStanley/makerspace/tree/master/site/content) directory.
 
 [MarkDown Reference](https://daringfireball.net/projects/markdown/syntax)
 
-
-The [`/site/content/exercises`](https://github.com/MorganStanley/cpx-training/tree/master/site/content/exercises) directory contains directories name for the corresponding level and exercise. [`/site/content/exercises/L1-E1`](https://github.com/MorganStanley/cpx-training/tree/master/site/content/exercises/L1-E1) should contain Level 1 Exercise 1 details and code. The main content is build from the `index.md` file contained in each of these directories.
+The [`/site/content/exercises`](https://github.com/MorganStanley/makerspace/tree/master/site/content/exercises) directory contains directories name for the corresponding level and exercise. [`/site/content/exercises/L1-E1`](https://github.com/MorganStanley/makerspace/tree/master/site/content/exercises/L1-E1) should contain Level 1 Exercise 1 details and code. The main content is build from the `index.md` file contained in each of these directories.
 
 Please note that because the [starter project](https://www.gatsbyjs.org/starters/iamtherealgd/gatsby-starter-22boxes-uno/) used for this site is a blog template, the order of the exercises are dependent on the date included in the metadata that must be included at the top of each `index.md`.
 
@@ -95,3 +93,4 @@ Create a pull request and reach out to the contributing team for a code review a
 ### Implementation Notes
 
 By default, GatsbyJS will build a site to live at the root of a domain name, but with Github Pages, the site will live in a subdirectory of `cpx-training/` so a [slight modification](https://www.gatsbyjs.org/docs/path-prefix/) to the `gatsby-config.js` was needed to define a path prefix.
+```
