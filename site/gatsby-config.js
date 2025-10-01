@@ -4,8 +4,8 @@ module.exports = {
   siteMetadata: {
     title: `Makerspace by Morgan Stanley`,
     description: `An introduction to coding by professional software engineers`,
-    siteUrl: 'https://morganstanley.github.io/cpx-training/',
+    siteUrl: 'https://morganstanley.github.io/makerspace/',
   },
-  pathPrefix: `/cpx-training`,
+  pathPrefix: `/makerspace`,
   plugins,
 };

@@ -1,7 +1,6 @@
 # Functions
 
-Lets start with [where we left off with variables](https://github.com/mimiflynn/cpx-training/blob/master/Level%202%20-%20Intro%20to%20Programming/1-variables/main.py).
-
+Lets start with [where we left off with variables](https://github.com/mimiflynn/makerspace/blob/master/Level%202%20-%20Intro%20to%20Programming/1-variables/main.py).
 
 ```python
 def my_function(x):
@@ -17,26 +16,29 @@ findvolume(1, 2, 3)
 findvolume(length=5, depth=2, width=4)
 findvolume(2, depth=3, width=4)
 ```
-* Some tasks need to be performed multiple times within a program.
-* Rather than rewrite the same code in multiple places, a function may be defined using the def keyword.
-* Function definitions may include parameters, providing data input to the function.
-* Functions may return a value using the return keyword followed by the value to return.
-<br>
 
+- Some tasks need to be performed multiple times within a program.
+- Rather than rewrite the same code in multiple places, a function may be defined using the def keyword.
+- Function definitions may include parameters, providing data input to the function.
+- Functions may return a value using the return keyword followed by the value to return.
+  <br>
 
 **Calling a function**: `makeLight()` wriing the function name followed by parentheses
 
 **Defining a function**: `def` keyword followed by the name of the function, parentheses, and a colon
-* The body of the function, or the code for what the function will actually do, comes after the colon on an **indented** line
+
+- The body of the function, or the code for what the function will actually do, comes after the colon on an **indented** line
 
 **Function parameters**:
-* Sometimes functions require input to provide data for their code. This input is defined using parameters.
-* Parameters are variables that are defined in the function definition.
-* They are assigned the values which were passed as arguments when the function was called, elsewhere in the code.
+
+- Sometimes functions require input to provide data for their code. This input is defined using parameters.
+- Parameters are variables that are defined in the function definition.
+- They are assigned the values which were passed as arguments when the function was called, elsewhere in the code.
 
 **Function arguments**:
-* Parameters in python are variables— placeholders for the actual values the function needs
-* When the function is called, these values are passed in as arguments.
+
+- Parameters in python are variables— placeholders for the actual values the function needs
+- When the function is called, these values are passed in as arguments.
 
 ```python
 import time
@@ -119,6 +121,7 @@ def simpleCircle(wait):
 ```
 
 How to use:
+
 ```python
 # CircuitPlaygroundExpress_NeoPixel
 # https://learn.adafruit.com/adafruit-circuit-playground-express/circuitpython-neopixel
