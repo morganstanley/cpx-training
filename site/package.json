@@ -25,8 +25,8 @@
     "gatsby-source-filesystem": "^5.16.0",
     "gatsby-transformer-sharp": "^5.16.0",
     "prismjs": "^1.30.0",
-    "react": "^19.2.4",
-    "react-dom": "^19.2.4",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
     "style-to-object": "^2.0.2"
   },
   "overrides": {
